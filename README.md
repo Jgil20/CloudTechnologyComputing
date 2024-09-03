@@ -18,7 +18,6 @@ Project Structure
 The project structure for this website is organized as follows:
 
 arduino
-Copy code
 root/
 │
 ├── css/
