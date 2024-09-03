@@ -52,6 +52,7 @@ root/
 ├── contact.html
 ├── manifest.json
 └── README.md
+
 Technologies Used
 HTML5: Structure of the webpages.
 CSS3: Styling, including Bootstrap for responsive design, custom stylesheets for specific pages, and Font Awesome for icons.
@@ -105,12 +106,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Contact
 For any inquiries or support, please contact:
-
-Jhon Arzu-Gil
-Email: jgil20@me.com
-Phone: +1-248-938-5567
-Website: https://cloudtechnologycomputing.com
-Thank you for visiting www.cloudtechnologycomputing.com!
 
 Jhon Arzu-Gil
 Email: jgil20@me.com
