@@ -17,6 +17,10 @@ Contact
 Project Structure
 The project structure for this website is organized as follows:
 
+
+## File Structure
+
+```plaintext
 arduino
 root/
 │
