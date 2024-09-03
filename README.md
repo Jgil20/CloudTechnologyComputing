@@ -2,7 +2,7 @@ README for www.cloudtechnologycomputing.com
 Overview
 Welcome to www.cloudtechnologycomputing.com, the official website for Cloud Technology Computing Corporation, a technology consulting and software development firm based in Texas. This site showcases our comprehensive range of services, which include cloud computing solutions, custom web and software development, digital marketing, and more. The website is designed to provide potential clients, partners, and stakeholders with a clear understanding of our expertise and offerings.
 
-![Portfolio Screenshot](/assets/img/home-3/Cloud Solutions Techology.webp
+![Portfolio Screenshot](assets/img/home-3/Cloud Solutions Techology.webp
 /JhonArzuGilDP.jpeg) <!-- Update with an actual screenshot -->
 
 Table of Contents
