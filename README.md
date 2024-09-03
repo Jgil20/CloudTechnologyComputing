@@ -17,44 +17,6 @@ Contact
 Project Structure
 The project structure for this website is organized as follows:
 
-
-## File Structure
-
-```plaintext
-arduino
-root/
-│
-├── css/
-│   ├── bootstrap.min.css
-│   ├── fontawesome/
-│   │   └── all.min.css
-│   ├── owl.carousel.min.css
-│   ├── owl.theme.default.min.css
-│   ├── lightbox.min.css
-│   ├── parallax.css
-│   ├── style.css
-│   └── responsive.css
-│
-├── images/
-│   ├── logo.avif
-│   ├── hackerJhon.png
-│   └── ...
-│
-├── js/
-│   ├── bootstrap.min.js
-│   ├── jquery.min.js
-│   ├── owl.carousel.min.js
-│   ├── lightbox.min.js
-│   └── script.js
-│
-├── index.html
-├── about.html
-├── services.html
-├── portfolio.html
-├── contact.html
-├── manifest.json
-└── README.md
-
 Technologies Used
 HTML5: Structure of the webpages.
 CSS3: Styling, including Bootstrap for responsive design, custom stylesheets for specific pages, and Font Awesome for icons.
@@ -95,6 +57,44 @@ This website can be deployed to any standard web hosting service. For deployment
 Upload the project files to your web hosting server using FTP/SFTP or a hosting control panel.
 Ensure that PHP and MySQL are supported if using dynamic content or forms.
 Set up a MySQL database if required, and update the database connection details in your PHP files.
+
+## File Structure
+
+```plaintext
+arduino
+root/
+│
+├── css/
+│   ├── bootstrap.min.css
+│   ├── fontawesome/
+│   │   └── all.min.css
+│   ├── owl.carousel.min.css
+│   ├── owl.theme.default.min.css
+│   ├── lightbox.min.css
+│   ├── parallax.css
+│   ├── style.css
+│   └── responsive.css
+│
+├── images/
+│   ├── logo.avif
+│   ├── hackerJhon.png
+│   └── ...
+│
+├── js/
+│   ├── bootstrap.min.js
+│   ├── jquery.min.js
+│   ├── owl.carousel.min.js
+│   ├── lightbox.min.js
+│   └── script.js
+│
+├── index.html
+├── about.html
+├── services.html
+├── portfolio.html
+├── contact.html
+├── manifest.json
+└── README.md
+
 Contributing
 We welcome contributions from the community. If you have suggestions or improvements, please follow these steps:
 
