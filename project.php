@@ -1,11 +1,11 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology." />
+<meta name="description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Discover tailored solutions in web development, cloud services, AI, and more, designed to enhance your business efficiency." />
 <meta name=”robots” content=”index, follow”> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
-<meta property="og:description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology.">
+<meta property="og:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Discover tailored solutions in web development, cloud services, AI, and more, designed to enhance your business efficiency.">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
 <meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -14,16 +14,16 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Cloud Technology Computing: Computer Software Development"/>
-<meta property="twitter:description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology.">
+<meta property="twitter:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Discover tailored solutions in web development, cloud services, AI, and more, designed to enhance your business efficiency.">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://cloudtechnologycomputing.com/">
-<meta name="twitter:image:alt" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology.">  
+<meta name="twitter:image:alt" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Discover tailored solutions in web development, cloud services, AI, and more, designed to enhance your business efficiency.">  
     <!-- Favicon -->
    <link href="assets/img/computer clouds.png" type="image/x-icon" rel="icon">
      <!-- Title -->
-    <title>"Cloud Technology Computing: Blog</title>
+    <title>Innovative Cloud Computing Projects | Cloud Technology Computing</title>
 </head>
 
 <body class="home-dark2 tt-magic-cursor">
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <ul class="menu-list">
-                <li class="menu-item active">
+                <li class="menu-item">
                     <a href="index.php" class="drop-down">Home</a><i class="bi bi-plus dropdown-icon"></i>
                 </li>
                 <li><a href="https://www.arzugil.com">C.E.O</a></li>
@@ -150,7 +150,7 @@
                            <li> <a href="I.T%20Services%20/Artificial%20Intelligence%20service-details.php" class="dropdown-item">Artificial Intelligence Services</a></li>
                       </ul>
                 <li class="menu-item-has-children">
-                    <a href="project.php" class="drop-down">Projects</a><i class="bi bi-plus dropdown-icon"></i>
+                    <a href="project.php" class="drop-down active">Projects</a><i class="bi bi-plus dropdown-icon"></i>
                     <ul class="sub-menu">
                         <li> <a href="https://iownya.com" class="dropdown-item">Shop Online</a></li>
                         <li><a href="https://play.google.com/store/search?q=Jhon%20Arzu&c=apps&hl=en_US&gl=US" target="_blank"  class="nav-item nav-link">App's</a></li>
@@ -228,10 +228,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="assets/img/inner-pages/inner-banner-1.png" alt="">
+                <img src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="assets/img/inner-pages/inner-banner-2.png" alt="">
+                <img src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -242,7 +242,7 @@
                             <span>Projects</span>
                             <h1>"Our Complited Projects"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.html">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Projects
+                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Projects
                             </div>
                            
                         </div>
@@ -258,11 +258,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img class="img-fluid magnetic-item" src="assets/img/home-3/home3-suc-sto-01.png" alt="">
+                            <img class="img-fluid magnetic-item" src="assets/img/home-3/CloudComputing.webp" alt="">
                         </div>
                         <div class="success-content">
                             <span>Web development</span>
-                            <h3><a href="project-details.html">Streamlining IT Infrastructure</a></h3>
+                            <h3><a href="https://www.arzugil.com">Portfolio Site</a></h3>
                             <div class="view-btn">
                                 <a href="project-details.html">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,11 +276,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img class="img-fluid magnetic-item" src="assets/img/home-3/home3-suc-sto-02.png" alt="">
+                            <img class="img-fluid magnetic-item" src="assets/img/home-3/CloudTechnologyComputing.avif" alt="">
                         </div>
                         <div class="success-content">
-                            <span>Web development</span>
-                            <h3><a href="project-details.html">Transforming Customer Experience</a></h3>
+                            <span>Mobile development</span>
+                            <h3><a href="https://play.google.com/store/apps/details?id=com.arzugil.com.portfoliositejhongil">Portfolio Site App</a></h3>
                             <div class="view-btn">
                                 <a href="project-details.html">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,11 +294,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                     <div class="success-storie-card">
                         <div class="success-img magnetic-item">
-                            <img class="img-fluid" src="assets/img/home-3/home3-suc-sto-03.png" alt="">
+                            <img class="img-fluid" src="assets/img/home-3/ComputerClouds.webp" alt="">
                         </div>
                         <div class="success-content">
                             <span>Web development</span>
-                            <h3><a href="project-details.html">Scaling Agile Development</a></h3>
+                            <h3><a href="index.php">Cloud Technology Computing</a></h3>
                             <div class="view-btn">
                                 <a href="project-details.html">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -312,11 +312,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img class="img-fluid magnetic-item" src="assets/img/home-3/home3-suc-sto-01.png" alt="">
+                            <img class="img-fluid magnetic-item" src="assets/img/home-3/ComputerCloudsDisplay.webp" alt="">
                         </div>
                         <div class="success-content">
-                            <span>Web development</span>
-                            <h3><a href="project-details.html">Optimizing IT Operations</a></h3>
+                            <span>Mobile development</span>
+                            <h3><a href="https://play.google.com/store/apps/details?id=com.cloudtechnologycomputing.Cloud_Technology_Computing">Cloud Technology Computing App</a></h3>
                             <div class="view-btn">
                                 <a href="project-details.html">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,11 +330,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img class="img-fluid magnetic-item" src="assets/img/home-3/home3-suc-sto-02.png" alt="">
+                            <img class="img-fluid magnetic-item" src="assets/img/home-3/CloudSolutions.avif" alt="">
                         </div>
                         <div class="success-content">
-                            <span>Web development</span>
-                            <h3><a href="project-details.html">Maximizing Efficiency with DevOps</a></h3>
+                            <span>Mobile development</span>
+                            <h3><a href="https://play.google.com/store/apps/dev?id=8040499476760752928">App's On The Playstore</a></h3>
                             <div class="view-btn">
                                 <a href="project-details.html">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,11 +348,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div class="success-storie-card">
                         <div class="success-img magnetic-item">
-                            <img class="img-fluid" src="assets/img/home-3/home3-suc-sto-03.png" alt="">
+                            <img class="img-fluid" src="assets/img/home-3/ITConulsting2.avif" alt="">
                         </div>
                         <div class="success-content">
-                            <span>Web development</span>
-                            <h3><a href="project-details.html">Implementing Robotic Process Automation</a></h3>
+                            <span>Certification's</span>
+                            <h3><a href="https://www.credly.com/users/jhongil">Cedly Certifications</a></h3>
                             <div class="view-btn">
                                 <a href="project-details.html">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">

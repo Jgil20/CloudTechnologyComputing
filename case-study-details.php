@@ -1,29 +1,29 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="<meta name="description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies."/>
+<meta name="description" content="Dive into the detailed case study from Cloud Technology Computing. Discover comprehensive insights and strategies used to optimize cloud solutions, improve performance, and achieve client goals." />
 <meta name=”robots” content=”index, follow”> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
-<meta property="og:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies.">
+<meta property="og:description" content="Dive into the detailed case study from Cloud Technology Computing. Discover comprehensive insights and strategies used to optimize cloud solutions, improve performance, and achieve client goals.">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
-<meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
+<meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/inner-pages/AzureHostingDesktop.avif">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Cloud Technology Computing: Computer Software Development"/>
-<meta property="twitter:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies.">
+<meta property="twitter:description" content="Dive into the detailed case study from Cloud Technology Computing. Discover comprehensive insights and strategies used to optimize cloud solutions, improve performance, and achieve client goals.">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
+<meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/inner-pages/AzureHostingDesktop.avif">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://cloudtechnologycomputing.com/">
-<meta name="twitter:image:alt" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies.">  
+<meta name="twitter:image:alt" content="Dive into the detailed case study from Cloud Technology Computing. Discover comprehensive insights and strategies used to optimize cloud solutions, improve performance, and achieve client goals.">  
     <!-- Favicon -->
    <link href="assets/img/computer clouds.png" type="image/x-icon" rel="icon">
      <!-- Title -->
-    <title>Case Study: Standard Solutions for Optimizing Cloud Performance | Cloud Technology Computing</title>
+    <title>Case Study Details: Comprehensive Insights into Cloud Solutions | Cloud Technology Computing</title>
 </head>
 <body class="home-dark2 tt-magic-cursor">
     <!-- Preloader Start -->
@@ -150,7 +150,7 @@
                     <a href="project.php" class="drop-down">Projects</a><i class="bi bi-plus dropdown-icon"></i>
                     <ul class="sub-menu">
                         <li> <a href="https://iownya.com" class="dropdown-item">Shop Online</a></li>
-                        <li><a href="https://play.google.com/store/search?q=Jhon%20Arzu&c=apps&hl=en_US&gl=US" target="_blank"  class="nav-item nav-link">App's</a></li>
+                        <li><a href="https://play.google.com/store/search?q=Jhon%20Arzu" target="_blank"  class="nav-item nav-link">App's</a></li>
                      <li>  <a href="https://www.credly.com/users/jhon-arzu-gil.8cf7cffc" target="_blank"  class="dropdown-item">Certifications</a></li>
                     <li><a href="https://profile.indeed.com/p/jhona-ycwvn06" target="_blank"  class="dropdown-item">Indeed Resume</a></li>
                     </ul>
@@ -220,30 +220,150 @@
             </div>
         </div>
     </header>
-    <!-- End breadcrumbs section -->
-    <div class="case-study-pages sec-mar">
+    <!-- End header section -->
+    <!-- Start breadcrumbs section -->
+    <section class="breadcrumbs">
+      <div class="breadcrumb-sm-images">
+            <div class="inner-banner-1 magnetic-item">
+                <img src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+            </div>
+            <div class="inner-banner-2 magnetic-item">
+                <img src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+            </div>
+        </div>
+        </div>
         <div class="container">
-            <div class="row gy-5 mb-60 justify-content-center">
-                <div class="col-lg-8">
-                    <div class="case-study-wrap">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="case-img magnetic-item">
-                                    <img class="img-fluid" src="assets/img/inner-pages/Website Optimization3.avif" alt="Move from fixed dedicated hosting to a scalable cloud environment that can adjust resources based on demand and Evaluate different cloud providers to choose the best fit for specific business needs.">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-wrapper">
+                        <div class="breadcrumb-cnt">
+                            <span>Case Study Details</span>
+                            <h1>"Improve website load times and enhance the overall user experience globally"</h1>
+                            <div class="breadcrumb-list">
+                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Case Study Details
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End breadcrumbs section -->
+    <div class="case-study-details sec-mar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="case-study-title">
+                        <h2>Cloud Hosting vs. Dedicated Hosting: A Case Study by Cloud Technology Computing Corporation</h2>
+                    </div>
+                    <div class="case-big-img magnetic-item">
+                        <img class="img-fluid" src="assets/img/inner-pages/AzureHostingDesktop.avif" alt="Azure Page Speed Hosting">
+                    </div>
+                    <div class="case-content mb-60">
+                        <p>Cloud Technology Computing Corporation conducted a comprehensive evaluation to determine the most suitable hosting environment for their web applications. The study focused on comparing the performance, reliability, scalability, and cost-effectiveness of cloud hosting solutions, specifically AWS and Azure, against their existing dedicated hosting providers, Hostinger and Eco Web Hosting. The goal was to identify the best platform to support their operations before making a full transition to cloud hosting.</p>
+                    </div>
+                    <div class="row g-lg-4 gy-5 mb-120">
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="case-content">
+                                <h2>Performance Testing</h2>
+                                <p>The evaluation focused on key performance indicators, including load times, server response times, and scalability under traffic surges, across AWS, Azure, Hostinger, and Eco Web Hosting.</p>
+                                <p>Findings
+Load Times:
+
+AWS: Demonstrated significant improvements in load times due to their globally distributed data centers, reducing latency.
+Azure: Showed similar performance to AWS, with slight differences depending on regional data centers.
+Hostinger: While stable, load times were longer compared to both cloud environments, especially during peak traffic periods.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="case-img magnetic-item">
+                                <img class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsEcowebhosting.avif" alt="Page speed Insights Ecowebhosting">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-lg-4 gy-5 mb-120">
+                        <div class="col-lg-6">
+                            <div class="case-img magnetic-item">
+                                <img class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsHostinger.avif" alt="Page speed Insights Hostinger">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="case-content">
+                                <h2>Scalability</h2>
+                                <p>AWS and Azure: Both platforms offered superior scalability, handling traffic surges without any performance degradation. Autoscaling features in AWS and Azure allowed for automatic resource adjustment.</p>
+                                <p>Hostinger: Scalability was more challenging, requiring manual server adjustments and often leading to temporary slowdowns during high traffic periods.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-120">
+                        <div class="col-lg-12">
+                            <div class="case-content mb-60">
+                                <h2>ProcessLoad Times</h2>
+                                <p>AWS: Demonstrated significant improvements in load times, benefiting from globally distributed data centers, which reduced latency and provided faster access to content.</p> 
+                                <p>Azure: Showed similar performance to AWS, with slight differences based on the proximity of regional data centers. Performance was consistently high, though marginally variable depending on the region.</p>
+                                <p>Dedicated hosting like Hostinger provided stable load times, but they were generally longer compared to the cloud environments, particularly during peak traffic periods, where latency became more noticeable.</p>
+                            </div>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="single-process magnetic-item">
+                                        <div class="icon">
+                                            <img src="assets/img/inner-pages/research.svg" alt="">
+                                        </div>
+                                        <span>Step 01</span>
+                                        <h3>Research</h3>
+                                        <p>Objective: Understand the problem, gather requirements, and analyze potential solutions..</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="single-process magnetic-item">
+                                        <div class="icon">
+                                            <img src="assets/img/inner-pages/devlopment.svg" alt="">
+                                        </div>
+                                        <span>Step 02</span>
+                                        <h3>Development</h3>
+                                        <p>Objective: Build and implement the solution based on the research findings.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="single-process magnetic-item">
+                                        <div class="icon">
+                                            <img src="assets/img/inner-pages/testing.svg" alt="">
+                                        </div>
+                                        <span>Step 03</span>
+                                        <h3>Testing</h3>
+                                        <p>Validate that the solution meets the requirements and functions correctly.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="single-process magnetic-item">
+                                        <div class="icon">
+                                            <img src="assets/img/inner-pages/deploy.svg" alt="">
+                                        </div>
+                                        <span>Step 04</span>
+                                        <h3>Deploy</h3>
+                                        <p>Launch the solution to the production environment and ensure it is operational.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-7 d-flex align-items-center">
-                                <div class="case-content">
-                                    <span>CLOUD HOSTING</span>
-                                    <h3><a href="case-study-details.php"> Improve website load times and enhance the overall user experience globally</a></h3>
-                                    <p> Move from fixed dedicated hosting to a scalable cloud environment that can adjust resources based on demand and Evaluate different cloud providers to choose the best fit for specific business needs.</p>
-                                    <div class="learn-btn">
-                                        <a class="primary-btn9" href="case-study-details.php">
-                                            <span>Learn More</span>
-                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5"></path>
-                                            </svg>
-                                        </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="case-content mb-60">
+                                <h2>Mission</h2>
+                                <p>The company's mission is to provide cutting-edge technology solutions that help businesses thrive in the digital age. By focusing on innovation, client satisfaction, and technological excellence, Cloud Technology Computing Corporation aims to be a leader in the cloud computing and software development space.</p>
+                            </div>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-md-6">
+                                    <div class="case-img magnetic-item">
+                                        <img class="img-fluid" src="assets/img/inner-pages/SAPAnalyticsCloud.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="case-img magnetic-item">
+                                        <img class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -251,14 +371,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <div class="load-more-btn">
-                        <a class="primary-btn3" href="case-study-standard.html">Load More</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Start Footer section -->
-    <?php include 'footer.php'; ?>
+  <?php include 'footer.php'; ?>

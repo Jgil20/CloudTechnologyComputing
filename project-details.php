@@ -1,11 +1,11 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="<meta name="description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies."/>
+<meta name="description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology." />
 <meta name=”robots” content=”index, follow”> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
-<meta property="og:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies.">
+<meta property="og:description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology.">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
 <meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -14,17 +14,18 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Cloud Technology Computing: Computer Software Development"/>
-<meta property="twitter:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies.">
+<meta property="twitter:description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology.">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://cloudtechnologycomputing.com/">
-<meta name="twitter:image:alt" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies.">  
+<meta name="twitter:image:alt" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology.">  
     <!-- Favicon -->
    <link href="assets/img/computer clouds.png" type="image/x-icon" rel="icon">
      <!-- Title -->
-    <title>Case Study: Standard Solutions for Optimizing Cloud Performance | Cloud Technology Computing</title>
+    <title>"Cloud Technology Computing:Project</title>
 </head>
+
 <body class="home-dark2 tt-magic-cursor">
     <!-- Preloader Start -->
     <div class="preloader">
@@ -56,7 +57,8 @@
     
     </div>
     <!-- Preloader End -->
-        <div class="header-sidebar">
+       <!-- Preloader End -->
+      <div class="header-sidebar">
         <div class="siderbar-top">
             <div class="sidebar-log">
                 <a href="../index.html">Cloud Technology Computing</a>
@@ -114,7 +116,9 @@
                 </ul>
             </div>
         </div>
-    </div>  <!-- Start header section -->
+    </div>
+    <!-- Start header section -->
+    <!-- Start header section -->
     <header class="header-area2 style-2 two">
         <div class="header-logo">
             <a href="index.html"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
@@ -147,14 +151,14 @@
                            <li> <a href="I.T%20Services%20/Artificial%20Intelligence%20service-details.php" class="dropdown-item">Artificial Intelligence Services</a></li>
                       </ul>
                 <li class="menu-item-has-children">
-                    <a href="project.php" class="drop-down">Projects</a><i class="bi bi-plus dropdown-icon"></i>
+                    <a href="project.php" class="drop-down active">Projects</a><i class="bi bi-plus dropdown-icon"></i>
                     <ul class="sub-menu">
                         <li> <a href="https://iownya.com" class="dropdown-item">Shop Online</a></li>
                         <li><a href="https://play.google.com/store/search?q=Jhon%20Arzu&c=apps&hl=en_US&gl=US" target="_blank"  class="nav-item nav-link">App's</a></li>
                      <li>  <a href="https://www.credly.com/users/jhon-arzu-gil.8cf7cffc" target="_blank"  class="dropdown-item">Certifications</a></li>
                     <li><a href="https://profile.indeed.com/p/jhona-ycwvn06" target="_blank"  class="dropdown-item">Indeed Resume</a></li>
                     </ul>
-               <li class="menu-item active"><a href="case-study-standard.php">Case Studies</a></li>
+               <li><a href="case-study-standard.php">Case Studies</a></li>
                 <li><a href="blog.php">Blog</a></li>
    <li class="menu-item-has-children">
                     <a href="about.php" class="drop-down">About Us</a><i class="bi bi-plus dropdown-icon"></i>
@@ -220,45 +224,198 @@
             </div>
         </div>
     </header>
-    <!-- End breadcrumbs section -->
-    <div class="case-study-pages sec-mar">
+
+    <!-- End header section -->
+    <!-- Start breadcrumbs section -->
+    <section class="breadcrumbs">
+        <div class="breadcrumb-sm-images">
+            <div class="inner-banner-1 magnetic-item">
+                <img src="assets/img/inner-pages/inner-banner-1.png" alt="">
+            </div>
+            <div class="inner-banner-2 magnetic-item">
+                <img src="assets/img/inner-pages/inner-banner-2.png" alt="">
+            </div>
+        </div>
         <div class="container">
-            <div class="row gy-5 mb-60 justify-content-center">
-                <div class="col-lg-8">
-                    <div class="case-study-wrap">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="case-img magnetic-item">
-                                    <img class="img-fluid" src="assets/img/inner-pages/Website Optimization3.avif" alt="Move from fixed dedicated hosting to a scalable cloud environment that can adjust resources based on demand and Evaluate different cloud providers to choose the best fit for specific business needs.">
-                                </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-wrapper">
+                        <div class="breadcrumb-cnt">
+                            <span>Projects Details</span>
+                            <h1>"Portfolio Site"</h1>
+                            <div class="breadcrumb-list">
+                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Projects Details
                             </div>
-                            <div class="col-lg-7 d-flex align-items-center">
-                                <div class="case-content">
-                                    <span>CLOUD HOSTING</span>
-                                    <h3><a href="case-study-details.php"> Improve website load times and enhance the overall user experience globally</a></h3>
-                                    <p> Move from fixed dedicated hosting to a scalable cloud environment that can adjust resources based on demand and Evaluate different cloud providers to choose the best fit for specific business needs.</p>
-                                    <div class="learn-btn">
-                                        <a class="primary-btn9" href="case-study-details.php">
-                                            <span>Learn More</span>
-                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5"></path>
-                                            </svg>
-                                        </a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End breadcrumbs section -->
+    <div class="portfolio-details sec-mar">
+        <div class="container ">
+            <div class="row g-4 mb-80">
+                <div class="col-lg-7">
+                    <div class="portfolio-img magnetic-item">
+                        <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="portfolio-img magnetic-item">
+                                <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="portfolio-img magnetic-item">
+                                <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5">
+                <div class="col-lg-8">
+                    <div class="portfolio-content">
+                        <h3>Projects Overview</h3>
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh elementum, accumsan ona
+                            neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, pellentesque risus. Vivamus vehicula nl
+                            purus at eros interdum, in dignissim nulla vestibulum. Nunc sit amet finibus felis, ut egestas lacus. Sedan 
+                            pellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis faucibus il
+                            ut, hendrerit vel tortor. In pharetra lectus luctus ornare sollicitudin.</p> 
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh elementum, accumsan ona
+                            neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, pellentesque risus. Vivamus vehicula nl
+                            
+                            pellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis faucibus il
+                            ut, hendrerit vel tortor. In pharetra lectus luctus ornare sollicitudin.</p> 
+
+                        <div class="working-process">
+                            <h3>Our Process</h3>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="single-process magnetic-item">
+                                        <div class="icon">
+                                            <img src="assets/img/inner-pages/research.svg" alt="">
+                                        </div>
+                                        <span>Step 01</span>
+                                        <h3>Research</h3>
+                                        <p>Interdum et malesuada fames ac Etiam europeat nibh elementum, accumsan ona.</p>
                                     </div>
                                 </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="single-process magnetic-item">
+                                        <div class="icon">
+                                            <img src="assets/img/inner-pages/devlopment.svg" alt="">
+                                        </div>
+                                        <span>Step 02</span>
+                                        <h3>Development</h3>
+                                        <p>Interdum et malesuada fames ac Etiam europeat nibh elementum, accumsan ona.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="single-process magnetic-item">
+                                        <div class="icon">
+                                            <img src="assets/img/inner-pages/deploy.svg" alt="">
+                                        </div>
+                                        <span>Step 03</span>
+                                        <h3>Deploy</h3>
+                                        <p>Interdum et malesuada fames ac Etiam europeat nibh elementum, accumsan ona.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mb-55">
+                            <div class="col-lg-7 col-sm-6">
+                                <div class="portfolio-img magnetic-item">
+                                    <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-6">
+                                <div class="portfolio-img magnetic-item">
+                                    <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-05.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Result</h3>
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh elementum, accumsan ona
+                            neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, pellentesque risus. Vivamus vehicula nl
+                            purus at eros interdum, in dignissim nulla vestibulum.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <ul>
+                            <li>
+                                <span>Client:</span>
+                                <h5>Argova Josen</h5>
+                            </li>
+                            <li>
+                                <span>Company:</span>
+                                <h5>Egens Lab</h5>
+                            </li>
+                            <li>
+                                <span>Location:</span>
+                                <h5>7 Lake Street, London</h5>
+                            </li>
+                            <li>
+                                <span>Project Type:</span>
+                                <h5>Desktop Mockup</h5>
+                            </li>
+                            <li>
+                                <span>Duration:</span>
+                                <h5>6 Month</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-details-sm-banner">
+                        <div class="section-title-5">
+                            <h2>Ready to <br>
+                            <span>work with us?</span></h2>
+                            <div class="get-btn">
+                                <a class="primary-btn3" href="contact.html">Get a quote</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <div class="load-more-btn">
-                        <a class="primary-btn3" href="case-study-standard.html">Load More</a>
+                <div class="col-lg-12">
+                    <div class="details-navigation">
+                        <div class="single-navigation">
+                            <div class="content">
+                                <a href="project-details.html">Previous</a>
+                                <h4><a href="project-details.html">Streamlining IT Infrastructure</a></h4>
+                            </div>
+                            <a href="project-details.html" class="img">
+                                <img src="assets/img/inner-pages/portfolio-navigation-01.png" alt="">
+                                <div class="arrow">
+                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="single-navigation two">
+                            <a href="project-details.html" class="img">
+                                <img src="assets/img/inner-pages/portfolio-navigation-02.png" alt="">
+                                <div class="arrow">
+                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="content">
+                                <a href="project-details.html">NEXT </a>
+                                <h4><a href="project-details.html">Scaling Agile Development</a></h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Start Footer section -->
-    <?php include 'footer.php'; ?>
+   <?php include 'footer.php'; ?>
