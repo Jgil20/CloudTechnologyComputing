@@ -6,7 +6,7 @@
                     <div class="col-lg-12">
                         <div class="footer-top-content">
                             <div class="footer-logo">
-                                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a></div>
+                                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a></div>
                             <div class="footer-contect">
                                 <div class="icon">
                                     <svg width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">

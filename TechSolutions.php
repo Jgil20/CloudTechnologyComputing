@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -148,12 +148,12 @@
  <!-- Start header section -->
        <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -241,7 +241,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -257,10 +257,10 @@
     <section class="breadcrumbs">
        <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -271,7 +271,7 @@
                             <span>Blog Details</span>
                             <h1>Affordable Tech Solutions</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Blog Details
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Blog Details
                             </div>
                            
                         </div>
@@ -286,7 +286,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="post-thumb magnetic-item">
-                        <img class="img-fluid" src="assets/img/inner-pages/blog-dt-01.png" alt="">
+                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/blog-dt-01.png" alt="">
                     </div>
                 </div>
             </div>
@@ -298,7 +298,7 @@
                         <div class="author-and-meta">
                             <div class="author-area">
                                 <div class="author-img">
-                                    <img src="assets/img/inner-pages/ProfilePictJhonArzuGil.webp" alt="Jhon Arzu-Gil, an Application Developer at IBM, sitting in a chair, dressed in a black shirt and gray pants, with a smartphone and laptop on a table beside him.">
+                                    <img loading="lazy" src="assets/img/inner-pages/ProfilePictJhonArzuGil.webp" alt="Jhon Arzu-Gil, an Application Developer at IBM, sitting in a chair, dressed in a black shirt and gray pants, with a smartphone and laptop on a table beside him.">
                                 </div>
                                 <div class="author-content">
                                     <h6>By, <span>Jhon Arzu-Gil</span></h6>
@@ -346,8 +346,8 @@
 </ul>
 
                             <div class="bolckquote-icons">
-                                <img class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="">
-                                <img class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="">
+                                <img loading="lazy" class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="">
+                                <img loading="lazy" class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="">
                             </div>
                         
                         
@@ -359,19 +359,19 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="blog-details-img magnetic-item">
-                                        <img class="img-fluid" src="assets/img/inner-pages/CloudComping.avif" alt="">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/CloudComping.avif" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="row g-4">
                                         <div class="col-lg-12">
                                             <div class="blog-details-img magnetic-item">
-                                                <img class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="">
+                                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="blog-details-img magnetic-item">
-                                                <img class="img-fluid" src="assets/img/inner-pages/Wordpress2.avif" alt="">
+                                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/Wordpress2.avif" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -510,7 +510,7 @@
                                 <h4><a href="blog-details.php">Feugiat Varius Mattis Mass Enim Est Egestas.</a></h4>
                             </div>
                             <a href="blog-details.php" class="img">
-                                <img src="assets/img/inner-pages/portfolio-navigation-01.png" alt="">
+                                <img loading="lazy" src="assets/img/inner-pages/portfolio-navigation-01.png" alt="">
                                 <div class="arrow">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
@@ -520,7 +520,7 @@
                         </div>
                         <div class="single-navigation two">
                             <a href="blog-details.php" class="img">
-                                <img src="assets/img/inner-pages/portfolio-navigation-02.png" alt="">
+                                <img loading="lazy" src="assets/img/inner-pages/portfolio-navigation-02.png" alt="">
                                 <div class="arrow">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
@@ -588,7 +588,7 @@
                     <div class="col-lg-12">
                         <div class="footer-top-content">
                             <div class="footer-logo">
-                                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a></div>
+                                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a></div>
                             <div class="footer-contect">
                                 <div class="icon">
                                     <svg width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">

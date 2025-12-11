@@ -2,7 +2,7 @@
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
 <meta name="description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies."/>
-<meta name=”robots” content=”index, follow”> 
+<meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
 <meta property="og:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies.">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -117,12 +117,12 @@
     </div>  <!-- Start header section -->
     <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -210,7 +210,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -230,7 +230,7 @@
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="case-img magnetic-item">
-                                    <img class="img-fluid" src="assets/img/inner-pages/Website Optimization3.avif" alt="Move from fixed dedicated hosting to a scalable cloud environment that can adjust resources based on demand and Evaluate different cloud providers to choose the best fit for specific business needs.">
+                                    <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/Website Optimization3.avif" alt="Move from fixed dedicated hosting to a scalable cloud environment that can adjust resources based on demand and Evaluate different cloud providers to choose the best fit for specific business needs.">
                                 </div>
                             </div>
                             <div class="col-lg-7 d-flex align-items-center">

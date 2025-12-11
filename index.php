@@ -2,13 +2,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=5" />
 <meta name="author" content="Jhon Arzu-Gil">
-<meta name="description" content="Explore public cloud, SaaS, and software consulting with Cloud Technology Computing—Houston's trusted cloud technology services partner.">
+<meta name="description" content="Cloud Technology Computing helps small businesses and enterprises build fast, secure cloud solutions, AI chatbots, and SEO-optimized web apps on AWS, Azure, IBM Cloud, and Google Cloud.">
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="cloud computing, AI services, web development, SEO, software consulting, AI Chatbot Development">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Cloud Technology for Business: SaaS, Azure, IBM & More">
-<meta property="og:description" content="Explore public cloud, SaaS, and software consulting with Cloud Technology Computing—Houston's trusted cloud technology services partner.">
+<meta property="og:title" content="Cloud Technology Computing | Cloud, AI & Web Development">
+<meta property="og:description" content="Cloud Technology Computing helps small businesses and enterprises build fast, secure cloud solutions, AI chatbots, and SEO-optimized web apps on AWS, Azure, IBM Cloud, and Google Cloud.">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
 <meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/CloudRoom3.png">
 <meta property="og:site_name" content="Cloud Technology Computing">
@@ -17,8 +17,8 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cloud Technology for Business: SaaS, Azure, IBM & More">
-<meta name="twitter:description" content="Explore public cloud, SaaS, and software consulting with Cloud Technology Computing—Houston's trusted cloud technology services partner.">
+<meta name="twitter:title" content="Cloud Technology Computing | Cloud, AI & Web Development">
+<meta name="twitter:description" content="Cloud Technology Computing helps small businesses and enterprises build fast, secure cloud solutions, AI chatbots, and SEO-optimized web apps on AWS, Azure, IBM Cloud, and Google Cloud.">
 <meta name="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/CloudRoom3.png">
 <meta name="twitter:site" content="@CTCCorporation">
 <meta name="twitter:creator" content="@JhonArzuGil">
@@ -50,7 +50,7 @@
 <script src="/js/scripts.min.js" defer></script>
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<title>Cloud Technology services | Public Cloud & SaaS by Cloud Technology Computing</title>
+<title>Cloud Technology Computing | Cloud, AI & Web Development</title>
 </head>
 
 <body class="bg-6  tt-magic-cursor">
@@ -1362,7 +1362,7 @@
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img class="img-fluid magnetic-item" src="assets/img/home-3/cloudtech.webp" alt="Cloud Technology Computing Logo">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/cloudtech.webp" alt="Cloud Technology Computing Logo">
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
@@ -1380,7 +1380,7 @@
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img class="img-fluid magnetic-item" src="assets/img/home-3/custom business website.webp" alt="Custom Portfolio Site">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/custom business website.webp" alt="Custom Portfolio Site">
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
@@ -1398,7 +1398,7 @@
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img class="img-fluid magnetic-item" src="assets/img/home-3/hybridcloud.webp" alt="Hybrid Cloud Website">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/hybridcloud.webp" alt="Hybrid Cloud Website">
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
@@ -1416,7 +1416,7 @@
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img class="img-fluid magnetic-item" src="assets/img/home-3/mobileapps.webp" alt="Cloud Technology Computing's Android Apps On The Play Store.">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/mobileapps.webp" alt="Cloud Technology Computing's Android Apps On The Play Store.">
                                     </div>
                                     <div class="success-content">
                                         <span>Mobile development</span>
@@ -1434,7 +1434,7 @@
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img class="img-fluid magnetic-item" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computings Fully Certified">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computings Fully Certified">
                                     </div>
                                     <div class="success-content">
                                         <span>Certifications</span>
@@ -1495,7 +1495,7 @@
                                                 <h2><sup>$</sup>500<sub>/Month</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img src="assets/img/home-3/pricing-vec2.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1520,7 +1520,7 @@
                                                 <h2><sup>$</sup>1500<sub> One-Time</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img src="assets/img/home-3/pricing-vec1.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1545,7 +1545,7 @@
                                                 <h2><sup>$</sup>0<sub>/One-Time</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img src="assets/img/home-3/pricing-vec2.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1575,7 +1575,7 @@
                                                 <h2><sup>$</sup>5400<sub>/Year</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img src="assets/img/home-3/pricing-vec2.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1600,7 +1600,7 @@
                                                 <h2><sup>$</sup>4788<sub>/Year</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img src="assets/img/home-3/pricing-vec1.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1625,7 +1625,7 @@
                                                 <h2><sup>$</sup>9500<sub>/Year</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img src="assets/img/home-3/price-bg.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/price-bg.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -2408,7 +2408,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                                                     <p>Let’s be honest — the cloud isn’t a buzzword anymore; it’s the backbone of modern business. And when it’s done right.......</p>
                                                 </div>
                                                 <div class="blog-img magnetic-item">
-                                                     <img class="img-fluid" src="assets/img/home-5/Cloudblogpict.webp" alt="What Are Cloud Services, Really?">
+                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/Cloudblogpict.webp" alt="What Are Cloud Services, Really?">
                                                 </div>
                                             </div>
                                         </div>
@@ -2423,7 +2423,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                                                     <p>A Cloud Technology Partner is a third-party organization that provides expert guidance and services to help businesses plan, execute, and manage cloud transformations.......</p>
                                                 </div>
                                                 <div class="blog-img magnetic-item">
-                                                     <img class="img-fluid" src="assets/img/home-5/cloudblog.webp" alt="A Cloud Technology Partner is a third-party organization that provides expert guidance and services to help businesses plan">
+                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/cloudblog.webp" alt="A Cloud Technology Partner is a third-party organization that provides expert guidance and services to help businesses plan">
                                                 </div>
                                             </div>
                                         </div>
@@ -2438,7 +2438,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                                                     <p>Running a small business today means walking a razor’s edge between innovation and financial discipline.......</p>
                                                 </div>
                                                 <div class="blog-img magnetic-item">
-                                                     <img class="img-fluid" src="assets/img/home-5/cloudmoney.webp" alt="Services for Your Business">
+                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/cloudmoney.webp" alt="Services for Your Business">
                                                 </div>
                                             </div>
                                         </div>
@@ -2453,7 +2453,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                                                     <p>In todays fast-paced digital world, a small business cant afford to be left behind......</p>
                                                 </div>
                                                 <div class="blog-img magnetic-item">
-                                                     <img class="img-fluid" src="assets/img/home-5/moneycloud.webp" alt="Is Your Small Business Stuck in the Stone Age">
+                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/moneycloud.webp" alt="Is Your Small Business Stuck in the Stone Age">
                                                 </div>
                                             </div>
                                         </div>

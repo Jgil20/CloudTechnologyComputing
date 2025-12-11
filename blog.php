@@ -1,11 +1,24 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php';
+
+require_once 'includes/db.php'; // this should set up $mysqli (or similar)
+
+$stmt = $mysqli->prepare("
+    SELECT id, slug, title, category, excerpt, featured_image, published_at
+    FROM posts
+    ORDER BY published_at DESC
+");
+$stmt->execute();
+$result = $stmt->get_result();
+$posts = $result->fetch_all(MYSQLI_ASSOC);
+$stmt->close();
+
+?>
+
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Stay updated with the latest trends in cloud computing, web development, AI, and digital transformation. Read expert insights, tutorials, and industry news from Cloud Technology Computing." />
-<meta name=”robots” content=”index, follow”> 
+<meta name="description" content="Stay updated with the latest articles on cloud computing, AI, web development, security, and real-world case studies from Cloud Technology Computing."> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
-<meta property="og:description" content="Stay updated with the latest trends in cloud computing, web development, AI, and digital transformation. Read expert insights, tutorials, and industry news from Cloud Technology Computing.">
+<meta property="og:title" content="Cloud Computing & AI Blog | Cloud Technology Computing">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
 <meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -13,8 +26,7 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Cloud Technology Computing: Computer Software Development"/>
-<meta property="twitter:description" content="Stay updated with the latest trends in cloud computing, web development, AI, and digital transformation. Read expert insights, tutorials, and industry news from Cloud Technology Computing.">
+<meta name="twitter:title" content="Cloud Computing & AI Blog | Cloud Technology Computing">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
@@ -23,7 +35,7 @@
     <!-- Favicon -->
    <link href="assets/img/computer clouds.png" type="image/x-icon" rel="icon">
      <!-- Title -->
-    <title>"Cloud Technology Computing: Blog</title>
+    <title>Cloud Computing & AI Blog | Cloud Technology Computing</title>
 </head>
 
 
@@ -61,7 +73,7 @@
     <div class="header-sidebar">
         <div class="siderbar-top">
             <div class="sidebar-log">
-               <a href="../index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+               <a href="../index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
             </div>
             <div class="close-btn">
                 <i class="bi bi-x-lg"></i>
@@ -101,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -118,12 +130,12 @@
     </div>
     <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white">Cloud Technology Computing</p></a>
+                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white">Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -211,7 +223,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -227,10 +239,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -241,7 +253,7 @@
                             <span>Blog</span>
                             <h1>"Cloud Technology Computing"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Blog
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Blog
                             </div>
                            
                         </div>
@@ -257,7 +269,7 @@
                 <div class="col-lg-12">
                     <div class="blog-banner-wrap">
                         <div class="banner-img">
-                            <img src="assets/img/inner-pages/blog-banner.png" alt="">
+                            <img loading="lazy" src="assets/img/inner-pages/blog-banner.png" alt="">
                         </div>
                        <div class="banner-content">
                             <h2>Blog</h2>
@@ -293,26 +305,34 @@
     </div>
     <div class="home3-blog-area sec-mar">
         <div class="container">
-            <div class="row g-lg-4 gy-5">
-
-                <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-blog magnetic-item">
-                        <div class="blog-img">
-                            <img class="img-fluid" src="assets/img/home-5/Cloudblogpict.webp" alt="Cloud Technology Computing: Transforming the Future">
-                            <div class="blog-tag">
-                                <a href="blog.php">Cloud Solutions</a>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                           <ul class="blog-meta">
-                                <li><a href="blog.php">Aug 31, 2023</a></li>
-                                <li><a href="blog.php">Comment (1)</a></li>
-                            </ul>
-                            <h4><a href="blog/Cloud Comprehensive Guide.php?id=1">Cloud Technology Computing: Transforming the Future</a></h4>
-                            <div class="blog-footer">
-                                <div class="read-btn">
-                                    <a href="blog/Cloud Comprehensive Guide.php?id=1">Read More
-                                        <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+                                    <div class="row g-4">
+    <?php foreach ($posts as $post): ?>
+        <div class="col-lg-4 col-md-6">
+            <div class="single-blog-card">
+                <div class="blog-thumb magnetic-item">
+                    <a href="blog-details.php?slug=<?php echo htmlspecialchars($post['slug'], ENT_QUOTES); ?>">
+                        <img loading="lazy"
+                             class="img-fluid"
+                             src="<?php echo htmlspecialchars($post['featured_image'], ENT_QUOTES); ?>"
+                             alt="<?php echo htmlspecialchars($post['title'], ENT_QUOTES); ?>">
+                    </a>
+                </div>
+                <div class="blog-card-content">
+                    <span><?php echo htmlspecialchars($post['category'], ENT_QUOTES); ?></span>
+                    <h3>
+                        <a href="blog-details.php?slug=<?php echo htmlspecialchars($post['slug'], ENT_QUOTES); ?>">
+                            <?php echo htmlspecialchars($post['title'], ENT_QUOTES); ?>
+                        </a>
+                    </h3>
+                    <p><?php echo htmlspecialchars($post['excerpt'], ENT_QUOTES); ?></p>
+                    <a class="read-more"
+                       href="blog-details.php?slug=<?php echo htmlspecialchars($post['slug'], ENT_QUOTES); ?>">
+                        Read More
+                    </a>
+                    
+                                    
+                                    
                                             <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                         </svg>
                                     </a>
@@ -324,17 +344,18 @@
                     <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                     <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
                                     </ul>
-                                    <span><img src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
+                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
                                 </div>
                             </div>
                         </div>
+                        <?php endforeach; ?> 
                     </div>
                  </div>
 
                 <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img class="img-fluid" src="assets/img/home-3/Cloud Solutions Techology.webp" alt="Cloud Technology Computing: Transforming the Future">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/Cloud Solutions Techology.webp" alt="Cloud Technology Computing: Transforming the Future">
                             <div class="blog-tag">
                                 <a href="blog.php">Cloud Solutions</a>
                             </div>
@@ -360,7 +381,7 @@
                     <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                     <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
                                     </ul>
-                                    <span><img src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
+                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +390,7 @@
                  <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img class="img-fluid" src="assets/img/home-3/Cloud Solutions Techology.webp" alt="Cloud Technology Computing: Transforming the Future">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/Cloud Solutions Techology.webp" alt="Cloud Technology Computing: Transforming the Future">
                             <div class="blog-tag">
                                 <a href="blog.php">Cloud Solutions</a>
                             </div>
@@ -395,7 +416,7 @@
                     <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                     <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
                                     </ul>
-                                    <span><img src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
+                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +426,7 @@
                  <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img class="img-fluid" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computing: Transforming the Future">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computing: Transforming the Future">
                             <div class="blog-tag">
                                 <a href="TechSolutions.php">Business Solutions</a>
                             </div>
@@ -431,7 +452,7 @@
                     <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                     <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
                                     </ul>
-                                    <span><img src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
+                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
                                 </div>
                             </div>
                         </div>

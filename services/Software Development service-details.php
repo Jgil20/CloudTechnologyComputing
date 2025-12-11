@@ -2,7 +2,7 @@
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
 <meta name="description" content="Explore the future of software development with our deep dive into cloud technology computing. Learn how cloud-based application and mobile development are transforming businesses. Book your free consultation today." />
-<meta name=”robots” content=”index, follow”> 
+<meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
 <meta property="og:description" content="Explore the future of software development with our deep dive into cloud technology computing. Learn how cloud-based application and mobile development are transforming businesses. Book your free consultation today.">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -119,12 +119,12 @@
     <!-- Start header section -->
    <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="../index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="../index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="../index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="../index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -214,7 +214,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="../assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="../assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -229,10 +229,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="mobile development application">
+                <img loading="lazy" src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="mobile development application">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -243,7 +243,7 @@
                             <span>services Details</span>
                             <h1>"Software Development"</h1>
                             <div class="breadcrumb-list">
-                                <a href="../index.php">Home</a><img src="../assets/img/inner-pages/breadcrumb-arrow.svg" alt="software co development"> services Details
+                                <a href="../index.php">Home</a><img loading="lazy" src="../assets/img/inner-pages/breadcrumb-arrow.svg" alt="software co development"> services Details
                             </div>
                            
                         </div>
@@ -305,7 +305,7 @@
                     </div>
                     <div class="col-lg-6 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="service-img magnetic-item">
-                            <img class="img-fluid" src="../assets/img/inner-pages/software%20development.avif" alt="developing custom software">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/software%20development.avif" alt="developing custom software">
                         </div>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-01.svg" alt="software for cleaning company">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-01.svg" alt="software for cleaning company">
                                 </div>
                                 <div class="work-content">
                                     <h3>Requirements Gathering.</h3>
@@ -338,7 +338,7 @@
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-02.svg" alt="custom software development company usa">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-02.svg" alt="custom software development company usa">
                                 </div>
                                 <div class="work-content">
                                     <h3>Analysis and Planning.</h3>
@@ -349,7 +349,7 @@
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-03.svg" alt="software company in houston texas">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-03.svg" alt="software company in houston texas">
                                 </div>
                                 <div class="work-content">
                                     <h3>Design & Development.</h3>
@@ -360,7 +360,7 @@
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-04.svg" alt="software companies in austin">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-04.svg" alt="software companies in austin">
                                 </div>
                                 <div class="work-content">
                                     <h3>Testing Device & Release.</h3>
@@ -371,7 +371,7 @@
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-05.svg" alt="custom software development company">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-05.svg" alt="custom software development company">
                                 </div>
                                 <div class="work-content">
                                     <h3>Maintenance and Support.</h3>
@@ -388,7 +388,7 @@
                 <div class="row">
                     <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="driscription-img magnetic-item">
-                            <img class="img-fluid" src="../assets/img/inner-pages/AustinTechCity.avif" alt="software co development">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/AustinTechCity.avif" alt="software co development">
                         </div>
                     </div>
                     <div class="driscription-content">
@@ -419,7 +419,7 @@ Cloud Technology Computing utilizes the Agile Methodology in custom software des
                 <div class="row gy-5">
                     <div class="col-lg-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="faq-img magnetic-item">
-                            <img class="img-fluid" src="../assets/img/inner-pages/Programming.avif" alt="cloud what">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/Programming.avif" alt="cloud what">
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex align-items-center wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">

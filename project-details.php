@@ -2,7 +2,7 @@
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
 <meta name="description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology." />
-<meta name=”robots” content=”index, follow”> 
+<meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
 <meta property="og:description" content="Cloud Technology Computing Corporation, founded by Jhon Arzu-Gil on October 6, 2023, is a Texas-based software development company offering a range of services to enhance your online presence and business functionality. Providing affordable solutions, including website development, SEO packages, social media marketing, PPC advertising, custom software and application development, WordPress development, SAP consulting, cloud consulting, and IT consulting. Prices vary based on service and project complexity. Leverage the expertise of Cloud Technology Computing Corporation to drive business success through technology.">
@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -121,12 +121,12 @@
     <!-- Start header section -->
     <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -214,7 +214,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -231,10 +231,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="assets/img/inner-pages/inner-banner-1.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="assets/img/inner-pages/inner-banner-2.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="">
             </div>
         </div>
         <div class="container">
@@ -245,7 +245,7 @@
                             <span>Projects Details</span>
                             <h1>"Portfolio Site"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Projects Details
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Projects Details
                             </div>
                            
                         </div>
@@ -260,19 +260,19 @@
             <div class="row g-4 mb-80">
                 <div class="col-lg-7">
                     <div class="portfolio-img magnetic-item">
-                        <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-01.png" alt="">
+                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/portfolio-dt-01.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="row g-4">
                         <div class="col-lg-12">
                             <div class="portfolio-img magnetic-item">
-                                <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-02.png" alt="">
+                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/portfolio-dt-02.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="portfolio-img magnetic-item">
-                                <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-03.png" alt="">
+                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/portfolio-dt-03.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -299,7 +299,7 @@
                                 <div class="col-xl-4 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img src="assets/img/inner-pages/research.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/research.svg" alt="">
                                         </div>
                                         <span>Step 01</span>
                                         <h3>Research</h3>
@@ -309,7 +309,7 @@
                                 <div class="col-xl-4 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img src="assets/img/inner-pages/devlopment.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/devlopment.svg" alt="">
                                         </div>
                                         <span>Step 02</span>
                                         <h3>Development</h3>
@@ -319,7 +319,7 @@
                                 <div class="col-xl-4 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img src="assets/img/inner-pages/deploy.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/deploy.svg" alt="">
                                         </div>
                                         <span>Step 03</span>
                                         <h3>Deploy</h3>
@@ -331,12 +331,12 @@
                         <div class="row g-4 mb-55">
                             <div class="col-lg-7 col-sm-6">
                                 <div class="portfolio-img magnetic-item">
-                                    <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-04.png" alt="">
+                                    <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/portfolio-dt-04.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-5 col-sm-6">
                                 <div class="portfolio-img magnetic-item">
-                                    <img class="img-fluid" src="assets/img/inner-pages/portfolio-dt-05.png" alt="">
+                                    <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/portfolio-dt-05.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -391,7 +391,7 @@
                                 <h4><a href="project-details.html">Streamlining IT Infrastructure</a></h4>
                             </div>
                             <a href="project-details.html" class="img">
-                                <img src="assets/img/inner-pages/portfolio-navigation-01.png" alt="">
+                                <img loading="lazy" src="assets/img/inner-pages/portfolio-navigation-01.png" alt="">
                                 <div class="arrow">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
@@ -401,7 +401,7 @@
                         </div>
                         <div class="single-navigation two">
                             <a href="project-details.html" class="img">
-                                <img src="assets/img/inner-pages/portfolio-navigation-02.png" alt="">
+                                <img loading="lazy" src="assets/img/inner-pages/portfolio-navigation-02.png" alt="">
                                 <div class="arrow">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>

@@ -1,12 +1,12 @@
 <?php include 'header.php'; ?>
 <link rel="canonical" href="https://cloudtechnologycomputing.com" />
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta property="og:description" content="Cloud Technology Computing: Computer Software Development | IBM Cloud Provider  | Google Cloud Computing Platform | Windows Azure And Cloud Computing">
+<meta name="description" content="Discover end-to-end services including cloud migration, web and mobile app development, AI chatbot solutions, SEO, and managed hosting tailored for small businesses and enterprises.">
+<meta property="og:description" content="Discover end-to-end services including cloud migration, web and mobile app development, AI chatbot solutions, SEO, and managed hosting tailored for small businesses and enterprises.">
 <meta name="author" content="Jhon Arzu-Gil">
-<meta name=”robots” content=”index, follow”> 
+<meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
-<meta property="og:description" content="Cloud Technology Computing: Computer Software Development | IBM Cloud Provider  | Google Cloud Computing Platform | Windows Azure And Cloud Computing">
+<meta property="og:title" content="Cloud, AI & Web Development Services | Cloud Technology Computing">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
 <meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -14,8 +14,7 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Cloud Technology Computing: Computer Software Development"/>
-<meta property="og:description" content="Cloud Technology Computing: Computer Software Development | IBM Cloud Provider  | Google Cloud Computing Platform | Windows Azure And Cloud Computing">
+<meta name="twitter:title" content="Cloud, AI & Web Development Services | Cloud Technology Computing">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
@@ -24,13 +23,13 @@
     <!-- Favicon -->
    <link href="assets/img/CloudTechnologyComputingAIservices.png" type="image/x-icon" rel="icon">
      <!-- Title -->
-    <title>"Cloud Technology Computing: Computer Clouds"</title>
+    <title>Cloud, AI & Web Development Services | Cloud Technology Computing</title>
 </head>
 
 <body class="home-dark2 tt-magic-cursor">
     <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
        <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
@@ -151,10 +150,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -165,7 +164,7 @@
                             <span>services</span>
                             <h1>"Cloud Technology Computing"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service"> services
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service"> services
                             </div>
                            
                         </div>
@@ -181,7 +180,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/cloud computing software as a service saas.avif" alt="cloud computing software as a service saas">
+                            <img loading="lazy" src="assets/img/home-6/services/cloud computing software as a service saas.avif" alt="cloud computing software as a service saas">
                         </div>
                         <div class="sl">
                             <h2>01</h2>
@@ -228,7 +227,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/cloud%20and%20microsoft.avif" alt="cloud and microsoft">
+                            <img loading="lazy" src="assets/img/home-6/services/cloud%20and%20microsoft.avif" alt="cloud and microsoft">
                         </div>
                         <div class="sl">
                             <h2>02</h2>
@@ -275,7 +274,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/windows azure and cloud computing.avif" alt="windows azure and cloud computing">
+                            <img loading="lazy" src="assets/img/home-6/services/windows azure and cloud computing.avif" alt="windows azure and cloud computing">
                         </div>
                         <div class="sl">
                             <h2>03</h2>
@@ -326,7 +325,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/google cloud computing platform.avif" alt="google cloud computing platform">
+                            <img loading="lazy" src="assets/img/home-6/services/google cloud computing platform.avif" alt="google cloud computing platform">
                         </div>
                         <div class="sl">
                             <h2>04</h2>
@@ -373,7 +372,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/define cloud solutions.avif" alt="define cloud solutions">
+                            <img loading="lazy" src="assets/img/home-6/services/define cloud solutions.avif" alt="define cloud solutions">
                         </div>
                         <div class="sl">
                             <h2>05</h2>
@@ -421,7 +420,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/analytics cloud computing.avif" alt="analytics cloud computing">
+                            <img loading="lazy" src="assets/img/home-6/services/analytics cloud computing.avif" alt="analytics cloud computing">
                         </div>
                         <div class="sl">
                             <h2>06</h2>
@@ -468,7 +467,7 @@
                      <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/computer clouds.avif" alt="computer clouds">
+                            <img loading="lazy" src="assets/img/home-6/services/computer clouds.avif" alt="computer clouds">
                         </div>
                         <div class="sl">
                             <h2>07</h2>
@@ -519,7 +518,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/mobile development application.avif" alt="mobile development application">
+                            <img loading="lazy" src="assets/img/home-6/services/mobile development application.avif" alt="mobile development application">
                         </div>
                         <div class="sl">
                             <h2>08</h2>
@@ -566,7 +565,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/wordpress-ecommerce.avif" alt="wordpress-ecommerce">
+                            <img loading="lazy" src="assets/img/home-6/services/wordpress-ecommerce.avif" alt="wordpress-ecommerce">
                         </div>
                         <div class="sl">
                             <h2>09</h2>
@@ -613,7 +612,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/development company software.avif" alt="development company software">
+                            <img loading="lazy" src="assets/img/home-6/services/development company software.avif" alt="development company software">
                         </div>
                         <div class="sl">
                             <h2>10</h2>
@@ -666,7 +665,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/Cloud Technology Computing.avif" alt="Cloud Technology Computing">
+                            <img loading="lazy" src="assets/img/home-6/services/Cloud Technology Computing.avif" alt="Cloud Technology Computing">
                         </div>
                         <div class="sl">
                             <h2>11</h2>
@@ -719,7 +718,7 @@
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img src="assets/img/home-6/services/what are the cloud.avif" alt="what are the cloud">
+                            <img loading="lazy" src="assets/img/home-6/services/what are the cloud.avif" alt="what are the cloud">
                         </div>
                         <div class="sl">
                             <h2>12</h2>

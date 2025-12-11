@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -123,12 +123,12 @@
     </div>
    <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="../index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="../index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="../index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="../index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -216,7 +216,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="../assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="../assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -232,10 +232,10 @@
     <section class="breadcrumbs">
        <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -246,7 +246,7 @@
                             <span>Blog Details</span>
                             <h1>"Insights Of Exploring Technology"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Blog Details
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Blog Details
                             </div>
                            
                         </div>
@@ -261,7 +261,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="post-thumb magnetic-item">
-                        <img class="img-fluid" src="assets/img/inner-pages/blog-dt-01.png" alt="">
+                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/blog-dt-01.png" alt="">
                     </div>
                 </div>
             </div>
@@ -273,7 +273,7 @@
                         <div class="author-and-meta">
                             <div class="author-area">
                                 <div class="author-img">
-                                    <img src="assets/img/inner-pages/blog-dt-author.png" alt="">
+                                    <img loading="lazy" src="assets/img/inner-pages/blog-dt-author.png" alt="">
                                 </div>
                                 <div class="author-content">
                                     <h6>By, <span>Cooper Jogan</span></h6>
@@ -313,8 +313,8 @@
                             <p>"I work with Alguneb Johnl on many projects, he always beeni toldagona exci my expectations with his quality work and fastestopa tope service, very smooth and simple."</p>
                             <h3>Leslie Alexander</h3>
                             <div class="bolckquote-icons">
-                                <img class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="">
-                                <img class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="">
+                                <img loading="lazy" class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="">
+                                <img loading="lazy" class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="">
                             </div>
                         </blockquote>
                         <h3>Our Begin Now To Beingonl</h3>
@@ -323,19 +323,19 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="blog-details-img magnetic-item">
-                                        <img class="img-fluid" src="assets/img/inner-pages/blog-dt-02.png" alt="">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/blog-dt-02.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="row g-4">
                                         <div class="col-lg-12">
                                             <div class="blog-details-img magnetic-item">
-                                                <img class="img-fluid" src="assets/img/inner-pages/blog-dt-03.png" alt="">
+                                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/blog-dt-03.png" alt="">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="blog-details-img magnetic-item">
-                                                <img class="img-fluid" src="assets/img/inner-pages/blog-dt-04.png" alt="">
+                                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/blog-dt-04.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -407,7 +407,7 @@
                             <div class="recent-post-wraper">
                                 <div class="widget-cnt">
                                     <div class="wi">
-                                        <a href="blog-details.html"><img src="assets/img/inner-pages/blog-sidebar-1.png" alt="image"></a>
+                                        <a href="blog-details.html"><img loading="lazy" src="assets/img/inner-pages/blog-sidebar-1.png" alt="image"></a>
                                     </div>
                                     <div class="wc">
                                         <h6><a href="blog-details.html">Grant Distributions Conti nu to Incr Ease.</a></h6>
@@ -416,7 +416,7 @@
                                 </div>
                                 <div class="widget-cnt">
                                     <div class="wi">
-                                        <a href="blog-details.html"><img src="assets/img/inner-pages/blog-sidebar-2.png" alt="image"></a>
+                                        <a href="blog-details.html"><img loading="lazy" src="assets/img/inner-pages/blog-sidebar-2.png" alt="image"></a>
                                     </div>
                                     <div class="wc">
                                         <h6><a href="blog-details.html">Distributions Conti nu to grant Incr Ease.</a></h6>
@@ -425,7 +425,7 @@
                                 </div>
                                 <div class="widget-cnt">
                                     <div class="wi">
-                                        <a href="blog-details.html"><img src="assets/img/inner-pages/blog-sidebar-3.png" alt="image"></a>
+                                        <a href="blog-details.html"><img loading="lazy" src="assets/img/inner-pages/blog-sidebar-3.png" alt="image"></a>
                                     </div>
                                     <div class="wc">
                                         <h6><a href="blog-details.html">Conti nu to Incr Ease malesuada sapien sed.</a></h6>
@@ -462,7 +462,7 @@
                                 <h4><a href="blog-details.html">Learn Programming.</a></h4>
                             </div>
                             <a href="blog-details.html" class="img">
-                                <img src="assets/img/inner-pages/portfolio-navigation-01.png" alt="">
+                                <img loading="lazy" src="assets/img/inner-pages/portfolio-navigation-01.png" alt="">
                                 <div class="arrow">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
@@ -472,7 +472,7 @@
                         </div>
                         <div class="single-navigation two">
                             <a href="blog-details.html" class="img">
-                                <img src="assets/img/inner-pages/portfolio-navigation-02.png" alt="">
+                                <img loading="lazy" src="assets/img/inner-pages/portfolio-navigation-02.png" alt="">
                                 <div class="arrow">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
@@ -496,7 +496,7 @@
 
     <template class="reply-input-template">
     <div class="reply-input container">
-      <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
+      <img loading="lazy" src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
       <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
       <button class="bu-primary">SEND</button>
     </div>
@@ -506,17 +506,17 @@
     <div class="comment-wrp">
       <div class="comment container">
         <div class="c-score">
-          <img src="images/icon-plus.svg" alt="plus" class="score-control score-plus">
+          <img loading="lazy" src="images/icon-plus.svg" alt="plus" class="score-control score-plus">
           <p class="score-number">5</p>
-          <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
+          <img loading="lazy" src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
         </div>
         <div class="c-controls">
-          <a  class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
-          <a  class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-          <a  class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
+          <a  class="delete"><img loading="lazy" src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
+          <a  class="edit"><img loading="lazy" src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
+          <a  class="reply"><img loading="lazy" src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
         </div>
         <div class="c-user">
-          <img src="images/avatars/image-maxblagun.webp" alt="" class="usr-img">
+          <img loading="lazy" src="images/avatars/image-maxblagun.webp" alt="" class="usr-img">
           <p class="usr-name">maxblagun</p>
           <p class="cmnt-at">2 weeks ago</p>    
         </div>
@@ -536,7 +536,7 @@
 
     </div> <!--commentS wrapper-->
   <div class="reply-input container">
-      <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
+      <img loading="lazy" src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
       <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
       <button class="bu-primary">SEND</button>
     </div> <!--reply input-->
@@ -601,7 +601,7 @@
                     <div class="col-lg-12">
                         <div class="footer-top-content">
                             <div class="footer-logo">
-                                <a href="index.php"><img class="img-fluid" src="assets/img/logo.svg" alt=""></a>
+                                <a href="index.php"><img loading="lazy" class="img-fluid" src="assets/img/logo.svg" alt=""></a>
                             </div>
                             <div class="footer-contect">
                                 <div class="icon">

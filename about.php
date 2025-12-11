@@ -1,11 +1,9 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Cloud Technology Computing: Expert in software development, cloud computing (IBM, Google, Azure), and mobile app innovation. Elevate your tech journey." />
-<meta name=”robots” content=”index, follow”> 
+<meta name="description" content="Learn about Cloud Technology Computing and founder Jhon Arzu-Gil, a multi-certified application developer specializing in hybrid cloud, AI, and custom web and mobile solutions for growing businesses."> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
-<meta property="og:description" content="Cloud Technology Computing: Expert in software development, cloud computing (IBM, Google, Azure), and mobile app innovation. Elevate your tech journey.">
+<meta property="og:title" content="About Cloud Technology Computing | Hybrid Cloud & AI Experts">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
 <meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -13,8 +11,7 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Cloud Technology Computing: Computer Software Development"/>
-<meta property="twitter:description" content="Cloud Technology Computing: Expert in software development, cloud computing (IBM, Google, Azure), and mobile app innovation. Elevate your tech journey.">
+<meta name="twitter:title" content="About Cloud Technology Computing | Hybrid Cloud & AI Experts">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
@@ -34,7 +31,7 @@
     <!-- Favicon -->
    <link href="assets/img/computer clouds.png" type="image/x-icon" rel="icon">
      <!-- Title -->
-    <title>"Cloud Technology Computing: Computer Software Development</title>
+    <title>About Cloud Technology Computing | Hybrid Cloud & AI Experts</title>
 </head>
 
 
@@ -112,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -131,12 +128,12 @@
  <!-- Start header section -->
        <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -226,7 +223,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -241,10 +238,10 @@
     <section class="breadcrumbs">
        <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -255,7 +252,7 @@
                             <span>About</span>
                             <h1>"Get To Know More About Cloud Technology Computing"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> About
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> About
                             </div>
                            
                         </div>
@@ -276,7 +273,7 @@
                     </div>
                     <div class="about-left">
                         <div class="about-img  wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <img class="img-fluid magnetic-item" src="assets/img/home-3/CloudTechnologyComputing.avif" alt="">
+                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudTechnologyComputing.avif" alt="">
                         </div>
                         <div class="about-content wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                             <h2>Ever wanted to create your own business?</h2>
@@ -298,11 +295,11 @@
                 <div class="col-lg-3">
                     <div class="about-right">
                         <div class="about-img wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <img class="img-fluid magnetic-item" src="assets/img/home-3/CloudSolutions.avif" alt="">
+                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudSolutions.avif" alt="">
                         </div>
                         <div class="about-exprience d-flex align-items-center justify-content-center wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="exp-text">
-                                <img src="assets/img/home-3/rotate-text.png" alt="">
+                                <img loading="lazy" src="assets/img/home-3/rotate-text.png" alt="">
                             </div>
                             <div class="years">
                                 <h2>6<br><span>Years</span></h2>
@@ -328,7 +325,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="choose-right-img magnetic-item">
-                                <img class="img-fluid " src="assets/img/home-6/choose-img-1.png" alt="">
+                                <img loading="lazy" class="img-fluid " src="assets/img/home-6/choose-img-1.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -338,8 +335,8 @@
                         <div class="col-lg-7">
                             <div class="choose-left-content">
                                 <div class="vectors">
-                                    <img class="choose-vec-top-r" src="assets/img/home-6/choose-vec-top-r.svg" alt="">
-                                    <img class="choose-vec-btm-l" src="assets/img/home-6/choose-vec-btm-l.svg" alt="">
+                                    <img loading="lazy" class="choose-vec-top-r" src="assets/img/home-6/choose-vec-top-r.svg" alt="">
+                                    <img loading="lazy" class="choose-vec-btm-l" src="assets/img/home-6/choose-vec-btm-l.svg" alt="">
                                 </div>
                                 <div class="icon">
                                    <h4>Cloud Technology Computing </h4> 
@@ -548,37 +545,37 @@
         <div class="marque-wrap">
             <div class="marquee_text">
                 <div class="single-client">
-                    <img src="assets/img/home-6/Certifications/IBMstoragecert.avif" alt="Jhon Arzu-Gil's certified expertise in IBM Storage and Cloud Essentials, highlighting specialization in 'cloud ibm'.">
+                    <img loading="lazy" src="assets/img/home-6/Certifications/IBMstoragecert.avif" alt="Jhon Arzu-Gil's certified expertise in IBM Storage and Cloud Essentials, highlighting specialization in 'cloud ibm'.">
                 </div>
                 <div class="single-client">
-                     <img src="assets/img/home-6/Certifications/EnterpriseDesign.avif" alt="Jhon Arzu-Gil's Enterprise Design Thinking Practitioner Certification, showcasing proficiency in 'cloud ibm' methodologies.">
+                     <img loading="lazy" src="assets/img/home-6/Certifications/EnterpriseDesign.avif" alt="Jhon Arzu-Gil's Enterprise Design Thinking Practitioner Certification, showcasing proficiency in 'cloud ibm' methodologies.">
                 </div>
                 <div class="single-client">
-<img src="assets/img/home-6/Certifications/IBAgile.avif" alt="Jhon Arzu-Gil's Enterprise IBM Agile Explorer certification showcasing proficiency in 'agile software development and scrum'.">
+<img loading="lazy" src="assets/img/home-6/Certifications/IBAgile.avif" alt="Jhon Arzu-Gil's Enterprise IBM Agile Explorer certification showcasing proficiency in 'agile software development and scrum'.">
                 </div>
                 <div class="single-client">
-                    <img src="assets/img/home-6/Certifications/IBMAICertJhons.avif" alt="Jhon Arzu-Gil's IBM AI Associate Data Scientist certification, showcasing proficiency in Cloud Technology Computing and A.I.">
+                    <img loading="lazy" src="assets/img/home-6/Certifications/IBMAICertJhons.avif" alt="Jhon Arzu-Gil's IBM AI Associate Data Scientist certification, showcasing proficiency in Cloud Technology Computing and A.I.">
                 </div>
                 <div class="single-client">
-                    <img src="assets/img/home-6/Certifications/IBM Cloud Cert.avif" alt="Jhon Arzu-Gil's Cloud Core certification, symbolizing expertise in 'computer clouds' technologies and solutions.">
+                    <img loading="lazy" src="assets/img/home-6/Certifications/IBM Cloud Cert.avif" alt="Jhon Arzu-Gil's Cloud Core certification, symbolizing expertise in 'computer clouds' technologies and solutions.">
                 </div>
                 <div class="single-client">
-                    <img src="assets/img/home-6/Certifications/IBMAICertJhons.avif" alt="Jhon Arzu-Gil's IBM AI Associate Data Scientist certification, showcasing proficiency in Cloud Technology Computing and A.I.">
+                    <img loading="lazy" src="assets/img/home-6/Certifications/IBMAICertJhons.avif" alt="Jhon Arzu-Gil's IBM AI Associate Data Scientist certification, showcasing proficiency in Cloud Technology Computing and A.I.">
                 </div>
                 <div class="single-client">
-                   <img src="assets/img/home-6/Certifications/JhonsAnalyticsCloud.avif" alt="Jhon Arzu-Gil's SAP Analytics Cloud certification highlights 'Cloud Technology Computing' proficiency.">
+                   <img loading="lazy" src="assets/img/home-6/Certifications/JhonsAnalyticsCloud.avif" alt="Jhon Arzu-Gil's SAP Analytics Cloud certification highlights 'Cloud Technology Computing' proficiency.">
                 </div>
                 <div class="single-client">
-                    <img src="assets/img/home-6/Certifications/JhonsComptiaA+.avif" alt="Jhon Arzu-Gil's CompTIA A+ ce Certification, emphasizing proficiency in 'software co development'.">
+                    <img loading="lazy" src="assets/img/home-6/Certifications/JhonsComptiaA+.avif" alt="Jhon Arzu-Gil's CompTIA A+ ce Certification, emphasizing proficiency in 'software co development'.">
                 </div>
                 <div class="single-client">
-                    <img src="assets/img/home-6/Certifications/SecurityPrivacy.avif" alt="Jhon Arzu-Gil's Security and Privacy by Design Foundations Certification, highlighting expertise in 'software security development lifecycle'.">
+                    <img loading="lazy" src="assets/img/home-6/Certifications/SecurityPrivacy.avif" alt="Jhon Arzu-Gil's Security and Privacy by Design Foundations Certification, highlighting expertise in 'software security development lifecycle'.">
                 </div>
                 <div class="single-client">
-                    <img src="assets/img/home-6/Certifications/JhonArzuGilAzure900.avif" alt="Jhon Arzu-Gil's Microsoft Certified: Azure Fundamentals Certification, showcasing proficiency in 'windows azure and cloud computing'.">
+                    <img loading="lazy" src="assets/img/home-6/Certifications/JhonArzuGilAzure900.avif" alt="Jhon Arzu-Gil's Microsoft Certified: Azure Fundamentals Certification, showcasing proficiency in 'windows azure and cloud computing'.">
                 </div>
                 <div class="single-client">
-                   <img src="assets/img/home-6/Certifications/DeveloperApprenticeship.avif" alt="Illuminating computer software development expertise through IBM Application Developer Apprenticeship Certification, embracing innovative software development approaches.">
+                   <img loading="lazy" src="assets/img/home-6/Certifications/DeveloperApprenticeship.avif" alt="Illuminating computer software development expertise through IBM Application Developer Apprenticeship Certification, embracing innovative software development approaches.">
                 </div>
             </div>
         </div>
@@ -604,7 +601,7 @@
                         <div class="swiper-slide">
                             <div class="team-member">
                                 <div class="member-photo">
-                                    <img class="img-fluid" src="assets/img/home-3/ProfilePictJhonArzuGil.webp" alt="Jhon Arzu-Gil, Application Developer at IBM, sitting in a chair, dressed in a black shirt and gray pants, with a smartphone and laptop nearby.">
+                                    <img loading="lazy" class="img-fluid" src="assets/img/home-3/ProfilePictJhonArzuGil.webp" alt="Jhon Arzu-Gil, Application Developer at IBM, sitting in a chair, dressed in a black shirt and gray pants, with a smartphone and laptop nearby.">
                                     <div class="social-icons">
                                         <ul>
                                             <li><a href="https://www.facebook.com/profile.php?id=61552191954476" target="_blank"><i class="bx bxl-facebook"></i></a></li>
@@ -671,7 +668,7 @@
                 <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img class="img-fluid" src="assets/img/home-3/home3-blog-01.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/home3-blog-01.png" alt="">
                             <div class="blog-tag">
                                 <a href="blog.html">Web development</a>
                             </div>
@@ -697,7 +694,7 @@
                                         <li><a href="https://www.pinterest.com/"><i class="bx bxl-pinterest-alt"></i></a></li>
                                         <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
                                     </ul>
-                                    <span><img src="assets/img/home-3/plain-icon.svg" alt=""></span>
+                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt=""></span>
                                 </div>
                             </div>
                         </div>
@@ -706,7 +703,7 @@
                 <div class="col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img class="img-fluid" src="assets/img/home-3/home3-blog-02.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/home3-blog-02.png" alt="">
                             <div class="blog-tag">
                                 <a href="blog.html">Cloud solutions</a>
                             </div>
@@ -732,7 +729,7 @@
                                         <li><a href="https://www.pinterest.com/"><i class="bx bxl-pinterest-alt"></i></a></li>
                                         <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
                                     </ul>
-                                    <span><img src="assets/img/home-3/plain-icon.svg" alt=""></span>
+                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt=""></span>
                                 </div>
                             </div>
                         </div>
@@ -741,7 +738,7 @@
                 <div class="col-lg-4 col-md-6 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img class="img-fluid" src="assets/img/home-3/home3-blog-03.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/home3-blog-03.png" alt="">
                             <div class="blog-tag">
                                 <a href="blog.html">Web development</a>
                             </div>
@@ -767,7 +764,7 @@
                                         <li><a href="https://www.pinterest.com/"><i class="bx bxl-pinterest-alt"></i></a></li>
                                         <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
                                     </ul>
-                                    <span><img src="assets/img/home-3/plain-icon.svg" alt=""></span>
+                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt=""></span>
                                 </div>
                             </div>
                         </div>

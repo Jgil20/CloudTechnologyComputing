@@ -97,6 +97,7 @@ if ($result === false) {
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+<meta name="description" content="Download our comprehensive cloud guide to learn how small businesses can reduce costs, improve reliability, and scale using AWS, Azure, IBM Cloud, and Google Cloud solutions.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
@@ -112,7 +113,7 @@ if ($result === false) {
   <link rel="stylesheet" href="assets/css/style2.css">
 
   <!-- Title / Favicon -->
-  <title>Cloud Technology Computing: Comprehensive Guide on Benefits, Types, and Future Trends</title>
+  <title>Cloud Comprehensive Guide for Small Business | Cloud Technology Computing</title>
   <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20">
 </head>
 
@@ -170,7 +171,7 @@ if ($result === false) {
           </div>
         </div>
       </div>
-      <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+      <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
     </div>
     <div class="follow-area">
       <h5 class="blog-widget-title">Follow Us</h5>
@@ -190,7 +191,7 @@ if ($result === false) {
   <header class="header-area2 style-2 two">
     <div class="header-logo">
       <a href="index.php">
-        <!-- <img alt="Cloud Technology Computing" class="img-fluid" src="assets/img/logo.svg"> -->
+        <!-- <img loading="lazy" alt="Cloud Technology Computing" class="img-fluid" src="assets/img/logo.svg"> -->
         <p style="color: white">Cloud Technology Computing</p>
       </a>
     </div>
@@ -199,7 +200,7 @@ if ($result === false) {
       <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
         <div class="mobile-logo-wrap">
           <a href="index.php">
-            <!-- <img alt="Cloud Technology Computing" src="assets/img/logo.svg"> -->
+            <!-- <img loading="lazy" alt="Cloud Technology Computing" src="assets/img/logo.svg"> -->
             <p style="color: white">Cloud Technology Computing</p>
           </a>
         </div>
@@ -283,7 +284,7 @@ if ($result === false) {
 
     <div class="nav-right d-flex justify-content-end align-items-center">
       <div class="header-contact d-xl-block d-none">
-        <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing client support">For Client Support:</span>
+        <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing client support">For Client Support:</span>
         <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
       </div>
       <div class="header-btn d-sm-flex d-none">
@@ -315,7 +316,7 @@ if ($result === false) {
               <h1>"Cloud Technology Computing: Transforming the Future"</h1>
               <div class="breadcrumb-list">
                 <a href="index.php">Home</a>
-                <img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="breadcrumb arrow">
+                <img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="breadcrumb arrow">
                 Blog Details
               </div>
             </div>
@@ -433,8 +434,8 @@ if ($result === false) {
               </section>
               <h3>Jhon Arzu-Gil</h3>
               <div class="bolckquote-icons">
-                <img class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="" aria-hidden="true">
-                <img class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="" aria-hidden="true">
+                <img loading="lazy" class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="" aria-hidden="true">
+                <img loading="lazy" class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="" aria-hidden="true">
               </div>
             </blockquote>
 
@@ -630,7 +631,7 @@ if ($result === false) {
           <div class="footer-top-content">
             <div class="footer-logo">
               <a href="index.php">
-                <!-- <img alt="Cloud Technology Computing" src="assets/img/logo.svg"> -->
+                <!-- <img loading="lazy" alt="Cloud Technology Computing" src="assets/img/logo.svg"> -->
                 <p style="color: white">Cloud Technology Computing</p>
               </a>
             </div>

@@ -2,7 +2,7 @@
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
 <meta name="description" content="Dive into the detailed case study from Cloud Technology Computing. Discover comprehensive insights and strategies used to optimize cloud solutions, improve performance, and achieve client goals." />
-<meta name=”robots” content=”index, follow”> 
+<meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
 <meta property="og:description" content="Dive into the detailed case study from Cloud Technology Computing. Discover comprehensive insights and strategies used to optimize cloud solutions, improve performance, and achieve client goals.">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -117,12 +117,12 @@
     </div>  <!-- Start header section -->
     <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -209,7 +209,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -225,10 +225,10 @@
     <section class="breadcrumbs">
       <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         </div>
@@ -240,7 +240,7 @@
                             <span>Case Study Details</span>
                             <h1>"Improve website load times and enhance the overall user experience globally"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Case Study Details
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Case Study Details
                             </div>
                            
                         </div>
@@ -258,7 +258,7 @@
                         <h2>Cloud Hosting vs. Dedicated Hosting: A Case Study by Cloud Technology Computing Corporation</h2>
                     </div>
                     <div class="case-big-img magnetic-item">
-                        <img class="img-fluid" src="assets/img/inner-pages/AzureHostingDesktop.avif" alt="Azure Page Speed Hosting">
+                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/AzureHostingDesktop.avif" alt="Azure Page Speed Hosting">
                     </div>
                     <div class="case-content mb-60">
                         <p>Cloud Technology Computing Corporation conducted a comprehensive evaluation to determine the most suitable hosting environment for their web applications. The study focused on comparing the performance, reliability, scalability, and cost-effectiveness of cloud hosting solutions, specifically AWS and Azure, against their existing dedicated hosting providers, Hostinger and Eco Web Hosting. The goal was to identify the best platform to support their operations before making a full transition to cloud hosting.</p>
@@ -278,14 +278,14 @@ Hostinger: While stable, load times were longer compared to both cloud environme
                         </div>
                         <div class="col-lg-6">
                             <div class="case-img magnetic-item">
-                                <img class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsEcowebhosting.avif" alt="Page speed Insights Ecowebhosting">
+                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsEcowebhosting.avif" alt="Page speed Insights Ecowebhosting">
                             </div>
                         </div>
                     </div>
                     <div class="row g-lg-4 gy-5 mb-120">
                         <div class="col-lg-6">
                             <div class="case-img magnetic-item">
-                                <img class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsHostinger.avif" alt="Page speed Insights Hostinger">
+                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsHostinger.avif" alt="Page speed Insights Hostinger">
                             </div>
                         </div>
                         <div class="col-lg-6 d-flex align-items-center">
@@ -309,7 +309,7 @@ Hostinger: While stable, load times were longer compared to both cloud environme
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img src="assets/img/inner-pages/research.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/research.svg" alt="">
                                         </div>
                                         <span>Step 01</span>
                                         <h3>Research</h3>
@@ -319,7 +319,7 @@ Hostinger: While stable, load times were longer compared to both cloud environme
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img src="assets/img/inner-pages/devlopment.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/devlopment.svg" alt="">
                                         </div>
                                         <span>Step 02</span>
                                         <h3>Development</h3>
@@ -329,7 +329,7 @@ Hostinger: While stable, load times were longer compared to both cloud environme
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img src="assets/img/inner-pages/testing.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/testing.svg" alt="">
                                         </div>
                                         <span>Step 03</span>
                                         <h3>Testing</h3>
@@ -339,7 +339,7 @@ Hostinger: While stable, load times were longer compared to both cloud environme
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img src="assets/img/inner-pages/deploy.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/deploy.svg" alt="">
                                         </div>
                                         <span>Step 04</span>
                                         <h3>Deploy</h3>
@@ -358,12 +358,12 @@ Hostinger: While stable, load times were longer compared to both cloud environme
                             <div class="row g-4 justify-content-center">
                                 <div class="col-md-6">
                                     <div class="case-img magnetic-item">
-                                        <img class="img-fluid" src="assets/img/inner-pages/SAPAnalyticsCloud.jpg" alt="">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/SAPAnalyticsCloud.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="case-img magnetic-item">
-                                        <img class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="">
                                     </div>
                                 </div>
                             </div>

@@ -2,7 +2,7 @@
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
 <meta name="description" content="Looking to build a custom website that converts? This blog reveals how Cloud Technology Computing's Houston-based software development experts can take you from domain to launch with SEO-optimized web design." />
-<meta name=”robots” content=”index, follow”> 
+<meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
 <meta property="og:description" content="Looking to build a custom website that converts? This blog reveals how Cloud Technology Computing's Houston-based software development experts can take you from domain to launch with SEO-optimized web design.">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -118,12 +118,12 @@
     <!-- Start header section -->
   <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="../index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="../index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="../index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="../index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -213,7 +213,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="../assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="../assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -230,10 +230,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -244,7 +244,7 @@
                             <span>services Details</span>
                             <h1>"Web Development"</h1>
                             <div class="breadcrumb-list">
-                                <a href="../index.php">Home</a><img src="../assets/img/inner-pages/breadcrumb-arrow.svg" alt="software companies houston texas
+                                <a href="../index.php">Home</a><img loading="lazy" src="../assets/img/inner-pages/breadcrumb-arrow.svg" alt="software companies houston texas
 "> services Details
                             </div>
                            
@@ -321,7 +321,7 @@ Through our comprehensive approach, we empower you to establish a strong online 
                     </div>
                     <div class="col-lg-6 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="service-img magnetic-item">
-                            <img class="img-fluid" src="../assets/img/inner-pages/CloudTechnologyComputing.avif" alt="software companies houston">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/CloudTechnologyComputing.avif" alt="software companies houston">
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@ Through our comprehensive approach, we empower you to establish a strong online 
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-01.svg" alt="software for cleaning company">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-01.svg" alt="software for cleaning company">
                                 </div>
                                 <div class="work-content">
                                     <h3>Requirements Gathering.</h3>
@@ -354,7 +354,7 @@ Through our comprehensive approach, we empower you to establish a strong online 
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-02.svg" alt="custom software development company usa">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-02.svg" alt="custom software development company usa">
                                 </div>
                                 <div class="work-content">
                                     <h3>Analysis and Planning.</h3>
@@ -365,7 +365,7 @@ Through our comprehensive approach, we empower you to establish a strong online 
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-03.svg" alt="software company in houston texas">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-03.svg" alt="software company in houston texas">
                                 </div>
                                 <div class="work-content">
                                     <h3>Design & Development.</h3>
@@ -376,7 +376,7 @@ Through our comprehensive approach, we empower you to establish a strong online 
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-04.svg" alt="software companies in austin">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-04.svg" alt="software companies in austin">
                                 </div>
                                 <div class="work-content">
                                     <h3>Testing Device & Release.</h3>
@@ -387,7 +387,7 @@ Through our comprehensive approach, we empower you to establish a strong online 
                         <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img src="../assets/img/inner-pages/work-icon-05.svg" alt="custom software development company">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-05.svg" alt="custom software development company">
                                 </div>
                                 <div class="work-content">
                                     <h3>Maintenance and Support.</h3>
@@ -404,7 +404,7 @@ Through our comprehensive approach, we empower you to establish a strong online 
                 <div class="row">
                     <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="driscription-img magnetic-item">
-                            <img class="img-fluid" src="../assets/img/inner-pages/webdevelopment.avif" alt="small remote software development companies
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/webdevelopment.avif" alt="small remote software development companies
 ">
                         </div>
                     </div>
@@ -455,7 +455,7 @@ By optimizing for mobile, businesses can provide a seamless user experience, imp
                 <div class="row gy-5">
                     <div class="col-lg-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="faq-img magnetic-item">
-                            <img class="img-fluid" src="../assets/img/inner-pages/appDeveloper.avif" alt="what the cloud is">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/appDeveloper.avif" alt="what the cloud is">
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex align-items-center wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">

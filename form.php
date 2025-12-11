@@ -2,10 +2,9 @@
 <link rel="canonical" href="https://cloudtechnologycomputing.com" />
 <meta name="copyright" content="Jhon Arzu-Gil" />
 <meta name="author" content="Jhon Arzu-Gil">
-<meta name=”robots” content=”index, follow”> 
+<meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Cloud Technology Computing: Computer Software Development" />
-<meta property="og:description" content="Cloud Technology Computing: Computer Software Development | IBM Cloud Provider  | Google Cloud Computing Platform | Windows Azure And Cloud Computing">
+<meta property="og:title" content="Book a Free Cloud Consultation | Cloud Technology Computing">
 <meta property="og:url" content="https://cloudtechnologycomputing.com">
 <meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -13,8 +12,7 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Cloud Technology Computing: Computer Software Development"/>
-<meta property="og:description" content="Cloud Technology Computing: Computer Software Development | IBM Cloud Provider  | Google Cloud Computing Platform | Windows Azure And Cloud Computing">
+<meta name="twitter:title" content="Book a Free Cloud Consultation | Cloud Technology Computing">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
@@ -23,9 +21,9 @@
     <!-- Favicon -->
    <link href="assets/img/CloudTechnologyComputingAIservices.png" type="image/x-icon" rel="icon">
      <!-- Title -->
-    <title>Cloud Technology Computing Multi-Step-Form</title>
+    <title>Book a Free Cloud Consultation | Cloud Technology Computing</title>
 	<!-- set your website meta description and keywords -->
-	<meta name="description" content="Add your website description here">
+	<meta name="description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies for your business.">
 	<meta name="keywords" content="Add your website keywords here">
 	
 	<!-- Bootstrap Stylesheets -->
@@ -82,12 +80,12 @@
     <!-- Preloader End -->
     <header class="header-area2 style-2 two">
         <div class="header-logo">
-            <a href="index.php"><!--<img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
+            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
+                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white"> Cloud Technology Computing</p></a>
                 </div>
             </div>
             <ul class="menu-list">
@@ -176,7 +174,7 @@
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
             <div class="header-contact d-xl-block d-none">
-                <span><img src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
+                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
                 <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
             </div>
             <div class="header-btn d-sm-flex d-none">
@@ -193,10 +191,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
             </div>
         </div>
         <div class="container">
@@ -207,7 +205,7 @@
                             <span>services</span>
                             <h1>"Cloud Technology Computing"</h1>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service"> services
+                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service"> services
                             </div>
                            
                         </div>
@@ -289,13 +287,13 @@
 														<div class="form-group validopsys">
 															<ul class="mgs-radio list-unstyled">
 																<li><input type="radio" name="opsys" id="opsys1" value="Android" />
-																	<label for="opsys1"><img src="images/logo-android.jpg" /></label>
+																	<label for="opsys1"><img loading="lazy" src="images/logo-android.jpg" /></label>
 																</li>
 																<li><input type="radio" name="opsys" id="opsys2" value="Apple" />
-																	<label for="opsys2"><img src="images/logo-apple.jpg" /></label>
+																	<label for="opsys2"><img loading="lazy" src="images/logo-apple.jpg" /></label>
 																</li>
 																<li><input type="radio" name="opsys" id="opsys3" value="Windows" />
-																	<label for="opsys3"><img src="images/logo-windows.jpg" /></label>
+																	<label for="opsys3"><img loading="lazy" src="images/logo-windows.jpg" /></label>
 																</li>
 															</ul>
 															<div class="help-block with-errors"></div>
@@ -714,7 +712,7 @@
 																<div id="mgsContactSubmit" class="hidden"></div>
 																
 																<div id="loading-image" style="display:none;">
-																	<img src="images/loading-image.gif" alt="Processing" />
+																	<img loading="lazy" src="images/loading-image.gif" alt="Processing" />
 																</div><!-- end title-box -->
 																<div id="final-step-buttons" class="form-group  quoteForm-step-5">
 																	<button class="btn btn-custom" type="button" onclick="previousStep4()"><span class="fa-solid fa-arrow-left"></span> Back</button> 
