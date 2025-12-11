@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare the email
-    $to = "Admin@cloudtechnologycomputing.com"; // Replace with your email address
+    $to = "Jhongil@cloudtechnologycomputing.com"; // Replace with your email address
     $subject = "New Contact Request from $fname $lname";
     $body = "
     First Name: $fname\n
