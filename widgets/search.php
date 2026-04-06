@@ -5,8 +5,10 @@
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/db.php';
 
+$method = $_SERVER['REQUEST_METHOD'] ?? 'GET'; // CLI-safe
+
 $q = '';
-if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['s'])) {
+if ($method === 'POST') {
   $q = trim((string)$_GET['s']);
   if ($q !== '') {
     $like = '%' . $q . '%';

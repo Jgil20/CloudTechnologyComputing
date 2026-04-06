@@ -1,6 +1,17 @@
 <?php
-// ---------- Bootstrap PHP (runs before any output) ----------
 declare(strict_types=1);
+
+// now everything else is allowed:
+require_once __DIR__ . "/includes/db.php";
+// Base URL for assets/links
+$baseUrl =
+  (php_sapi_name() === 'cli')
+    ? ''
+    : ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://')
+        . ($_SERVER['HTTP_HOST'] ?? '')
+        . rtrim(dirname($_SERVER['SCRIPT_NAME'] ?? ''), '/\\');
+
+// ---------- Bootstrap PHP (runs before any output) ----------
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
@@ -17,10 +28,10 @@ if (empty($_SESSION['csrf_token'])) {
 }
 
 // --- Comments DB connection (separate from $mysqli if your includes use it) ---
-$servername = "127.0.0.1:3306";
-$username   = "u249000411_Jhongil";
-$password   = "Spiderman8085$";
-$dbname     = "u249000411_CloudHoneyPot";
+$servername = "127.0.0.1:8889";
+$username   = "root";
+$password   = "root";
+$dbname     = "mydatabase";
 $conn = @new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   // Fail softly (don’t break entire page)
@@ -45,7 +56,9 @@ $chk->close();
 
 
 // Handle form submission (comments) with CSRF + prepared statements
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+$method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+
+if ($method === 'POST') {
     // CSRF check stays the same...
 
     $name    = trim($_POST['name'] ?? '');

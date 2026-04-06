@@ -3,10 +3,10 @@
 // Centralized DB connection using mysqli. Load sensitive values from environment if available.
 
 $DB_HOST = getenv('DB_HOST') ?: '127.0.0.1';
-$DB_PORT = getenv('DB_PORT') ?: '3306';
-$DB_USER = getenv('DB_USER') ?: 'u249000411_Jhongil';
-$DB_PASS = getenv('DB_PASS') ?: 'Spiderman8085$';
-$DB_NAME = getenv('DB_NAME') ?: 'u249000411_CloudHoneyPot';
+$DB_PORT = getenv('DB_PORT') ?: '8889';
+$DB_USER = getenv('DB_USER') ?: 'root';
+$DB_PASS = getenv('DB_PASS') ?: 'root';
+$DB_NAME = getenv('DB_NAME') ?: 'mydatabase';
  
 $mysqli = @new mysqli("$DB_HOST:$DB_PORT", $DB_USER, $DB_PASS, $DB_NAME);
 if ($mysqli->connect_errno) {

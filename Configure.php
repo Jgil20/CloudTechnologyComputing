@@ -5,11 +5,11 @@ $siteName = 'Cloud Technology Computing';
 $siteEmail = 'jhongil@cloudtechnologycomputing.com'; 
  
 // Database configuration 
-define('DB_HOST', 'Server: 127.0.0.1:3306'); 
-define('DB_USERNAME', 'u249000411_Jhongil'); 
-define('DB_PASSWORD', 'Spiderman8085$'); 
-define('DB_NAME', 'u249000411_CloudHoneyPot'); 
- 
+define('DB_HOST', '127.0.0.1'); 
+define('DB_USERNAME', 'root'); 
+define('DB_PASSWORD', 'root'); 
+define('DB_NAME', 'mydatabase'); 
+
  
 /* Changes are not required, used for internal purpose */ 
 $siteURL = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on")?'https://':'http://'; 
