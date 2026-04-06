@@ -1734,7 +1734,7 @@
 
 <div class="col-lg-12 col-md-6">
               <div class="home6-case-study">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7396717751412662272" height="1685" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7396845319499542528" height="1685" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
               </div>
             </div>
 
@@ -1796,7 +1796,7 @@
   <!-- Case 4 -->
             <div class="col-lg-12 col-md-6">
               <div class="home6-case-study">
-               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7393069974430552064" height="1651" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7440652755649662977" height="1651" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 </div>
               </div>
             </div>

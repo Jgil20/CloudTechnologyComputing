@@ -97,9 +97,9 @@ if ($result === false) {
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-<meta name="description" content="Download our comprehensive cloud guide to learn how small businesses can reduce costs, improve reliability, and scale using AWS, Azure, IBM Cloud, and Google Cloud solutions.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Google tag (gtag.js) -->
+  <meta name="viewport" content="width=device-width, initial-scale=5">
+
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GT-NMKVXWDW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -108,7 +108,22 @@ if ($result === false) {
 
   gtag('config', 'GT-NMKVXWDW');
 </script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/841264057ad6189b30060d0b6/4c0e0a465f807452debd11900.js");</script>
+<!--Trust Pilot Review -->
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+<script>
+        (function(w,d,s,r,n){w.TrustpilotObject=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)};
+            a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
+            f.parentNode.insertBefore(a,f)})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+            tp('register', 'x73KWStcI958P9MT');
+</script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/841264057ad6189b30060d0b6/4c0e0a465f807452debd11900.js");</script>
+<meta name="p:domain_verify" content="ac5c484e34bef5bf8d2f4b91d7d28dba"/><link rel="preload" as="image" href="assets/img/home-6/CloudSolutions.png">
+
   <!-- CSS -->
+ <!-- CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/all.min.css" rel="stylesheet">
@@ -121,37 +136,24 @@ if ($result === false) {
   <link rel="stylesheet" href="assets/css/style2.css">
 
   <!-- Title / Favicon -->
-  <title>Cloud Comprehensive Guide for Small Business | Cloud Technology Computing</title>
-  <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20">
-</head>
+  <!-- ===================== SEO META TAGS ===================== -->
+  <title>How Small Businesses Save Money with the Cloud | Cloud Technology Computing</title>
+  <meta name="description" content="See practical strategies for small businesses to cut IT costs, automate workflows, and increase revenue with smart cloud adoption, custom software, and AI-driven tools.">
+  <meta name="keywords" content="5 Ways Cloud Migration Saves Small Businesses Thousands, cloud migration savings, cloud computing for small business, AWS, Azure, Google Cloud, IBM Cloud, cost reduction, cloud solutions, small business cloud transformation">
 
-<body class="home-dark2 tt-magic-cursor">
+  <!-- Open Graph -->
+  <meta property="og:title" content="How Small Businesses Save Money with the Cloud | Cloud Technology Computing">
+  <meta property="og:description" content="See practical strategies for small businesses to cut IT costs, automate workflows, and increase revenue with smart cloud adoption, custom software, and AI-driven tools.">
+  <meta property="og:image" content="https://www.cloudtechnologycomputing.com/images/blog/cloud-migration-savings.jpg">
+  <meta property="og:url" content="https://www.cloudtechnologycomputing.com/blog-details.php?post=5-ways-cloud-migration-saves-small-businesses-thousands">
+  <meta property="og:type" content="article">
 
-  <!-- Preloader Start -->
-  <div class="preloader">
-    <div id="particles-background" class="vertical-centered-box"></div>
-    <div id="particles-foreground" class="vertical-centered-box"></div>
-    <div class="vertical-centered-box">
-      <div class="content">
-        <div class="loader-circle"></div>
-        <div class="loader-line-mask">
-          <div class="loader-line"></div>
-        </div>
-        <svg width="50" height="50" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5875 7.80132C26.1756 2.71548 18.9772 3.33531 13.0177 7.36702C12.9433 7.45181 12.4808 7.69025 12.9963 6.94836C24.4371 -5.54919 45.4795 11.5151 33.7252 25.7347C36.3568 20.0872 37.0161 12.9032 31.5879 7.80144L31.5875 7.80132Z" fill="#06D889"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M26.7504 1.91075C8.15888 -3.63601 -7.81139 25.1051 12.8958 38C-10.3418 27.992 1.07241 -2.40195 21.5296 0.151704C23.1991 0.358215 25.7562 1.14769 26.7503 1.91051L26.7504 1.91075Z" fill="#06D889"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M31.656 20.3691C31.656 26.5676 26.6425 31.6058 20.4701 31.6058C14.2923 31.6058 9.2793 26.5675 9.2793 20.3691C9.2793 14.1705 14.2928 9.13232 20.4701 9.13232C26.6425 9.13232 31.656 14.1706 31.656 20.3691ZM12.2671 21.8578C11.4325 23.1348 12.4106 26.377 15.3081 28.2948C18.1789 30.2125 21.8579 30.0695 22.7139 28.7876C23.5485 27.5373 21.7676 28.3426 18.514 27.1345C13.1444 25.1426 13.0966 20.5759 12.2671 21.8578Z" fill="#06D889"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M38.395 13.1796C46.0027 27.7854 24.886 46.5405 10.1649 33.2636C8.28281 31.579 7.45359 29.9525 6.08203 27.8385C17.5284 43.6315 42.7177 31.1549 38.1986 13.4121C38.0338 12.7603 38.1402 12.7021 38.3952 13.179L38.395 13.1796Z" fill="#06D889"/>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <!-- Preloader End -->
-
-  <div class="header-sidebar">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Small Businesses Save Money with the Cloud | Cloud Technology Computing">
     <div class="siderbar-top">
       <div class="sidebar-log">
-        <a href="../index.php">Cloud Technology Computing</a>
+        <a href="index.php">Cloud Technology Computing</a>
       </div>
       <div class="close-btn"><i class="bi bi-x-lg" aria-hidden="true"></i></div>
     </div>
@@ -285,7 +287,7 @@ if ($result === false) {
           </div>
         </form>
         <div class="header-btn5">
-          <a class="primary-btn3" href="contact.php">Free Consultation!</a>
+          <a class="primary-btn3" href="form.php">Free Consultation!</a>
         </div>
       </div>
     </div>
@@ -296,7 +298,7 @@ if ($result === false) {
         <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
       </div>
       <div class="header-btn d-sm-flex d-none">
-        <a href="../form.php" target="_blank" rel="noopener noreferrer">Free Consultation!</a>
+        <a href="form.php" target="_blank" rel="noopener noreferrer">Free Consultation!</a>
       </div>
       <div class="sidebar-button mobile-menu-btn">
         <span></span>
@@ -321,7 +323,7 @@ if ($result === false) {
           <div class="breadcrumb-wrapper">
             <div class="breadcrumb-cnt">
               <span>Blog Details</span>
-              <h1>"Cloud Technology Computing: Transforming the Future"</h1>
+            <h1>AWS Solutions Architect – Associate: The Certification That Makes Cloud + AI Click</h1>
               <div class="breadcrumb-list">
                 <a href="index.php">Home</a>
                 <img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="breadcrumb arrow">
@@ -343,7 +345,8 @@ if ($result === false) {
         <div class="col-lg-8">
           <div class="blog-details-content">
             <span>Cloud Computing</span>
-            <h2>Cloud Technology Computing: Transforming the Future</h2>
+            <h2>How Cloud Technology Computing designs secure, scalable, cost-aware systems built for the AI era
+ </h2>
 
             <div class="author-and-meta">
               <div class="author-area">
@@ -379,115 +382,243 @@ if ($result === false) {
               </ul>
             </div> <!-- End header section -->
 
-   <aside class="toc" role="navigation" aria-label="Table of contents">
-              <h2>Table of Contents</h2>
-              <ol>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#multi-cloud">Multi-Cloud Deployments</a></li>
-                <li><a href="#ai">AI-Powered Cloud Solutions</a></li>
-                <li><a href="#security">Cybersecurity in the Cloud</a></li>
-                <li><a href="#edge">Edge Computing</a></li>
-                <li><a href="#sustainability">Sustainable Cloud</a></li>
-                <li><a href="#conclusion">Conclusion & Next Steps</a></li>
-                <li><a href="#faq">FAQs</a></li>
-              </ol>
-            </aside>
+  <main class="container py-5">Date:</strong> November 8, 2025</p>
+  
+  <!-- Blog Post: Cloud Technology Computing -->
+<article class="blog-post">
+  <section>
+    <p>
+      Becoming <strong>AWS Certified Solutions Architect – Associate</strong> wasn’t just another certification milestone
+      for me—it was a mindset shift that changed how I design solutions for clients at
+      <strong>Cloud Technology Computing</strong>.
+    </p>
 
-            <section id="intro">
-              <p>The cloud is now the foundation of modern business. In 2025, forward-thinking companies are using cloud platforms to scale faster, lower costs, and unlock innovation. This post covers the top trends and how to capitalize on them.</p>
-            </section>
+    <p>
+      A lot of people hear “AWS certification” and assume it’s about spinning up resources in the cloud. But what this
+      certification really trains you to do is <strong>architect</strong>: to design systems that are reliable, secure,
+      scalable, and cost-aware—even when constraints are real and timelines are tight.
+    </p>
 
-            <section id="multi-cloud">
-              <h2>1) Multi-Cloud Deployments Are the New Standard</h2>
-              <p>Enterprises increasingly run workloads across AWS, Azure, Google Cloud, and IBM Cloud to minimize vendor lock-in, improve resilience, and optimize for cost-performance.</p>
-              <ul>
-                <li>Mix and match best-in-class services</li>
-                <li>Improve uptime and disaster recovery</li>
-                <li>Negotiate better pricing with portability</li>
-              </ul>
-              <p><strong>Internal resource:</strong> Explore our <a href="<?= htmlspecialchars($baseUrl . "/services.php") ?>">Cloud Services</a> for multi-cloud planning and migration.</p>
-            </section>
+    <p>
+      And here’s the key point for where the industry is going:
+      <strong>Cloud architecture is now inseparable from AI architecture.</strong>
+    </p>
 
-            <section id="ai">
-              <h2>2) AI-Powered Cloud Solutions</h2>
-              <p>From chatbots to predictive analytics, AI turns raw data into action. Cloud-native AI services accelerate deployment and reduce infrastructure overhead.</p>
-              <ul>
-                <li>Automate support with intelligent chatbots</li>
-                <li>Forecast demand and personalize experiences</li>
-                <li>Detect anomalies and reduce churn</li>
-              </ul>
-              <p>See how we build <a href="<?= htmlspecialchars($baseUrl . "/services.php") ?>">custom AI chatbots</a> tailored to your data.</p>
-            </section>
+    <p>
+      If you’re building modern digital products—web apps, mobile apps, internal tools, customer portals—AI is quickly
+      becoming part of the roadmap. Whether that’s a chatbot, a recommendation engine, intelligent search, automation
+      workflows, or analytics that drive decisions… it all runs on infrastructure. Which means AI doesn’t replace
+      architecture—it <strong>demands better architecture</strong>.
+    </p>
+  </section>
+<blockquote> 
+  <section>
+    <h2>Why AWS Solutions Architect – Associate matters (especially now)</h2>
 
-            <section id="security">
-              <h2>3) Cybersecurity in the Cloud</h2>
-              <p>Security must be built-in, not bolted-on. Adopt Zero Trust, encrypt data at rest and in transit, and implement continuous monitoring with alerting.</p>
-              <ul>
-                <li>Enforce MFA and least-privilege access</li>
-                <li>Use managed secrets and key management</li>
-                <li>Automate backups and disaster recovery tests</li>
-              </ul>
-            </section>
+    <p>
+      This certification trains you to think in outcomes, not services. It made me better at answering the questions
+      that separate a quick deployment from a production-grade system:
+    </p>
 
-            <section id="edge">
-              <h2>4) Edge Computing for Real-Time Experiences</h2>
-              <p>Processing data closer to users reduces latency and bandwidth costs—critical for IoT, healthcare, and financial services.</p>
-              <p><em>Tip:</em> Pair a global CDN with regional edge functions to speed up dynamic content.</p>
-            </section>
+    <ul>
+      <li>How do you design for failure instead of hoping everything stays up?</li>
+      <li>How do you keep systems secure by default—not secure after the fact?</li>
+      <li>How do you build for scale without wasting money upfront?</li>
+      <li>How do you make tradeoffs between cost, performance, availability, and operational overhead?</li>
+    </ul>
 
-            <blockquote>
-              <section id="sustainability">
-                <h2>5) Sustainable Cloud Technology</h2>
-                <p>Choose providers investing in renewable energy and efficient data centers. Right-size instances and schedule non-critical jobs to cut emissions and cost.</p>
-              </section>
-              <h3>Jhon Arzu-Gil</h3>
-              <div class="bolckquote-icons">
-                <img loading="lazy" class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="" aria-hidden="true">
-                <img loading="lazy" class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="" aria-hidden="true">
-              </div>
-            </blockquote>
+    <p>
+      That’s what separates “cloud knowledge” from “cloud engineering.” And those are the same questions you must answer
+      when you’re incorporating AI into real products.
+    </p>
+  </section>
 
-            <div class="blog-details-img-group">
-              <div class="row g-4">
-                <div class="col-lg-6">
-                  <div class="blog-details-img magnetic-item">
-                    <img class="img-fluid" src="assets/img/inner-pages/CloudComping.avif" alt="Cloud computing illustration" loading="lazy" decoding="async">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="row g-4">
-                    <div class="col-lg-12">
-                      <div class="blog-details-img magnetic-item">
-                        <img class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="Website optimization visualization" loading="lazy" decoding="async">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <section>
+    <h2>The Cloud + AI connection: what architecture really looks like</h2>
 
-            <section id="conclusion">
-              <h2>Conclusion & Next Steps</h2>
-              <p>Cloud technology is evolving rapidly. By embracing multi-cloud, AI, robust security, edge, and sustainability, your business can thrive in 2025 and beyond.</p>
-              <div class="cta-box">
-                <p><strong>Ready to modernize?</strong> Get an expert plan tailored to your business.</p>
-                <a href="<?= htmlspecialchars($baseUrl . "/form.php") ?>">Book a Free Consultation</a>
-                &nbsp; or &nbsp;
-                <a href="https://www.amazon.com/dp/B0FKYLR78F?asin=B0FKYLR78F&revisionId=541f7b3e&format=3&depth=1" target="_blank" rel="noopener noreferrer">Download our Cloud Growth eBook</a>
-              </div>
-            </section>
+    <p>
+      When a business says, “We want AI,” what they often mean is: “We want better results, faster support, smarter
+      workflows, and less manual work.”
+    </p>
 
-            <section id="faq" aria-label="Frequently Asked Questions">
-              <h2>FAQs</h2>
-              <h3>What’s the fastest way to start?</h3>
-              <p>Begin with a technical and on-page <a href="<?= htmlspecialchars($baseUrl . "/services.php#seo-audit") ?>">SEO + Cloud Readiness Audit</a> to prioritize quick wins.</p>
-              <h3>Which cloud is best?</h3>
-              <p>It depends on your workloads. We often recommend a hybrid or multi-cloud approach to balance performance, features, and cost.</p>
-              <h3>How do you keep costs under control?</h3>
-              <p>Use budgets, alerts, and autoscaling. Turn off idle resources and right-size instances monthly.</p>
-            </section>
+    <p>
+      But to deliver that in a way that’s stable and cost-controlled, you need a blueprint.
+    </p>
 
-            <div class="blog-tag-and-social">
+    <p>
+      At Cloud Technology Computing, we think about AI systems as an ecosystem:
+    </p>
+    
+                 <h3>Jhon Arzu-Gil</h3>
+                            <div class="bolckquote-icons">
+                                <img loading="lazy" class="blockquote-icon-01" src="assets/img/inner-pages/blockquote-icon-01.svg" alt="">
+                                <img loading="lazy" class="blockquote-icon-02" src="assets/img/inner-pages/blockquote-icon-02.svg" alt="">
+                            </div>
+                        </blockquote>
+ 
+
+
+    <ul>
+      <li><strong>Data sources</strong> (documents, websites, internal knowledge bases, databases)</li>
+      <li><strong>Processing and pipelines</strong> (cleaning, transformations, scheduled jobs)</li>
+      <li><strong>Model inference</strong> (real-time or batch)</li>
+      <li><strong>Retrieval/search layers</strong> (where relevant information is pulled safely)</li>
+      <li><strong>Security boundaries</strong> (who can access what, and how it’s logged)</li>
+      <li><strong>Monitoring and cost controls</strong> (so usage doesn’t explode)</li>
+    </ul>
+
+    <p>
+      That ecosystem depends on the same core AWS architecture principles taught in the SAA journey.
+    </p>
+
+    <h3>1) High availability isn’t a feature—it’s a design choice</h3>
+    <p>
+      AI features don’t get a pass on reliability. If your customer support chatbot is down, your support load spikes.
+      If your AI search tool fails, your internal teams lose productivity. If your automation workflows break,
+      operations slow down.
+    </p>
+
+    <p>
+      AWS architecture patterns—<strong>Multi-AZ deployments, load balancing, auto scaling, health checks, and
+      decoupled services</strong>—are how we design systems that keep working even when components fail.
+    </p>
+
+    <p><em>AWS makes it possible. Architecture makes it dependable.</em></p>
+
+    <h3>2) Cost optimization is part of being a good engineer</h3>
+    <p>
+      AI can become expensive quickly. More requests, more logs, more storage, more compute—costs add up fast if there
+      aren’t guardrails.
+    </p>
+
+    <p>
+      SAA trains you to think like this:
+    </p>
+
+    <ul>
+      <li>Use managed services when it reduces operational overhead</li>
+      <li>Right-size compute instead of overbuilding</li>
+      <li>Use the right storage tier for the job</li>
+      <li>Scale based on real demand—not assumptions</li>
+      <li>Monitor usage continuously and optimize</li>
+    </ul>
+
+    <p>
+      At Cloud Technology Computing, we apply the same mentality to AI:
+      <strong>build what you need, measure it, and optimize it over time.</strong>
+    </p>
+
+    <h3>3) Security is layers—and AI raises the stakes</h3>
+    <p>
+      Security isn’t just IAM. It’s identity + access control, network segmentation, encryption, logging/monitoring,
+      least privilege, auditing, and alerting.
+    </p>
+
+    <p>
+      With AI, security becomes even more important because prompts can contain sensitive information, outputs can
+      expose internal data, and logs can store content you didn’t intend to keep.
+    </p>
+
+    <p>
+      AWS architecture thinking helps ensure AI features are built with guardrails from day one.
+    </p>
+
+    <h3>4) “Best service” is rarely the answer—the best design is</h3>
+    <p>
+      SAA teaches something that matters a lot in real consulting work:
+      <strong>There is no perfect AWS service. There is only the right design for your requirements.</strong>
+    </p>
+
+    <p>
+      Great solutions come from tradeoffs: simplicity vs control, managed vs self-managed, cost vs performance, latency
+      vs accuracy, and real-time vs batch processing.
+    </p>
+  </section>
+
+  <section>
+    <h2>What this certification represents at Cloud Technology Computing</h2>
+
+    <p>
+      For us, AWS Solutions Architect – Associate represents discipline and consistency, strong foundations that scale
+      into advanced systems, and architecture-first thinking that supports security, reliability, and cost control.
+    </p>
+
+    <p>
+      It forces you to understand and connect:
+    </p>
+
+    <ul>
+      <li>VPC networking and connectivity patterns</li>
+      <li>Storage tradeoffs (S3 / EBS / EFS)</li>
+      <li>Compute choices (EC2 vs containers vs serverless)</li>
+      <li>Database selection (relational vs NoSQL)</li>
+      <li>Disaster recovery and RTO/RPO planning</li>
+      <li>Monitoring, logging, and operational excellence</li>
+    </ul>
+
+    <p>
+      That connection is what makes cloud + AI implementations successful.
+    </p>
+  </section>
+
+  <section>
+    <h2>The real value: confidence in design</h2>
+
+    <p>
+      The biggest change after earning AWS Solutions Architect – Associate wasn’t a badge. It was how I think when
+      someone says: “We need to move to the cloud,” “We want something scalable,” or “We want AI added to our business.”
+    </p>
+
+    <ul>
+      <li>What’s the real requirement?</li>
+      <li>What are the failure points?</li>
+      <li>What’s the security posture?</li>
+      <li>What’s the budget and cost ceiling?</li>
+      <li>What needs to be automated?</li>
+      <li>What’s the simplest design that meets the need?</li>
+    </ul>
+
+    <p>
+      And with AI specifically:
+    </p>
+
+    <ul>
+      <li>What data will it touch?</li>
+      <li>Who should access it?</li>
+      <li>How do we prevent leakage?</li>
+      <li>How do we measure quality, latency, and cost over time?</li>
+    </ul>
+
+    <p><strong>That’s architecture.</strong></p>
+  </section>
+
+  <section>
+    <h2>If you’re building cloud + AI right now…</h2>
+
+    <ul>
+      <li>Don’t just study—build small projects and break them on purpose</li>
+      <li>Learn the “why,” not just the “what”</li>
+      <li>Focus on decision-making and tradeoffs</li>
+      <li>Design for failure, not perfection</li>
+      <li>Add AI responsibly—with security and cost controls built in</li>
+    </ul>
+
+    <p>
+      <strong>✅ AWS Certified Solutions Architect – Associate</strong><br />
+      And more importantly: committed to building systems that are secure, scalable, cost-aware, and ready for the AI era.
+    </p>
+
+    <p>
+      If your business is planning a migration, modernization, or wants to incorporate AI into real workflows, Cloud
+      Technology Computing can help you design it the right way—<strong>from blueprint to build</strong>.
+    </p>
+  </section>
+
+    <p><a href="https://www.cloudtechnologycomputing.com/form.php" class="btn btn-primary mt-3">Book a Free Cloud Consultation</a></p>
+  </article>
+</main>
+
+ <div class="blog-tag-and-social">
               <div class="tag">
                 <h6>Tag:</h6>
                 <ul>
@@ -507,79 +638,10 @@ if ($result === false) {
                 </ul>
               </div>
             </div>
-
-            <!-- Comments -->
-            <div class="comments-area sec-mar">
-              <h3><?php echo (int)$result->num_rows; ?> Comment(s)</h3>
-
-            <?php if (!empty($comment_message)): ?>
-  <div class="alert alert-info" role="alert">
-    <?php echo htmlspecialchars($comment_message, ENT_QUOTES); ?>
-  </div>
-<?php endif; ?>
-
-
-              <?php while ($row = $result->fetch_assoc()): ?>
-                <div class="single-comment">
-                  <div class="author-thumb">
-                    <img src="assets/img/inner-pages/hackerJhonBG.avif" alt="Avatar - Jhon Arzu-Gil" loading="lazy" decoding="async">
-                  </div>
-                  <div class="comment-content">
-                    <div class="author-post">
-                      <div class="author-info">
-                        <h4><?php echo htmlspecialchars($row['name'] ?? '', ENT_QUOTES); ?></h4>
-                        <span><?php echo isset($row['created_at']) ? date("d M, Y h:i a", strtotime($row['created_at'])) : ''; ?></span>
-                      </div>
-                      <div class="reply">
-                        <a href="#"><i class="bi bi-arrow-return-right" aria-hidden="true"></i> Reply</a>
-                      </div>
-                    </div>
-                    <p><?php echo htmlspecialchars($row['message'] ?? '', ENT_QUOTES); ?></p>
-                  </div>
-                </div>
-              <?php endwhile; ?>
-            </div>
-
-            <div class="comment-form">
-              <h3>Leave a comment</h3>
-              <form action="?id=<?php echo (int)$post_id; ?>" method="POST" novalidate>
-  <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token'] ?? '', ENT_QUOTES); ?>">
-  <!-- the rest of your inputs -->
-</form>
-
-                <div class="row">
-                  <div class="col-md-12 mb-40">
-                    <div class="form-inner">
-                      <input type="text" name="name" placeholder="Enter your name" required>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-40">
-                    <div class="form-inner">
-                      <input type="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-40">
-                    <div class="form-inner">
-                      <input type="text" name="subject" placeholder="Subject">
-                    </div>
-                  </div>
-                  <div class="col-12 mb-40">
-                    <div class="form-inner">
-                      <textarea name="message" placeholder="Your message" required></textarea>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-inner">
-                      <button class="primary-btn3" type="submit">Post a Comment</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-          </div>
+  
+</div>
         </div>
-        <!-- Sidebar -->
+                <!-- Sidebar -->
         <div class="col-lg-4">
           <div class="widget-area">
             <div class="single-widgets widget_search">
@@ -625,6 +687,80 @@ if ($result === false) {
 
           </div>
         </div>
+            <!-- Comments -->
+            <div class="comments-area sec-mar">
+              <h3><?php echo (int)$result->num_rows; ?> Comment(s)</h3>
+
+            <?php if (!empty($comment_message)): ?>
+  <div class="alert alert-info" role="alert">
+    <?php echo htmlspecialchars($comment_message, ENT_QUOTES); ?>
+  </div>
+<?php endif; ?>
+
+
+              <?php while ($row = $result->fetch_assoc()): ?>
+                <div class="single-comment">
+                  <div class="author-thumb">
+                    <img src="assets/img/inner-pages/hackerJhonBG.avif" alt="Avatar - Jhon Arzu-Gil" loading="lazy" decoding="async">
+                  </div>
+                  <div class="comment-content">
+                    <div class="author-post">
+                      <div class="author-info">
+                        <h4><?php echo htmlspecialchars($row['name'] ?? '', ENT_QUOTES); ?></h4>
+                        <span><?php echo isset($row['created_at']) ? date("d M, Y h:i a", strtotime($row['created_at'])) : ''; ?></span>
+                      </div>
+                      <div class="reply">
+                        <a href="#"><i class="bi bi-arrow-return-right" aria-hidden="true"></i> Reply</a>
+                      </div>
+                    </div>
+                    <p><?php echo htmlspecialchars($row['message'] ?? '', ENT_QUOTES); ?></p>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            </div>
+
+           <div class="comment-form">
+  <h3>Leave a comment</h3>
+
+  <form action="?id=<?= (int)$post_id ?>" method="POST" novalidate>
+    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'] ?? '', ENT_QUOTES) ?>">
+
+    <!-- Honeypot anti-bot field (hidden to humans) -->
+    <div style="position:absolute;left:-9999px" aria-hidden="true">
+      <label for="website">Website</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-40">
+        <div class="form-inner">
+          <input type="text" name="name" placeholder="Enter your name" maxlength="80" required>
+        </div>
+      </div>
+      <div class="col-md-6 mb-40">
+        <div class="form-inner">
+          <input type="email" name="email" placeholder="Enter your email" maxlength="120" required>
+        </div>
+      </div>
+      <div class="col-md-6 mb-40">
+        <div class="form-inner">
+          <input type="text" name="subject" placeholder="Subject" maxlength="120">
+        </div>
+      </div>
+      <div class="col-12 mb-40">
+        <div class="form-inner">
+          <textarea name="message" placeholder="Your message" rows="6" maxlength="5000" required></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-inner">
+          <button class="primary-btn3" type="submit">Post a Comment</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
       </div>
     </div>
   </div>
@@ -764,7 +900,7 @@ if ($result === false) {
   <!-- End Footer section -->
 
   <!-- Scripts -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
+ <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>

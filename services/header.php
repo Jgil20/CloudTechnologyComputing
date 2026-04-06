@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GT-NMKVXWDW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -9,15 +9,6 @@
   gtag('js', new Date());
 
   gtag('config', 'GT-NMKVXWDW');
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9B1HJ5VPX"defer></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-R9B1HJ5VPX');
 </script>
 <!-- Required meta tags -->
 <meta charset="utf-8">

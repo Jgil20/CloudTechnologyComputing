@@ -17,10 +17,10 @@ if (empty($_SESSION['csrf_token'])) {
 }
 
 // --- Comments DB connection (separate from $mysqli if your includes use it) ---
-$servername = "127.0.0.1:8889";
-$username   = "root";
-$password   = "root";
-$dbname     = "mydatabase";
+$servername = "127.0.0.1:3306";
+$username   = "u249000411_Jhongil";
+$password   = "Spiderman8085$";
+$dbname     = "u249000411_CloudHoneyPot";
 $conn = @new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   // Fail softly (don’t break entire page)
@@ -95,6 +95,10 @@ if ($result === false) {
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=5">
+
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GT-NMKVXWDW"></script>
 <script>
@@ -105,32 +109,6 @@ if ($result === false) {
   gtag('config', 'GT-NMKVXWDW');
 </script>
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/841264057ad6189b30060d0b6/4c0e0a465f807452debd11900.js");</script>
-
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=6">
-<link rel="stylesheet" href="style.css" />
-<!-- Bootstrap CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap Icon CSS -->
-<link href="assets/css/bootstrap-icons.css" rel="stylesheet"defer>
-<!-- Fontawesome all CSS -->
-<link href="assets/css/all.min.css" rel="stylesheet">
-
-<!-- Fontawesome CSS -->
-<link href="assets/css/fontawesome.min.css" rel="stylesheet"defer>
-<!-- Swiper slider CSS -->
-<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-<!-- Animate CSS -->
-<link rel="stylesheet" href="assets/css/animate.min.css">
-<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-<!-- BoxIcon  CSS -->
-<link href="assets/css/boxicons.min.css" rel="stylesheet" defer>
-<!--  Style CSS  -->
-<link rel="stylesheet" href="assets/css/preloader.css">
-<link rel="stylesheet" href="assets/css/style2.css" defer>
-<link rel="icon" href="assets/img/cloud.svg" type="image/gif" sizes="30x30">
 <!--Trust Pilot Review -->
 
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -143,6 +121,19 @@ if ($result === false) {
 </script>
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/841264057ad6189b30060d0b6/4c0e0a465f807452debd11900.js");</script>
 <meta name="p:domain_verify" content="ac5c484e34bef5bf8d2f4b91d7d28dba"/><link rel="preload" as="image" href="assets/img/home-6/CloudSolutions.png">
+
+  <!-- CSS -->
+ <!-- CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <link href="assets/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/preloader.css">
+  <link rel="stylesheet" href="assets/css/style2.css">
 
   <!-- Title / Favicon -->
   <!-- ===================== SEO META TAGS ===================== -->
