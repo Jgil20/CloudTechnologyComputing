@@ -1,228 +1,243 @@
 <?php include 'header.php'; ?>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=5" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Cloud Computing, AI & Web Development for Small Businesses</title>
 <meta name="author" content="Jhon Arzu-Gil">
-<meta name="description" content="Cloud Technology Computing helps small businesses and enterprises build fast, secure cloud solutions, AI chatbots, and SEO-optimized web apps on AWS, Azure, IBM Cloud, and Google Cloud.">
-<meta name="robots" content="index, follow">
-<meta name="keywords" content="cloud computing, AI services, web development, SEO, software consulting, AI Chatbot Development">
+<meta name="description"
+content="Cloud Technology Computing provides cloud consulting, AI automation, custom websites, managed IT and SEO services for small businesses in Houston and nationwide.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.cloudtechnologycomputing.com/">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Cloud Technology Computing | Cloud, AI & Web Development">
-<meta property="og:description" content="Cloud Technology Computing helps small businesses and enterprises build fast, secure cloud solutions, AI chatbots, and SEO-optimized web apps on AWS, Azure, IBM Cloud, and Google Cloud.">
-<meta property="og:url" content="https://cloudtechnologycomputing.com">
-<meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/CloudRoom3.png">
+<meta property="og:title" content="Cloud Technology Services for Small Business | CTC">
+<meta property="og:description" content="Cloud Technology Computing provides cloud technology services, cloud migration, AWS, Azure, managed cloud, AI chatbots, SEO, and web development.">
+<meta property="og:url" content="https://www.cloudtechnologycomputing.com/">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif">
+<meta property="og:image:alt" content="Cloud Technology Computing cloud, AI, and web development services">
 <meta property="og:site_name" content="Cloud Technology Computing">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cloud Technology Computing | Cloud, AI & Web Development">
-<meta name="twitter:description" content="Cloud Technology Computing helps small businesses and enterprises build fast, secure cloud solutions, AI chatbots, and SEO-optimized web apps on AWS, Azure, IBM Cloud, and Google Cloud.">
-<meta name="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/CloudRoom3.png">
+<meta name="twitter:title" content="Cloud Technology Services for Small Business | CTC">
+<meta name="twitter:description" content="Cloud technology, managed cloud, cloud migration, AI chatbot, SEO, web development, and mobile app services for small businesses.">
+<meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif">
+<meta name="twitter:image:alt" content="Cloud Technology Computing digital technology services">
 <meta name="twitter:site" content="@CTCCorporation">
 <meta name="twitter:creator" content="@JhonArzuGil">
-<meta name="twitter:url" content="https://cloudtechnologycomputing.com/">
-<meta name="twitter:image:alt" content="Illustration of cloud computing and AI chatbot solutions by Cloud Technology Computing">
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/img/computer-clouds.png" type="image/png">
+
 
 <!-- Structured Data -->
 <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Cloud Technology Computing",
-        "url": "https://cloudtechnologycomputing.com",
-        "sameAs": [
-            "https://www.linkedin.com/company/cloudtechnologycomputing",
-            "https://www.facebook.com/cloudtechnologycomputing"
-        ],
-        "description": "Cloud Technology Computing offers services in AWS, Azure, IaaS, SaaS, edge compute, and cloud solutions for business and healthcare.",
-        "logo": "https://cloudtechnologycomputing.com/assets/logo.png"
-    }
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://www.cloudtechnologycomputing.com/#website",
+            "url": "https://www.cloudtechnologycomputing.com/",
+            "name": "Cloud Technology Computing",
+            "description": "Cloud technology, AI, and web development services for small businesses.",
+            "inLanguage": "en-US",
+            "publisher": {"@id": "https://www.cloudtechnologycomputing.com/#organization"}
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://www.cloudtechnologycomputing.com/#organization",
+            "name": "Cloud Technology Computing",
+            "url": "https://www.cloudtechnologycomputing.com/",
+            "logo": "https://www.cloudtechnologycomputing.com/assets/img/sm-logo.svg",
+            "description": "Cloud Technology Computing provides cloud computing, AI chatbot development, web development, SEO, mobile app development, and managed technology services for small businesses.",
+            "founder": {
+                "@type": "Person",
+                "name": "Jhon Arzu-Gil"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4409 Caplin St",
+                "addressLocality": "Houston",
+                "addressRegion": "TX",
+                "postalCode": "77026",
+                "addressCountry": "US"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-713-870-9966",
+                "contactType": "customer service",
+                "email": "Jgil20@me.com",
+                "areaServed": "US"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/cloud-technology-computing-corporation/",
+                "https://www.facebook.com/CloudTechnologyComputingCorporation",
+                "https://x.com/ctccorporation",
+                "https://www.instagram.com/cloudtechnologycomputing"
+            ],
+            "serviceType": [
+                "Cloud Computing",
+                "AI Chatbot Development",
+                "Web Development",
+                "SEO",
+                "Mobile App Development",
+                "Managed Cloud Services"
+            ]
+        },
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://www.cloudtechnologycomputing.com/#localbusiness",
+            "name": "Cloud Technology Computing",
+            "image": "https://www.cloudtechnologycomputing.com/assets/img/sm-logo.svg",
+            "url": "https://www.cloudtechnologycomputing.com/",
+            "telephone": "+1-713-870-9966",
+            "email": "Jgil20@me.com",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4409 Caplin St",
+                "addressLocality": "Houston",
+                "addressRegion": "TX",
+                "postalCode": "77026",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 29.8015,
+                "longitude": -95.3555
+            },
+            "areaServed": [
+                {"@type": "City", "name": "Houston"},
+                {"@type": "AdministrativeArea", "name": "Texas"},
+                {"@type": "Country", "name": "United States"}
+            ],
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                }
+            ],
+            "parentOrganization": {"@id": "https://www.cloudtechnologycomputing.com/#organization"}
+        }
+    ]
+}
 </script>
-
-<!-- Performance -->
-<link rel="preload" href="/css/styles.min.css" as="style">
-<link rel="stylesheet" href="/css/styles.min.css" media="print" onload="this.media='all'">
-<noscript>
-    <link rel="stylesheet" href="/css/styles.min.css">
-</noscript>
-<script src="/js/scripts.min.js" defer></script>
-
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<title>Cloud Technology Computing | Cloud, AI & Web Development</title>
 </head>
 
 <body class="bg-6  tt-magic-cursor">
 
     <!-- Start header section -->
-    <header class="header-area2 style-2 two">
-        <div class="header-logo">
-            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg" width="300" height="200"></a>-->
-                <p style="color : white">Cloud Technology Computing</p>
-            </a>
-        </div>
-        <div class="main-menu">
-            <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
-                <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg" width="300" height="200"> -->
-                        <p style="color : white">Cloud Technology Computing</p>
-                    </a>
-                </div>
-            </div>
-            <ul class="menu-list">
-                <li class="menu-item active">
-                    <a href="index.php" class="drop-down">Home</a><i class="bi bi-plus dropdown-icon"></i>
-                </li>
-                <li><a href="https://arzugil.com/">C.E.O</a></li>
-                <li class="menu-item-has-children">
-                    <a href="services.php" class="drop-down">services</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li> <a href="services/Web%20Development%20service-details.php" class="dropdown-item">Web Development services</a></li>
-                        <li><a href="services/Software%20Development%20service-details.php" class="nav-item nav-link">Software Development services</a></li>
-                        <li> <a href="services/Managed_Cloud_Hosting.php" class="dropdown-item">Managed Cloud Hosting</a></li>
-                        <li> <a href="services/S.E.O%20service-details.php" class="dropdown-item">S.E.O services</a></li>
-                        <li> <a href="services/Data%20Analytics%20service-details.php" class="dropdown-item">Data Analytics services</a></li>
-                        <li> <a href="services/Data%20Analytics%20service-details.php" class="dropdown-item">Digital Marketing services</a></li>
-                        <li> <a href="services/Website%20Optimization%20service-details.php" class="dropdown-item">Website Optimization services</a></li>
-                        <li><a href="services/Mobile%20Development%20service-details.php" class="nav-item nav-link">Mobile Development services</a></li>
-                        <li> <a href="services/Wordpress%20Development%20service-details.php" class="dropdown-item">Wordpress Development services</a></li>
-                        <li> <a href="services/SAP%20Consulting%20service-details.php" class="dropdown-item">SAP Consulting services</a></li>
-                        <li> <a href="services/IT%20Consulting%20service-details.php" class="dropdown-item">IT Consulting services</a></li>
-                        <li> <a href="services/AI_Chatbot_Development.php" class="dropdown-item">AI Chatbot Development</a></li>
-                    </ul>
-                <li class="menu-item-has-children">
-                    <a href="project.php" class="drop-down">Projects</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li><a href="https://github.com/Cloud-Technology-Computing-Corporation" target="_blank" class="nav-item nav-link">Github</a></li>
-                        <li><a href="https://play.google.com/store/search?q=Jhon%20Arzu&c=apps&hl=en_US&gl=US" target="_blank" class="nav-item nav-link">Android App's</a></li>
-                        <li> <a href="https://www.credly.com/users/jhongil" target="_blank" class="dropdown-item">Certifications</a></li>
-                        <li><a href="https://www.linkedin.com/in/jhongil/" target="_blank" class="dropdown-item">LinkedIn</a></li>
-                        <li><a href="https://www.hybridclouddev.com" target="_blank" class="dropdown-item">Portfolio Site</a></li>
-                    </ul>
-                <li class="menu-item-has-children">
-                    <a href="https://www.amazon.com/dp/B0FKYLR78F?asin=B0FKYLR78F&revisionId=541f7b3e&format=3&depth=1" class="drop-down">Buy services</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li><a href="https://buy.stripe.com/4gweWe8jzdLteqcbIK" target="_blank" class="nav-item nav-link">AI Chatbot Integration</a></li>
-                        <li><a href="https://buy.stripe.com/6oEcO657n5eX4PC5kl" target="_blank" class="nav-item nav-link">Custom Business Website</a></li>
-                        <li> <a href="https://buy.stripe.com/14k4hA6br7n5eqc5kn" target="_blank" class="dropdown-item">Monthly SEO Optimization</a></li>
-                        <li><a href="https://buy.stripe.com/9AQ01k6brgXF0zm5ko" target="_blank" class="dropdown-item">Business Consulting services</a></li>
-                        <li><a href="https://www.amazon.com/dp/B0FKYLR78F?asin=B0FKYLR78F&revisionId=541f7b3e&format=3&depth=1" target="_blank" class="dropdown-item">Buy E-Book</a></li>
-
-
-
-                    </ul>
-                <li><a href="blog.php">Blog</a></li>
-                <li class="menu-item-has-children">
-                    <a href="about.php" class="drop-down">About Us</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li><a href="case-study-standard.php" class="dropdown-item">Case Studies</a></li>
-                        <li> <a href="https://cloudtechnologycomputing.com/JhonGil_Resume.pdf" class="dropdown-item">Resume</a></li>
-                        <li> <a href="team.php" class="dropdown-item">Our Team</a></li>
-                        <li> <a href="pricing.php" class="dropdown-item">Pricing</a></li>
-                        <li> <a href="faq.php" class="dropdown-item">FAQ's</a></li>
-                        <li>
-                        <li> <a href="contact.php" class="dropdown-item">Contact Us!</a></li>
-
-                    </ul>
-            </ul>
-            <div class="d-lg-none d-block">
-                <form class="mobile-menu-form">
-                    <div class="hotline pt-30">
-                        <div class="hotline-icon">
-                            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20.5488 16.106C20.0165 15.5518 19.3745 15.2554 18.694 15.2554C18.0191 15.2554 17.3716 15.5463 16.8173 16.1005L15.0833 17.8291C14.9406 17.7522 14.7979 17.6809 14.6608 17.6096C14.4632 17.5108 14.2766 17.4175 14.1175 17.3187C12.4932 16.2871 11.0171 14.9426 9.6013 13.2031C8.91536 12.3361 8.45441 11.6063 8.11968 10.8655C8.56965 10.4539 8.9867 10.0259 9.39277 9.61431C9.54642 9.46066 9.70007 9.30152 9.85372 9.14787C11.0061 7.9955 11.0061 6.50291 9.85372 5.35054L8.35564 3.85246C8.18553 3.68234 8.00993 3.50674 7.8453 3.33115C7.51606 2.99092 7.17034 2.63972 6.81366 2.31047C6.28137 1.78368 5.64483 1.50381 4.97535 1.50381C4.30588 1.50381 3.65836 1.78368 3.10961 2.31047C3.10412 2.31596 3.10412 2.31596 3.09864 2.32145L1.23289 4.20365C0.530497 4.90605 0.129911 5.7621 0.0421114 6.75533C-0.089588 8.35768 0.382335 9.85027 0.744508 10.827C1.63348 13.2251 2.96145 15.4475 4.94243 17.8291C7.34594 20.699 10.2378 22.9653 13.5413 24.5622C14.8034 25.1603 16.4881 25.8682 18.3703 25.9889C18.4855 25.9944 18.6062 25.9999 18.716 25.9999C19.9836 25.9999 21.0482 25.5445 21.8823 24.639C21.8878 24.628 21.8987 24.6226 21.9042 24.6116C22.1896 24.2659 22.5188 23.9531 22.8645 23.6184C23.1005 23.3934 23.3419 23.1574 23.5779 22.9105C24.1212 22.3453 24.4065 21.6868 24.4065 21.0118C24.4065 20.3314 24.1157 19.6783 23.5614 19.1296L20.5488 16.106ZM22.5133 21.8843C22.5078 21.8843 22.5078 21.8898 22.5133 21.8843C22.2993 22.1148 22.0798 22.3233 21.8439 22.5538C21.4872 22.894 21.125 23.2507 20.7848 23.6513C20.2305 24.2439 19.5775 24.5238 18.7215 24.5238C18.6392 24.5238 18.5514 24.5238 18.4691 24.5183C16.8393 24.414 15.3247 23.7775 14.1888 23.2342C11.0829 21.7307 8.35564 19.596 6.08931 16.8907C4.21808 14.6354 2.96694 12.5501 2.13833 10.3112C1.62799 8.94484 1.44142 7.88026 1.52373 6.87606C1.57861 6.23402 1.82554 5.70174 2.281 5.24628L4.15223 3.37504C4.42112 3.12262 4.70647 2.98543 4.98633 2.98543C5.33204 2.98543 5.6119 3.19396 5.7875 3.36956C5.79299 3.37504 5.79847 3.38053 5.80396 3.38602C6.1387 3.69881 6.45697 4.02257 6.79171 4.36828C6.96182 4.54388 7.13742 4.71948 7.31302 4.90056L8.8111 6.39865C9.39277 6.98032 9.39277 7.51809 8.8111 8.09976C8.65196 8.2589 8.49831 8.41804 8.33918 8.57169C7.87823 9.04361 7.43923 9.48261 6.96182 9.91063C6.95085 9.92161 6.93987 9.92709 6.93438 9.93807C6.46246 10.41 6.55026 10.8709 6.64903 11.1837C6.65452 11.2002 6.66001 11.2167 6.6655 11.2331C7.05511 12.177 7.60385 13.0659 8.43795 14.125L8.44344 14.1305C9.95798 15.9962 11.5548 17.4504 13.3163 18.5644C13.5413 18.7071 13.7718 18.8223 13.9913 18.932C14.1888 19.0308 14.3754 19.1241 14.5345 19.2229C14.5565 19.2339 14.5784 19.2503 14.6004 19.2613C14.787 19.3546 14.9626 19.3985 15.1436 19.3985C15.5991 19.3985 15.8845 19.1131 15.9777 19.0198L17.8545 17.1431C18.041 16.9566 18.3374 16.7316 18.6831 16.7316C19.0233 16.7316 19.3032 16.9456 19.4733 17.1322C19.4788 17.1376 19.4788 17.1376 19.4842 17.1431L22.5078 20.1667C23.0731 20.7265 23.0731 21.3026 22.5133 21.8843Z">
-                                </path>
-                                <path
-                                    d="M14.0512 6.18495C15.4889 6.4264 16.7949 7.10685 17.8375 8.14947C18.8802 9.19209 19.5551 10.4981 19.8021 11.9358C19.8624 12.298 20.1752 12.5504 20.5319 12.5504C20.5758 12.5504 20.6142 12.5449 20.6581 12.5395C21.0642 12.4736 21.3331 12.0895 21.2672 11.6834C20.9709 9.94387 20.1478 8.35799 18.8911 7.10136C17.6345 5.84473 16.0486 5.0216 14.3091 4.72528C13.903 4.65943 13.5244 4.92832 13.4531 5.3289C13.3817 5.72949 13.6451 6.1191 14.0512 6.18495Z">
-                                </path>
-                                <path
-                                    d="M25.9707 11.4691C25.4823 8.60468 24.1324 5.99813 22.0581 3.92387C19.9838 1.8496 17.3773 0.49968 14.5128 0.011294C14.1122 -0.0600432 13.7336 0.214331 13.6623 0.614917C13.5964 1.02099 13.8653 1.39963 14.2714 1.47096C16.8285 1.90447 19.1607 3.11721 21.0155 4.96649C22.8702 6.82125 24.0775 9.15343 24.511 11.7106C24.5714 12.0728 24.8841 12.3252 25.2408 12.3252C25.2847 12.3252 25.3231 12.3197 25.367 12.3142C25.7676 12.2539 26.042 11.8697 25.9707 11.4691Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="hotline-info">
-                            <span>Call Us Now</span>
-                            <h2><a href="tel:12489385567">1-248-938-5567</a></h2>
-                        </div>
-                    </div>
-                    <div class="email pt-20 d-flex align-items-center">
-                        <div class="email-icon">
-                            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_461_205)">
-                                    <path
-                                        d="M23.5117 3.30075H2.38674C1.04261 3.30075 -0.0507812 4.39414 -0.0507812 5.73827V20.3633C-0.0507812 21.7074 1.04261 22.8008 2.38674 22.8008H23.5117C24.8558 22.8008 25.9492 21.7074 25.9492 20.3633V5.73827C25.9492 4.39414 24.8558 3.30075 23.5117 3.30075ZM23.5117 4.92574C23.6221 4.92574 23.7271 4.94865 23.8231 4.98865L12.9492 14.4131L2.07526 4.98865C2.17127 4.9487 2.27629 4.92574 2.38668 4.92574H23.5117ZM23.5117 21.1757H2.38674C1.93844 21.1757 1.57421 20.8116 1.57421 20.3632V6.70547L12.4168 16.1024C12.57 16.2349 12.7596 16.3008 12.9492 16.3008C13.1388 16.3008 13.3285 16.2349 13.4816 16.1024L24.3242 6.70547V20.3633C24.3242 20.8116 23.96 21.1757 23.5117 21.1757Z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="email-info">
-                            <span>Email Now</span>
-                            <h6><a href="mailto:Jgil20@me.com">Jgil20@me.com</a></h6>
-                        </div>
-                    </div>
-                </form>
-                <div class="header-btn5">
-                    <a class="primary-btn3" href="form.php">Free Consultation!!</a>
-                </div>
-            </div>
-        </div>
-        <div class="nav-right d-flex jsutify-content-end align-items-center">
-            <div class="header-contact d-xl-block d-none">
-                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions" width="30" height="10">For Client Support:</span>
-                <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
-            </div>
-            <div class="header-btn d-sm-flex d-none">
-                <a href="form.php" target="_blank">Free Consultation!</a>
-            </div>
-            <div class="sidebar-button mobile-menu-btn ">
-                <span></span>
-            </div>
-        </div>
-    </header>
+   <?php include"nav.php" ?>
     <!-- End header section -->
-    <div class="banner-area4">
-        <div class="background-text-slider">
-            <h2 class="marquee_text">“Cloud Technology services for Business Growth"</h2>
-        </div>
-        <div class="banner-video-area">
-            <img loading="lazy" src="assets/img/home-4/rotate-text.svg" alt="">
-            <a href="https://youtu.be/4BQxTCEW2xc" data-fancybox="gallery" class="video-popup">
-                <svg width="30" height="34" viewBox="0 0 30 34" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M30 17.0012C30 16.0359 29.4735 15.1469 28.5906 14.6218L4.75661 0.46019C3.79257 -0.111681 2.61693 -0.153462 1.60777 0.351093C0.601772 0.855365 0 1.78612 0 2.83996V31.1609C0 32.2148 0.601723 33.1452 1.60931 33.6498C2.079 33.8837 2.5828 34 3.08665 34C3.66595 34 4.24144 33.8456 4.75628 33.5407L28.5903 19.3813C29.4734 18.8559 30 17.9669 30 17.0016V17.0012ZM27.7302 18.1537L3.89624 32.3131C3.42844 32.5905 2.85862 32.6093 2.36997 32.3668C1.88133 32.1225 1.58884 31.6719 1.58884 31.1607V2.83969C1.58884 2.32846 1.88133 1.8761 2.36997 1.63359C2.59834 1.52102 2.84346 1.46385 3.08699 1.46385C3.36811 1.46385 3.64734 1.53842 3.89658 1.68755L27.7306 15.8492C28.1646 16.1074 28.4135 16.5287 28.4135 17.0033C28.4131 17.4763 28.1642 17.8955 27.7302 18.1537Z" />
-                </svg>
-            </a>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="banner-content">
-                        <h1>🌩️ Welcome to Cloud Technology Computing Corporation</h1>
-                        <p>In today’s fast-paced digital landscape, small businesses and entrepreneurs are under pressure to adopt to new technologies while staying lean and competitive. That’s where Cloud Technology Computing Corporation, a trusted C-Corporation located in Houston Texas, specializing in software engineering and cloud computing solutions, steps in. We offer flexible, budget-friendly cloud technology services tailored to help small business owners understand, adopt, and thrive in the cloud—without needing a tech degree.</p>
-                        <div class="banner-btn">
-                            <a class="primary-btn5" href="service.html">
+   <div class="banner-area4">
+    <div class="background-text-slider">
+        <h2 class="marquee_text">Cloud Technology Services for Small Business Growth</h2>
+    </div>
 
-                            </a>
-                        </div>
+    <div class="banner-video-area">
+        <img 
+            src="/assets/img/home-4/rotate-text.svg" 
+            alt="Cloud Technology Computing video introduction" 
+            width="160" 
+            height="160"
+            loading="lazy">
+
+        <a href="https://www.youtube.com/watch?v=_ZeUbA1Marw" data-fancybox="gallery" class="video-popup" aria-label="Watch Cloud Technology Computing video">
+            <svg width="30" height="34" viewBox="0 0 30 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path opacity="0.3" d="M30 17.0012C30 16.0359 29.4735 15.1469 28.5906 14.6218L4.75661 0.46019C3.79257 -0.111681 2.61693 -0.153462 1.60777 0.351093C0.601772 0.855365 0 1.78612 0 2.83996V31.1609C0 32.2148 0.601723 33.1452 1.60931 33.6498C2.079 33.8837 2.5828 34 3.08665 34C3.66595 34 4.24144 33.8456 4.75628 33.5407L28.5903 19.3813C29.4734 18.8559 30 17.9669 30 17.0016V17.0012Z"></path>
+            </svg>
+        </a>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="banner-content">
+                    <h1>Cloud Computing, AI Automation, and Web Development for Small Businesses</h1>
+
+                    <p>
+                        Cloud Technology Computing helps small businesses modernize with secure cloud services, AI chatbots, custom websites, mobile apps, SEO, and managed technology solutions. We make cloud technology easier to understand, easier to use, and more affordable for growing businesses.
+                    </p>
+
+                    <div class="banner-btn">
+                        <a class="primary-btn5" href="/services.php" aria-label="View Cloud Technology Computing services">
+                            Explore Services
+                        </a>
+                        <a class="primary-btn3" href="/form.php" aria-label="Book a free consultation with Cloud Technology Computing">
+                            Free Consultation
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-5 d-flex jsutify-content-center">
-                    <div class="banner-img">
-                        <div class="banner-big-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-6/CloudTechnologyComputingDisplay.avif" alt="">
-                        </div>
-                        <div class="banner-sm-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-6/JhonApplicationDeveloper.avif" alt="">
-                            <div class="down-arrow">
-                                <img loading="lazy" class="magnetic-item" src="assets/img/home-4/down-arow.png" alt="">
-                            </div>
+            </div>
+
+            <div class="col-lg-5 d-flex justify-content-center">
+                <div class="banner-img">
+                    <div class="banner-big-img">
+                        <img 
+                            class="img-fluid magnetic-item" 
+                            src="/assets/img/home-6/CloudTechnologyComputingDisplay.avif" 
+                            alt="Cloud Technology Computing cloud and AI technology dashboard"
+                            width="700"
+                            height="500"
+                            fetchpriority="high">
+                    </div>
+
+                    <div class="banner-sm-img">
+                        <img 
+                            class="img-fluid magnetic-item" 
+                            src="/assets/img/home-6/JhonApplicationDeveloper.avif" 
+                            alt="Jhon Arzu-Gil, cloud computing and software development professional"
+                            width="300"
+                            height="300"
+                            loading="lazy">
+
+                        <div class="down-arrow">
+                            <img 
+                                class="magnetic-item" 
+                                src="/assets/img/home-4/down-arow.png" 
+                                alt="" 
+                                width="60"
+                                height="60"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<section class="solution-section">
+    <div class="container">
+        <span class="solution-kicker">Popular Technology Solutions</span>
+        <h2>Focused services for small business growth</h2>
+        <p>Explore targeted cloud, AI, SEO, web development, and mobile app services designed to answer buyer questions and turn website visitors into leads.</p>
+        <div class="seo-link-grid mt-4">
+            <article class="seo-card">
+                <h3><a href="/solutions/cloud-computing-small-business">Cloud Computing for Small Businesses</a></h3>
+                <p>Secure cloud hosting, migration, backups, storage, and managed support for growing businesses.</p>
+            </article>
+            <article class="seo-card">
+                <h3><a href="/solutions/ai-automation-small-business">AI Automation for Small Businesses</a></h3>
+                <p>AI chatbots, lead capture, workflow automation, and smarter customer response systems.</p>
+            </article>
+            <article class="seo-card">
+                <h3><a href="/solutions/business-website-seo-optimization">Business Website SEO Optimization</a></h3>
+                <p>Technical SEO, metadata, schema, Core Web Vitals, internal links, and conversion improvements.</p>
+            </article>
+            <article class="seo-card">
+                <h3><a href="/solutions/houston-cloud-consulting-services">Houston Cloud Consulting Services</a></h3>
+                <p>Local cloud strategy, migration planning, hosting, security, and technical support in Houston.</p>
+            </article>
+        </div>
+    </div>
+</section>
     <!-- Start Banner section -->
     <div class="banner-area6">
         <div class="banner-wrap">
@@ -231,7 +246,8 @@
                     <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Facebook Page" target="_blank"><i class="bx bxl-facebook"></i></a></li>
                     <li><a href="https://github.com/Jgil20" aria-label="Github Page" target="_blank"><i class="bi bi-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/jhongil" aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation" aria-label="Google Business Page" target="_blank"><i class="bi bi-google"></i></a></li>
+                    <!-- TODO: replace with real Google Business Profile URL once provisioned. -->
+                    <li><a href="/" aria-label="Google Business Page" target="_blank"><i class="bi bi-google"></i></a></li>
                 </ul>
             </div>
             <div class="row">
@@ -271,7 +287,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="banner-img">
-                                        <img loading="lazy" class="img-fluid" loading="lazy" src="assets/img/home-6/CloudComputing.webp" alt="Cloud Technology Computing: Demystifying 'what the cloud is' with innovative and transformative cloud solutions.">
+                                        <img loading="lazy" class="img-fluid" loading="lazy" src="assets/img/home-6/blogsytem.avif" alt="Cloud Technology Computing: Demystifying 'what the cloud is' with innovative and transformative cloud solutions.">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -314,7 +330,7 @@
                             <li><i class="bi bi-star-fill"></i></li>
                             <li><i class="bi bi-star-fill"></i></li>
                             <li><i class="bi bi-star-fill"></i></li>
-                            <li>0.0/5.0</li>
+                            <!-- TODO: insert real Trustpilot/Google rating widget when available -->
                         </ul>
                     </a>
                 </li>
@@ -329,7 +345,7 @@
                             <li><i class="bi bi-star-fill"></i></li>
                             <li><i class="bi bi-star-fill"></i></li>
                             <li><i class="bi bi-star-fill"></i></li>
-                            <li>0.0/5.0</li>
+                            <!-- TODO: insert real Google review rating widget when available -->
                         </ul>
                     </a>
                 </li>
@@ -341,10 +357,10 @@
                     <div class="single-counter">
                         <div class="content">
                             <div class="number">
-                                <h3 class="counter">7</h3>
+                                <h3 class="counter">8</h3>
                                 <span>Years</span>
                             </div>
-                            <p>Software Engineering</p>
+                            <p>Programming Experience</p>
                         </div>
                     </div>
                 </li>
@@ -352,10 +368,10 @@
                     <div class="single-counter">
                         <div class="content">
                             <div class="number">
-                                <h3 class="counter">4</h3>
-                                <span>Clients</span>
+                                <h3 class="counter">63</h3>
+                                <span>Projects</span>
                             </div>
-                            <p>Small Business Clients</p>
+                            <p>Real-World Technical Projects</p>
                         </div>
                     </div>
                 </li>
@@ -363,10 +379,10 @@
                     <div class="single-counter">
                         <div class="content">
                             <div class="number">
-                                <h3 class="counter">5</h3>
+                                <h3 class="counter">12</h3>
                                 <span>App's</span>
                             </div>
-                            <p>Published On Google Play</p>
+                            <p>Android & iOS Development</p>
                         </div>
                     </div>
                 </li>
@@ -377,7 +393,7 @@
                                 <h3 class="counter">32</h3>
                                 <span>Certifications</span>
                             </div>
-                            <p>Certifications And Badges</p>
+                            <p>Certifications & Digital Badges</p>
                         </div>
                     </div>
                 </li>
@@ -413,8 +429,8 @@
                                     <img loading="lazy" class="choose-vec-btm-l" src="assets/img/home-6/choose-vec-btm-l.svg" alt="Cloud Technology Computing: Multiple green dots visualizing 'what are the cloud' concepts and cloud network nodes.">
                                 </div>
                                 <div class="icon">
-                                    <!-- <img loading="lazy" src="assets/img/logo.svg" alt=""> -->
-                                    <h1 style="color:white">Cloud Technology Computing</h1>
+                                    <!-- <img loading="lazy" src="assets/img/logo.svg" alt="Cloud Technology Computing"> -->
+                                    <h2 style="color:white">Cloud Technology Computing</h2>
                                 </div>
                                 <h4>🔧 Tech Is Essential—But It Shouldn’t Be a Barrier<br>
                                     <span>Incorporated In 2023.</span>
@@ -482,6 +498,8 @@
         </div>
     </div>
     <!-- End Why Choose section -->
+    
+</script>
     <!-- Start Solution section -->
     <div class="home6-solution-section sec-mar">
         <div class="container">
@@ -503,10 +521,10 @@
                                         <img loading="lazy" src="assets/img/home-6/services/cloud-computing-software-as-a-service-saas.avif" loading="lazy" alt="Cloud Technology Computing: Web development source code showcasing our proficiency in cloud computing software as a service (SaaS).">
                                     </div>
                                     <div class="sl">
-                                        <h2>01</.h2>
+                                        <h2 style="color:white">01</h2>
                                     </div>
                                     <div class="solution-content">
-                                        <h3><a href="sservices.php">🌐 Web App Development</a></h3>
+                                        <h3><a href="/services.php">🌐 Web App Development</a></h3>
                                         <p>🌐 From Domain to Deployment — We Build Your Cloud Presence
                                             At Cloud Technology Computing, we guide you through every step of the digital journey—from purchasing your domain to launching a fully optimized, SEO-friendly website that’s ready to scale.
 
@@ -567,7 +585,7 @@
                                         <img loading="lazy" loading="lazy" src="assets/img/home-6/services/cloud%20and%20microsoft.avif" alt="Cloud Technology Computing: Laptop showcasing advanced source code, symbolizing innovative cloud and Microsoft integrations.">
                                     </div>
                                     <div class="sl">
-                                        <h2>02</h2>
+                                        <h2 style="color:white">02</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">🤖 AI-Powered Chatbot</a></h3>
@@ -624,7 +642,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/windows azure and cloud computing.avif" alt="Earth surrounded by source code, symbolizing the global reach of windows azure and cloud computing technology.">
                                     </div>
                                     <div class="sl">
-                                        <h2>03</h2>
+                                        <h2 style="color:white">03</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">☁️ Managed Cloud Hosting</a></h3>
@@ -670,7 +688,7 @@
                                             <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_1453_763)">
                                                     <path d="M25.2665 33.04C24.8998 33.04 24.5998 33.34 24.5998 33.7067V46.3734H20.6665C20.2998 46.3734 19.9998 46.6734 19.9998 47.04V53.7867C18.6665 54.0934 17.6665 55.28 17.6665 56.7067C17.6665 58.36 19.0132 59.7067 20.6665 59.7067C22.3198 59.7067 23.6665 58.36 23.6665 56.7067C23.6665 55.28 22.6665 54.0934 21.3332 53.7867V47.7067H25.2665C25.6332 47.7067 25.9332 47.4067 25.9332 47.04V33.7067C25.9332 33.34 25.6332 33.04 25.2665 33.04ZM22.3332 56.7067C22.3332 57.1487 22.1576 57.5727 21.845 57.8852C21.5325 58.1978 21.1085 58.3734 20.6665 58.3734C20.2245 58.3734 19.8006 58.1978 19.488 57.8852C19.1754 57.5727 18.9998 57.1487 18.9998 56.7067C18.9998 56.2647 19.1754 55.8408 19.488 55.5282C19.8006 55.2156 20.2245 55.04 20.6665 55.04C21.1085 55.04 21.5325 55.2156 21.845 55.5282C22.1576 55.8408 22.3332 56.2647 22.3332 56.7067Z"></path>
-                                                    <path d="M12 53.7867V43.7067H20.6667C21.0333 43.7067 21.3333 43.4067 21.3333 43.04V33.7067C21.3333 33.34 21.0333 33.04 20.6667 33.04C20.3 33.04 20 33.34 20 33.7067V42.3734H5.92C5.61333 41.04 4.42667 40.04 3 40.04C1.34667 40.04 0 41.3867 0 43.04C0 44.6934 1.34667 46.04 3 46.04C4.42667 46.04 5.61333 45.04 5.92 43.7067H10.6667V53.7867C9.33333 54.0934 8.33333 55.28 8.33333 56.7067C8.33333 58.36 9.68 59.7067 11.3333 59.7067C12.9867 59.7067 14.3333 58.36 14.3333 56.7067C14.3333 55.28 13.3333 54.0934 12 53.7867ZM3 44.7067C2.55797 44.7067 2.13405 44.5311 1.82149 44.2186C1.50893 43.906 1.33333 43.4821 1.33333 43.04C1.33333 42.598 1.50893 42.1741 1.82149 41.8615C2.13405 41.549 2.55797 41.3734 3 41.3734C3.44203 41.3734 3.86595 41.549 4.17851 41.8615C4.49107 42.1741 4.66667 42.598 4.66667 43.04C4.66667 43.4821 4.49107 43.906 4.17851 44.2186C3.86595 44.5311 3.44203 44.7067 3 44.7067ZM11.3333 58.3734C10.8913 58.3734 10.4674 58.1978 10.1548 57.8852C9.84226 57.5727 9.66667 57.1487 9.66667 56.7067C9.66667 56.2647 9.84226 55.8408 10.1548 55.5282C10.4674 55.2156 10.8913 55.04 11.3333 55.04C11.7754 55.04 12.1993 55.2156 12.5118 55.5282C12.8244 55.8408 13 56.2647 13 56.7067C13 57.1487 12.8244 57.5727 12.5118 57.8852C12.1993 58.1978 11.7754 58.3734 11.3333 58.3734Z"></path>
+                                                    <path d="M12 53.7867V43.7067H20.6667C21.0333 43.7067 21.3333 43.4067 21.3333 43.04V33.7067C21.3333 33.34 21.0333 33.04 20.6667 33.04C20.3 33.04 20 33.34 20 33.7067V42.3734H5.92C5.61333 41.04 4.42667 40.04 3 40.04C1.34667 40.04 0 41.3867 0 43.04C0 44.6934 1.34667 46.04 3 46.04C4.42667 46.04 5.61333 45.04 5.92 43.7067H10.6667V53.7867C9.33333 54.0934 8.33333 55.28 8.33333 56.7067C8.33333 58.36 9.68 59.7067 11.3333 59.7067C12.9867 59.7067 14.3333 58.36 14.3333 56.7067C14.3333 55.28 13.3333 54.0934 12 53.7867ZM3 44.7067C2.55797 44.7067 2.13405 44.5311 1.82149 44.2186C1.50893 43.906 1.33333 43.4821 1.33333 43.04C1.33333 42.598 1.50893 42.1741 1.82149 41.8615C2.13405 41.549 2.55797 41.3734 3 41.3734C3.44203 41.3734 3.86595 41.549 4.17851 41.8615C4.49107 42.1741 4.66667 42.598 4.66667 43.04C4.66667 43.4821 4.49107 43.906 4.17851 44.2186C3.86595 44.5311 3.44203 44.7067 3 44.7067ZM11.3333 58.3734C10.8913 58.3734 10.4674 58.1978 10.1548 57.8852C9.84226 57.5727 9.66667 57.1487 9.66667 56.7067C9.66c667 56.2647 9.84226 55.8408 10.1548 55.5282C10.4674 55.2156 10.8913 55.04 11.3333 55.04C11.7754 55.04 12.1993 55.2156 12.5118 55.5282C12.8244 55.8408 13 56.2647 13 56.7067C13 57.1487 12.8244 57.5727 12.5118 57.8852C12.1993 58.1978 11.7754 58.3734 11.3333 58.3734Z"></path>
                                                     <path d="M57.0003 40.04C55.5737 40.04 54.387 41.04 54.0803 42.3733H47.3337V38.3733H49.907C55.4737 38.3733 60.0003 33.8867 60.0003 28.3733C60.0003 24.3 57.527 20.8 53.9937 19.24C53.9203 9.68 45.967 1 36.9003 1C31.0137 1 25.5203 4.04 22.407 8.96667C20.8438 7.71712 18.9015 7.03756 16.9003 7.04C11.827 7.04 8.03366 12.3867 8.00033 17.0933C3.72033 18.6667 0.666992 22.6733 0.666992 27.3733C0.666992 33.1533 5.28033 37.8933 11.1203 38.3333C11.187 38.36 11.2603 38.3733 11.3337 38.3733H16.027C16.3937 38.3733 16.6937 38.0733 16.6937 37.7067C16.6937 37.34 16.3937 37.04 16.027 37.04H12.0003C6.48699 37.04 2.00033 32.7067 2.00033 27.3733C2.00033 22.04 6.48699 17.7067 12.0003 17.7067C12.367 17.7067 12.667 17.4067 12.667 17.04C12.667 16.6733 12.367 16.3733 12.0003 16.3733C11.087 16.3733 10.207 16.4867 9.35366 16.6867C9.59366 11.96 13.4403 8.37333 16.9003 8.37333C18.8937 8.37333 20.7737 9.14667 22.1937 10.5533C22.4537 10.8133 22.8803 10.8133 23.1337 10.5533C23.2803 10.4067 23.3337 10.2067 23.3137 10.02C26.147 5.28 31.3337 2.34 36.8937 2.34C45.1003 2.34 52.3137 10.1067 52.647 18.7667C51.7737 18.52 50.8537 18.38 49.9003 18.38C49.5337 18.38 49.2337 18.68 49.2337 19.0467C49.2337 19.4133 49.5337 19.7133 49.9003 19.7133C54.7337 19.7133 58.6603 23.6 58.6603 28.38C58.6603 33.16 54.727 37.0467 49.9003 37.0467H43.9937C43.627 37.0467 43.327 37.3467 43.327 37.7133C43.327 38.08 43.627 38.38 43.9937 38.38H45.9937V43.0467C45.9937 43.4133 46.2937 43.7133 46.6603 43.7133H54.0737C54.3803 45.0467 55.567 46.0467 56.9937 46.0467C58.647 46.0467 59.9937 44.7 59.9937 43.0467C59.9937 41.3933 58.647 40.0467 56.9937 40.0467L57.0003 40.04ZM57.0003 44.7067C56.5583 44.7067 56.1344 44.5311 55.8218 44.2185C55.5093 43.906 55.3337 43.482 55.3337 43.04C55.3337 42.598 55.5093 42.174 55.8218 41.8615C56.1344 41.5489 56.5583 41.3733 57.0003 41.3733C57.4424 41.3733 57.8663 41.5489 58.1788 41.8615C58.4914 42.174 58.667 42.598 58.667 43.04C58.667 43.482 58.4914 43.906 58.1788 44.2185C57.8663 44.5311 57.4424 44.7067 57.0003 44.7067Z"></path>
                                                     <path d="M30.6667 53.7867V33.7067C30.6667 33.34 30.3667 33.04 30 33.04C29.6333 33.04 29.3333 33.34 29.3333 33.7067V53.7867C28 54.0934 27 55.28 27 56.7067C27 58.36 28.3467 59.7067 30 59.7067C31.6533 59.7067 33 58.36 33 56.7067C33 55.28 32 54.0934 30.6667 53.7867ZM30 58.3734C29.558 58.3734 29.134 58.1978 28.8215 57.8852C28.5089 57.5727 28.3333 57.1487 28.3333 56.7067C28.3333 56.2647 28.5089 55.8408 28.8215 55.5282C29.134 55.2156 29.558 55.04 30 55.04C30.442 55.04 30.866 55.2156 31.1785 55.5282C31.4911 55.8408 31.6667 56.2647 31.6667 56.7067C31.6667 57.1487 31.4911 57.5727 31.1785 57.8852C30.866 58.1978 30.442 58.3734 30 58.3734ZM40 53.7867V49.7067C40 49.4667 39.8733 49.2467 39.6667 49.1267L35.3333 46.6534V33.7067C35.3333 33.34 35.0333 33.04 34.6667 33.04C34.3 33.04 34 33.34 34 33.7067V47.04C34 47.28 34.1267 47.5 34.3333 47.62L38.6667 50.0934V53.7867C37.3333 54.0934 36.3333 55.28 36.3333 56.7067C36.3333 58.36 37.68 59.7067 39.3333 59.7067C40.9867 59.7067 42.3333 58.36 42.3333 56.7067C42.3333 55.28 41.3333 54.0934 40 53.7867ZM39.3333 58.3734C38.8913 58.3734 38.4674 58.1978 38.1548 57.8852C37.8423 57.5727 37.6667 57.1487 37.6667 56.7067C37.6667 56.2647 37.8423 55.8408 38.1548 55.5282C38.4674 55.2156 38.8913 55.04 39.3333 55.04C39.7754 55.04 40.1993 55.2156 40.5118 55.5282C40.8244 55.8408 41 56.2647 41 56.7067C41 57.1487 40.8244 57.5727 40.5118 57.8852C40.1993 58.1978 39.7754 58.3734 39.3333 58.3734Z"></path>
                                                     <path d="M49.3332 53.7867V49.5667C49.3332 49.3133 49.1865 49.08 48.9598 48.9667L39.9998 44.62V33.7067C39.9998 33.34 39.6998 33.04 39.3332 33.04C38.9665 33.04 38.6665 33.34 38.6665 33.7067V45.04C38.6665 45.2933 38.8132 45.5267 39.0398 45.64L47.9998 49.9867V53.7867C46.6665 54.0933 45.6665 55.28 45.6665 56.7067C45.6665 58.36 47.0132 59.7067 48.6665 59.7067C50.3198 59.7067 51.6665 58.36 51.6665 56.7067C51.6665 55.28 50.6665 54.0933 49.3332 53.7867ZM48.6665 58.3733C48.2245 58.3733 47.8006 58.1977 47.488 57.8852C47.1754 57.5726 46.9998 57.1487 46.9998 56.7067C46.9998 56.2646 47.1754 55.8407 47.488 55.5282C47.8006 55.2156 48.2245 55.04 48.6665 55.04C49.1085 55.04 49.5325 55.2156 49.845 55.5282C50.1576 55.8407 50.3332 56.2646 50.3332 56.7067C50.3332 57.1487 50.1576 57.5726 49.845 57.8852C49.5325 58.1977 49.1085 58.3733 48.6665 58.3733ZM20.6665 19.7067C21.7665 19.7067 22.6665 18.8067 22.6665 17.7067V15.7067C22.6665 14.6067 21.7665 13.7067 20.6665 13.7067C19.5665 13.7067 18.6665 14.6067 18.6665 15.7067V17.7067C18.6665 18.8067 19.5665 19.7067 20.6665 19.7067ZM19.9998 15.7067C19.9998 15.34 20.2998 15.04 20.6665 15.04C21.0332 15.04 21.3332 15.34 21.3332 15.7067V17.7067C21.3332 18.0733 21.0332 18.3733 20.6665 18.3733C20.2998 18.3733 19.9998 18.0733 19.9998 17.7067V15.7067ZM18.6665 25.04C18.6665 26.14 19.5665 27.04 20.6665 27.04C21.7665 27.04 22.6665 26.14 22.6665 25.04V23.04C22.6665 21.94 21.7665 21.04 20.6665 21.04C19.5665 21.04 18.6665 21.94 18.6665 23.04V25.04ZM19.9998 23.04C19.9998 22.6733 20.2998 22.3733 20.6665 22.3733C21.0332 22.3733 21.3332 22.6733 21.3332 23.04V25.04C21.3332 25.4067 21.0332 25.7067 20.6665 25.7067C20.2998 25.7067 19.9998 25.4067 19.9998 25.04V23.04ZM27.9998 23.04V25.04C27.9998 26.14 28.8998 27.04 29.9998 27.04C31.0998 27.04 31.9998 26.14 31.9998 25.04V23.04C31.9998 21.94 31.0998 21.04 29.9998 21.04C28.8998 21.04 27.9998 21.94 27.9998 23.04ZM30.6665 23.04V25.04C30.6665 25.4067 30.3665 25.7067 29.9998 25.7067C29.6332 25.7067 29.3332 25.4067 29.3332 25.04V23.04C29.3332 22.6733 29.6332 22.3733 29.9998 22.3733C30.3665 22.3733 30.6665 22.6733 30.6665 23.04ZM37.3332 23.04V25.04C37.3332 26.14 38.2332 27.04 39.3332 27.04C40.4332 27.04 41.3332 26.14 41.3332 25.04V23.04C41.3332 21.94 40.4332 21.04 39.3332 21.04C38.2332 21.04 37.3332 21.94 37.3332 23.04ZM39.9998 23.04V25.04C39.9998 25.4067 39.6998 25.7067 39.3332 25.7067C38.9665 25.7067 38.6665 25.4067 38.6665 25.04V23.04C38.6665 22.6733 38.9665 22.3733 39.3332 22.3733C39.6998 22.3733 39.9998 22.6733 39.9998 23.04ZM27.3332 13.7067C26.2332 13.7067 25.3332 14.6067 25.3332 15.7067V17.7067C25.3332 18.8067 26.2332 19.7067 27.3332 19.7067C28.4332 19.7067 29.3332 18.8067 29.3332 17.7067V15.7067C29.3332 14.6067 28.4332 13.7067 27.3332 13.7067ZM27.9998 17.7067C27.9998 18.0733 27.6998 18.3733 27.3332 18.3733C26.9665 18.3733 26.6665 18.0733 26.6665 17.7067V15.7067C26.6665 15.34 26.9665 15.04 27.3332 15.04C27.6998 15.04 27.9998 15.34 27.9998 15.7067V17.7067ZM37.3332 13.7067C36.2332 13.7067 35.3332 14.6067 35.3332 15.7067V17.7067C35.3332 18.8067 36.2332 19.7067 37.3332 19.7067C38.4332 19.7067 39.3332 18.8067 39.3332 17.7067V15.7067C39.3332 14.6067 38.4332 13.7067 37.3332 13.7067ZM37.9998 17.7067C37.9998 18.0733 37.6998 18.3733 37.3332 18.3733C36.9665 18.3733 36.6665 18.0733 36.6665 17.7067V15.7067C36.6665 15.34 36.9665 15.04 37.3332 15.04C37.6998 15.04 37.9998 15.34 37.9998 15.7067V17.7067ZM23.9998 19.7333C24.3665 19.7333 24.6665 19.4333 24.6665 19.0667V14.3733C24.6665 14.0067 24.3665 13.7067 23.9998 13.7067C23.6332 13.7067 23.3332 14.0067 23.3332 14.3733V19.0667C23.3332 19.4333 23.6332 19.7333 23.9998 19.7333ZM23.3332 26.3733C23.3332 26.74 23.6332 27.04 23.9998 27.04C24.3665 27.04 24.6665 26.74 24.6665 26.3733V21.68C24.6665 21.3133 24.3665 21.0133 23.9998 21.0133C23.6332 21.0133 23.3332 21.3133 23.3332 21.68V26.3733ZM27.3332 26.4V21.7067C27.3332 21.34 27.0332 21.04 26.6665 21.04C26.2998 21.04 25.9998 21.34 25.9998 21.7067V26.4C25.9998 26.7667 26.2998 27.0667 26.6665 27.0667C27.0332 27.0667 27.3332 26.7667 27.3332 26.4ZM33.9998 21.68C33.9998 21.3133 33.6998 21.0133 33.3332 21.0133C32.9665 21.0133 32.6665 21.3133 32.6665 21.68V26.3733C32.6665 26.74 32.9665 27.04 33.3332 27.04C33.6998 27.04 33.9998 26.74 33.9998 26.3733V21.68ZM35.3332 26.4C35.3332 26.7667 35.6332 27.0667 35.9998 27.0667C36.3665 27.0667 36.6665 26.7667 36.6665 26.4V21.7067C36.6665 21.34 36.3665 21.04 35.9998 21.04C35.6332 21.04 35.3332 21.34 35.3332 21.7067V26.4ZM31.3332 19.0667V14.3733C31.3332 14.0067 31.0332 13.7067 30.6665 13.7067C30.2998 13.7067 29.9998 14.0067 29.9998 14.3733V19.0667C29.9998 19.4333 30.2998 19.7333 30.6665 19.7333C31.0332 19.7333 31.3332 19.4333 31.3332 19.0667ZM41.3332 19.0667V14.3733C41.3332 14.0067 41.0332 13.7067 40.6665 13.7067C40.2998 13.7067 39.9998 14.0067 39.9998 14.3733V19.0667C39.9998 19.4333 40.2998 19.7333 40.6665 19.7333C41.0332 19.7333 41.3332 19.4333 41.3332 19.0667ZM33.3332 19.7333C33.6998 19.7333 33.9998 19.4333 33.9998 19.0667V14.3733C33.9998 14.0067 33.6998 13.7067 33.3332 13.7067C32.9665 13.7067 32.6665 14.0067 32.6665 14.3733V19.0667C32.6665 19.4333 32.9665 19.7333 33.3332 19.7333Z"></path>
@@ -686,7 +704,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/google cloud computing platform.avif" alt="Connected earth imagery symbolizing the expansive network of google cloud computing platform’s global infrastructure.">
                                     </div>
                                     <div class="sl">
-                                        <h2>04</h2>
+                                        <h2 style="color:white">04</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">📈 S.E.O</a></h3>
@@ -739,7 +757,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/define cloud solutions.avif" alt="Earth interconnected with arrows symbolizing the innovative define cloud solutions by Cloud Technology Computing.">
                                     </div>
                                     <div class="sl">
-                                        <h2>05</h2>
+                                        <h2 style="color:white">05</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">🧠 Cloud Strategy</a></h3>
@@ -793,7 +811,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/analytics cloud computing.avif" alt="Computer enveloped in 1's and 0's, illustrating the powerful analytics cloud computing capabilities of Cloud Technology Computing.">
                                     </div>
                                     <div class="sl">
-                                        <h2>06</h2>
+                                        <h2 style="color:white">06</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">🚀 Digital Marketing</a></h3>
@@ -847,7 +865,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/computer clouds.avif" alt="Metropolitan skyline with an inverted reflection, illustrating the parallel universe of computer clouds in the digital age.">
                                     </div>
                                     <div class="sl">
-                                        <h2>07</h2>
+                                        <h2 style="color:white">07</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">🔧 Website Optimization</a></h3>
@@ -902,7 +920,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/mobile development application.avif" alt="Glasses on table with computer showcasing source code, emphasizing mobile development application techniques and tools.">
                                     </div>
                                     <div class="sl">
-                                        <h2>08</h2>
+                                        <h2 style="color:white">08</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">📱 Mobile Development</a></h3>
@@ -953,7 +971,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/wordpress-ecommerce.avif" alt="Command line outputs displayed on a computer screen, illustrating backend processes of a wordpress-ecommerce site.">
                                     </div>
                                     <div class="sl">
-                                        <h2>09</h2>
+                                        <h2 style="color:white">09</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">🛒 Wordpress</a></h3>
@@ -1008,7 +1026,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/development company software.avif" alt="Development company software infrastructure in a server room powered by Google Cloud Computing Platform.">
                                     </div>
                                     <div class="sl">
-                                        <h2>10</h2>
+                                        <h2 style="color:white">10</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">⚙️ SAP Consulting</a></h3>
@@ -1063,7 +1081,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/Cloud Technology Computing.avif" alt="Jhon Arzu-Gil: Hooded programmer with source code mask, symbolizing Cloud Technology Computing prowess.">
                                     </div>
                                     <div class="sl">
-                                        <h2>11</h2>
+                                        <h2 style="color:white">11</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">🧩 IT Consulting</a></h3>
@@ -1122,7 +1140,7 @@
                                         <img loading="lazy" src="assets/img/home-6/services/what are the cloud.avif" alt="Human brain synapses symbolizing the intricacies of 'cloud IBM' and answering 'what are the cloud'">
                                     </div>
                                     <div class="sl">
-                                        <h2>12</h2>
+                                        <h2 style="color:white">12</h2>
                                     </div>
                                     <div class="solution-content">
                                         <h3><a href="services.php">🌟 Artificial Intelligence</a></h3>
@@ -1192,7 +1210,7 @@
             <div class="col-lg-12 d-flex align-items-center justify-content-between flex-wrap gap-2">
                 <div class="section-title-5">
                     <span>Certifications</span>
-                    <h2>32+ Leading I.T & Cloud Certifications</h2>
+                    <h2>32+ I.T & Cloud Certifications</h2>
                 </div>
                 <div class="section-content">
                     <p>
@@ -1366,7 +1384,7 @@
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
-                                        <h3><a href="project.php">Tech Startup</a></h3>
+                                        <h3><a href="https://www.cloudcomputeai.com/">Tech Startup</a></h3>
                                         <div class="view-btn">
                                             <a href="project.php">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1384,9 +1402,9 @@
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
-                                        <h3><a href="project.php">Portfolio Site</a></h3>
+                                        <h3><a href="https://www.arzugil.com/">Portfolio Site</a></h3>
                                         <div class="view-btn">
-                                            <a href="#">
+                                            <a href="project.php">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1402,9 +1420,9 @@
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
-                                        <h3><a href="project.php">Hybrid Cloud Developer</a></h3>
+                                        <h3><a href="https://www.hybridclouddeveloper.com/">Hybrid Cloud Developer</a></h3>
                                         <div class="view-btn">
-                                            <a href="project-details.html">
+                                            <a href="project.php">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1420,9 +1438,9 @@
                                     </div>
                                     <div class="success-content">
                                         <span>Mobile development</span>
-                                        <h3><a href="project-details.html">Android App's</a></h3>
+                                        <h3><a href="https://www.linkedin.com/in/jhongil/">Android App's</a></h3>
                                         <div class="view-btn">
-                                            <a href="project-details.html">
+                                            <a href="project.php">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1438,9 +1456,9 @@
                                     </div>
                                     <div class="success-content">
                                         <span>Certifications</span>
-                                        <h3><a href="project.php">Fully Certified</a></h3>
+                                        <h3><a href="https://www.credly.com/users/jhongil">Fully Certified</a></h3>
                                         <div class="view-btn">
-                                            <a href="project-details.html">
+                                            <a href="project.php">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1495,7 +1513,7 @@
                                                 <h2><sup>$</sup>500<sub>/Month</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Cloud Technology Computing">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1520,7 +1538,7 @@
                                                 <h2><sup>$</sup>1500<sub> One-Time</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="Cloud Technology Computing">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1545,7 +1563,7 @@
                                                 <h2><sup>$</sup>0<sub>/One-Time</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Cloud Technology Computing">
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1556,7 +1574,7 @@
                                                 <li>Custom Solution Recommendation</li>
                                             </ul>
                                             <div class="pay-btn">
-                                                <a class="primary-btn3" href="form.php">Book Now</a>
+                                                <a class="primary-btn3" href="https://calendly.com/jhongil/freeconsultation">Book Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1564,85 +1582,118 @@
                             </div>
                         </div>
                         <!-- Yearly Plans -->
-                        <div class="tab-pane fade" id="nav-yearly" role="tabpanel" aria-labelledby="nav-yearly-tab">
-                            <div class="row g-lg-0 g-4 align-items-center justify-content-center">
-                                <!-- Yearly Local SEO -->
-                                <div class="col-xl-4 col-md-6">
-                                    <div class="pricing-card">
-                                        <div class="pricing-top">
-                                            <div class="left">
-                                                <span>Local SEO</span>
-                                                <h2><sup>$</sup>5400<sub>/Year</sub></h2>
-                                            </div>
-                                            <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="pricing-content">
-                                            <ul>
-                                                <li>Full Year SEO Management</li>
-                                                <li>Google Business Boost</li>
-                                                <li>Monthly Reports & Adjustments</li>
-                                                <li>Includes Review Strategy</li>
-                                            </ul>
-                                            <div class="pay-btn">
-                                                <a class="primary-btn3" href="#">Subscribe Annually</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Yearly Social Media Marketing -->
-                                <div class="col-xl-4 col-md-6">
-                                    <div class="pricing-card">
-                                        <div class="pricing-top">
-                                            <div class="left">
-                                                <span>Social Media Marketing</span>
-                                                <h2><sup>$</sup>4788<sub>/Year</sub></h2>
-                                            </div>
-                                            <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="pricing-content">
-                                            <ul>
-                                                <li>Facebook/Instagram Ads Strategy</li>
-                                                <li>Full Year Engagement Boost</li>
-                                                <li>Creative Calendar Management</li>
-                                                <li>Quarterly Analytics Reports</li>
-                                            </ul>
-                                            <div class="pay-btn">
-                                                <a class="primary-btn3" href="#">Subscribe Annually</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Yearly Bundle Plan -->
-                                <div class="col-xl-4 col-md-6">
-                                    <div class="pricing-card two">
-                                        <div class="pricing-top">
-                                            <div class="left">
-                                                <span>SEO + Social Media Bundle</span>
-                                                <h2><sup>$</sup>9500<sub>/Year</sub></h2>
-                                            </div>
-                                            <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/price-bg.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="pricing-content">
-                                            <ul>
-                                                <li>Local SEO + Social Media</li>
-                                                <li>Priority Support Access</li>
-                                                <li>Monthly Strategy Meetings</li>
-                                                <li>12-Month Marketing Plan</li>
-                                            </ul>
-                                            <div class="pay-btn">
-                                                <a class="primary-btn3" href="#">Get Bundle</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<div class="tab-pane fade" id="nav-yearly" role="tabpanel" aria-labelledby="nav-yearly-tab">
+    <div class="row g-lg-0 g-4 align-items-center justify-content-center">
+
+        <!-- Product 10: AI Chatbot Integration -->
+        <div class="col-xl-4 col-md-6">
+            <div class="pricing-card">
+                <div class="pricing-top">
+                    <div class="left">
+                        <span>AI Chatbot Integration</span>
+                        <h2><sup>$</sup>1,200<sub>/Starting</sub></h2>
+                    </div>
+                    <div class="right">
+                        <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="AI Chatbot Integration for small business websites">
+                    </div>
+                </div>
+
+                <div class="pricing-content">
+                    <p class="pricing-description">
+                        Custom-built AI chatbot tailored for your business needs, integrating seamlessly with your
+                        existing platforms to enhance customer engagement and automate responses.
+                    </p>
+
+                    <ul>
+                        <li>Business website chatbot integration</li>
+                        <li>Automated customer responses</li>
+                        <li>Platform connection planning</li>
+                        <li>Customer engagement improvement</li>
+                    </ul>
+
+                    <div class="pay-btn">
+                        <a class="primary-btn3" href="https://buy.stripe.com/4gweWe8jzdLteqcbIK">
+                            Integrate Chatbot
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Custom PHP and MySQL Website Development -->
+        <div class="col-xl-4 col-md-6">
+            <div class="pricing-card">
+                <div class="pricing-top">
+                    <div class="left">
+                        <span>Custom PHP & MySQL Website Development</span>
+                        <h2><sup>$</sup>3,000<sub> Starting</sub></h2>
+                    </div>
+                    <div class="right">
+                        <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Custom PHP and MySQL Website Development for small businesses">
+                    </div>
+                </div>
+
+                <div class="pricing-content">
+                    <p class="pricing-description">
+                        Custom-coded business website built with PHP and MySQL. Includes responsive pages,
+                        dynamic content structure, contact forms, database integration, basic SEO setup,
+                        and launch support.
+                    </p>
+
+                    <ul>
+                        <li>Custom PHP and MySQL website build</li>
+                        <li>Responsive business pages</li>
+                        <li>Dynamic content and database integration</li>
+                        <li>Contact forms, SEO basics, and launch support</li>
+                    </ul>
+
+                    <div class="pay-btn">
+                        <a class="primary-btn3" href="https://buy.stripe.com/bJecN5gEBdpDfE64vBfUQ05">
+                            Build Custom Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Managed Cloud Services Monthly -->
+        <div class="col-xl-4 col-md-6">
+            <div class="pricing-card two">
+                <div class="pricing-top">
+                    <div class="left">
+                        <span>Managed Cloud Services</span>
+                        <h2><sup>$</sup>3,400<sub>/Month</sub></h2>
+                    </div>
+                    <div class="right">
+                        <img loading="lazy" src="assets/img/home-3/price-bg.svg" alt="Managed Cloud Services Monthly for small businesses">
+                    </div>
+                </div>
+
+                <div class="pricing-content">
+                    <p class="pricing-description">
+                        Monthly managed cloud support for businesses that need ongoing monitoring,
+                        optimization, basic troubleshooting, cloud cost review, security checks,
+                        and technical guidance.
+                    </p>
+
+                    <ul>
+                        <li>Ongoing cloud monitoring and support</li>
+                        <li>Cloud cost review and optimization</li>
+                        <li>Basic troubleshooting and technical guidance</li>
+                        <li>Security checks and infrastructure recommendations</li>
+                    </ul>
+
+                    <div class="pay-btn">
+                        <a class="primary-btn3" href="https://buy.stripe.com/14k8xQ7fv36P3LydQQ">
+                            Start Managed Cloud
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -1651,164 +1702,226 @@
     <!-- End Pricing Plan Section -->
 
     <!-- Start Case Study section -->
-   <div class="home6-case-study-section sec-mar">
-  <div class="container">
-    <div class="row mb-55">
-      <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-        <div class="section-title-6 text-center">
-          <span>Case Study</span>
-          <h2>Case Study</h2>
+    <?php
+require_once __DIR__ . '/includes/db.php';
+
+if (!function_exists('e')) {
+    function e(?string $value): string
+    {
+        return htmlspecialchars($value ?? '', ENT_QUOTES, 'UTF-8');
+    }
+}
+
+if (!function_exists('assetPath')) {
+    function assetPath(?string $path): string
+    {
+        if (!$path) {
+            return '/assets/img/inner-pages/Website Optimization3.avif';
+        }
+
+        if (
+            str_starts_with($path, 'http://') ||
+            str_starts_with($path, 'https://')
+        ) {
+            return $path;
+        }
+
+        return '/' . ltrim($path, '/');
+    }
+}
+
+if (!function_exists('caseStudyUrl')) {
+    function caseStudyUrl(string $slug): string
+    {
+        return '/case-study/' . rawurlencode($slug);
+
+        // Use this if clean URLs are not active:
+        // return '/case-study-details.php?slug=' . rawurlencode($slug);
+    }
+}
+
+$stmt = $pdo->prepare("
+    SELECT 
+        id,
+        title,
+        slug,
+        subtitle,
+        excerpt,
+        featured_image,
+        featured_image_alt,
+        industry,
+        service_type,
+        published_at
+    FROM case_studies
+    WHERE status = 'published'
+    ORDER BY published_at DESC, id DESC
+    LIMIT 6
+");
+
+$stmt->execute();
+$caseStudies = $stmt->fetchAll();
+
+$leftCaseStudies = array_slice($caseStudies, 0, 3);
+$rightCaseStudies = array_slice($caseStudies, 3, 3);
+?>
+  <div class="home6-case-study-section sec-mar">
+    <div class="container">
+        <div class="row mb-55">
+            <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="section-title-6 text-center">
+                    <span>Case Study</span>
+                    <h2>Case Study</h2>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="row g-lg-4 gy-5 border-rights">
+
+            <!-- Left Column -->
+            <div class="col-lg-6">
+                <div class="case-left">
+                    <div class="row g-lg-4 gy-5">
+
+                        <?php if (!empty($leftCaseStudies)): ?>
+                            <?php foreach ($leftCaseStudies as $index => $caseStudy): ?>
+                                <?php
+                                    $caseUrl = caseStudyUrl($caseStudy['slug']);
+                                    $image = assetPath($caseStudy['featured_image']);
+                                    $imageAlt = $caseStudy['featured_image_alt'] ?: $caseStudy['title'];
+                                    $label = $caseStudy['service_type'] ?: $caseStudy['industry'] ?: 'Case Study';
+                                    $headline = $caseStudy['subtitle'] ?: $caseStudy['title'];
+                                    $excerpt = $caseStudy['excerpt'] ?: 'Explore this Cloud Technology Computing case study.';
+                                    $borderClass = $index < count($leftCaseStudies) - 1 ? ' border-bottom1' : '';
+                                    $imagePadding = $index === 0 ? '' : ' pt-50';
+                                    $contentPadding = $index === 0 ? ' pb-50' : '';
+                                ?>
+
+                                <div class="col-lg-12 col-md-6<?= e($borderClass); ?>">
+                                    <div class="home6-case-study">
+                                        <div class="case-img<?= e($imagePadding); ?> magnetic-item">
+                                            <a href="<?= e($caseUrl); ?>">
+                                                <img 
+                                                    loading="lazy" 
+                                                    class="img-fluid" 
+                                                    src="<?= e($image); ?>" 
+                                                    alt="<?= e($imageAlt); ?>">
+                                            </a>
+                                        </div>
+
+                                        <div class="case-content<?= e($contentPadding); ?>">
+                                            <span><?= e($label); ?></span>
+
+                                            <h3>
+                                                <a href="<?= e($caseUrl); ?>">
+                                                    <?= e($headline); ?>
+                                                </a>
+                                            </h3>
+
+                                            <p><?= e($excerpt); ?></p>
+
+                                            <div class="learn-btn">
+                                                <a class="primary-btn9" href="<?= e($caseUrl); ?>">
+                                                    <span>Learn More</span>
+                                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="home6-case-study">
+                                    <div class="case-content">
+                                        <span>Case Study</span>
+                                        <h3>No case studies found</h3>
+                                        <p>Published case studies will appear here automatically.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-6">
+                <div class="case-right">
+                    <div class="row g-lg-4 gy-5">
+
+                        <?php if (!empty($rightCaseStudies)): ?>
+                            <?php foreach ($rightCaseStudies as $index => $caseStudy): ?>
+                                <?php
+                                    $caseUrl = caseStudyUrl($caseStudy['slug']);
+                                    $image = assetPath($caseStudy['featured_image']);
+                                    $imageAlt = $caseStudy['featured_image_alt'] ?: $caseStudy['title'];
+                                    $label = $caseStudy['service_type'] ?: $caseStudy['industry'] ?: 'Case Study';
+                                    $headline = $caseStudy['subtitle'] ?: $caseStudy['title'];
+                                    $excerpt = $caseStudy['excerpt'] ?: 'Explore this Cloud Technology Computing case study.';
+                                    $borderClass = $index < count($rightCaseStudies) - 1 ? ' border-bottom2' : '';
+                                    $imagePadding = $index === 0 ? '' : ' pt-50';
+                                    $cardPadding = $index === 0 ? ' pb-50' : '';
+                                ?>
+
+                                <div class="col-lg-12 col-md-6<?= e($borderClass); ?>">
+                                    <div class="home6-case-study<?= e($cardPadding); ?>">
+                                        <div class="case-img<?= e($imagePadding); ?> magnetic-item">
+                                            <a href="<?= e($caseUrl); ?>">
+                                                <img 
+                                                    loading="lazy" 
+                                                    class="img-fluid" 
+                                                    src="<?= e($image); ?>" 
+                                                    alt="<?= e($imageAlt); ?>">
+                                            </a>
+                                        </div>
+
+                                        <div class="case-content">
+                                            <span><?= e($label); ?></span>
+
+                                            <h3>
+                                                <a href="<?= e($caseUrl); ?>">
+                                                    <?= e($headline); ?>
+                                                </a>
+                                            </h3>
+
+                                            <p><?= e($excerpt); ?></p>
+
+                                            <div class="learn-btn">
+                                                <a class="primary-btn9" href="<?= e($caseUrl); ?>">
+                                                    <span>Learn More</span>
+                                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="home6-case-study">
+                                    <div class="case-content">
+                                        <span>More Case Studies</span>
+                                        <h3>More projects coming soon</h3>
+                                        <p>Add more published case studies to the database to fill this section.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-    <div class="row g-lg-4 gy-5 border-rights">
-      <!-- Left Column -->
-      <div class="col-lg-6">
-        <div class="case-left">
-          <div class="row g-lg-4 gy-5">
-            <!-- Case 1 -->
-            <div class="col-lg-12 col-md-6 border-bottom1">
-              <div class="home6-case-study">
-                <div class="case-img magnetic-item">
-                  <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/Website Optimization3.avif" alt="Laptop displaying source code on a table, symbolizing 'Introduction To I.T' and 'windows azure and cloud computing'">
-                </div>
-                <div class="case-content pb-50">
-                  <span>Case Trial</span>
-                  <h3><a href="https://www.cloudtechnologycomputing.com/website-load-times.php">"Improve website load times"</a></h3>
-                  <p>"Improve website load times and enhance the overall user experience globally".</p>
-                  <div class="learn-btn">
-                    <a class="primary-btn9" href="https://www.cloudtechnologycomputing.com/website-load-times.php">
-                      <span>Learn More</span>
-                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Case 2 -->
-            <div class="col-lg-12 col-md-6">
-              <div class="home6-case-study">
-                <div class="case-img pt-50 magnetic-item">
-                  <img loading="lazy" class="img-fluid" src="assets/img/home-3/Cloud Solutions Techology.webp" alt="Green source code on dark screen representing 'Comptia A+ Part Two', 'cloud and microsoft', and 'app development for mobile'.">
-                </div>
-                <div class="case-content">
-                  <span>Blog</span>
-                  <h3><a href="https://www.cloudtechnologycomputing.com/Cloud%20Comprehensive%20Guide.php">"Cloud Technology Computing"</a></h3>
-                  <p>"Cloud Technology Computing: Transforming the Future".</p>
-                  <div class="learn-btn">
-                    <a class="primary-btn9" href="https://www.cloudtechnologycomputing.com/Cloud%20Comprehensive%20Guide.php">
-                      <span>Learn More</span>
-                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  <!-- Case 5 -->
-            <div class="col-lg-12 col-md-6">
-              <div class="home6-case-study">
-                <div class="case-img pt-50 magnetic-item">
-                  <img loading="lazy" class="img-fluid" src="assets/img/home-3/aws-certified-solutions-architect-associate.webp" alt="AWS Certified Solutions Architect – Associate Amazon Web Services (AWS) Credential that validates the ability to design and deploy scalable, highly available, and fault-tolerant systems on AWS.">
-                </div>
-                <div class="case-content">
-                  <span>AWS Solutions Architect</span>
-                  <h3><a href="https://www.credly.com/badges/c745aece-1623-4124-a940-482e85f34a30/public_url">Cloud Certification</a></h3>
-                  <p>The SAA C03 exam is one of the most in-demand certifications in cloud computing and also one of the highest-paying certifications in the market.</p>
-                  <div class="learn-btn">
-                    <a class="primary-btn9" href="https://www.credly.com/users/jhongil/">
-                      <span>Learn More</span>
-                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-<div class="col-lg-12 col-md-6">
-              <div class="home6-case-study">
-               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7396845319499542528" height="1685" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="col-lg-6">
-        <div class="case-right">
-          <div class="row g-lg-4 gy-5">
-            <!-- Case 3 -->
-            <div class="col-lg-12 col-md-6 border-bottom2">
-              <div class="home6-case-study pb-50">
-                <div class="case-img magnetic-item">
-                  <img loading="lazy" class="img-fluid" src="assets/img/home-3/ITConulsting2.avif" alt="Room with huge monitor displaying source code, highlighting 'cloud what' and 'development company software'.">
-                </div>
-                <div class="case-content">
-                  <span>Certifications</span>
-                  <h3><a href="https://www.credly.com/users/jhongil">Credly Certification's</a></h3>
-                  <p>Get a free consultation with Cloud Technology Computing! We take care of the tech talk, so you can focus on what really matters—growing your business.</p>
-                  <div class="learn-btn">
-                    <a class="primary-btn9" href="https://www.credly.com/users/jhongil">
-                      <span>Learn More</span>
-                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Case 4 -->
-            <div class="col-lg-12 col-md-6">
-              <div class="home6-case-study">
-                <div class="case-img pt-50 magnetic-item">
-                  <img loading="lazy" class="img-fluid" src="assets/img/home-3/CloudSolutions.avif" alt="Blue LinkedIn image focusing on 'software for android application development' and 'agile software development and scrum'.">
-                </div>
-                <div class="case-content">
-                  <span>Mobile Apps</span>
-                  <h3><a href="https://www.linkedin.com/in/jhongil">App's On The Playstore.</a></h3>
-                  <p>Think about it—Fortune 500 companies spend millions on advertising to bring in traffic. So, how can a small business with a limited marketing budget compete?</p>
-                  <div class="learn-btn">
-                    <a class="primary-btn9" href="https://www.linkedin.com/in/jhongil/">
-                      <span>Learn More</span>
-                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-  <!-- Case 4 -->
-            <div class="col-lg-12 col-md-6">
-              <div class="home6-case-study">
-               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7440652755649662977" height="1651" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div>
-              </div>
-            </div>
-
-
-          
-
-          </div><!-- /.row -->
-        </div><!-- /.case-right -->
-      </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
-
+</div>
     <!-- View All Button -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
@@ -2221,7 +2334,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                             <div class="swiper-slide">
                                 <div class="testimonial-wrapper">
                                     <div class="client-review">
-                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt="">  -->
+                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt="Cloud Technology Computing">  -->
                                     </div>
                                     <div class="testimonial-content">
                                         <p>“Insanity Is Doing the Same Thing Over and Over Again and Expecting Different Results”</p>
@@ -2235,7 +2348,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                             <div class="swiper-slide">
                                 <div class="testimonial-wrapper">
                                     <div class="client-review">
-                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt=""> -->
+                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt="Cloud Technology Computing"> -->
                                     </div>
                                     <div class="testimonial-content">
                                         <p>“Any sufficiently advanced technology is indistinguishable from magic”</p>
@@ -2327,7 +2440,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
             <div class="row g-lg-4 gy-5 align-items-center">
                 <div class="col-lg-5">
                     <div class="what-we-do-img magnetic-item">
-                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/computer clouds Jhon Gil.avif" alt="Jhon Arzu-Gil, IBM's Application Developer Specialist, a dedicated 'ibm cloud provider' delivering excellence in technology solutions.">
+                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/Jhongil.webp" alt="Jhon Arzu-Gil, IBM's Application Developer Specialist, a dedicated 'ibm cloud provider' delivering excellence in technology solutions.">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -2374,97 +2487,185 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
         </div>
     </div>
     <!-- End what we do section -->
-   <div class="home5-blog-area mb-130">
-                <div class="container">
-                    <div class="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="col-lg-12 d-flex for-padding align-items-center justify-content-between flex-wrap gap-3">
-                            <div class="section-title-5">
-                                <span>IT News & Trends</span>
-                                <h2>News & Article</h2>
-                            </div>
-                            <div class="swiper-btn-group">
-                                <div class="swiper-btn prevbtn4">
-                                    <i class="bi bi-arrow-left"></i>
-                                </div>
-                                <div class="swiper-btn nextbtn4">
-                                    <i class="bi bi-arrow-right"></i>
-                                </div>
-                            </div>
-                        </div>
+   <?php
+require_once __DIR__ . '/includes/db.php';
+
+if (!function_exists('e')) {
+    function e(?string $value): string
+    {
+        return htmlspecialchars($value ?? '', ENT_QUOTES, 'UTF-8');
+    }
+}
+
+if (!function_exists('assetPath')) {
+    function assetPath(?string $path): string
+    {
+        if (!$path) {
+            return '/assets/img/home-5/Cloudblogpict.webp';
+        }
+
+        if (
+            str_starts_with($path, 'http://') ||
+            str_starts_with($path, 'https://')
+        ) {
+            return $path;
+        }
+
+        return '/' . ltrim($path, '/');
+    }
+}
+
+if (!function_exists('blogUrl')) {
+    function blogUrl(string $slug): string
+    {
+        return '/blog/' . rawurlencode($slug);
+
+        // Use this instead if clean URLs are not working yet:
+        // return '/blog-details.php?slug=' . rawurlencode($slug);
+    }
+}
+
+$stmt = $pdo->prepare("
+    SELECT 
+        p.id,
+        p.title,
+        p.slug,
+        p.excerpt,
+        p.featured_image,
+        p.featured_image_alt,
+        p.post_date,
+        c.name AS category_name,
+        c.slug AS category_slug
+    FROM blog_posts p
+    LEFT JOIN blog_categories c 
+        ON p.category_id = c.id
+    WHERE p.status = 'published'
+    ORDER BY p.post_date DESC, p.id DESC
+    LIMIT 8
+");
+
+$stmt->execute();
+$latestBlogPosts = $stmt->fetchAll();
+?>
+
+<div class="home5-blog-area mb-130">
+    <div class="container">
+        <div class="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div class="col-lg-12 d-flex for-padding align-items-center justify-content-between flex-wrap gap-3">
+                <div class="section-title-5">
+                    <span>IT News & Trends</span>
+                    <h2>News & Article</h2>
+                </div>
+
+                <div class="swiper-btn-group">
+                    <div class="swiper-btn prevbtn4">
+                        <i class="bi bi-arrow-left"></i>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="blog-wrapper">
-                                <div class="swiper home5-blog-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="single-blog-card">
-                                                <div class="blog-content">
-                                                    <ul>
-                                                        <li><a href="blog.php">November 11, 2025</a></li>
-                                                        <li><a href="Cloud Comprehensive Guide.php">Transforming the Future</a></li>
-                                                    </ul>
-                                                    <h3><a href="/Cloud Comprehensive Guide.php">What Are Cloud Services, Really?</a></h3>
-                                                    <p>Let’s be honest — the cloud isn’t a buzzword anymore; it’s the backbone of modern business. And when it’s done right.......</p>
-                                                </div>
-                                                <div class="blog-img magnetic-item">
-                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/Cloudblogpict.webp" alt="What Are Cloud Services, Really?">
-                                                </div>
+                    <div class="swiper-btn nextbtn4">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="blog-wrapper">
+                    <div class="swiper home5-blog-slider">
+                        <div class="swiper-wrapper">
+
+                            <?php if (!empty($latestBlogPosts)): ?>
+                                <?php foreach ($latestBlogPosts as $post): ?>
+                                    <?php
+                                        $postUrl = blogUrl($post['slug']);
+                                        $categoryName = $post['category_name'] ?: 'Cloud Technology';
+                                        $categorySlug = $post['category_slug'] ?: 'cloud-technology';
+                                        $image = assetPath($post['featured_image']);
+                                        $imageAlt = $post['featured_image_alt'] ?: $post['title'];
+                                        $excerpt = $post['excerpt'] ?: 'Read the latest insights from Cloud Technology Computing.';
+                                    ?>
+
+                                    <div class="swiper-slide">
+                                        <div class="single-blog-card">
+                                            <div class="blog-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="/blog.php">
+                                                            <?= e(date('F j, Y', strtotime($post['post_date']))); ?>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="/blog.php?category=<?= urlencode($categorySlug); ?>">
+                                                            <?= e($categoryName); ?>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <h3>
+                                                    <a href="<?= e($postUrl); ?>">
+                                                        <?= e($post['title']); ?>
+                                                    </a>
+                                                </h3>
+
+                                                <p>
+                                                    <?= e(mb_strimwidth($excerpt, 0, 155, '...')); ?>
+                                                </p>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="single-blog-card">
-                                                <div class="blog-content">
-                                                    <ul>
-                                                        <li><a href="blog.php">November 12, 2025</a></li>
-                                                        <li><a href="cloud technology partners.php">Today’s Digital Economy</a></li>
-                                                    </ul>
-                                                    <h3><a href="cloud technology partners.php">businesses must innovate or risk falling behind.</a></h3>
-                                                    <p>A Cloud Technology Partner is a third-party organization that provides expert guidance and services to help businesses plan, execute, and manage cloud transformations.......</p>
-                                                </div>
-                                                <div class="blog-img magnetic-item">
-                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/cloudblog.webp" alt="A Cloud Technology Partner is a third-party organization that provides expert guidance and services to help businesses plan">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="single-blog-card">
-                                                <div class="blog-content">
-                                                    <ul>
-                                                        <li><a href="blog.php">November 15, 2025</a></li>
-                                                        <li><a href="Save_Small_Business_Money.php">Services for Your Business</a></li>
-                                                    </ul>
-                                                    <h3><a href="Save_Small_Business_Money.php">5 Ways Cloud Migration Saves Small Businesses Thousands.</a></h3>
-                                                    <p>Running a small business today means walking a razor’s edge between innovation and financial discipline.......</p>
-                                                </div>
-                                                <div class="blog-img magnetic-item">
-                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/cloudmoney.webp" alt="Services for Your Business">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="single-blog-card">
-                                                <div class="blog-content">
-                                                    <ul>
-                                                        <li><a href="blog.php">November 17, 2025</a></li>
-                                                        <li><a href="TechSolutions.php">Affordable Tech Solutions</a></li>
-                                                    </ul>
-                                                    <h3><a href="TechSolutions.php">Is Your Small Business Stuck in the Stone Age?</a></h3>
-                                                    <p>In todays fast-paced digital world, a small business cant afford to be left behind......</p>
-                                                </div>
-                                                <div class="blog-img magnetic-item">
-                                                     <img loading="lazy" class="img-fluid" src="assets/img/home-5/moneycloud.webp" alt="Is Your Small Business Stuck in the Stone Age">
-                                                </div>
+
+                                            <div class="blog-img magnetic-item">
+                                                <a href="<?= e($postUrl); ?>">
+                                                    <img 
+                                                        loading="lazy" 
+                                                        class="img-fluid" 
+                                                        src="<?= e($image); ?>" 
+                                                        alt="<?= e($imageAlt); ?>">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
+                                <?php endforeach; ?>
+
+                            <?php else: ?>
+                                <div class="swiper-slide">
+                                    <div class="single-blog-card">
+                                        <div class="blog-content">
+                                            <ul>
+                                                <li><a href="/blog.php">Cloud Technology Computing</a></li>
+                                                <li><a href="/blog.php">News & Article</a></li>
+                                            </ul>
+
+                                            <h3>
+                                                <a href="/blog.php">
+                                                    No blog posts found
+                                                </a>
+                                            </h3>
+
+                                            <p>
+                                                New articles will appear here once they are published in the blog database.
+                                            </p>
+                                        </div>
+
+                                        <div class="blog-img magnetic-item">
+                                            <a href="/blog.php">
+                                                <img 
+                                                    loading="lazy" 
+                                                    class="img-fluid" 
+                                                    src="/assets/img/home-5/Cloudblogpict.webp" 
+                                                    alt="Cloud Technology Computing blog">
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php endif; ?>
+
                         </div>
                     </div>
                 </div>
-              
             </div>
+        </div>
+    </div>
+</div>
 
     <!-- Start Contact section -->
     <div class="home6-contact-section sec-mar">
@@ -2478,7 +2679,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                     <div class="contact-content">
                         <p>We’re happy to answer any questions you may have need of our help to determine which of our services best fit your needs.</p>
                         <div class="contact-number">
-                            <p>Call Us Now: <a href="tel:+12389385567">+1 248 938 5567</a></p>
+                            <p>Call Us Now: <a href="tel:+17138709966">+1 713 870 9966</a></p>
                         </div>
                         <div class="contact-step">
                             <div class="accordion" id="accordionExample">
@@ -2582,18 +2783,6 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
         </div>
     </div>
     <!-- End Contact section -->
-    <script>
-        // Inside app.js or inline
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/service-worker.js', {
-                        scope: '/'
-                    })
-                    .then(r => console.log('SW registered', r.scope))
-                    .catch(console.error);
-            }
-    </script>
 
-
-    </script>
 
     <?php include 'footer.php'; ?>

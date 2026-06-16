@@ -1,4 +1,5 @@
 <?php 
+require_once __DIR__ . '/includes/env.php';
 /* 
  * Subscriber Class 
  * This class is used for database related (connect, fetch, insert, update, and delete) operations 
@@ -8,13 +9,23 @@
  */ 
  
 class Subscriber { 
-    private $dbHost     = DB_HOST; 
-    private $dbUsername = DB_USERNAME; 
-    private $dbPassword = DB_PASSWORD; 
-    private $dbName     = DB_NAME; 
+    
+    private $dbHost     = ''; 
+    private $dbUsername = ''; 
+    private $dbPassword = ''; 
+    private $dbName     = ''; 
     private $userTbl    = 'subscribers'; 
      
     function __construct(){ 
+        $this->dbHost = ctc_env('DB_HOST', '127.0.0.1') . ':' . ctc_env('DB_PORT', '3306');
+        $this->dbUsername = ctc_env('DB_USERNAME', '');
+        $this->dbPassword = ctc_env('DB_PASSWORD', '');
+        $this->dbName = ctc_env('DB_NAME', '');
+
+        if ($this->dbUsername === '' || $this->dbPassword === '' || $this->dbName === '') {
+            die('Database connection is not configured.');
+        }
+
         if(!isset($this->db)){ 
             // Connect to the database 
             $conn = new mysqli($this->dbHost, $this->dbUsername, $this->dbPassword, $this->dbName); 

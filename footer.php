@@ -58,7 +58,7 @@
                    <div class="col-lg-12">
                        <div class="footer-top-content">
                            <div class="footer-logo">
-                                   <a href="index.php"><!--<img src="assets/img/logo.svg" alt="Cloud Technology Computing" loading="lazy" width="200" height="100"> --> <p style="color : white"> Cloud Technology Computing</p></a></div>
+                                   <a href="/"><!--<img src="/assets/img/logo.svg" alt="Cloud Technology Computing" loading="lazy" width="200" height="100"> --> <p style="color : white"> Cloud Technology Computing</p></a></div>
                            <div class="footer-contect">
                                <div class="icon">
                                    <svg width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@
                                </div>
                                <div class="content">
                                    <span>Call Any Time</span>
-                                   <h6><a href="tel: 12489385567">1-248-938-5567</a></h6>
+                                   <h6><a href="tel:17138709966">1-713-870-9966</a></h6>
                                </div>
                            </div>
                        </div>
@@ -94,7 +94,8 @@
                                </svg>
                                Address
                            </h4>
-                           <a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation">4409 Caplin St,Houston,Texas,77026</a>
+                           <!-- TODO: replace with real Google Business Profile URL once provisioned. -->
+                           <a href="/">4409 Caplin St, Houston, TX 77026</a>
                        </div>
                        <div class="footer-contact mb-40">
                            <h4>
@@ -109,9 +110,9 @@
                        </div>
                        <div class="footer-contact">
                            <h6>See Our New updates</h6>
-                           <form>
+                           <form action="/form.php" method="get">
                                <div class="form-inner">
-                                   <input type="text" placeholder="Email here...">
+                                   <input type="email" name="email" placeholder="Email here..." autocomplete="email" required>
                                    <button aria-label="submit" type="submit">
                                        <svg width="17" height="17" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
@@ -130,12 +131,21 @@
                        </div>
                        <div class="menu-container">
                            <ul>
-                               <li><a href="services/Web%20Development%20service-details.php">Web Development</a></li>
-                               <li><a href="services/Mobile%20Development%20service-details.php">Mobile Development</a></li>
-                               <li><a href="services/Managed_Cloud_Hosting.php">Cloud services</a></li>
-                               <li><a href="services/AI_Chatbot_Development.php">Artificial Intelligence</a></li>
-                               <li><a href="services/S.E.O%20service-details.php">S.E.O services</a></li>
-                               <li><a href="services/Software%20Development%20service-details.php">Software Development</a></li>
+                               <li><a href="/services/Web%20Development%20service-details.php">Web Development</a></li>
+                               <li><a href="/services/Mobile%20Development%20service-details.php">Mobile Development</a></li>
+                               <li><a href="/services/Managed_Cloud_Hosting.php">Cloud services</a></li>
+                               <li><a href="/services/AI_Chatbot_Development.php">Artificial Intelligence</a></li>
+                               <li><a href="/services/S.E.O%20service-details.php">S.E.O services</a></li>
+                               <li><a href="/services/Software%20Development%20service-details.php">Software Development</a></li>
+                               <li><a href="/solutions/cloud-computing-small-business">Cloud Computing for Small Business</a></li>
+                               <li><a href="/solutions/cloud-technology-services">Cloud Technology Services</a></li>
+                               <li><a href="/solutions/cloud-based-computing-services">Cloud-Based Computing Services</a></li>
+                               <li><a href="/solutions/aws-cloud-services">AWS Cloud Services</a></li>
+                               <li><a href="/solutions/microsoft-azure-cloud-services">Microsoft Azure Cloud Services</a></li>
+                               <li><a href="/solutions/cloud-security-services">Cloud Security Services</a></li>
+                               <li><a href="/solutions/managed-cloud-services-provider">Managed Cloud Services</a></li>
+                               <li><a href="/solutions/business-website-seo-optimization">Business Website SEO</a></li>
+                               <li><a href="/solutions/houston-cloud-consulting-services">Houston Cloud Consulting</a></li>
                            </ul>
                        </div>
                    </div>
@@ -147,12 +157,13 @@
                        </div>
                        <div class="menu-container">
                            <ul>
-                               <li><a href="about.php">About Us</a></li>
-                               <li><a href="case-study-standard.php">Case Study</a></li>
-                               <li><a href="blog.php">News & Article</a></li>
-                               <li><a href="team1.html">Our Team</a></li>
-                               <li><a href="project.php">All Portfolio</a></li>
-                               <li><a href="pricing.html">Pricing Plan</a></li>
+                               <li><a href="/about.php">About Us</a></li>
+                               <li><a href="/case-study-standard.php">Case Study</a></li>
+                               <li><a href="/blog.php">News & Article</a></li>
+                               <li><a href="/team.php">Our Team</a></li>
+                               <li><a href="/project.php">All Portfolio</a></li>
+                               <li><a href="/pricing.php">Pricing Plan</a></li>
+                               <li><a href="/Certified.php">Certifications</a></li>
                            </ul>
                        </div>
                    </div>
@@ -164,16 +175,27 @@
                        </div>
                        <div class="menu-container">
                            <ul>
+                               <!-- TODO: replace with real legal pages -->
                                <li><a href="services/Data%20Analytics%20service-details.php">Data Analytics</a></li>
                                <li><a href="#">Support Policy</a></li>
                                <li><a href="#">Terms & Conditions</a></li>
                                <li><a href="#">Privacy Policy</a></li>
                                <li><a href="services/Website%20Optimization%20service-details.php">Website Optimization</a></li>
-                               <li><a href="services/Consulting%20service-details.php">Consulting</a></li>
+                               <li><a href="/solutions/cloud-infrastructure-services">Cloud Infrastructure Services</a></li>
                            </ul>
                        </div>
                    </div>
                </div>
+           </div>
+       </div>
+       <div class="container footer-growth-cta-wrap">
+           <div class="blog-cta-box footer-growth-cta">
+               <div>
+                   <span class="solution-kicker">Free Website + Cloud Review</span>
+                   <h3>Need more traffic, faster pages, or better lead capture?</h3>
+                   <p>Book a free consultation and get practical next steps for SEO, cloud hosting, AI chatbots, mobile apps, and website conversion improvements.</p>
+               </div>
+               <a class="primary-btn3" href="/form.php">Book Free Consultation</a>
            </div>
        </div>
        <div class="footer-btm">
@@ -182,14 +204,15 @@
                    <div class="col-lg-12">
                        <div class="footer-btn-content">
                            <div class="copyright-area">
-                               <p>©Copyright 2024 <a href="https://www.cloudtechnologycomputing.com">Cloud Technology Computing</a> | Design By <a href="https://www.arzugil.com/">Jhon Arzu-Gil</a></p>
+                               <p>©Copyright <?= date("Y"); ?> <a href="https://www.cloudtechnologycomputing.com">Cloud Technology Computing</a> | Design By <a href="https://www.arzugil.com/">Jhon Arzu-Gil</a></p>
                            </div>
                            <div class="footer-social">
                                <ul>
-                                  <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Faceebook Page" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                                  <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Facebook Page" target="_blank"><i class="bx bxl-facebook"></i></a></li>
                                    <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank"><i class="bi bi-github"></i></a></li>
-                                   <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                                   <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page" target="_blank"><i class="bi bi-google"></i></a></li>
+                                   <li><a href="https://www.linkedin.com/in/jhongil" aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                   <!-- TODO: replace with real Google Business Profile URL once provisioned. -->
+                                   <li><a href="/" aria-label="Google Business Page" target="_blank"><i class="bi bi-google"></i></a></li>
                                </ul>
                            </div>
                        </div>
@@ -210,36 +233,37 @@
    <!--cursor design-->
  <!--  Main jQuery  -->
     <!-- Linking Emoji Mart script for emoji picker -->
-    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js" defer></script>
 
     <!-- Linking custom script -->
-    <script src="script.js"></script>
-   <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/script.js" defer></script>
+   <script src="/assets/js/jquery-3.6.0.min.js" defer></script>
    <!-- Popper and Bootstrap JS -->
-   <script src="assets/js/popper.min.js"></script>
-   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="/assets/js/popper.min.js" defer></script>
+   <script src="/assets/js/bootstrap.min.js" defer></script>
    <!-- Swiper slider JS -->
-   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="/assets/js/swiper-bundle.min.js" defer></script>
    <!-- Waypoints JS -->
-   <script src="assets/js/waypoints.min.js"></script>
+   <script src="/assets/js/waypoints.min.js" defer></script>
    <!-- Counterup JS -->
-   <script src="assets/js/jquery.counterup.min.js"></script>
+   <script src="/assets/js/jquery.counterup.min.js" defer></script>
    <!-- Isotope  JS -->
-   <script src="assets/js/isotope.pkgd.min.js"></script>
+   <script src="/assets/js/isotope.pkgd.min.js" defer></script>
    <!-- Fancybox  JS -->
-   <script src="assets/js/jquery.fancybox.min.js"></script>
+   <script src="/assets/js/jquery.fancybox.min.js" defer></script>
    <!-- GSAP  JS -->
-    <script src="assets/js/gsap.min.js"></script>
-   <script src="assets/js/simpleParallax.min.js"></script>
-   <script src="assets/js/TweenMax.min.js"></script>
+    <script src="/assets/js/gsap.min.js" defer></script>
+   <script src="/assets/js/simpleParallax.min.js" defer></script>
+   <script src="/assets/js/TweenMax.min.js" defer></script>
    <!-- Marquee  JS -->
-   <script src="assets/js/jquery.marquee.min.js"></script>
+   <script src="/assets/js/jquery.marquee.min.js" defer></script>
    <!-- Wow JS -->
-   <script src="assets/js/wow.min.js"></script>
+   <script src="/assets/js/wow.min.js" defer></script>
    <!-- Custom JS -->
-   <script src="assets/js/preloader.js"></script>
-   <script src="assets/js/custom.js"></script>
-  <script>
+   <script src="/assets/js/preloader.js" defer></script>
+   <script src="/assets/js/custom.js" defer></script>
+  <script defer>
+   document.addEventListener('DOMContentLoaded', function () {
        $(".marquee_text").marquee({
        direction: "left",
        duration: 20000,
@@ -257,6 +281,7 @@
        duplicated: true,
        startVisible: true,
        });
+   });
    </script>
 
 </body>

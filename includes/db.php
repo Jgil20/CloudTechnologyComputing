@@ -1,19 +1,34 @@
 <?php
-// includes/db.php
-// Centralized DB connection using mysqli. Load sensitive values from environment if available.
 
-$DB_HOST = getenv('DB_HOST') ?: '127.0.0.1';
-$DB_PORT = getenv('DB_PORT') ?: '3306';
-$DB_USER = getenv('DB_USER') ?: 'u249000411_Jhongil';
-$DB_PASS = getenv('DB_PASS') ?: 'Spiderman8085$';
-$DB_NAME = getenv('DB_NAME') ?: 'u249000411_CloudHoneyPot';
- 
-$mysqli = @new mysqli("$DB_HOST:$DB_PORT", $DB_USER, $DB_PASS, $DB_NAME);
-if ($mysqli->connect_errno) {
+declare(strict_types=1);
+
+require_once __DIR__ . '/env.php';
+
+$host = ctc_env('DB_HOST', '127.0.0.1');
+$port = ctc_env('DB_PORT', '3306');
+$dbname = ctc_env('DB_NAME', '');
+$username = ctc_env('DB_USERNAME', '');
+$password = ctc_env('DB_PASSWORD', '');
+
+if ($dbname === '' || $username === '' || $password === '') {
+    error_log('Database credentials are not configured. Set DB_NAME, DB_USERNAME, and DB_PASSWORD.');
     http_response_code(500);
-    error_log("DB connection failed: " . $mysqli->connect_error);
-    die("Temporary database issue. Please try again later.");
+    exit('Database connection is not configured.');
 }
 
-$mysqli->set_charset('utf8mb4');
-?>
+try {
+    $pdo = new PDO(
+        "mysql:host={$host};port={$port};dbname={$dbname};charset=utf8mb4",
+        $username,
+        $password,
+        [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false,
+        ]
+    );
+} catch (PDOException $e) {
+    error_log('Database connection failed: ' . $e->getMessage());
+    http_response_code(500);
+    exit('Database connection error.');
+}

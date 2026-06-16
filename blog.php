@@ -1,248 +1,346 @@
-<?php include 'header.php';
+<?php
+// This listing is database-driven and must never be served as stale HTML.
+if (!headers_sent()) {
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+    header('Pragma: no-cache');
+    header('Expires: Thu, 01 Jan 1970 00:00:00 GMT');
+    header('CDN-Cache-Control: no-store');
+    header('Cloudflare-CDN-Cache-Control: no-store');
+    header('Surrogate-Control: no-store');
+}
 
-require_once 'includes/db.php'; // this should set up $mysqli (or similar)
+require_once __DIR__ . '/includes/db.php';
 
-$stmt = $mysqli->prepare("
-    SELECT id, slug, title, category, excerpt, featured_image, published_at
-    FROM posts
-    ORDER BY published_at DESC
-");
+if (!function_exists('e')) {
+    function e(?string $value): string
+    {
+        return htmlspecialchars($value ?? '', ENT_QUOTES, 'UTF-8');
+    }
+}
+
+if (!function_exists('cleanBlogSlug')) {
+    function cleanBlogSlug(string $value): string
+    {
+        $value = strtolower(trim($value));
+        return preg_match('/^[a-z0-9-]{1,100}$/', $value) ? $value : '';
+    }
+}
+
+if (!function_exists('cleanBlogSearch')) {
+    function cleanBlogSearch(string $value): string
+    {
+        $value = trim(preg_replace('/\s+/', ' ', $value) ?? '');
+        return substr($value, 0, 100);
+    }
+}
+
+if (!function_exists('blogPageUrl')) {
+    function blogPageUrl(int $page, string $category = '', string $tag = '', string $search = ''): string
+    {
+        $query = [];
+
+        if ($page > 1) {
+            $query['page'] = $page;
+        }
+        if ($category !== '') {
+            $query['category'] = $category;
+        }
+        if ($tag !== '') {
+            $query['tag'] = $tag;
+        }
+        if ($search !== '') {
+            $query['s'] = $search;
+        }
+
+        return '/blog.php' . ($query !== [] ? '?' . http_build_query($query, '', '&', PHP_QUERY_RFC3986) : '');
+    }
+}
+
+if (!function_exists('formatBlogDate')) {
+    function formatBlogDate(?string $date): string
+    {
+        if (empty($date)) {
+            return '';
+        }
+
+        try {
+            return (new DateTimeImmutable($date))->format('M d, Y');
+        } catch (Throwable $exception) {
+            return '';
+        }
+    }
+}
+
+if (!function_exists('formatBlogDateTimeAttribute')) {
+    function formatBlogDateTimeAttribute(?string $date): string
+    {
+        if (empty($date)) {
+            return '';
+        }
+
+        try {
+            return (new DateTimeImmutable($date))->format(DateTimeInterface::ATOM);
+        } catch (Throwable $exception) {
+            // Keep rendering the page and footer when a legacy row contains
+            // an empty, zero, or otherwise invalid post_date value.
+            error_log('Invalid blog post date: ' . $date);
+            return '';
+        }
+    }
+}
+
+$siteUrl = 'https://www.cloudtechnologycomputing.com';
+$postsPerPage = 6;
+$blogCurrentPage = isset($_GET['page']) && ctype_digit((string) $_GET['page'])
+    ? max(1, (int) $_GET['page'])
+    : 1;
+$category = cleanBlogSlug((string) ($_GET['category'] ?? ''));
+$tag = cleanBlogSlug((string) ($_GET['tag'] ?? ''));
+$search = cleanBlogSearch((string) ($_GET['s'] ?? ''));
+
+$whereSql = "WHERE p.status = 'published' AND p.post_date <= NOW()";
+$params = [];
+
+if ($category !== '') {
+    $whereSql .= ' AND c.slug = :category';
+    $params[':category'] = $category;
+}
+
+if ($tag !== '') {
+    $whereSql .= " AND EXISTS (
+        SELECT 1
+        FROM blog_post_tags pt
+        INNER JOIN blog_tags t ON t.id = pt.tag_id
+        WHERE pt.post_id = p.id AND t.slug = :tag
+    )";
+    $params[':tag'] = $tag;
+}
+
+if ($search !== '') {
+    // Use separate placeholders because native PDO prepares do not reliably allow
+    // one named parameter to be reused multiple times in the same statement.
+    $whereSql .= " AND (
+        p.title LIKE :search_title
+        OR p.excerpt LIKE :search_excerpt
+        OR p.content_html LIKE :search_content
+        OR c.name LIKE :search_category
+    )";
+    $searchValue = '%' . $search . '%';
+    $params[':search_title'] = $searchValue;
+    $params[':search_excerpt'] = $searchValue;
+    $params[':search_content'] = $searchValue;
+    $params[':search_category'] = $searchValue;
+}
+
+$countSql = "
+    SELECT COUNT(DISTINCT p.id)
+    FROM blog_posts p
+    LEFT JOIN blog_categories c ON p.category_id = c.id
+    {$whereSql}
+";
+
+$countStmt = $pdo->prepare($countSql);
+foreach ($params as $key => $value) {
+    $countStmt->bindValue($key, $value, PDO::PARAM_STR);
+}
+$countStmt->execute();
+$totalPosts = (int) $countStmt->fetchColumn();
+$totalPages = max(1, (int) ceil($totalPosts / $postsPerPage));
+
+$pageOutOfRange = $totalPosts > 0 && $blogCurrentPage > $totalPages;
+if ($pageOutOfRange) {
+    http_response_code(404);
+}
+
+$offset = ($blogCurrentPage - 1) * $postsPerPage;
+
+$sql = "
+    SELECT
+        p.id,
+        p.slug,
+        p.title,
+        p.excerpt,
+        p.featured_image,
+        p.featured_image_alt,
+        p.post_date,
+        p.updated_at,
+        c.name AS category_name,
+        c.slug AS category_slug
+    FROM blog_posts p
+    LEFT JOIN blog_categories c ON p.category_id = c.id
+    {$whereSql}
+    ORDER BY p.post_date DESC, p.id DESC
+    LIMIT :limit OFFSET :offset
+";
+
+$stmt = $pdo->prepare($sql);
+foreach ($params as $key => $value) {
+    $stmt->bindValue($key, $value, PDO::PARAM_STR);
+}
+$stmt->bindValue(':limit', $postsPerPage, PDO::PARAM_INT);
+$stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
 $stmt->execute();
-$result = $stmt->get_result();
-$posts = $result->fetch_all(MYSQLI_ASSOC);
-$stmt->close();
+$posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+$categoryStmt = $pdo->query("
+    SELECT
+        c.name,
+        c.slug,
+        COUNT(p.id) AS post_count
+    FROM blog_categories c
+    INNER JOIN blog_posts p
+        ON p.category_id = c.id
+        AND p.status = 'published'
+        AND p.post_date <= NOW()
+    GROUP BY c.id, c.name, c.slug
+    HAVING COUNT(p.id) > 0
+    ORDER BY c.name ASC
+");
+$categories = $categoryStmt->fetchAll(PDO::FETCH_ASSOC);
+
+$activeCategoryName = '';
+foreach ($categories as $categoryRow) {
+    if (($categoryRow['slug'] ?? '') === $category) {
+        $activeCategoryName = (string) $categoryRow['name'];
+        break;
+    }
+}
+
+$pageTitle = 'Cloud Computing & AI Blog | Cloud Technology Computing';
+$pageDescription = 'Read practical cloud computing, AI automation, web development, SEO, cybersecurity, and managed IT guides for small business growth.';
+$heroTitle = 'Cloud, AI, Web Development, and SEO Resources';
+$heroText = 'Practical technology guides designed to help small businesses improve security, performance, automation, visibility, and growth.';
+
+if ($search !== '') {
+    $pageTitle = 'Search Results for ' . $search . ' | CTC Blog';
+    $pageDescription = 'Search Cloud Technology Computing articles about cloud services, AI automation, SEO, web development, cybersecurity, and business technology.';
+    $heroTitle = 'Search Results for “' . $search . '”';
+    $heroText = $totalPosts === 1
+        ? '1 article matched your search.'
+        : $totalPosts . ' articles matched your search.';
+} elseif ($category !== '') {
+    $displayCategory = $activeCategoryName !== ''
+        ? $activeCategoryName
+        : ucwords(str_replace('-', ' ', $category));
+    $pageTitle = $displayCategory . ' Articles | CTC Blog';
+    $pageDescription = 'Browse practical ' . strtolower($displayCategory) . ' articles for small businesses, entrepreneurs, and growing organizations.';
+    $heroTitle = $displayCategory . ' Articles';
+    $heroText = 'Explore practical guidance, comparisons, checklists, and strategies related to ' . strtolower($displayCategory) . '.';
+} elseif ($tag !== '') {
+    $displayTag = ucwords(str_replace('-', ' ', $tag));
+    $pageTitle = $displayTag . ' Resources | CTC Blog';
+    $pageDescription = 'Explore Cloud Technology Computing resources tagged ' . strtolower($displayTag) . ' with practical guidance for modern businesses.';
+    $heroTitle = $displayTag . ' Resources';
+    $heroText = 'Browse articles and practical guidance tagged ' . strtolower($displayTag) . '.';
+} elseif ($blogCurrentPage > 1) {
+    $pageTitle = 'Cloud Computing & AI Blog – Page ' . $blogCurrentPage . ' | CTC';
+    $pageDescription = 'Browse page ' . $blogCurrentPage . ' of Cloud Technology Computing guides covering cloud, AI, cybersecurity, SEO, web development, and managed IT.';
+}
+
+$isSearchPage = $search !== '';
+$isFilteredPage = $category !== '' || $tag !== '';
+$robotsContent = ($isSearchPage || $pageOutOfRange)
+    ? 'noindex, follow, max-image-preview:large'
+    : 'index, follow, max-image-preview:large';
+
+// Internal search results are noindex and canonicalize to the main blog page.
+$canonicalPath = $isSearchPage
+    ? '/blog.php'
+    : blogPageUrl($blogCurrentPage, $category, $tag, '');
+$canonicalUrl = $siteUrl . $canonicalPath;
+
+$itemListElements = [];
+foreach ($posts as $index => $post) {
+    $itemListElements[] = [
+        '@type' => 'ListItem',
+        'position' => $offset + $index + 1,
+        'url' => $siteUrl . '/blog/' . rawurlencode((string) $post['slug']),
+        'name' => (string) $post['title'],
+    ];
+}
+
+$blogSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Blog',
+    'name' => 'Cloud Technology Computing Blog',
+    'description' => $pageDescription,
+    'url' => $canonicalUrl,
+    'publisher' => [
+        '@type' => 'Organization',
+        'name' => 'Cloud Technology Computing',
+        'url' => $siteUrl . '/',
+        'logo' => [
+            '@type' => 'ImageObject',
+            'url' => $siteUrl . '/assets/img/cloud.svg',
+        ],
+    ],
+    'blogPost' => array_map(
+        static fn(array $post): array => [
+            '@type' => 'BlogPosting',
+            'headline' => (string) $post['title'],
+            'url' => $siteUrl . '/blog/' . rawurlencode((string) $post['slug']),
+            'datePublished' => (string) $post['post_date'],
+            'dateModified' => (string) ($post['updated_at'] ?: $post['post_date']),
+        ],
+        $posts
+    ),
+];
+
+$itemListSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'ItemList',
+    'name' => $heroTitle,
+    'numberOfItems' => count($itemListElements),
+    'itemListElement' => $itemListElements,
+];
+
+$pagePreloadImage = '/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif';
 ?>
-
+<?php include __DIR__ . '/header.php'; ?>
+<title><?= e($pageTitle); ?></title>
 <meta name="author" content="Jhon Arzu-Gil">
-<meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Stay updated with the latest articles on cloud computing, AI, web development, security, and real-world case studies from Cloud Technology Computing."> 
-<!-- Open Graph / Facebook -->
-<meta property="og:title" content="Cloud Computing & AI Blog | Cloud Technology Computing">
-<meta property="og:url" content="https://cloudtechnologycomputing.com">
-<meta property="og:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
-<meta property="og:site_name" content="Cloud Technology Computing" />
-<meta property="og:locale" content="en_US" />
+<meta name="description" content="<?= e($pageDescription); ?>">
+<meta name="robots" content="<?= e($robotsContent); ?>">
+<link rel="canonical" href="<?= e($canonicalUrl); ?>">
+<?php if (!$isSearchPage && $blogCurrentPage > 1 && !$pageOutOfRange): ?>
+<link rel="prev" href="<?= e($siteUrl . blogPageUrl($blogCurrentPage - 1, $category, $tag)); ?>">
+<?php endif; ?>
+<?php if (!$isSearchPage && $blogCurrentPage < $totalPages): ?>
+<link rel="next" href="<?= e($siteUrl . blogPageUrl($blogCurrentPage + 1, $category, $tag)); ?>">
+<?php endif; ?>
+<meta property="og:title" content="<?= e($pageTitle); ?>">
+<meta property="og:description" content="<?= e($pageDescription); ?>">
+<meta property="og:url" content="<?= e($canonicalUrl); ?>">
+<meta property="og:image" content="<?= e($siteUrl . '/assets/img/home-6/CloudTechnologyComputingDisplay.avif'); ?>">
+<meta property="og:image:alt" content="Cloud Technology Computing cloud, AI, web development, and SEO resources">
+<meta property="og:site_name" content="Cloud Technology Computing">
+<meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Cloud Computing & AI Blog | Cloud Technology Computing">
-<meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://cloudtechnologycomputing.com/assets/img/home-6/computer clouds.png">
-<meta name="twitter:creator" content="@JhonArzuGil"/>
-<meta property="twitter:url" content="https://cloudtechnologycomputing.com/">
-<meta name="twitter:image:alt" content="Stay updated with the latest trends in cloud computing, web development, AI, and digital transformation. Read expert insights, tutorials, and industry news from Cloud Technology Computing.">  
-    <!-- Favicon -->
-   <link href="assets/img/computer clouds.png" type="image/x-icon" rel="icon">
-     <!-- Title -->
-    <title>Cloud Computing & AI Blog | Cloud Technology Computing</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?= e($pageTitle); ?>">
+<meta name="twitter:description" content="<?= e($pageDescription); ?>">
+<meta name="twitter:image" content="<?= e($siteUrl . '/assets/img/home-6/CloudTechnologyComputingDisplay.avif'); ?>">
+<script type="application/ld+json">
+<?= json_encode($blogSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
+</script>
+<?php if ($itemListElements !== []): ?>
+<script type="application/ld+json">
+<?= json_encode($itemListSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
+</script>
+<?php endif; ?>
 </head>
-
-
 <body class="home-dark2 tt-magic-cursor">
-    <!-- Preloader Start -->
-    <div class="preloader">
-        <div id="particles-background" class="vertical-centered-box"></div>
-        <div id="particles-foreground" class="vertical-centered-box"></div>
-    
-        <div class="vertical-centered-box">
-        <div class="content">
-            <div class="loader-circle"></div>
-            <div class="loader-line-mask">
-            <div class="loader-line"></div>
-            </div>
-            <svg width="50" height="50" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M31.5875 7.80132C26.1756 2.71548 18.9772 3.33531 13.0177 7.36702C12.9433 7.45181 12.4808 7.69025 12.9963 6.94836C24.4371 -5.54919 45.4795 11.5151 33.7252 25.7347C36.3568 20.0872 37.0161 12.9032 31.5879 7.80144L31.5875 7.80132Z"
-                    fill="#06D889" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M26.7504 1.91075C8.15888 -3.63601 -7.81139 25.1051 12.8958 38C-10.3418 27.992 1.07241 -2.40195 21.5296 0.151704C23.1991 0.358215 25.7562 1.14769 26.7503 1.91051L26.7504 1.91075Z"
-                    fill="#06D889" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M31.656 20.3691C31.656 26.5676 26.6425 31.6058 20.4701 31.6058C14.2923 31.6058 9.2793 26.5675 9.2793 20.3691C9.2793 14.1705 14.2928 9.13232 20.4701 9.13232C26.6425 9.13232 31.656 14.1706 31.656 20.3691ZM12.2671 21.8578C11.4325 23.1348 12.4106 26.377 15.3081 28.2948C18.1789 30.2125 21.8579 30.0695 22.7139 28.7876C23.5485 27.5373 21.7676 28.3426 18.514 27.1345C13.1444 25.1426 13.0966 20.5759 12.2671 21.8578Z"
-                    fill="#06D889" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M38.395 13.1796C46.0027 27.7854 24.886 46.5405 10.1649 33.2636C8.28281 31.579 7.45359 29.9525 6.08203 27.8385C17.5284 43.6315 42.7177 31.1549 38.1986 13.4121C38.0338 12.7603 38.1402 12.7021 38.3952 13.179L38.395 13.1796Z"
-                    fill="#06D889" />
-            </svg>
-        </div>
-        </div>
-    
-    </div>
-    <!-- Preloader End -->
-    <div class="header-sidebar">
-        <div class="siderbar-top">
-            <div class="sidebar-log">
-               <a href="../index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
-            </div>
-            <div class="close-btn">
-                <i class="bi bi-x-lg"></i>
-            </div>
-        </div>
-        <div class="sidebar-content">
-            <p>🌐 Cloud Tech Co. | Est. Oct 6, 2023 | Texas-Based | Cloud Computing & Web Development Wizards 🚀 #TechInnovators.</p>
-        </div>
-        <div class="address-card">
-            <div class="content">
-                <div class="informations">
-                    <div class="single-info">
-                        <div class="icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info">
-                            <p>4409 Caplin St, Houston,Texas, 77026, United States</p>
-                        </div>
-                    </div>
-                    <div class="single-info">
-                        <div class="icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="info">
-                           <a href="tel:2489385567">+1 248 938 5567</a>
-                            <a href="tel:2489385567">+1 248 938 5567</a>
-                        </div>
-                    </div>
-                    <div class="single-info">
-                        <div class="icon">
-                            <i class="far fa-envelope"></i>
-                        </div>
-                        <div class="info">
-                             <a href="mailto: Jgil20@me.com">Jgil20@me.com</a>
-                            <a href="mailto: Jgil20@me.com">Jgil20@me.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
-        </div>
-        <div class="follow-area">
-            <h5 class="blog-widget-title">Follow Us</h5>
-            <p class="para">Follow us on Social Network</p>
-            <div class="blog-widget-body">
-                <ul class="follow-list d-flex flex-row align-items-start gap-4">
-                   <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <header class="header-area2 style-2 two">
-        <div class="header-logo">
-            <a href="index.php"><!--<img loading="lazy" alt="image" class="img-fluid" src="assets/img/logo.svg"></a>--><p style="color : white">Cloud Technology Computing</p></a>
-        </div>
-        <div class="main-menu">
-            <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
-                <div class="mobile-logo-wrap">
-                    <a href="index.php"><!--<img loading="lazy" alt="image" src="assets/img/logo.svg"> --> <p style="color : white">Cloud Technology Computing</p></a>
-                </div>
-            </div>
-            <ul class="menu-list">
-                <li class="menu-item">
-                    <a href="index.php" class="drop-down">Home</a><i class="bi bi-plus dropdown-icon"></i>
-                </li>
-                <li><a href="https://hybridclouddev.com/">C.E.O</a></li>
-                <li class="menu-item-has-children">
-                    <a href="services.php" class="drop-down">services</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li><a href="services/Web%20Development%20service-details.php" class="dropdown-item">Web Development services</a></li>
-                        <li><a href="services/Software%20Development%20service-details.php" class="nav-item nav-link">Software Development services</a></li>
-                        <li><a href="services/Managed_Cloud_Hosting.php" class="dropdown-item">Managed Cloud Hosting</a></li>
-                        <li><a href="services/S.E.O%20service-details.php" class="dropdown-item">S.E.O services</a></li>
-                        <li><a href="services/Data%20Analytics%20service-details.php" class="dropdown-item">Data Analytics services</a></li>
-                        <li><a href="services/Digital%20Marketing%20service-details.php" class="dropdown-item">Digital Marketing services</a></li>
-                        <li><a href="services/Website%20Optimization%20service-details.php" class="dropdown-item">Website Optimization services</a></li>
-                        <li><a href="services/Mobile%20Development%20service-details.php" class="nav-item nav-link">Mobile Development services</a></li>
-                        <li><a href="services/Wordpress%20Development%20service-details.php" class="dropdown-item">Wordpress Development services</a></li>
-                        <li><a href="services/SAP%20Consulting%20service-details.php" class="dropdown-item">SAP Consulting services</a></li>
-                        <li><a href="services/Consulting%20service-details.php" class="dropdown-item">Consulting services</a></li>
-                        <li><a href="services/AI_Chatbot_Development.php" class="dropdown-item">AI Chatbot Development</a></li>
-                    </ul>
-                <li class="menu-item-has-children">
-                    <a href="project.php" class="drop-down">Projects</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                         <li> <a href="https://smartwatchesanddrones.com/" class="dropdown-item">Shop Online</a></li>
-                        <li><a href="https://play.google.com/store/search?q=Jhon%20Arzu&c=apps&hl=en_US&gl=US" target="_blank"  class="nav-item nav-link">App's</a></li>
-                     <li>  <a href="https://www.credly.com/users/jhongil" target="_blank"  class="dropdown-item">Certifications</a></li>
-                    <li><a href="https://profile.indeed.com/p/jhona-y4v6mdm" target="_blank"  class="dropdown-item">Indeed Resume</a></li>
-                     <li><a href="https://www.arzugil.com" target="_blank"  class="dropdown-item">Portfolio Site</a></li>
-                    </ul>
-               <li><a href="case-study-standard.php">Case Studies</a></li>
-                <li class="menu-item active"><a href="blog.php">Blog</a></li>
-   <li class="menu-item-has-children">
-                    <a href="about.php" class="drop-down">About Us</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li> <a href="team.php" class="dropdown-item">Our Team</a></li>
-                        <li> <a href="pricing.php" class="dropdown-item">Pricing</a></li>
-                        <li> <a href="faq.php" class="dropdown-item">FAQ's</a></li><li> 
-                        <li> <a href="contact.php" class="dropdown-item">Contact Us!</a></li>
-       </ul>
-            </ul>
-            <div class="d-lg-none d-block">
-                <form class="mobile-menu-form">
-                    <div class="hotline pt-30">
-                        <div class="hotline-icon">
-                            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20.5488 16.106C20.0165 15.5518 19.3745 15.2554 18.694 15.2554C18.0191 15.2554 17.3716 15.5463 16.8173 16.1005L15.0833 17.8291C14.9406 17.7522 14.7979 17.6809 14.6608 17.6096C14.4632 17.5108 14.2766 17.4175 14.1175 17.3187C12.4932 16.2871 11.0171 14.9426 9.6013 13.2031C8.91536 12.3361 8.45441 11.6063 8.11968 10.8655C8.56965 10.4539 8.9867 10.0259 9.39277 9.61431C9.54642 9.46066 9.70007 9.30152 9.85372 9.14787C11.0061 7.9955 11.0061 6.50291 9.85372 5.35054L8.35564 3.85246C8.18553 3.68234 8.00993 3.50674 7.8453 3.33115C7.51606 2.99092 7.17034 2.63972 6.81366 2.31047C6.28137 1.78368 5.64483 1.50381 4.97535 1.50381C4.30588 1.50381 3.65836 1.78368 3.10961 2.31047C3.10412 2.31596 3.10412 2.31596 3.09864 2.32145L1.23289 4.20365C0.530497 4.90605 0.129911 5.7621 0.0421114 6.75533C-0.089588 8.35768 0.382335 9.85027 0.744508 10.827C1.63348 13.2251 2.96145 15.4475 4.94243 17.8291C7.34594 20.699 10.2378 22.9653 13.5413 24.5622C14.8034 25.1603 16.4881 25.8682 18.3703 25.9889C18.4855 25.9944 18.6062 25.9999 18.716 25.9999C19.9836 25.9999 21.0482 25.5445 21.8823 24.639C21.8878 24.628 21.8987 24.6226 21.9042 24.6116C22.1896 24.2659 22.5188 23.9531 22.8645 23.6184C23.1005 23.3934 23.3419 23.1574 23.5779 22.9105C24.1212 22.3453 24.4065 21.6868 24.4065 21.0118C24.4065 20.3314 24.1157 19.6783 23.5614 19.1296L20.5488 16.106ZM22.5133 21.8843C22.5078 21.8843 22.5078 21.8898 22.5133 21.8843C22.2993 22.1148 22.0798 22.3233 21.8439 22.5538C21.4872 22.894 21.125 23.2507 20.7848 23.6513C20.2305 24.2439 19.5775 24.5238 18.7215 24.5238C18.6392 24.5238 18.5514 24.5238 18.4691 24.5183C16.8393 24.414 15.3247 23.7775 14.1888 23.2342C11.0829 21.7307 8.35564 19.596 6.08931 16.8907C4.21808 14.6354 2.96694 12.5501 2.13833 10.3112C1.62799 8.94484 1.44142 7.88026 1.52373 6.87606C1.57861 6.23402 1.82554 5.70174 2.281 5.24628L4.15223 3.37504C4.42112 3.12262 4.70647 2.98543 4.98633 2.98543C5.33204 2.98543 5.6119 3.19396 5.7875 3.36956C5.79299 3.37504 5.79847 3.38053 5.80396 3.38602C6.1387 3.69881 6.45697 4.02257 6.79171 4.36828C6.96182 4.54388 7.13742 4.71948 7.31302 4.90056L8.8111 6.39865C9.39277 6.98032 9.39277 7.51809 8.8111 8.09976C8.65196 8.2589 8.49831 8.41804 8.33918 8.57169C7.87823 9.04361 7.43923 9.48261 6.96182 9.91063C6.95085 9.92161 6.93987 9.92709 6.93438 9.93807C6.46246 10.41 6.55026 10.8709 6.64903 11.1837C6.65452 11.2002 6.66001 11.2167 6.6655 11.2331C7.05511 12.177 7.60385 13.0659 8.43795 14.125L8.44344 14.1305C9.95798 15.9962 11.5548 17.4504 13.3163 18.5644C13.5413 18.7071 13.7718 18.8223 13.9913 18.932C14.1888 19.0308 14.3754 19.1241 14.5345 19.2229C14.5565 19.2339 14.5784 19.2503 14.6004 19.2613C14.787 19.3546 14.9626 19.3985 15.1436 19.3985C15.5991 19.3985 15.8845 19.1131 15.9777 19.0198L17.8545 17.1431C18.041 16.9566 18.3374 16.7316 18.6831 16.7316C19.0233 16.7316 19.3032 16.9456 19.4733 17.1322C19.4788 17.1376 19.4788 17.1376 19.4842 17.1431L22.5078 20.1667C23.0731 20.7265 23.0731 21.3026 22.5133 21.8843Z">
-                                </path>
-                                <path
-                                    d="M14.0512 6.18495C15.4889 6.4264 16.7949 7.10685 17.8375 8.14947C18.8802 9.19209 19.5551 10.4981 19.8021 11.9358C19.8624 12.298 20.1752 12.5504 20.5319 12.5504C20.5758 12.5504 20.6142 12.5449 20.6581 12.5395C21.0642 12.4736 21.3331 12.0895 21.2672 11.6834C20.9709 9.94387 20.1478 8.35799 18.8911 7.10136C17.6345 5.84473 16.0486 5.0216 14.3091 4.72528C13.903 4.65943 13.5244 4.92832 13.4531 5.3289C13.3817 5.72949 13.6451 6.1191 14.0512 6.18495Z">
-                                </path>
-                                <path
-                                    d="M25.9707 11.4691C25.4823 8.60468 24.1324 5.99813 22.0581 3.92387C19.9838 1.8496 17.3773 0.49968 14.5128 0.011294C14.1122 -0.0600432 13.7336 0.214331 13.6623 0.614917C13.5964 1.02099 13.8653 1.39963 14.2714 1.47096C16.8285 1.90447 19.1607 3.11721 21.0155 4.96649C22.8702 6.82125 24.0775 9.15343 24.511 11.7106C24.5714 12.0728 24.8841 12.3252 25.2408 12.3252C25.2847 12.3252 25.3231 12.3197 25.367 12.3142C25.7676 12.2539 26.042 11.8697 25.9707 11.4691Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="hotline-info">
-                            <span>Call Us Now</span>
-                            <h1><a href="tel:12489385567">1-248-938-5567</a></h1>
-                        </div>
-                    </div>
-                    <div class="email pt-20 d-flex align-items-center">
-                        <div class="email-icon">
-                            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_461_205)">
-                                    <path
-                                        d="M23.5117 3.30075H2.38674C1.04261 3.30075 -0.0507812 4.39414 -0.0507812 5.73827V20.3633C-0.0507812 21.7074 1.04261 22.8008 2.38674 22.8008H23.5117C24.8558 22.8008 25.9492 21.7074 25.9492 20.3633V5.73827C25.9492 4.39414 24.8558 3.30075 23.5117 3.30075ZM23.5117 4.92574C23.6221 4.92574 23.7271 4.94865 23.8231 4.98865L12.9492 14.4131L2.07526 4.98865C2.17127 4.9487 2.27629 4.92574 2.38668 4.92574H23.5117ZM23.5117 21.1757H2.38674C1.93844 21.1757 1.57421 20.8116 1.57421 20.3632V6.70547L12.4168 16.1024C12.57 16.2349 12.7596 16.3008 12.9492 16.3008C13.1388 16.3008 13.3285 16.2349 13.4816 16.1024L24.3242 6.70547V20.3633C24.3242 20.8116 23.96 21.1757 23.5117 21.1757Z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="email-info">
-                            <span>Email Now</span>
-                           <h6><a href="mailto:Jgil20@me.com">Jgil20@me.com</a></h6>
-                        </div>
-                    </div>
-                </form>
-                <div class="header-btn5">
-                    <a class="primary-btn3" href="form.php">Free Consultation!</a>
-                </div>
-            </div>
-        </div>
-        <div class="nav-right d-flex jsutify-content-end align-items-center">
-            <div class="header-contact d-xl-block d-none">
-                <span><img loading="lazy" src="assets/img/home-6/phone.svg" alt="Cloud Technology Computing: Superior client support in computer clouds for enhanced reliability and innovative technical solutions">For Client Support:</span>
-                <h6><a href="Tel:12489385567">1-248-938-5567</a></h6>
-            </div>
-            <div class="header-btn d-sm-flex d-none">
-                <a href="../form.php" target="_blank">Free Consultation!</a>
-            </div>
-            <div class="sidebar-button mobile-menu-btn ">
-                <span></span>
-            </div>
-        </div>
-    </header>
-        <!-- End header section -->
-    <!-- Start breadcrumbs section -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<?php include __DIR__ . '/nav.php'; ?>
+
+<main id="main-content">
     <section class="breadcrumbs">
-        <div class="breadcrumb-sm-images">
+        <div class="breadcrumb-sm-images" aria-hidden="true">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img src="/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="" width="260" height="180" fetchpriority="high">
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="/assets/img/inner-pages/ibm cloud provider.avif" alt="" width="260" height="180">
             </div>
         </div>
         <div class="container">
@@ -250,232 +348,226 @@ $stmt->close();
                 <div class="col-12">
                     <div class="breadcrumb-wrapper">
                         <div class="breadcrumb-cnt">
-                            <span>Blog</span>
-                            <h1>"Cloud Technology Computing"</h1>
+                            <span>Technology Insights</span>
+                            <h1><?= e($heroTitle); ?></h1>
+                            <p><?= e($heroText); ?></p>
                             <div class="breadcrumb-list">
-                                <a href="index.php">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Blog
+                                <a href="/">Home</a>
+                                <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="16">
+                                <a href="/blog.php">Blog</a>
+                                <?php if ($isFilteredPage || $isSearchPage): ?>
+                                    <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="16">
+                                    <span><?= e($search !== '' ? 'Search' : ($activeCategoryName !== '' ? $activeCategoryName : ucwords(str_replace('-', ' ', $category !== '' ? $category : $tag)))); ?></span>
+                                <?php endif; ?>
                             </div>
-                           
+                            <form class="mt-4" method="get" action="/blog.php" role="search" aria-label="Search blog articles">
+                                <div class="row g-2 justify-content-center">
+                                    <div class="col-md-7">
+                                        <label class="visually-hidden" for="blog-search">Search blog articles</label>
+                                        <input id="blog-search" class="form-control" type="search" name="s" value="<?= e($search); ?>" maxlength="100" placeholder="Search cloud, AI, SEO, cybersecurity...">
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <button class="primary-btn3" type="submit">Search Articles</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End breadcrumbs section -->
-    <div class="blog-banner sec-mar">
+
+    <section class="home3-blog-area sec-mar">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="blog-banner-wrap">
-                        <div class="banner-img">
-                            <img loading="lazy" src="assets/img/inner-pages/blog-banner.png" alt="">
-                        </div>
-                       <div class="banner-content">
-                            <h2>Blog</h2>
-                            <p>Join Our Subscribers List</p>
-                        
-                               <div id="mc_embed_shell">
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-  <style type="text/css">
-        #mc_embed_signup{background:#6c757d; false,clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-    <form action="https://cloudtechnologycomputing.us22.list-manage.com/subscribe/post?u=841264057ad6189b30060d0b6&amp;id=c6f8709ae8&amp;f_id=00f0c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
-            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-        <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_841264057ad6189b30060d0b6_c6f8709ae8" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
-    </div>
-</form>
-</div>
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='url';fnames[7]='MMERGE7';ftypes[7]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-
-                            
-                       </div>
+            <?php if ($categories !== []): ?>
+                <nav class="mb-4" aria-label="Blog categories">
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <a class="btn btn-outline-light<?= $category === '' && $tag === '' && $search === '' ? ' active' : ''; ?>" href="/blog.php">All Articles</a>
+                        <?php foreach ($categories as $categoryRow): ?>
+                            <?php $categoryUrl = blogPageUrl(1, (string) $categoryRow['slug']); ?>
+                            <a class="btn btn-outline-light<?= $category === $categoryRow['slug'] ? ' active' : ''; ?>" href="<?= e($categoryUrl); ?>">
+                                <?= e((string) $categoryRow['name']); ?>
+                                <span aria-label="<?= (int) $categoryRow['post_count']; ?> articles">(<?= (int) $categoryRow['post_count']; ?>)</span>
+                            </a>
+                        <?php endforeach; ?>
                     </div>
+                </nav>
+            <?php endif; ?>
+
+            <div class="blog-cta-box">
+                <div>
+                    <span class="solution-kicker">Turn traffic into customers</span>
+                    <h2>Need a stronger search presence?</h2>
+                    <p>Combine useful content, focused service pages, technical SEO, analytics, and clear calls to action to attract qualified visitors.</p>
                 </div>
+                <a class="primary-btn3" href="/solutions/business-website-seo-optimization">Explore SEO Optimization</a>
             </div>
-        </div>
-    </div>
-    <div class="home3-blog-area sec-mar">
-        <div class="container">
-            
-                                    <div class="row g-4">
-    <?php foreach ($posts as $post): ?>
-        <div class="col-lg-4 col-md-6">
-            <div class="single-blog-card">
-                <div class="blog-thumb magnetic-item">
-                    <a href="blog-details.php?slug=<?php echo htmlspecialchars($post['slug'], ENT_QUOTES); ?>">
-                        <img loading="lazy"
-                             class="img-fluid"
-                             src="<?php echo htmlspecialchars($post['featured_image'], ENT_QUOTES); ?>"
-                             alt="<?php echo htmlspecialchars($post['title'], ENT_QUOTES); ?>">
-                    </a>
+
+            <?php if ($search !== '' || $category !== '' || $tag !== ''): ?>
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+                    <p class="mb-0">
+                        Showing <?= count($posts); ?> of <?= $totalPosts; ?> result<?= $totalPosts === 1 ? '' : 's'; ?>.
+                    </p>
+                    <a href="/blog.php">Clear filters and view all articles</a>
                 </div>
-                <div class="blog-card-content">
-                    <span><?php echo htmlspecialchars($post['category'], ENT_QUOTES); ?></span>
-                    <h3>
-                        <a href="blog-details.php?slug=<?php echo htmlspecialchars($post['slug'], ENT_QUOTES); ?>">
-                            <?php echo htmlspecialchars($post['title'], ENT_QUOTES); ?>
-                        </a>
-                    </h3>
-                    <p><?php echo htmlspecialchars($post['excerpt'], ENT_QUOTES); ?></p>
-                    <a class="read-more"
-                       href="blog-details.php?slug=<?php echo htmlspecialchars($post['slug'], ENT_QUOTES); ?>">
-                        Read More
-                    </a>
-                    
-                                    
-                                    
-                                            <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="social-area">
-                                   <ul>
-                                        <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"aria-label="Facebook Page"  target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank"><i class="bi bi-github"></i></a></li> 
-                    <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
-                                    </ul>
-                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endforeach; ?> 
-                    </div>
-                 </div>
+            <?php endif; ?>
 
-                <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-blog magnetic-item">
-                        <div class="blog-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/Cloud Solutions Techology.webp" alt="Cloud Technology Computing: Transforming the Future">
-                            <div class="blog-tag">
-                                <a href="blog.php">Cloud Solutions</a>
+            <div class="row g-4">
+                <?php if ($pageOutOfRange): ?>
+                    <div class="col-12">
+                        <div class="blog-cta-box">
+                            <div>
+                                <h2>This blog page does not exist.</h2>
+                                <p>The requested page is outside the available article archive.</p>
                             </div>
-                        </div>
-                        <div class="blog-content">
-                           <ul class="blog-meta">
-                                <li><a href="blog.php">Aug 31, 2023</a></li>
-                                <li><a href="blog.php">Comment (1)</a></li>
-                            </ul>
-                            <h4><a href="blog/Cloud Comprehensive Guide.php">Cloud Technology Computing: Transforming the Future</a></h4>
-                            <div class="blog-footer">
-                                <div class="read-btn">
-                                    <a href="blog/Cloud Comprehensive Guide.php">Read More
-                                        <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="social-area">
-                                   <ul>
-                                        <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"aria-label="Facebook Page"  target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank"><i class="bi bi-github"></i></a></li> 
-                    <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
-                                    </ul>
-                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
-                                </div>
-                            </div>
+                            <a class="primary-btn3" href="/blog.php">Return to the Blog</a>
                         </div>
                     </div>
-                 </div>
-                 <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-blog magnetic-item">
-                        <div class="blog-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/Cloud Solutions Techology.webp" alt="Cloud Technology Computing: Transforming the Future">
-                            <div class="blog-tag">
-                                <a href="blog.php">Cloud Solutions</a>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                           <ul class="blog-meta">
-                                <li><a href="blog.php">Aug 31, 2023</a></li>
-                                <li><a href="blog.php">Comment (1)</a></li>
-                            </ul>
-                            <h4><a href="blog/Cloud Comprehensive Guide.php">Cloud Technology Computing: Transforming the Future</a></h4>
-                            <div class="blog-footer">
-                                <div class="read-btn">
-                                    <a href="blog/Cloud Comprehensive Guide.php">Read More
-                                        <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                        </svg>
+                <?php elseif ($posts !== []): ?>
+                    <?php foreach ($posts as $index => $post): ?>
+                        <?php
+                            $postUrl = '/blog/' . rawurlencode((string) $post['slug']);
+                            $image = !empty($post['featured_image'])
+                                ? '/' . ltrim((string) $post['featured_image'], '/')
+                                : '/assets/img/home-3/Cloud Solutions Techology.webp';
+                            $imageAlt = !empty($post['featured_image_alt'])
+                                ? (string) $post['featured_image_alt']
+                                : (string) $post['title'];
+                            $categorySlug = (string) ($post['category_slug'] ?? '');
+                            $publishedDate = formatBlogDate((string) ($post['post_date'] ?? ''));
+                            $dateTime = formatBlogDateTimeAttribute((string) ($post['post_date'] ?? ''));
+                            $absolutePostUrl = $siteUrl . $postUrl;
+                        ?>
+                        <div class="col-lg-4 col-md-6">
+                            <article class="single-blog magnetic-item h-100">
+                                <div class="blog-img">
+                                    <a href="<?= e($postUrl); ?>">
+                                        <img
+                                            class="img-fluid"
+                                            src="<?= e($image); ?>"
+                                            alt="<?= e($imageAlt); ?>"
+                                            width="420"
+                                            height="280"
+                                            <?= $index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'; ?>
+                                            decoding="async"
+                                        >
                                     </a>
+                                    <?php if ($categorySlug !== ''): ?>
+                                        <div class="blog-tag">
+                                            <a href="<?= e(blogPageUrl(1, $categorySlug)); ?>"><?= e((string) ($post['category_name'] ?? 'Blog')); ?></a>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
-                                <div class="social-area">
-                                   <ul>
-                                        <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"aria-label="Facebook Page"  target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank"><i class="bi bi-github"></i></a></li> 
-                    <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
+                                <div class="blog-content">
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <?php if ($publishedDate !== ''): ?>
+                                                <time datetime="<?= e($dateTime); ?>"><?= e($publishedDate); ?></time>
+                                            <?php endif; ?>
+                                        </li>
                                     </ul>
-                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
+                                    <h2 class="h4"><a href="<?= e($postUrl); ?>"><?= e((string) $post['title']); ?></a></h2>
+                                    <p><?= e((string) $post['excerpt']); ?></p>
+                                    <div class="blog-footer">
+                                        <div class="read-btn">
+                                            <a href="<?= e($postUrl); ?>" aria-label="Read <?= e((string) $post['title']); ?>">Read More
+                                                <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M0 1H12M12 1V13M12 1L0.5 12"></path></svg>
+                                            </a>
+                                        </div>
+                                        <div class="social-area">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?= rawurlencode($absolutePostUrl); ?>" aria-label="Share <?= e((string) $post['title']); ?> on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?= rawurlencode($absolutePostUrl); ?>" aria-label="Share <?= e((string) $post['title']); ?> on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></li>
+                                            </ul>
+                                            <span><img loading="lazy" src="/assets/img/home-3/plain-icon.svg" alt="" width="26" height="26"></span>
+                                        </div>
+                                    </div>
                                 </div>
+                            </article>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <div class="col-12">
+                        <div class="blog-cta-box">
+                            <div>
+                                <h2>No articles found.</h2>
+                                <p>Try a broader search or browse all Cloud Technology Computing articles.</p>
                             </div>
+                            <a class="primary-btn3" href="/blog.php">View All Articles</a>
                         </div>
                     </div>
-                 </div>
+                <?php endif; ?>
+            </div>
 
-                 <div class="col-lg-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-blog magnetic-item">
-                        <div class="blog-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computing: Transforming the Future">
-                            <div class="blog-tag">
-                                <a href="TechSolutions.php">Business Solutions</a>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                           <ul class="blog-meta">
-                                <li><a href="blog.php">Feb 9, 2025</a></li>
-                                <li><a href="blog.php">Comment (0)</a></li>
-                            </ul>
-                            <h4><a href="blog/TechSolutions.php">Is Your Small Business Stuck in the Stone Age?</a></h4>
-                            <div class="blog-footer">
-                                <div class="read-btn">
-                                    <a href="blog/Stoneage.php">Read More
-                                        <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="social-area">
-                                   <ul>
-                                        <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"aria-label="Facebook Page"  target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank"><i class="bi bi-github"></i></a></li> 
-                    <li><a href="https://www.linkedin.com/in/jhongil"aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://www.google.com/search?q=Cloud+Technology+Computing+Corporation"aria-label="Google Business Page"target="_blank"><i class="bi bi-google"></i></a></li>
-                                    </ul>
-                                    <span><img loading="lazy" src="assets/img/home-3/plain-icon.svg" alt="Cloud Technology Computing: Transforming the Future"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                
-            </div>
-            <div class="row">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                      <li class="page-item disabled">
-                        <a class="page-link"><i class="bi bi-arrow-left"></i></a>
-                      </li>
-                      <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#"><i class="bi bi-arrow-right"></i></a>
-                      </li>
-                    </ul>
-                  </nav>
-            </div>
+            <?php if (!$pageOutOfRange && $totalPages > 1): ?>
+                <?php
+                    $startPage = max(1, $blogCurrentPage - 2);
+                    $endPage = min($totalPages, $blogCurrentPage + 2);
+                ?>
+                <div class="row mt-5">
+                    <nav aria-label="Blog page navigation">
+                        <ul class="pagination justify-content-center flex-wrap">
+                            <li class="page-item <?= $blogCurrentPage <= 1 ? 'disabled' : ''; ?>">
+                                <?php if ($blogCurrentPage > 1): ?>
+                                    <a class="page-link" href="<?= e(blogPageUrl($blogCurrentPage - 1, $category, $tag, $search)); ?>" rel="prev" aria-label="Previous blog page"><i class="bi bi-arrow-left"></i></a>
+                                <?php else: ?>
+                                    <span class="page-link" aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                                <?php endif; ?>
+                            </li>
+
+                            <?php if ($startPage > 1): ?>
+                                <li class="page-item"><a class="page-link" href="<?= e(blogPageUrl(1, $category, $tag, $search)); ?>">1</a></li>
+                                <?php if ($startPage > 2): ?><li class="page-item disabled"><span class="page-link">…</span></li><?php endif; ?>
+                            <?php endif; ?>
+
+                            <?php for ($page = $startPage; $page <= $endPage; $page++): ?>
+                                <li class="page-item <?= $page === $blogCurrentPage ? 'active' : ''; ?>">
+                                    <a class="page-link" href="<?= e(blogPageUrl($page, $category, $tag, $search)); ?>" <?= $page === $blogCurrentPage ? 'aria-current="page"' : ''; ?>><?= $page; ?></a>
+                                </li>
+                            <?php endfor; ?>
+
+                            <?php if ($endPage < $totalPages): ?>
+                                <?php if ($endPage < $totalPages - 1): ?><li class="page-item disabled"><span class="page-link">…</span></li><?php endif; ?>
+                                <li class="page-item"><a class="page-link" href="<?= e(blogPageUrl($totalPages, $category, $tag, $search)); ?>"><?= $totalPages; ?></a></li>
+                            <?php endif; ?>
+
+                            <li class="page-item <?= $blogCurrentPage >= $totalPages ? 'disabled' : ''; ?>">
+                                <?php if ($blogCurrentPage < $totalPages): ?>
+                                    <a class="page-link" href="<?= e(blogPageUrl($blogCurrentPage + 1, $category, $tag, $search)); ?>" rel="next" aria-label="Next blog page"><i class="bi bi-arrow-right"></i></a>
+                                <?php else: ?>
+                                    <span class="page-link" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                                <?php endif; ?>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            <?php endif; ?>
+
+            <section class="solution-section">
+                <span class="solution-kicker">Popular Service Pages</span>
+                <h2>Explore solutions built around real business needs</h2>
+                <div class="seo-link-grid mt-4">
+                    <article class="seo-card"><h3><a href="/solutions/cloud-computing-small-business">Cloud Computing for Small Businesses</a></h3><p>Cloud hosting, secure storage, backups, migration planning, and managed cloud support.</p></article>
+                    <article class="seo-card"><h3><a href="/solutions/ai-automation-small-business">AI Automation for Small Businesses</a></h3><p>AI chatbots, lead capture, workflow automation, and practical productivity improvements.</p></article>
+                    <article class="seo-card"><h3><a href="/solutions/custom-php-mysql-website-development">Custom PHP & MySQL Development</a></h3><p>Dynamic blogs, customer portals, forms, service pages, and database-driven applications.</p></article>
+                    <article class="seo-card"><h3><a href="/solutions/managed-it-services-small-businesses">Managed IT Services</a></h3><p>Technical support, cloud management, security monitoring, backups, and IT planning.</p></article>
+                    <article class="seo-card"><h3><a href="/solutions/houston-cloud-consulting-services">Houston Cloud Consulting</a></h3><p>Cloud assessments, migration roadmaps, cost optimization, security, and modernization.</p></article>
+                    <article class="seo-card"><h3><a href="/contact.php">Request a Technology Consultation</a></h3><p>Discuss your website, cloud, AI, cybersecurity, mobile app, SEO, or managed IT goals.</p></article>
+                </div>
+            </section>
         </div>
-    </div>
-    <!-- Start Footer section -->
-    <?php include 'footer.php'; ?>
+    </section>
+</main>
+
+<!-- CTC_BLOG_MAIN_COMPLETE -->
+<?php
+$footerPath = __DIR__ . '/footer.php';
+if (!is_file($footerPath) || !is_readable($footerPath)) {
+    error_log('CTC footer missing or unreadable: ' . $footerPath);
+    echo '<footer style="padding:40px;background:#171717;color:#fff;text-align:center"><p style="color:#fff">Cloud Technology Computing</p></footer>';
+    echo '</body></html>';
+} else {
+    require $footerPath;
+}
+?>

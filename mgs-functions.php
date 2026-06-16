@@ -11,7 +11,7 @@
 	$mail->CharSet = 'UTF-8';
 	
 	//keep smtpoption false if you don't need smtp
-	$smtpoption = false;		//Boolean true/false	true: email send using SMTP		false: email send using default
+	$smtpoption = ctc_env('SMTP_ENABLED', 'false') === 'true';		//Boolean true/false	true: email send using SMTP		false: email send using default
 	if($smtpoption) {
 		require 'phpmailer/src/SMTP.php';
 		
@@ -25,25 +25,25 @@
 		//Ask for HTML-friendly debug output
 		$mail->Debugoutput = 'html';
 		//Set the hostname of the mail server (Change here)
-		$mail->Host = "smtp.hostinger.com";
+		$mail->Host = ctc_env('SMTP_HOST', 'smtp.hostinger.com');
 		//Set the SMTP port number - likely to be 25, 465 or 587 (Change here)
-		$mail->Port = 25;
+		$mail->Port = (int) ctc_env('SMTP_PORT', '587');
 		//open tls if you use as like for gmail
 		//$email->SMTPSecure = 'tls';
 		//Whether to use SMTP authentication
 		$mail->SMTPAuth = true;
 		//Username to use for SMTP authentication (Change here)
-		$mail->Username = "admin@cloudtechnologycomputing.com ";
+		$mail->Username = ctc_env('SMTP_USERNAME', '');
 		//Password to use for SMTP authentication (Change here)
-		$mail->Password = "Spiderman8085$";
+		$mail->Password = ctc_env('SMTP_PASSWORD', '');
 	}
 	
 	//From email address and name (Change here)
-	$mail->From = "admin@cloudtechnologycomputing.com";
+	$mail->From = ctc_env('MAIL_FROM', 'admin@cloudtechnologycomputing.com');
 	$mail->FromName = "Jhon Arzu-Gil";
 	
 	//Recipient address and name (Change here)
-	$mail->addAddress("admin@cloudtechnologycomputing.com", "Jhon Arzu-Gil");
+	$mail->addAddress(ctc_env('MAIL_TO', 'admin@cloudtechnologycomputing.com'), 'Jhon Arzu-Gil');
 
 
 	$customeremail = $email;

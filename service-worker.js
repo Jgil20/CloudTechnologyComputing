@@ -2,11 +2,11 @@
 
 /** —— Tweak these for your site —— **/
 const SCOPE_ROOT = '/';                // If your site lives at /blog/, set '/blog/'
-const PRECACHE = 'precache-v1';
-const RUNTIME  = 'runtime';
+const PRECACHE = 'precache-v2';
+const RUNTIME  = 'runtime-v1';
 const RAW_URLS = [
   '/',                   // root landing (if your SW scope is root)
-  '/index.php',          // or your main PHP page(s)
+  '/',                   // canonical homepage
   '/blog.php',
   '/offline.html',
 
@@ -21,6 +21,8 @@ const RAW_URLS = [
   '/assets/css/boxicons.min.css',
   '/assets/css/preloader.css',
   '/assets/css/style2.css',
+  '/style.css',
+  '/css/seo-engagement.css',
 
   // JS
   '/assets/js/jquery-3.6.0.min.js',
@@ -38,6 +40,8 @@ const RAW_URLS = [
   '/assets/js/wow.min.js',
   '/assets/js/preloader.js',
   '/assets/js/custom.js',
+  '/script.js',
+  '/sw-register.js',
 
   // images you want guaranteed offline (optional)
   // '/assets/img/sm-logo.svg',
@@ -75,7 +79,9 @@ self.addEventListener('activate', event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
     await Promise.all(
-      keys.map(k => (k === PRECACHE || k === RUNTIME) ? null : caches.delete(k))
+      keys
+        .filter(k => k !== PRECACHE && k !== RUNTIME)
+        .map(k => caches.delete(k))
     );
     await self.clients.claim();
   })());
@@ -84,24 +90,34 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const { request } = event;
 
-self.addEventListener('fetch', (event) => {
-  if (event.request.method !== 'GET') return; // don't intercept form posts
-  // ...rest of handler...
-});
-
   // Only handle GETs from our own origin
+  if (request.method !== 'GET') return;
   const url = new URL(request.url);
-  if (request.method !== 'GET' || url.origin !== self.location.origin) return;
+  if (url.origin !== self.location.origin) return;
 
-  // Cache-first for same-origin assets/pages
+  // Cache-first for static assets, network-first with cache fallback for navigations.
   event.respondWith((async () => {
+    const isAsset = /\.(css|js|woff2?|png|jpe?g|webp|avif|svg|gif|ico)$/i.test(url.pathname);
+    const cacheKey = isAsset ? PRECACHE : RUNTIME;
+
+    // Try cache first.
     const cached = await caches.match(request);
-    if (cached) return cached;
+    if (cached) {
+      // For HTML pages, refresh in the background so next visit is fresh.
+      if (!isAsset) {
+        fetch(request).then(res => {
+          if (res && res.ok) {
+            caches.open(cacheKey).then(c => c.put(request, res.clone()));
+          }
+        }).catch(() => { /* offline; keep cached */ });
+      }
+      return cached;
+    }
 
     try {
       const response = await fetch(request);
       // Stash a copy for future offline use
-      const cache = await caches.open(RUNTIME);
+      const cache = await caches.open(cacheKey);
       cache.put(request, response.clone());
       return response;
     } catch {
@@ -110,7 +126,8 @@ self.addEventListener('fetch', (event) => {
         const fallback = await caches.match('/offline.html');
         if (fallback) return fallback;
       }
-      throw; // let the browser report the real network error
+      throw new Error('Network error and no cache available');
     }
   })());
 });
+

@@ -379,3 +379,55 @@ body.show-emoji-picker em-emoji-picker {
     opacity: 0;
   }
 }
+.blog-affiliate-box {
+    margin: 50px 0;
+    padding: 30px;
+    background: #000000;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+.affiliate-disclosure {
+    background: #ffb800;
+    border-left: 5px solid #9C27B0;
+    padding: 14px 18px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.affiliate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.affiliate-card {
+    background: #000000;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+}
+
+.affiliate-card h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.affiliate-category {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    background: #eaf2ff;
+    color: #111827;
+    padding: 5px 10px;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.affiliate-card small {
+    display: block;
+    color: #60ffdb;
+    margin-bottom: 15px;
+}

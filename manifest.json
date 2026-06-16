@@ -1,0 +1,44 @@
+{
+  "name": "Cloud Technology Computing",
+  "short_name": "CTC",
+  "description": "Cloud computing, AI, and web development services for small businesses.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#020617",
+  "background_color": "#020617",
+  "lang": "en-US",
+  "categories": ["business", "productivity", "technology"],
+  "icons": [
+    {
+      "src": "/images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/img/cloud.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Cloud Solutions",
+      "url": "/solutions/cloud-computing-small-business",
+      "icons": [{ "src": "/assets/img/cloud.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Blog",
+      "url": "/blog.php",
+      "icons": [{ "src": "/assets/img/cloud.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact.php",
+      "icons": [{ "src": "/assets/img/cloud.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}

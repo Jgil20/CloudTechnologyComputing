@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /_archive_2026-06-09/
+Disallow: /mgsc-email-template/
+Disallow: /phpmailer/
+Disallow: /widgets/
+Disallow: /ebook/
+Disallow: /store/
+Disallow: /quote-cond-multifile-attached.php
+Disallow: /quote-cond-process.php
+Disallow: /quote-process.php
+Disallow: /processform.php
+Disallow: /mgs-send-confirmation.php
+Disallow: /gemini-chat.php
+Disallow: /mail.php
+
+Sitemap: https://www.cloudtechnologycomputing.com/sitemap.xml

@@ -1,0 +1,16 @@
+{
+  "name": "cloudtechnologycomputing",
+  "version": "1.0.0",
+  "description": "Cloud Technology Computing marketing site (PHP/MySQL)",
+  "private": true,
+  "scripts": {
+    "lint:php": "find . -name '*.php' -not -path './phpmailer/*' -not -path './node_modules/*' -not -path './_archive_*' -print0 | xargs -0 -n1 php -l",
+    "lint": "npm run lint:php",
+    "start": "php -S 0.0.0.0:8000 -t ."
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "privateNotes": "Add minification tools (csso-cli, terser, html-minifier-terser) here when ready to optimize static assets. Until then, vendor minified .min.js/.min.css files in assets/ are used as-is.",
+  "_privateNotePlaceholder": "kept in package.json so it ships with the repo; no install needed"
+}

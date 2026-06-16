@@ -1,18 +1,16 @@
-<?php 
- 
-// Site Settings 
-$siteName = 'Cloud Technology Computing'; 
-$siteEmail = 'jhongil@cloudtechnologycomputing.com'; 
- 
-// Database configuration 
-define('DB_HOST', 'Server: 127.0.0.1:3306'); 
-define('DB_USERNAME', 'u249000411_Jhongil'); 
-define('DB_PASSWORD', 'Spiderman8085$'); 
-define('DB_NAME', 'u249000411_CloudHoneyPot'); 
- 
- 
-/* Changes are not required, used for internal purpose */ 
-$siteURL = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on")?'https://':'http://'; 
-$siteURL = $siteURL.$_SERVER["SERVER_NAME"].dirname($_SERVER['REQUEST_URI']).'/'; 
- 
+<?php
+require_once __DIR__ . '/includes/env.php';
+
+// Site Settings
+$siteName = 'Cloud Technology Computing';
+$siteEmail = 'jhongil@cloudtechnologycomputing.com';
+
+// Database configuration from environment variables.
+define('DB_HOST', ctc_env('DB_HOST', '127.0.0.1'));
+define('DB_USERNAME', ctc_env('DB_USERNAME', ''));
+define('DB_PASSWORD', ctc_env('DB_PASSWORD', ''));
+define('DB_NAME', ctc_env('DB_NAME', ''));
+define('DB_PORT', ctc_env('DB_PORT', '3306'));
+
+$siteURL = rtrim(ctc_env('APP_URL', 'https://www.cloudtechnologycomputing.com'), '/') . '/';
 ?>

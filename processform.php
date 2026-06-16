@@ -1,5 +1,23 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // CSRF validation
+    $postedToken = $_POST['csrf'] ?? '';
+    if (empty($_SESSION['csrf']) || !is_string($postedToken) || !hash_equals($_SESSION['csrf'], $postedToken)) {
+        http_response_code(403);
+        echo htmlspecialchars("Invalid request token. Please reload the form and try again.");
+        exit;
+    }
+
+    // Honeypot: silently drop submissions that fill the hidden website field
+    if (!empty($_POST['website'])) {
+        http_response_code(200);
+        exit;
+    }
+
     // Sanitize and validate inputs
     $fname = filter_var(trim($_POST["fname"]), FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $lname = filter_var(trim($_POST["lname"]), FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -37,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send the email
     if (mail($to, $subject, $body, $headers)) {
         http_response_code(200);
-        header("Location: index.php");
+        header("Location: /");
         exit();
     } else {
         http_response_code(500);

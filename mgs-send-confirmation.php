@@ -27,7 +27,7 @@ We appreciate you contacting us. One of our customer happiness members will be g
 Thanks in advance for your patience.<br>
 Have a great day!<br><br>";
 		$body_message .= "Regards,<br>";
-		$body_message .= "Cloud Technology Computing Team "
+		$body_message .= "Cloud Technology Computing Team ";
 	}
 	else{			
 		//prepare email body [Using email template]
