@@ -109,6 +109,26 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
     "mainEntityOfPage": <?= json_encode($canonicalUrl) ?>
   }
   </script>
+
+  <?php
+  // Load analytics only after the dynamic page title and metadata are available.
+  $gaMeasurementId = getenv('GA_MEASUREMENT_ID') ?: 'GT-NMKVXWDW';
+  if (!empty($gaMeasurementId)):
+      $gaMeasurementIdEscaped = htmlspecialchars($gaMeasurementId, ENT_QUOTES, 'UTF-8');
+  ?>
+  <!-- Google tag (gtag.js) — loaded after title and metadata -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<?= $gaMeasurementIdEscaped ?>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '<?= $gaMeasurementIdEscaped ?>', {
+      'page_title': document.title,
+      'page_location': window.location.href
+    });
+  </script>
+  <?php endif; ?>
+
 </head>
 
 <body class="home-dark2 tt-magic-cursor">

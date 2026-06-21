@@ -1,21 +1,72 @@
-<!doctype html>
-<html lang="en">
-
-<head>
 <?php
+/**
+ * Shared document header.
+ *
+ * The Google tag is injected immediately before </head> after the page-specific
+ * <title> and meta tags have been rendered. This prevents GA4 page views from
+ * being recorded before document.title is available and reduces “(not set)”
+ * values in page-title reports.
+ */
 $gaMeasurementId = getenv('GA_MEASUREMENT_ID') ?: 'GT-NMKVXWDW';
-?>
-<?php if (!empty($gaMeasurementId)): ?>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?= htmlspecialchars($gaMeasurementId, ENT_QUOTES, 'UTF-8'); ?>"></script>
+$gaMeasurementIdEscaped = htmlspecialchars($gaMeasurementId, ENT_QUOTES, 'UTF-8');
+$analyticsMarkup = '';
+
+if (!empty($gaMeasurementId)) {
+    $analyticsMarkup = <<<HTML
+<!-- Google tag (gtag.js) — intentionally loaded after title and metadata -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={$gaMeasurementIdEscaped}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '<?= htmlspecialchars($gaMeasurementId, ENT_QUOTES, 'UTF-8'); ?>');
+  gtag('config', '{$gaMeasurementIdEscaped}', {
+    'page_title': document.title,
+    'page_location': window.location.href
+  });
 </script>
-<?php endif; ?>
+HTML;
+}
 
+$scriptName = basename($_SERVER['SCRIPT_NAME'] ?? '');
+$fallbackTitle = ucwords(str_replace(['-', '_', '.php'], [' ', ' ', ''], $scriptName));
+$fallbackTitle = trim($fallbackTitle) !== ''
+    ? trim($fallbackTitle) . ' | Cloud Technology Computing'
+    : 'Cloud Technology Computing';
+$fallbackTitleEscaped = htmlspecialchars($fallbackTitle, ENT_QUOTES, 'UTF-8');
+
+ob_start(static function (string $html) use ($analyticsMarkup, $fallbackTitleEscaped): string {
+    $headClosePosition = stripos($html, '</head>');
+    if ($headClosePosition === false) {
+        return $html;
+    }
+
+    $headOpenPosition = stripos($html, '<head');
+    $headBlock = $headOpenPosition !== false
+        ? substr($html, $headOpenPosition, $headClosePosition - $headOpenPosition)
+        : substr($html, 0, $headClosePosition);
+
+    // Safety net for any future page that forgets to define a title.
+    if (stripos($headBlock, '<title') === false) {
+        $headTagEnd = $headOpenPosition !== false ? strpos($html, '>', $headOpenPosition) : false;
+        if ($headTagEnd !== false && $headTagEnd < $headClosePosition) {
+            $titleMarkup = "\n<title>{$fallbackTitleEscaped}</title>";
+            $html = substr_replace($html, $titleMarkup, $headTagEnd + 1, 0);
+            $headClosePosition += strlen($titleMarkup);
+        }
+    }
+
+    // Inject analytics only once and only after page-specific title/meta markup.
+    if ($analyticsMarkup !== '' && stripos($html, 'googletagmanager.com/gtag/js') === false) {
+        $html = substr_replace($html, "\n{$analyticsMarkup}\n", $headClosePosition, 0);
+    }
+
+    return $html;
+});
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020617">

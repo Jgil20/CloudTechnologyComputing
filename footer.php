@@ -139,6 +139,10 @@
                                <li><a href="/services/Software%20Development%20service-details.php">Software Development</a></li>
                                <li><a href="/solutions/cloud-computing-small-business">Cloud Computing for Small Business</a></li>
                                <li><a href="/solutions/cloud-technology-services">Cloud Technology Services</a></li>
+                               <li><a href="/solutions/cloud-computing-technology">Cloud Computing Technology</a></li>
+                               <li><a href="/solutions/cloud-technology-solutions">Cloud Technology Solutions</a></li>
+                               <li><a href="/solutions/cloud-computing-company-houston">Houston Cloud Computing Company</a></li>
+                               <li><a href="/solutions/cloud-it-consulting-services">Cloud IT Consulting</a></li>
                                <li><a href="/solutions/cloud-based-computing-services">Cloud-Based Computing Services</a></li>
                                <li><a href="/solutions/aws-cloud-services">AWS Cloud Services</a></li>
                                <li><a href="/solutions/microsoft-azure-cloud-services">Microsoft Azure Cloud Services</a></li>
@@ -163,7 +167,7 @@
                                <li><a href="/team.php">Our Team</a></li>
                                <li><a href="/project.php">All Portfolio</a></li>
                                <li><a href="/pricing.php">Pricing Plan</a></li>
-                               <li><a href="/Certified.php">Certifications</a></li>
+                               <li><a href="www.arzugil.com">C.E.O</a></li>
                            </ul>
                        </div>
                    </div>
@@ -176,12 +180,12 @@
                        <div class="menu-container">
                            <ul>
                                <!-- TODO: replace with real legal pages -->
-                               <li><a href="services/Data%20Analytics%20service-details.php">Data Analytics</a></li>
-                               <li><a href="#">Support Policy</a></li>
-                               <li><a href="#">Terms & Conditions</a></li>
-                               <li><a href="#">Privacy Policy</a></li>
-                               <li><a href="services/Website%20Optimization%20service-details.php">Website Optimization</a></li>
-                               <li><a href="/solutions/cloud-infrastructure-services">Cloud Infrastructure Services</a></li>
+                               <li><a href="Privacy Policy.pdf">Privacy Policy</a></li>
+                               <li><a href="Support Policy.pdf">Support Policy</a></li>
+                               <li><a href="https://www.cloudtechnologycomputing.com/blog.php">Blog Posts</a></li>
+                               <li><a href="Terms and Conditions.pdf">Terms and Conditions</a></li>
+                               <li><a href="www.arzugil.com">Portfolio Site</a></li>
+                               <li><a href="https://www.cloudcomputeai.com/">Services</a></li>
                            </ul>
                        </div>
                    </div>

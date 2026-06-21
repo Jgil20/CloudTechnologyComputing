@@ -191,17 +191,32 @@ $buyServices = [
     [
         'label' => 'AI Chatbot Integration',
         'href' => 'https://buy.stripe.com/4gweWe8jzdLteqcbIK',
-        'class' => 'nav-item nav-link',
+        'class' => 'dropdown-item',
     ],
     [
-        'label' => 'Buy Services',
-        'href' => 'https://www.cloudcomputeai.com/',
-        'class' => 'nav-item nav-link',
+        'label' => 'AI Chatbot',
+        'href' => 'https://www.paypal.com/ncp/payment/HA78YPSKVMW3N',
+        'class' => 'dropdown-item',
+    ],
+     [
+        'label' => 'Small Business Website Tangible Asset',
+        'href' => 'https://www.paypal.com/ncp/payment/TRYU3EBFV7DZW',
+        'class' => 'dropdown-item',
+    ],
+     [
+        'label' => 'Website Optimization',
+        'href' => 'https://www.paypal.com/ncp/payment/F2ZJ595BMD97W',
+        'class' => 'dropdown-item',
+    ],
+     [
+        'label' => 'Search Engine Optimized Business Websites',
+        'href' => 'https://www.paypal.com/ncp/payment/DJU9VBRBFJDU6',
+        'class' => 'dropdown-item',
     ],
     [
         'label' => 'Custom Business Website',
         'href' => 'https://buy.stripe.com/6oEcO657n5eX4PC5kl',
-        'class' => 'nav-item nav-link',
+        'class' => 'dropdown-item',
     ],
     [
         'label' => 'Monthly SEO Optimization',
