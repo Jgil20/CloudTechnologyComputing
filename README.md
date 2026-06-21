@@ -71,15 +71,6 @@ The platform is designed to:
 - Dynamic related-content and internal-link sections
 - Searchable resource and glossary content
 
-### Lead generation
-
-- Contact and consultation forms
-- Cloud readiness assessment
-- Technology service cost estimator
-- Proposal request builder
-- Client review submission
-- Lead-source and UTM attribution capture
-- Private lead dashboard
 
 ### SEO
 
