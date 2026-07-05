@@ -1,116 +1,444 @@
-README for www.cloudtechnologycomputing.com
-Overview
-Welcome to www.cloudtechnologycomputing.com, the official website for Cloud Technology Computing Corporation, a technology consulting and software development firm based in Texas. This site showcases our comprehensive range of services, which include cloud computing solutions, custom web and software development, digital marketing, and more. The website is designed to provide potential clients, partners, and stakeholders with a clear understanding of our expertise and offerings.
+ Cloud Technology Computing
 
-![Portfolio Screenshot](/assets/img/home-6/CloudComputing.webp) <!-- Update with an actual screenshot -->
+[![Website](https://img.shields.io/badge/Website-cloudtechnologycomputing.com-0A66C2)](https://www.cloudtechnologycomputing.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 
-Table of Contents
-Project Structure
-Technologies Used
-Setup and Installation
-Usage
-Features
-Deployment
-Contributing
-License
-Contact
-Project Structure
-The project structure for this website is organized as follows:
+Official website and digital platform for **Cloud Technology Computing Corporation**, a Texas-based cloud consulting, software development, AI automation, cybersecurity, managed IT, SEO, and digital transformation company.
 
-Technologies Used
-HTML5: Structure of the webpages.
-CSS3: Styling, including Bootstrap for responsive design, custom stylesheets for specific pages, and Font Awesome for icons.
-JavaScript: Interactive elements, including jQuery, Bootstrap JavaScript components, Owl Carousel for sliders, and Lightbox for media galleries.
-PHP: Backend functionality for dynamic content and form handling.
-MySQL: Database management for storing user data (in progress).
-Google Tag Manager: Integrated for analytics and tracking.
-Open Graph & Twitter Cards: Meta tags for enhanced social media sharing.
-Setup and Installation
-To run this website locally or on a server:
+**Live website:** [www.cloudtechnologycomputing.com](https://www.cloudtechnologycomputing.com/)
 
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-repo/cloudtechnologycomputing.git
-Navigate to the project directory:
-bash
-Copy code
-cd cloudtechnologycomputing
-Open the index.php file in your browser:
-You can directly open index.php in your browser to view the website.
-Alternatively, use a local server like XAMPP, WAMP, or MAMP for more advanced PHP functionality.
-Usage
-Homepage: Contains an overview of services and company details.
-About Page: Provides information about the company’s background and team.
-services Page: Lists the different services offered, including cloud solutions, web development, and more.
-Portfolio Page: Displays past projects and client testimonials.
-Contact Page: Allows users to get in touch with us for inquiries or service requests.
-Features
-Responsive Design: Ensures optimal viewing experience across devices (desktops, tablets, mobile phones).
-SEO Optimized: Implemented best practices for search engine optimization, including meta tags and descriptions.
-Interactive Elements: Includes carousels, lightboxes, and collapsible menus for an engaging user experience.
-Social Media Integration: Open Graph and Twitter Card tags for enhanced link previews on social media platforms.
-Google Analytics: Tracks user behavior and website performance.
-Deployment
-This website can be deployed to any standard web hosting service. For deployment:
+![Cloud Technology Computing website preview](assets/img/home-6/CloudComputing.webp)
 
-Upload the project files to your web hosting server using FTP/SFTP or a hosting control panel.
-Ensure that PHP and MySQL are supported if using dynamic content or forms.
-Set up a MySQL database if required, and update the database connection details in your PHP files.
+## Table of Contents
 
-## File Structure
+- [Overview](#overview)
+- [Core Services](#core-services)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Local Setup](#local-setup)
+- [Database Setup](#database-setup)
+- [Environment Configuration](#environment-configuration)
+- [SEO and Analytics](#seo-and-analytics)
+- [Deployment](#deployment)
+- [Security Notes](#security-notes)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-```plaintext
-arduino
+## Overview
+
+Cloud Technology Computing helps small businesses, startups, and growing organizations design, build, secure, migrate, and manage modern technology solutions.
+
+The website is more than a static company profile. It includes dynamic service and solution pages, a database-driven blog and case-study system, SEO landing pages, lead-generation tools, analytics tracking, consultation requests, resource content, and conversion-focused business features.
+
+The platform is designed to:
+
+- Explain cloud, AI, web, mobile, cybersecurity, and managed IT services
+- Attract organic search traffic through dedicated SEO landing pages
+- Convert visitors into qualified leads
+- Publish dynamic blog posts and case studies
+- Support customer inquiries, estimates, assessments, and consultation requests
+- Track important website interactions with Google Analytics 4
+- Provide a scalable PHP and MySQL foundation for future client and administrative tools
+
+## Core Services
+
+- Cloud computing consulting
+- AWS, Microsoft Azure, Google Cloud, and IBM Cloud planning
+- Cloud migration and modernization
+- Hybrid and multi-cloud architecture
+- Managed cloud and IT support
+- Cloud security and data protection
+- Custom PHP and MySQL development
+- Business website development
+- AI chatbot and workflow automation
+- Android and iOS mobile app development
+- SEO and digital marketing
+- Data analytics and reporting
+- SAP analytics and consulting support
+
+## Key Features
+
+### Dynamic content
+
+- Database-driven blog
+- Dynamic case studies
+- Reusable PHP service and solution templates
+- SEO-friendly slugs and clean URLs
+- Dynamic related-content and internal-link sections
+- Searchable resource and glossary content
+
+
+### SEO
+
+- Unique page titles and meta descriptions
+- Canonical URLs
+- Open Graph and Twitter Card metadata
+- XML sitemap
+- Search-engine-friendly URLs
+- Internal linking between services, blogs, case studies, and solution pages
+- JSON-LD structured data
+- Service, Article, Breadcrumb, Organization, and FAQ schema where appropriate
+- Optimized image formats and descriptive alternative text
+- Keyword-focused cloud-computing landing pages
+
+### Analytics
+
+- Google Analytics 4 integration
+- Page titles defined before the Google tag loads
+- Explicit `page_title` and `page_location` reporting
+- Conversion-ready events for forms, calls to action, assessments, and consultation requests
+- Campaign tracking through UTM parameters
+
+### User experience
+
+- Responsive layouts for desktop, tablet, and mobile
+- Accessible navigation and skip links
+- Mobile-friendly calls to action
+- Interactive carousels, accordions, and service cards
+- Fast-loading AVIF and WebP images
+- Progressive Web App assets and manifest support
+
+## Technology Stack
+
+### Front end
+
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+- jQuery
+- Font Awesome
+- Owl Carousel
+- Lightbox
+- Responsive and mobile-first layouts
+
+### Back end
+
+- PHP 8.x
+- MySQL or MariaDB
+- PDO prepared statements
+- PHP sessions
+- CSRF protection
+- Server-side form validation
+
+### Infrastructure and services
+
+- Apache or LiteSpeed
+- `.htaccess` URL rewriting
+- cPanel-compatible hosting
+- Cloudflare
+- Google Analytics 4
+- Google Search Console
+- Open Graph and Twitter Card metadata
+- JSON-LD structured data
+
+## Project Structure
+
+The repository may evolve over time, but the main structure follows this pattern:
+
+```text
 root/
-│
+├── admin/                         # Administrative tools and dashboards
+├── assets/
+│   ├── css/                       # Theme and component styles
+│   ├── fonts/                     # Theme font assets
+│   ├── img/                       # Website images and media
+│   └── js/                        # Theme and page scripts
+├── config/
+│   └── database.php               # Database connection configuration
 ├── css/
-│   ├── bootstrap.min.css
-│   ├── fontawesome/
-│   │   └── all.min.css
-│   ├── owl.carousel.min.css
-│   ├── owl.theme.default.min.css
-│   ├── lightbox.min.css
-│   ├── parallax.css
-│   ├── style.css
-│   └── responsive.css
-│
-├── images/
-│   ├── logo.avif
-│   ├── hackerJhon.png
-│   └── ...
-│
-├── js/
-│   ├── bootstrap.min.js
-│   ├── jquery.min.js
-│   ├── owl.carousel.min.js
-│   ├── lightbox.min.js
-│   └── script.js
-│
-├── index.php
-├── about.html
-├── services.html
-├── portfolio.html
+│   ├── business-tools.css         # Assessment, estimator, and lead-tool styles
+│   ├── style.css                  # Main site styling
+│   └── responsive.css             # Responsive rules
+├── database/
+│   ├── install_business_features.sql
+│   └── *.sql                      # Database installation and content scripts
+├── images/                        # Additional website images
+├── js/                            # JavaScript libraries and custom scripts
+├── uploads/                       # User or administrator uploads
+├── about.php
+├── blog.php
+├── blog-details.php
+├── book-consultation.php
+├── case-studies.php
+├── case-study-details.php
+├── certifications.php
+├── cloud-glossary.php
+├── cloud-readiness-assessment.php
+├── contact.php
+├── cost-estimator.php
+├── footer.php
 ├── form.php
+├── header.php
+├── index.php
+├── lead-dashboard.php
+├── nav.php
+├── pricing.php
+├── proposal-builder.php
+├── resources.php
+├── services.php
+├── site-search.php
+├── solution.php
+├── testimonials.php
+├── sitemap.xml
 ├── manifest.json
+├── .htaccess
 └── README.md
+```
 
-Contributing
-We welcome contributions from the community. If you have suggestions or improvements, please follow these steps:
+## Local Setup
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit them (git commit -m 'Add some feature').
-Push to the branch (git push origin feature-branch).
-Open a Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+### Requirements
 
-Contact
-For any inquiries or support, please contact:
+- PHP 8.0 or newer
+- MySQL 8.0+ or MariaDB
+- Apache, LiteSpeed, Nginx, XAMPP, MAMP, WAMP, or a comparable local environment
+- PHP extensions: PDO, PDO MySQL, JSON, mbstring, OpenSSL, and fileinfo
 
-Jhon Arzu-Gil
-Email: jgil20@me.com
-Website: www.cloudtechnologycomputing.com
-Phone: +1-248-938-5567
-Thank you for visiting Cloud Technology Computing Corporation! We look forward to collaborating on innovative cloud solutions and custom web development projects.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/cloudtechnologycomputing.git
+cd cloudtechnologycomputing
+```
+
+Replace the example repository URL with the actual GitHub repository URL.
+
+### 2. Create a local database
+
+```sql
+CREATE DATABASE cloudtechnologycomputing
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+```
+
+### 3. Import the SQL files
+
+Import the required schema and feature files through phpMyAdmin, MySQL Workbench, or the command line:
+
+```bash
+mysql -u root -p cloudtechnologycomputing < database/install_business_features.sql
+```
+
+Import any additional blog, case-study, or application-specific SQL files included in the `database/` directory.
+
+### 4. Configure the database connection
+
+Create or update `config/database.php`:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+$host = getenv('DB_HOST') ?: '127.0.0.1';
+$database = getenv('DB_NAME') ?: 'cloudtechnologycomputing';
+$username = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASS') ?: '';
+
+$dsn = "mysql:host={$host};dbname={$database};charset=utf8mb4";
+
+$pdo = new PDO($dsn, $username, $password, [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES => false,
+]);
+```
+
+Do not commit production credentials to Git.
+
+### 5. Start the local server
+
+Using PHP's built-in development server:
+
+```bash
+php -S localhost:8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+For full `.htaccess` rewrite support, use Apache, XAMPP, MAMP, WAMP, or another compatible web server.
+
+## Database Setup
+
+The platform may use tables for:
+
+- Blog categories
+- Blog posts
+- Blog tags
+- Post views
+- Case studies
+- Contact submissions
+- Feature leads
+- Consultation requests
+- Assessments
+- Cost estimates
+- Proposal requests
+- Testimonials
+- Newsletter subscriptions
+- Chatbot messages
+
+Use `utf8mb4` for full Unicode support.
+
+Before importing production data:
+
+1. Back up the existing database.
+2. Review SQL files for table-name conflicts.
+3. Confirm foreign-key relationships.
+4. Test changes in staging.
+5. Avoid manually changing primary-key values when dependent foreign keys exist.
+
+## Environment Configuration
+
+Recommended environment variables:
+
+```env
+APP_ENV=production
+APP_URL=https://www.cloudtechnologycomputing.com
+
+DB_HOST=localhost
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASS=your_secure_database_password
+
+LEAD_DASHBOARD_PASSWORD=use-a-long-random-password
+
+GA4_MEASUREMENT_ID=G-XXXXXXXXXX
+
+MAIL_FROM_ADDRESS=no-reply@cloudtechnologycomputing.com
+MAIL_FROM_NAME="Cloud Technology Computing"
+```
+
+Do not expose `.env`, database backups, API keys, SMTP passwords, or private credentials through the public web directory.
+
+## SEO and Analytics
+
+The site follows an on-page SEO structure that includes:
+
+- One descriptive `<title>` per page
+- Titles rendered inside `<head>` before Google Analytics loads
+- Unique meta descriptions
+- One primary H1 per page
+- Logical H2–H4 hierarchy
+- Canonical URLs
+- Crawlable internal links
+- XML sitemap entries
+- Descriptive image filenames and alt text
+- Mobile-responsive layouts
+- Structured data
+- Open Graph and Twitter Card metadata
+- Dedicated keyword landing pages
+- Google Search Console monitoring
+
+Example analytics order:
+
+```html
+<head>
+    <title>Cloud Technology Services for Business | CTC</title>
+    <meta
+        name="description"
+        content="Cloud technology services, consulting, migration, security, hosting, and managed support for growing businesses."
+    >
+
+    <!-- Google tag loads after page-specific metadata -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+</head>
+```
+
+## Deployment
+
+### Standard hosting deployment
+
+1. Back up the live website and database.
+2. Upload the project through Git, SFTP, FTP, or the hosting control panel.
+3. Keep the document root pointed to the intended public directory.
+4. Configure the production database.
+5. Import required SQL migrations.
+6. Enable HTTPS.
+7. Confirm `.htaccess` and URL rewriting.
+8. Confirm file and directory permissions.
+9. Clear server and CDN caches.
+10. Test all forms, routes, database queries, and payment links.
+11. Submit the sitemap in Google Search Console.
+12. Verify GA4 events and page titles in DebugView and Realtime reports.
+
+### Recommended production permissions
+
+```text
+Directories: 755
+Files:       644
+Sensitive configuration files: restrict as tightly as the host permits
+```
+
+Writable upload directories may require different permissions depending on the hosting provider. Avoid using `777`.
+
+## Security Notes
+
+- Use PDO prepared statements for database operations.
+- Validate and sanitize all user input.
+- Escape output with `htmlspecialchars`.
+- Protect forms with CSRF tokens.
+- Limit upload type, size, and filename handling.
+- Store API keys and credentials outside public source code.
+- Use HTTPS everywhere.
+- Protect administrative routes with secure authentication.
+- Rate-limit sensitive forms and chatbot endpoints.
+- Log errors privately; do not display stack traces in production.
+- Keep PHP, libraries, and hosting software updated.
+- Back up the database and uploaded files regularly.
+
+## Contributing
+
+Contributions, bug reports, and improvement suggestions are welcome.
+
+1. Fork the repository.
+2. Create a branch:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+3. Make and test your changes.
+4. Commit with a descriptive message:
+
+```bash
+git commit -m "Add cloud readiness assessment improvements"
+```
+
+5. Push the branch:
+
+```bash
+git push origin feature/your-feature-name
+```
+
+6. Open a pull request with a clear summary, testing steps, screenshots for visual changes, database migration notes, and any security or SEO impact.
+
+## License
+
+This project is licensed under the MIT License unless otherwise stated in the repository.
+
+Third-party themes, images, fonts, libraries, trademarks, and service integrations remain subject to their respective licenses and terms.
+
+## Contact
+
+**Jhon Arzu-Gil**  
+Founder and President, Cloud Technology Computing Corporation
+
+- Website: [www.cloudtechnologycomputing.com](https://www.cloudtechnologycomputing.com/)
+- Email: [Jgil20@me.com](mailto:Jgil20@me.com)
+- Phone: [713-870-9966](tel:+17138709966)
+- LinkedIn: [linkedin.com/in/jhongil](https://www.linkedin.com/in/jhongil)
+- Portfolio: [www.arzugil.com](https://www.arzugil.com/)
+- Credentials: [Credly profile](https://www.credly.com/users/jhongil/)
+
+---
+
+Cloud Technology Computing Corporation builds practical cloud, AI, software, web, mobile, cybersecurity, and managed IT solutions that help modern businesses operate securely and grow.
