@@ -39,7 +39,7 @@
             <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
             <div class="file-upload-wrapper">
               <input type="file" accept="image/*" id="file-input" hidden />
-              <img loading="lazy" src="#" />
+              <img loading="lazy" src="#" alt="Uploaded image preview" width="80" height="80"     />
               <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
               <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
             </div>
@@ -58,7 +58,7 @@
                    <div class="col-lg-12">
                        <div class="footer-top-content">
                            <div class="footer-logo">
-                                   <a href="/"><!--<img src="/assets/img/logo.svg" alt="Cloud Technology Computing" loading="lazy" width="200" height="100"> --> <p style="color : white"> Cloud Technology Computing</p></a></div>
+                                   <a href="/"><!--<img src="/assets/img/logo.svg" alt="Cloud Technology Computing" loading="lazy" width="196" height="35"   > --> <p style="color : white"> Cloud Technology Computing</p></a></div>
                            <div class="footer-contect">
                                <div class="icon">
                                    <svg width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
@@ -94,8 +94,7 @@
                                </svg>
                                Address
                            </h4>
-                           <!-- TODO: replace with real Google Business Profile URL once provisioned. -->
-                           <a href="/">4409 Caplin St, Houston, TX 77026</a>
+                           <a href="https://www.google.com/maps/search/?api=1&query=4409+Caplin+St+Houston+TX+77026" target="_blank" rel="noopener noreferrer">4409 Caplin St, Houston, TX 77026</a>
                        </div>
                        <div class="footer-contact mb-40">
                            <h4>
@@ -131,6 +130,10 @@
                        </div>
                        <div class="menu-container">
                            <ul>
+                    <li><a href="/solutions/cloud-computing-services-houston">Cloud Computing Services Houston</a></li>
+                    <li><a href="/solutions/cloud-services-small-business">Cloud Services for Small Business</a></li>
+                    <li><a href="/solutions/cloud-security-services-small-businesses">Cloud Security Services</a></li>
+
                                <li><a href="/services/Web%20Development%20service-details.php">Web Development</a></li>
                                <li><a href="/services/Mobile%20Development%20service-details.php">Mobile Development</a></li>
                                <li><a href="/services/Managed_Cloud_Hosting.php">Cloud services</a></li>
@@ -167,7 +170,7 @@
                                <li><a href="/team.php">Our Team</a></li>
                                <li><a href="/project.php">All Portfolio</a></li>
                                <li><a href="/pricing.php">Pricing Plan</a></li>
-                               <li><a href="www.arzugil.com">C.E.O</a></li>
+                               <li><a href="https://www.arzugil.com" target="_blank" rel="noopener noreferrer">C.E.O</a></li>
                            </ul>
                        </div>
                    </div>
@@ -180,12 +183,13 @@
                        <div class="menu-container">
                            <ul>
                                <!-- TODO: replace with real legal pages -->
-                               <li><a href="Privacy Policy.pdf">Privacy Policy</a></li>
-                               <li><a href="Support Policy.pdf">Support Policy</a></li>
-                               <li><a href="https://www.cloudtechnologycomputing.com/blog.php">Blog Posts</a></li>
-                               <li><a href="Terms and Conditions.pdf">Terms and Conditions</a></li>
-                               <li><a href="www.arzugil.com">Portfolio Site</a></li>
-                               <li><a href="https://www.cloudcomputeai.com/">Services</a></li>
+                               <li><a href="/privacy-policy.php">Privacy Policy</a> </li>
+                               <li><a href="/support-policy.php">Support Policy</a> </li>
+                               <li><a href="/blog.php">Blog Posts</a></li>
+                               <li><a href="/sitemap">HTML Sitemap</a></li>
+                               <li><a href="/terms.php">Terms and Conditions</a> </li>
+                               <li><a href="https://www.arzugil.com" target="_blank" rel="noopener noreferrer">Portfolio Site</a></li>
+                               <li><a href="https://www.cloudcomputeai.com/" target="_blank" rel="noopener noreferrer">Services</a></li>
                            </ul>
                        </div>
                    </div>
@@ -208,15 +212,15 @@
                    <div class="col-lg-12">
                        <div class="footer-btn-content">
                            <div class="copyright-area">
-                               <p>©Copyright <?= date("Y"); ?> <a href="https://www.cloudtechnologycomputing.com">Cloud Technology Computing</a> | Design By <a href="https://www.arzugil.com/">Jhon Arzu-Gil</a></p>
+                               <p>©Copyright <?= date("Y"); ?> <a href="https://www.cloudtechnologycomputing.com/" target="_blank" rel="noopener noreferrer">Cloud Technology Computing</a> | Design By <a href="https://www.arzugil.com/" target="_blank" rel="noopener noreferrer">Jhon Arzu-Gil</a></p>
                            </div>
                            <div class="footer-social">
                                <ul>
-                                  <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Facebook Page" target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                                   <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank"><i class="bi bi-github"></i></a></li>
-                                   <li><a href="https://www.linkedin.com/in/jhongil" aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                  <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Facebook Page" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                                   <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a></li>
+                                   <li><a href="https://www.linkedin.com/in/jhongil" aria-label="LinkedIn Page" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></li>
                                    <!-- TODO: replace with real Google Business Profile URL once provisioned. -->
-                                   <li><a href="/" aria-label="Google Business Page" target="_blank"><i class="bi bi-google"></i></a></li>
+                                   <li><a href="/" aria-label="Google Business Page" target="_blank" rel="noopener noreferrer"><i class="bi bi-google"></i></a></li>
                                </ul>
                            </div>
                        </div>
@@ -232,59 +236,114 @@
    
 
 
-   <!--cursor design-->
-   <!-- <div class="cursor"></div> -->
-   <!--cursor design-->
- <!--  Main jQuery  -->
-    <!-- Linking Emoji Mart script for emoji picker -->
-    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js" defer></script>
+   <!-- Optimized deferred scripts -->
+   <?php
+   $footerScriptName = basename($_SERVER['SCRIPT_NAME'] ?? '');
+   $isFooterHomepage = $footerScriptName === 'index.php' || $footerScriptName === '';
 
-    <!-- Linking custom script -->
-    <script src="/script.js" defer></script>
-   <script src="/assets/js/jquery-3.6.0.min.js" defer></script>
-   <!-- Popper and Bootstrap JS -->
-   <script src="/assets/js/popper.min.js" defer></script>
-   <script src="/assets/js/bootstrap.min.js" defer></script>
-   <!-- Swiper slider JS -->
-   <script src="/assets/js/swiper-bundle.min.js" defer></script>
-   <!-- Waypoints JS -->
-   <script src="/assets/js/waypoints.min.js" defer></script>
-   <!-- Counterup JS -->
-   <script src="/assets/js/jquery.counterup.min.js" defer></script>
-   <!-- Isotope  JS -->
-   <script src="/assets/js/isotope.pkgd.min.js" defer></script>
-   <!-- Fancybox  JS -->
-   <script src="/assets/js/jquery.fancybox.min.js" defer></script>
-   <!-- GSAP  JS -->
-    <script src="/assets/js/gsap.min.js" defer></script>
-   <script src="/assets/js/simpleParallax.min.js" defer></script>
-   <script src="/assets/js/TweenMax.min.js" defer></script>
-   <!-- Marquee  JS -->
-   <script src="/assets/js/jquery.marquee.min.js" defer></script>
-   <!-- Wow JS -->
-   <script src="/assets/js/wow.min.js" defer></script>
-   <!-- Custom JS -->
-   <script src="/assets/js/preloader.js" defer></script>
-   <script src="/assets/js/custom.js" defer></script>
+   // emoji-mart is lazy-loaded on first chatbot open (saves ~50KB on initial page load)
+   $footerScripts = [
+       '/script.min.js',
+       '/assets/js/jquery-3.6.0.min.js',
+       '/assets/js/popper.min.js',
+       '/assets/js/bootstrap.min.js',
+   ];
+
+   if ($isFooterHomepage) {
+       // Homepage keeps only scripts used for the hero video, sliders, marquee text, Bootstrap, and chatbot.
+       $footerScripts = array_merge($footerScripts, [
+           '/assets/js/swiper-bundle.min.js',
+           '/assets/js/jquery.fancybox.min.js',
+           '/assets/js/jquery.marquee.min.js',
+           '/assets/js/custom.min.js',
+       ]);
+   } else {
+       // Interior pages keep the broader plugin set for portfolio filters, counters, and legacy layouts.
+       $footerScripts = array_merge($footerScripts, [
+           '/assets/js/swiper-bundle.min.js',
+           '/assets/js/waypoints.min.js',
+           '/assets/js/jquery.counterup.min.js',
+           '/assets/js/isotope.pkgd.min.js',
+           '/assets/js/jquery.fancybox.min.js',
+           '/assets/js/jquery.marquee.min.js',
+           '/assets/js/preloader.min.js',
+           '/assets/js/custom.min.js',
+       ]);
+   }
+   ?>
+   <?php foreach ($footerScripts as $scriptSrc): ?>
+   <script src="<?= htmlspecialchars($scriptSrc, ENT_QUOTES, 'UTF-8'); ?>" defer></script>
+   <?php endforeach; ?>
+<script defer>
+  // Lazy-load emoji-mart only when the user opens the chatbot.
+  // Saves ~50KB of initial JS on every page.
+  (function() {
+    var loaded = false;
+    function loadEmojiMart() {
+      if (loaded) return;
+      loaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js';
+      s.defer = true;
+      s.onload = function() { window.dispatchEvent(new Event('emoji-mart-ready')); };
+      document.head.appendChild(s);
+    }
+    var toggler = document.getElementById('chatbot-toggler');
+    if (toggler) {
+      toggler.addEventListener('click', loadEmojiMart, { once: true });
+    } else {
+      // Fallback: load on first user interaction
+      document.addEventListener('mouseover', loadEmojiMart, { once: true, passive: true });
+      document.addEventListener('touchstart', loadEmojiMart, { once: true, passive: true });
+    }
+  })();
+  </script>
+
   <script defer>
-   document.addEventListener('DOMContentLoaded', function () {
-       $(".marquee_text").marquee({
-       direction: "left",
-       duration: 20000,
-       gap: 50,
-       delayBeforeStart: 0,
-       duplicated: true,
-       startVisible: true,
-       });
+  // Re-bind emoji picker after lazy emoji-mart loads
+  window.addEventListener('emoji-mart-ready', function() {
+    if (typeof EmojiMart === 'undefined' || !document.getElementById('emoji-picker')) return;
+    var messageInput = document.querySelector('.message-input');
+    if (typeof EmojiMart !== 'undefined' && messageInput && !window.__emojiMartPicker) {
+      window.__emojiMartPicker = new EmojiMart.Picker({
+        theme: 'dark',
+        skinTonePosition: 'none',
+        previewPosition: 'none',
+        onEmojiSelect: function(e) {
+          messageInput.value += e.native;
+          messageInput.focus();
+        }
+      });
+      var wrap = document.querySelector('.chat-controls');
+      if (wrap) wrap.appendChild(window.__emojiMartPicker);
+    }
+  });
+  </script>
 
-       $(".marquee_text3").marquee({
-       direction: "left",
-       duration: 30000,
-       gap: 50,
-       delayBeforeStart: 0,
-       duplicated: true,
-       startVisible: true,
-       });
+   <script defer>
+   document.addEventListener('DOMContentLoaded', function () {
+       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+           return;
+       }
+       if (window.jQuery && jQuery.fn.marquee) {
+           jQuery(".marquee_text").marquee({
+               direction: "left",
+               duration: 60000,
+               gap: 50,
+               delayBeforeStart: 0,
+               duplicated: true,
+               startVisible: true
+           });
+
+           jQuery(".marquee_text3").marquee({
+               direction: "left",
+               duration: 70000,
+               gap: 50,
+               delayBeforeStart: 0,
+               duplicated: true,
+               startVisible: true
+           });
+       }
    });
    </script>
 

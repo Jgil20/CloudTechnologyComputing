@@ -32,7 +32,7 @@
 <tr>
 <td align="left" style="padding:0 0 20px;">
 <strong>Regards,<br>
-<a href="https://www.cloudtechnologycomputing.com/" target="_blank" style="text-decoration:none;">Cloud Technology Computing</a></strong>
+<a href="https://www.cloudtechnologycomputing.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Cloud Technology Computing</a></strong>
 </td>
 </tr>
 </table>
@@ -41,7 +41,7 @@
 <table style="width:100%;">
 <tr>
 <td style="padding:5px 15px 40px 0;font-size:12px;">
-<p>&copy; [mgs-year] <a href="https://play.google.com/store/apps/details?id=com.cloudtechnologycomputing.Cloud_Technology_Computing" target="_blank" style="text-decoration:none;">App</a> All rights reserved. <a href="https://hybridclouddev.com/" target="_blank" style="text-decoration:none;">Meet The C.E.O</a></p>
+<p>&copy; [mgs-year] <a href="https://play.google.com/store/apps/details?id=com.cloudtechnologycomputing.Cloud_Technology_Computing" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">App</a> All rights reserved. <a href="https://hybridclouddev.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Meet The C.E.O</a></p>
 </td>
 </tr>
 </table>

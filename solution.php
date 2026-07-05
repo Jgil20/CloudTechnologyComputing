@@ -8,6 +8,23 @@ $solution = $solutions[$slug] ?? null;
 $seoContent = $solutionSeoContent[$slug] ?? [];
 
 $solutionMedia = [
+
+    'cloud-computing-services-houston' => [
+        'src' => '/assets/img/solutions/houston-cloud-consulting-growing-businesses.webp',
+        'alt' => 'Cloud computing services in Houston for small business cloud migration hosting and support',
+    ],
+    'cloud-services-small-business' => [
+        'src' => '/assets/img/home-6/smallbusiness.webp',
+        'alt' => 'Cloud services for small business with secure hosting backups and growth tools',
+    ],
+    'cloud-security-services-small-businesses' => [
+        'src' => '/assets/img/home-6/cloudsecurity.webp',
+        'alt' => 'Cloud security services for small businesses with monitoring backups and secure access',
+    ],
+    'sap-consulting-services' => [
+        'src' => '/assets/img/inner-pages/SAPAnalyticsCloud.avif',
+        'alt' => 'SAP consulting services for analytics reporting dashboards and business intelligence',
+    ],
     'cloud-computing-small-business' => [
         'src' => '/assets/img/home-6/smallbusiness.webp',
         'alt' => 'Small business cloud computing infrastructure dashboard with secure cloud services',
@@ -274,7 +291,7 @@ $seoSummary = sprintf(
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
 </script>
 </head>
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <?php include __DIR__ . '/nav.php'; ?>
 
@@ -293,7 +310,7 @@ $seoSummary = sprintf(
                 </div>
                 <div class="col-lg-5">
                     <figure class="solution-hero-media">
-                        <img src="<?= e($solutionImage); ?>" alt="<?= e($solutionImageAlt); ?>" width="900" height="675" loading="eager" decoding="async" fetchpriority="high">
+                        <img src="<?= e($solutionImage); ?>" alt="<?= e($solutionImageAlt); ?>" width="900" height="675" loading="eager"    fetchpriority="high">
                     </figure>
                 </div>
             </div>
@@ -499,7 +516,7 @@ $seoSummary = sprintf(
                     <?php $relatedMedia = ctc_solution_media($solutionMedia, $relatedSlug, $defaultSolutionMedia); ?>
                     <article class="seo-card solution-related-card">
                         <a class="solution-card-image" href="/solutions/<?= e($relatedSlug); ?>" aria-label="Read more about <?= e($related['h1']); ?>">
-                            <img src="<?= e($relatedMedia['src']); ?>" alt="<?= e($relatedMedia['alt']); ?>" width="640" height="420" loading="lazy" decoding="async">
+                            <img src="<?= e($relatedMedia['src']); ?>" alt="<?= e($relatedMedia['alt']); ?>" width="640" height="420" loading="lazy"   >
                         </a>
                         <h3><a href="/solutions/<?= e($relatedSlug); ?>"><?= e($related['h1']); ?></a></h3>
                         <p><?= e($related['meta']); ?></p>

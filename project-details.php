@@ -64,7 +64,7 @@ $absoluteImageUrl = static function (?string $path): string {
     $path = trim((string) $path);
 
     if ($path === '') {
-        return 'https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif';
+        return 'https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png';
     }
 
     if (preg_match('#^https?://#i', $path)) {
@@ -209,16 +209,16 @@ $structuredData = [
 <link rel="icon" href="<?= assetPath('assets/img/sm-logo.svg'); ?>" type="image/svg+xml">
 
 <link rel="stylesheet" href="<?= assetPath('assets/css/bootstrap.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/bootstrap-icons.css'); ?>">
+<link rel="stylesheet" href="<?= assetPath('assets/css/bootstrap-icons.min.css'); ?>">
 <link rel="stylesheet" href="<?= assetPath('assets/css/all.min.css'); ?>">
 <link rel="stylesheet" href="<?= assetPath('assets/css/fontawesome.min.css'); ?>">
 <link rel="stylesheet" href="<?= assetPath('assets/css/swiper-bundle.min.css'); ?>">
 <link rel="stylesheet" href="<?= assetPath('assets/css/animate.min.css'); ?>">
 <link rel="stylesheet" href="<?= assetPath('assets/css/jquery.fancybox.min.css'); ?>">
 <link rel="stylesheet" href="<?= assetPath('assets/css/boxicons.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/preloader.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/style2.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('style.css'); ?>">
+<link rel="stylesheet" href="<?= assetPath('assets/css/preloader.min.css'); ?>">
+<link rel="stylesheet" href="<?= assetPath('assets/css/style2.min.css'); ?>">
+<link rel="stylesheet" href="<?= assetPath('style.min.css'); ?>">
 <link rel="stylesheet" href="<?= assetPath('assets/css/blog-refactor.css'); ?>">
 
 <link
@@ -246,7 +246,7 @@ $structuredData = [
 
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
 
 <div class="preloader">
     <div id="particles-background" class="vertical-centered-box"></div>
@@ -315,11 +315,11 @@ $structuredData = [
 <section class="breadcrumbs">
     <div class="breadcrumb-sm-images">
         <div class="inner-banner-1 magnetic-item">
-            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/inner-banner-1.png'); ?>" alt="Project details banner">
+            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/inner-banner-1.png'); ?>" alt="Project details banner" width="300" height="300"   >
         </div>
 
         <div class="inner-banner-2 magnetic-item">
-            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/inner-banner-2.png'); ?>" alt="Project details banner">
+            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/inner-banner-2.png'); ?>" alt="Project details banner" width="300" height="300"   >
         </div>
     </div>
 
@@ -333,7 +333,7 @@ $structuredData = [
 
                         <div class="breadcrumb-list">
                             <a href="/">Home</a>
-                            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/breadcrumb-arrow.svg'); ?>" alt="">
+                            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/breadcrumb-arrow.svg'); ?>" alt="" width="16" height="9"   >
                             Project Details
                         </div>
                     </div>
@@ -353,7 +353,7 @@ $structuredData = [
                         loading="lazy" 
                         class="img-fluid" 
                         src="<?= e(assetPath($heroLargeImages[0]['image'] ?? $project['featured_image'])); ?>" 
-                        alt="<?= e($heroLargeImages[0]['image_alt'] ?? $project['featured_image_alt'] ?? $project['title']); ?>">
+                        alt="<?= e($heroLargeImages[0]['image_alt'] ?? $project['featured_image_alt'] ?? $project['title']); ?>" width="800" height="500"   >
                 </div>
             </div>
 
@@ -367,20 +367,20 @@ $structuredData = [
                                         loading="lazy" 
                                         class="img-fluid" 
                                         src="<?= e(assetPath($image['image'])); ?>" 
-                                        alt="<?= e($image['image_alt'] ?: $project['title']); ?>">
+                                        alt="<?= e($image['image_alt'] ?: $project['title']); ?>" width="800" height="500"   >
                                 </div>
                             </div>
                         <?php endforeach; ?>
                     <?php else: ?>
                         <div class="col-lg-12">
                             <div class="portfolio-img magnetic-item">
-                                <img loading="lazy" class="img-fluid" src="<?= assetPath('assets/img/inner-pages/portfolio-dt-02.png'); ?>" alt="<?= e($project['title']); ?>">
+                                <img loading="lazy" class="img-fluid" src="<?= assetPath('assets/img/inner-pages/portfolio-dt-02.png'); ?>" alt="<?= e($project['title']); ?>" width="800" height="500"   >
                             </div>
                         </div>
 
                         <div class="col-lg-12">
                             <div class="portfolio-img magnetic-item">
-                                <img loading="lazy" class="img-fluid" src="<?= assetPath('assets/img/inner-pages/portfolio-dt-03.png'); ?>" alt="<?= e($project['title']); ?>">
+                                <img loading="lazy" class="img-fluid" src="<?= assetPath('assets/img/inner-pages/portfolio-dt-03.png'); ?>" alt="<?= e($project['title']); ?>" width="800" height="500"   >
                             </div>
                         </div>
                     <?php endif; ?>
@@ -409,7 +409,7 @@ $structuredData = [
                                         <div class="single-process magnetic-item">
                                             <?php if (!empty($step['icon'])): ?>
                                                 <div class="icon">
-                                                    <img loading="lazy" src="<?= e(assetPath($step['icon'])); ?>" alt="<?= e($step['title']); ?>">
+                                                    <img loading="lazy" src="<?= e(assetPath($step['icon'])); ?>" alt="<?= e($step['title']); ?>" width="64" height="64"   >
                                                 </div>
                                             <?php endif; ?>
 
@@ -432,7 +432,7 @@ $structuredData = [
                                             loading="lazy" 
                                             class="img-fluid" 
                                             src="<?= e(assetPath($image['image'])); ?>" 
-                                            alt="<?= e($image['image_alt'] ?: $project['title']); ?>">
+                                            alt="<?= e($image['image_alt'] ?: $project['title']); ?>" width="800" height="500"   >
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -512,7 +512,7 @@ $structuredData = [
                                     <img 
                                         loading="lazy" 
                                         src="<?= e(assetPath($previousProject['featured_image'])); ?>" 
-                                        alt="<?= e($previousProject['featured_image_alt'] ?: $previousProject['title']); ?>">
+                                        alt="<?= e($previousProject['featured_image_alt'] ?: $previousProject['title']); ?>" width="800" height="500"   >
 
                                     <div class="arrow">
                                         <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -529,7 +529,7 @@ $structuredData = [
                                     <img 
                                         loading="lazy" 
                                         src="<?= e(assetPath($nextProject['featured_image'])); ?>" 
-                                        alt="<?= e($nextProject['featured_image_alt'] ?: $nextProject['title']); ?>">
+                                        alt="<?= e($nextProject['featured_image_alt'] ?: $nextProject['title']); ?>" width="800" height="500"   >
 
                                     <div class="arrow">
                                         <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -560,25 +560,21 @@ $structuredData = [
 
 <?php include __DIR__ . '/footer.php'; ?>
 
-<script src="<?= assetPath('assets/js/jquery-3.6.0.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/popper.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/bootstrap.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/swiper-bundle.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/waypoints.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/jquery.counterup.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/isotope.pkgd.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/jquery.fancybox.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/gsap.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/simpleParallax.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/TweenMax.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/jquery.marquee.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/wow.min.js'); ?>"></script>
-<script src="<?= assetPath('assets/js/preloader.js'); ?>"></script>
+<script src="<?= assetPath('assets/js/jquery-3.6.0.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/popper.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/bootstrap.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/swiper-bundle.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/waypoints.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/jquery.counterup.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/isotope.pkgd.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/jquery.fancybox.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/jquery.marquee.min.js'); ?>" defer></script>
+<script src="<?= assetPath('assets/js/preloader.min.js'); ?>" defer></script>
 
-<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js" defer></script>
 
-<script src="<?= assetPath('assets/js/custom.js'); ?>"></script>
-<script src="<?= assetPath('script.js'); ?>"></script>
+<script src="<?= assetPath('assets/js/custom.min.js'); ?>" defer></script>
+<script src="<?= assetPath('script.min.js'); ?>" defer></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {

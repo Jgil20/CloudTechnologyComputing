@@ -28,7 +28,7 @@ if ($ogImage && !str_starts_with($ogImage, 'http://') && !str_starts_with($ogIma
     $ogImage = 'https://www.cloudtechnologycomputing.com/' . ltrim($ogImage, '/');
 }
 if (!$ogImage) {
-    $ogImage = 'https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif';
+    $ogImage = 'https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png';
 }
 
 $featuredImage = $post['featured_image'] ?: '/assets/img/home-6/CloudTechnologyComputingDisplay.avif';
@@ -69,18 +69,18 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
   <meta name="twitter:image" content="<?= e($ogImage) ?>">
 
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/css/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/css/bootstrap-icons.min.css" rel="stylesheet">
   <link href="/assets/css/all.min.css" rel="stylesheet">
   <link href="/assets/css/fontawesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="/assets/css/animate.min.css">
   <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
   <link href="/assets/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/preloader.css">
-  <link rel="stylesheet" href="/assets/css/style2.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/css/blog-refactor.css">
-  <link rel="stylesheet" href="/css/seo-engagement.css">
+  <link rel="stylesheet" href="/assets/css/preloader.min.css">
+  <link rel="stylesheet" href="/assets/css/style2.min.css">
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/css/blog-refactor.min.css">
+  <link rel="stylesheet" href="/css/seo-engagement.min.css">
   <link rel="icon" href="/assets/img/sm-logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,7 +131,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
 
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
 
 <a class="skip-link" href="#main-content">Skip to content</a>
 <?php include __DIR__ . '/nav.php'; ?>
@@ -142,10 +142,10 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
 <section class="breadcrumbs">
     <div class="breadcrumb-sm-images">
         <div class="inner-banner-1 magnetic-item">
-            <img loading="lazy" src="/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="Cloud technology advertising">
+            <img loading="lazy" src="/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="Cloud technology advertising" width="164" height="210"   >
         </div>
         <div class="inner-banner-2 magnetic-item">
-            <img loading="lazy" src="/assets/img/inner-pages/ibm cloud provider.avif" alt="Cloud provider">
+            <img loading="lazy" src="/assets/img/inner-pages/ibm cloud provider.avif" alt="Cloud provider" width="250" height="191"   >
         </div>
     </div>
 
@@ -158,7 +158,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
                         <h1><?= e($post['title']) ?></h1>
                         <div class="breadcrumb-list">
                             <a href="/">Home</a>
-                            <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="">
+                            <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   >
                             Blog Details
                         </div>
                     </div>
@@ -178,7 +178,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
                         loading="lazy" 
                         class="img-fluid" 
                         src="<?= e($featuredImage) ?>" 
-                        alt="<?= e($post['featured_image_alt'] ?: $post['title']) ?>">
+                        alt="<?= e($post['featured_image_alt'] ?: $post['title']) ?>" width="800" height="600"   >
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
                                 <img 
                                     loading="lazy" 
                                     src="<?= e($authorImage) ?>" 
-                                    alt="<?= e($post['author_name']) ?>">
+                                    alt="<?= e($post['author_name']) ?>" width="96" height="96"   >
                             </div>
                             <div class="author-content">
                                 <h6>By, <span><?= e($post['author_name']) ?></span></h6>
@@ -348,7 +348,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
                                             <img 
                                                 loading="lazy" 
                                                 src="<?= e(!empty($recent['featured_image']) ? '/' . ltrim($recent['featured_image'], '/') : '/assets/img/home-3/Cloud Solutions Techology.webp') ?>" 
-                                                alt="<?= e($recent['title']) ?>">
+                                                alt="<?= e($recent['title']) ?>" width="800" height="600"   >
                                         </a>
                                     </div>
                                     <div class="wc">
@@ -357,7 +357,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
                                                 <?= e($recent['title']) ?>
                                             </a>
                                         </h6>
-                                        <a href="/blog.php">
+                                        <a href="/blog.php" aria-label="Read Cloud Technology Computing blog article">
                                             <?= date('d M, Y', strtotime($recent['post_date'])) ?>
                                         </a>
                                     </div>
@@ -413,7 +413,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
                                 <img 
                                     loading="lazy" 
                                     src="/assets/img/inner-pages/hackerJhonBG.avif" 
-                                    alt="Comment author">
+                                    alt="Comment author" width="250" height="191"   >
                             </div>
                             <div class="comment-content">
                                 <div class="author-post">

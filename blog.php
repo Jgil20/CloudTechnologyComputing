@@ -328,8 +328,20 @@ $pagePreloadImage = '/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyCom
 <?= json_encode($itemListSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
 </script>
 <?php endif; ?>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://www.cloudtechnologycomputing.com/blog#blog",
+    "name": "Cloud Technology Computing Blog",
+    "description": "Articles about cloud computing, web development, AI, SEO, mobile apps, and small business technology strategy from Cloud Technology Computing.",
+    "url": "https://www.cloudtechnologycomputing.com/blog.php",
+    "isPartOf": {"@type": "WebSite", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"},
+    "inLanguage": "en-US"
+}
+</script>
 </head>
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <?php include __DIR__ . '/nav.php'; ?>
 
@@ -337,10 +349,10 @@ $pagePreloadImage = '/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyCom
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images" aria-hidden="true">
             <div class="inner-banner-1 magnetic-item">
-                <img src="/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="" width="260" height="180" fetchpriority="high">
+                <img src="/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="" fetchpriority="high" width="164" height="210"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="/assets/img/inner-pages/ibm cloud provider.avif" alt="" width="260" height="180">
+                <img loading="lazy" src="/assets/img/inner-pages/ibm cloud provider.avif" alt="" width="250" height="191"   >
             </div>
         </div>
         <div class="container">
@@ -353,10 +365,10 @@ $pagePreloadImage = '/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyCom
                             <p><?= e($heroText); ?></p>
                             <div class="breadcrumb-list">
                                 <a href="/">Home</a>
-                                <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="16">
+                                <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   >
                                 <a href="/blog.php">Blog</a>
                                 <?php if ($isFilteredPage || $isSearchPage): ?>
-                                    <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="16">
+                                    <img loading="lazy" src="/assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   >
                                     <span><?= e($search !== '' ? 'Search' : ($activeCategoryName !== '' ? $activeCategoryName : ucwords(str_replace('-', ' ', $category !== '' ? $category : $tag)))); ?></span>
                                 <?php endif; ?>
                             </div>
@@ -449,9 +461,7 @@ $pagePreloadImage = '/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyCom
                                             alt="<?= e($imageAlt); ?>"
                                             width="420"
                                             height="280"
-                                            <?= $index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'; ?>
-                                            decoding="async"
-                                        >
+                                            <?= $index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'; ?>   >
                                     </a>
                                     <?php if ($categorySlug !== ''): ?>
                                         <div class="blog-tag">
@@ -480,7 +490,7 @@ $pagePreloadImage = '/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyCom
                                                 <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?= rawurlencode($absolutePostUrl); ?>" aria-label="Share <?= e((string) $post['title']); ?> on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
                                                 <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?= rawurlencode($absolutePostUrl); ?>" aria-label="Share <?= e((string) $post['title']); ?> on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></li>
                                             </ul>
-                                            <span><img loading="lazy" src="/assets/img/home-3/plain-icon.svg" alt="" width="26" height="26"></span>
+                                            <span><img loading="lazy" src="/assets/img/home-3/plain-icon.svg" alt="" width="15" height="15"   ></span>
                                         </div>
                                     </div>
                                 </div>

@@ -1,11 +1,11 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Explore a real-world case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed, scalability, and user experience.">
+<meta name="description" content="Explore a case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed and scalability.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Case Study: Website Load Times &amp; Cloud Performance | Cloud Technology Computing" />
-<meta property="og:description" content="Explore a real-world case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed, scalability, and user experience.">
+<meta property="og:description" content="Explore a case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed and scalability.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/website-load-times.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/inner-pages/AzureHostingDesktop.avif">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -14,7 +14,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Case Study: Website Load Times &amp; Cloud Performance | Cloud Technology Computing" />
-<meta name="twitter:description" content="Explore a real-world case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed, scalability, and user experience.">
+<meta name="twitter:description" content="Explore a case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed and scalability.">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/inner-pages/AzureHostingDesktop.avif">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
@@ -23,13 +23,13 @@
 
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/website-load-times.php" />
-    <title>Case Study: Website Load Times & Cloud Performance | Cloud Technology Computing</title>
+    <title>Website Load Times &amp; Cloud Performance Case Study | CTC</title>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Website Load Times & Cloud Performance: AWS vs Azure vs Dedicated Hosting",
-  "description": "Explore a real-world case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed, scalability, and user experience.",
+  "description": "Explore a case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed and scalability.",
   "image": "https://www.cloudtechnologycomputing.com/assets/img/inner-pages/AzureHostingDesktop.avif",
   "author": {"@type": "Organization", "name": "Cloud Technology Computing"},
   "publisher": {
@@ -43,7 +43,7 @@
 }
 </script>
 </head>
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -124,10 +124,10 @@
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -139,10 +139,10 @@
     <section class="breadcrumbs">
       <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds" width="164" height="210"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what" width="250" height="191"   >
             </div>
         </div>
         </div>
@@ -152,9 +152,9 @@
                     <div class="breadcrumb-wrapper">
                         <div class="breadcrumb-cnt">
                             <span>Case Study Details</span>
-                            <h1>"Improve website load times and enhance the overall user experience globally"</h1>
+                            <h1>Improve website load times and enhance the overall user experience globally</h1>
                             <div class="breadcrumb-list">
-                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Case Study Details
+                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   > Case Study Details
                             </div>
                            
                         </div>
@@ -172,7 +172,7 @@
                         <h2>Cloud Hosting vs. Dedicated Hosting: A Case Study by Cloud Technology Computing Corporation</h2>
                     </div>
                     <div class="case-big-img magnetic-item">
-                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/AzureHostingDesktop.avif" alt="Azure Page Speed Hosting">
+                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/AzureHostingDesktop.avif" alt="Azure Page Speed Hosting" width="1920" height="1080"   >
                     </div>
                     <div class="case-content mb-60">
                         <p>Cloud Technology Computing Corporation conducted a comprehensive evaluation to determine the most suitable hosting environment for their web applications. The study focused on comparing the performance, reliability, scalability, and cost-effectiveness of cloud hosting solutions, specifically AWS and Azure, against their existing dedicated hosting providers, Hostinger and Eco Web Hosting. The goal was to identify the best platform to support their operations before making a full transition to cloud hosting.Azure Hosting (Desktop):
@@ -223,14 +223,14 @@ Azure Hosting (Desktop): </p>
                         </div>
                         <div class="col-lg-6">
                             <div class="case-img magnetic-item">
-                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsEcowebhosting.avif" alt="Page speed Insights Ecowebhosting">
+                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsEcowebhosting.avif" alt="Page speed Insights Ecowebhosting" width="1920" height="1080"   >
                             </div>
                         </div>
                     </div>
                     <div class="row g-lg-4 gy-5 mb-120">
                         <div class="col-lg-6">
                             <div class="case-img magnetic-item">
-                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsHostinger.avif" alt="Page speed Insights Hostinger">
+                                <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/PagespeedInsightsHostinger.avif" alt="Page speed Insights Hostinger" width="1920" height="1080"   >
                             </div>
                         </div>
                         <div class="col-lg-6 d-flex align-items-center">
@@ -254,7 +254,7 @@ Azure Hosting (Desktop): </p>
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img loading="lazy" src="assets/img/inner-pages/research.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/research.svg" alt="" width="40" height="40"   >
                                         </div>
                                         <span>Step 01</span>
                                         <h3>Research</h3>
@@ -264,7 +264,7 @@ Azure Hosting (Desktop): </p>
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img loading="lazy" src="assets/img/inner-pages/devlopment.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/devlopment.svg" alt="" width="44" height="42"   >
                                         </div>
                                         <span>Step 02</span>
                                         <h3>Development</h3>
@@ -274,7 +274,7 @@ Azure Hosting (Desktop): </p>
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img loading="lazy" src="assets/img/inner-pages/testing.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/testing.svg" alt="" width="40" height="40"   >
                                         </div>
                                         <span>Step 03</span>
                                         <h3>Testing</h3>
@@ -284,7 +284,7 @@ Azure Hosting (Desktop): </p>
                                 <div class="col-xl-3 col-sm-6">
                                     <div class="single-process magnetic-item">
                                         <div class="icon">
-                                            <img loading="lazy" src="assets/img/inner-pages/deploy.svg" alt="">
+                                            <img loading="lazy" src="assets/img/inner-pages/deploy.svg" alt="" width="40" height="40"   >
                                         </div>
                                         <span>Step 04</span>
                                         <h3>Deploy</h3>
@@ -345,12 +345,12 @@ Your choice between these options depends on your business needs, budget, and fo
                             <div class="row g-4 justify-content-center">
                                 <div class="col-md-6">
                                     <div class="case-img magnetic-item">
-                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/SAPAnalyticsCloud.jpg" alt="">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/SAPAnalyticsCloud.jpg" alt="" width="639" height="568"   >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="case-img magnetic-item">
-                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/Website Optimization.avif" alt="" width="636" height="592"   >
                                     </div>
                                 </div>
                             </div>

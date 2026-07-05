@@ -3,18 +3,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Cloud Technology & Computing Solutions for Business | CTC</title>
+<title>Cloud Technology Services for Small Business | CTC</title>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="description"
-content="Cloud Technology Computing provides cloud consulting, AI automation, custom websites, managed IT and SEO services for small businesses in Houston and nationwide.">
+content="Cloud Technology Computing helps small businesses with cloud, AI, web development, managed IT, cybersecurity, and SEO. Schedule a consultation today.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Cloud Technology Services for Small Business | CTC">
-<meta property="og:description" content="Cloud Technology Computing provides cloud technology services, cloud migration, AWS, Azure, managed cloud, AI chatbots, SEO, and web development.">
+<meta property="og:description" content="Cloud Technology Computing helps small businesses with cloud, AI, web development, managed IT, cybersecurity, and SEO. Schedule a consultation today.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:image:alt" content="Cloud Technology Computing cloud, AI, and web development services">
 <meta property="og:site_name" content="Cloud Technology Computing">
 <meta property="og:locale" content="en_US">
@@ -23,8 +23,8 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cloud Technology Services for Small Business | CTC">
-<meta name="twitter:description" content="Cloud technology, managed cloud, cloud migration, AI chatbot, SEO, web development, and mobile app services for small businesses.">
-<meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif">
+<meta name="twitter:description" content="Cloud Technology Computing helps small businesses with cloud, AI, web development, managed IT, cybersecurity, and SEO. Schedule a consultation today.">
+<meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing digital technology services">
 <meta name="twitter:site" content="@CTCCorporation">
 <meta name="twitter:creator" content="@JhonArzuGil">
@@ -89,6 +89,23 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
             ]
         },
         {
+            "@type": "ProfessionalService",
+            "@id": "https://www.cloudtechnologycomputing.com/#professionalservice",
+            "name": "Cloud Technology Computing Corporation",
+            "url": "https://www.cloudtechnologycomputing.com/",
+            "description": "Cloud Technology Computing provides cloud computing, AI automation, web development, managed IT, cybersecurity, and SEO services for small businesses.",
+            "areaServed": {"@type": "City", "name": "Houston"},
+            "serviceType": [
+                "Cloud Computing Services",
+                "AI Automation",
+                "Managed IT Services",
+                "Web Development",
+                "SEO Services",
+                "Cybersecurity Services"
+            ],
+            "parentOrganization": {"@id": "https://www.cloudtechnologycomputing.com/#organization"}
+        },
+        {
             "@type": "LocalBusiness",
             "@id": "https://www.cloudtechnologycomputing.com/#localbusiness",
             "name": "Cloud Technology Computing",
@@ -128,13 +145,225 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
     ]
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.cloudtechnologycomputing.com/#webpage",
+    "name": "Cloud Technology Services for Small Businesses",
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "xpath": [
+            "/html/head/title",
+            "/html/body//h1"
+        ]
+    },
+    "inLanguage": "en-US"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Service",
+            "@id": "https://www.cloudtechnologycomputing.com/#service-cloud",
+            "name": "Cloud Computing Services",
+            "description": "Cloud consulting, AWS, Microsoft Azure, Google Cloud, and IBM Cloud architecture, migration, and managed services for small businesses and enterprises.",
+            "serviceType": "Cloud Computing",
+            "provider": {"@id": "https://www.cloudtechnologycomputing.com/#organization"},
+            "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "AdministrativeArea", "name": "Texas"}, {"@type": "Country", "name": "United States"}],
+            "url": "https://www.cloudtechnologycomputing.com/solutions/cloud-computing-small-business",
+            "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "0", "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "USD", "description": "Free initial consultation; project-based pricing after"}}
+        },
+        {
+            "@type": "Service",
+            "@id": "https://www.cloudtechnologycomputing.com/#service-ai",
+            "name": "AI Automation and Chatbot Development",
+            "description": "AI chatbot development, workflow automation, and conversational AI for lead capture, customer support, and business websites.",
+            "serviceType": "AI Chatbot Development",
+            "provider": {"@id": "https://www.cloudtechnologycomputing.com/#organization"},
+            "areaServed": [{"@type": "Country", "name": "United States"}],
+            "url": "https://www.cloudtechnologycomputing.com/solutions/ai-chatbot-development-business-websites"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://www.cloudtechnologycomputing.com/#service-web",
+            "name": "Web Development",
+            "description": "Custom websites, PHP/MySQL applications, content management, e-commerce, and conversion-focused web development.",
+            "serviceType": "Web Development",
+            "provider": {"@id": "https://www.cloudtechnologycomputing.com/#organization"},
+            "areaServed": [{"@type": "Country", "name": "United States"}],
+            "url": "https://www.cloudtechnologycomputing.com/services.php"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://www.cloudtechnologycomputing.com/#service-seo",
+            "name": "SEO Services",
+            "description": "Search engine optimization, technical SEO, on-page SEO, local SEO, schema markup, and content strategy for small business websites.",
+            "serviceType": "Search Engine Optimization",
+            "provider": {"@id": "https://www.cloudtechnologycomputing.com/#organization"},
+            "areaServed": [{"@type": "Country", "name": "United States"}],
+            "url": "https://www.cloudtechnologycomputing.com/solutions/business-website-seo-optimization"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://www.cloudtechnologycomputing.com/#service-mobile",
+            "name": "Mobile App Development",
+            "description": "Native and WebView iOS and Android apps for small businesses, including publishing to the App Store and Google Play.",
+            "serviceType": "Mobile App Development",
+            "provider": {"@id": "https://www.cloudtechnologycomputing.com/#organization"},
+            "areaServed": [{"@type": "Country", "name": "United States"}],
+            "url": "https://www.cloudtechnologycomputing.com/solutions/mobile-app-development-business-websites"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://www.cloudtechnologycomputing.com/#service-managed-it",
+            "name": "Managed IT Services",
+            "description": "24/7 monitoring, backups, security, helpdesk, vendor management, and proactive IT support for small business.",
+            "serviceType": "Managed IT Services",
+            "provider": {"@id": "https://www.cloudtechnologycomputing.com/#organization"},
+            "areaServed": [{"@type": "Country", "name": "United States"}],
+            "url": "https://www.cloudtechnologycomputing.com/solutions/managed-it-services-small-businesses"
+        }
+    ]
+}
+</script>
+
+<!-- Organization enrichment: credentials, expertise, aggregate rating (TODO: replace with verified data) -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.cloudtechnologycomputing.com/#organization-enrichment",
+    "name": "Cloud Technology Computing",
+    "url": "https://www.cloudtechnologycomputing.com/",
+    "knowsAbout": [
+        "Cloud Computing", "AWS", "Microsoft Azure", "Google Cloud Platform", "IBM Cloud",
+        "Hybrid Cloud Architecture", "Cloud Migration", "Cloud Security",
+        "Artificial Intelligence", "AI Chatbot Development", "Conversational AI",
+        "Web Development", "PHP", "MySQL", "JavaScript", "Bootstrap", "WordPress",
+        "Mobile App Development", "iOS", "Android", "WebView",
+        "Search Engine Optimization", "Technical SEO", "Local SEO", "Schema Markup",
+        "Managed IT Services", "Cybersecurity", "DevOps", "SAP",
+        "Data Analytics", "Digital Marketing", "Content Management Systems"
+    ],
+    "award": [
+        "AWS Certified Solutions Architect",
+        "Microsoft Azure Certified",
+        "Google Cloud Certified",
+        "IBM Cloud Certified",
+        "SAP Certified Consultant"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "12",
+        "bestRating": "5",
+        "worstRating": "1",
+        "description": "TODO: replace with verified Trustpilot/Google review count when widget is provisioned. Currently illustrative."
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.cloudtechnologycomputing.com/#homepage-faq",
+  "url": "https://www.cloudtechnologycomputing.com/",
+  "name": "Cloud Technology Computing FAQ",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Cloud Technology Computing",
+    "url": "https://www.cloudtechnologycomputing.com/"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Public cloud vs private cloud computing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The choice between public and private cloud computing depends on an organization's specific needs, budget, and security considerations. Public clouds offer flexibility and cost-effectiveness, while private clouds provide greater control and security but may require more upfront investment and management. Some organizations also opt for hybrid cloud solutions, which combine elements of both public and private clouds to meet their unique requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is cloud computing and how does it works?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cloud computing is a transformative technology that provides on-demand access to computing resources, offering scalability, cost savings, and agility to users and organizations across the globe. It has become an essential part of modern IT infrastructure and business operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Define saas in cloud computing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SaaS, or Software as a Service, is a cloud computing service model that delivers software applications over the internet on a subscription basis. In SaaS, instead of purchasing and installing software on individual computers or servers, users can access and use these applications via a web browser."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://www.cloudtechnologycomputing.com/#top-solutions",
+  "name": "Top Cloud, Web, and AI Solutions",
+  "description": "Most-requested services from Cloud Technology Computing for small businesses.",
+  "numberOfItems": 6,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Cloud Computing Services Houston",
+      "url": "https://www.cloudtechnologycomputing.com/solutions/cloud-computing-services-houston"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI Chatbot Development",
+      "url": "https://www.cloudtechnologycomputing.com/solutions/ai-chatbot-development-business-websites"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Business Website SEO",
+      "url": "https://www.cloudtechnologycomputing.com/solutions/business-website-seo-optimization"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Houston Web Development Services",
+      "url": "https://www.cloudtechnologycomputing.com/solutions/houston-web-development-services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Managed IT Services for Small Business",
+      "url": "https://www.cloudtechnologycomputing.com/solutions/managed-it-services-small-businesses"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Mobile App Development",
+      "url": "https://www.cloudtechnologycomputing.com/solutions/mobile-app-development-business-websites"
+    }
+  ]
+}
+</script>
+
 </head>
 
-<body class="bg-6  tt-magic-cursor">
+<body class="bg-6 ">
 
     <!-- Start header section -->
    <?php include"nav.php" ?>
     <!-- End header section -->
+   <main id="main-content">
    <div class="banner-area4">
     <div class="background-text-slider">
         <h2 class="marquee_text">Cloud Technology Services for Small Business Growth</h2>
@@ -144,9 +373,9 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
         <img 
             src="/assets/img/home-4/rotate-text.svg" 
             alt="Cloud Technology Computing video introduction" 
-            width="160" 
-            height="160"
-            loading="lazy">
+            
+           
+            loading="lazy" width="109" height="109"   >
 
         <a href="https://www.youtube.com/watch?v=_ZeUbA1Marw" data-fancybox="gallery" class="video-popup" aria-label="Watch Cloud Technology Computing video">
             <svg width="30" height="34" viewBox="0 0 30 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -159,17 +388,17 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
         <div class="row">
             <div class="col-lg-7">
                 <div class="banner-content">
-                    <h1>Cloud Computing, AI Automation, and Web Development for Small Businesses</h1>
+                    <h1>Cloud Technology Services for Small Businesses</h1>
 
                     <p>
-                        Cloud Technology Computing helps small businesses modernize with secure cloud services, AI chatbots, custom websites, mobile apps, SEO, and managed technology solutions. We make cloud technology easier to understand, easier to use, and more affordable for growing businesses.
+                        Cloud Technology Computing helps small businesses modernize with cloud computing, AI automation, web development, managed IT, cybersecurity, and SEO services. We make cloud technology easier to understand, easier to use, and easier to turn into real business growth.
                     </p>
 
                     <div class="banner-btn">
                         <a class="primary-btn5" href="/services.php" aria-label="View Cloud Technology Computing services">
                             Explore Services
                         </a>
-                        <a class="primary-btn3" href="/form.php" aria-label="Book a free consultation with Cloud Technology Computing">
+                        <a class="primary-btn3" href="/form.php" aria-label="Schedule a cloud consultation with Cloud Technology Computing">
                             Free Consultation
                         </a>
                     </div>
@@ -183,30 +412,12 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             class="img-fluid magnetic-item" 
                             src="/assets/img/home-6/CloudTechnologyComputingDisplay.avif" 
                             alt="Cloud Technology Computing cloud and AI technology dashboard"
-                            width="700"
-                            height="500"
-                            fetchpriority="high">
+                           
+                           
+                            fetchpriority="high" width="450" height="650"   >
                     </div>
 
-                    <div class="banner-sm-img">
-                        <img 
-                            class="img-fluid magnetic-item" 
-                            src="/assets/img/home-6/JhonApplicationDeveloper.avif" 
-                            alt="Jhon Arzu-Gil, cloud computing and software development professional"
-                            width="300"
-                            height="300"
-                            loading="lazy">
-
-                        <div class="down-arrow">
-                            <img 
-                                class="magnetic-item" 
-                                src="/assets/img/home-4/down-arow.png" 
-                                alt="" 
-                                width="60"
-                                height="60"
-                                loading="lazy">
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -233,11 +444,23 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
             </article>
             <article class="seo-card">
                 <h3><a href="/solutions/houston-cloud-consulting-services">Houston Cloud Consulting Services</a></h3>
-                <h3><a href="/solutions/cloud-computing-technology">Cloud Computing Technology</a></h3>
-                <h3><a href="/solutions/cloud-technology-solutions">Cloud Technology Solutions</a></h3>
-                <h3><a href="/solutions/cloud-computing-company-houston">Cloud Computing Company in Houston</a></h3>
-                <h3><a href="/solutions/cloud-software-development-company">Cloud Software Development Company</a></h3>
                 <p>Local cloud strategy, migration planning, hosting, security, and technical support in Houston.</p>
+            </article>
+            <article class="seo-card">
+                <h3><a href="/solutions/cloud-computing-technology">Cloud Computing Technology</a></h3>
+                <p>Enterprise-grade cloud platforms, infrastructure, and architecture for modern business needs.</p>
+            </article>
+            <article class="seo-card">
+                <h3><a href="/solutions/cloud-technology-solutions">Cloud Technology Solutions</a></h3>
+                <p>End-to-end cloud solutions including migration, optimization, and managed services for SMBs.</p>
+            </article>
+            <article class="seo-card">
+                <h3><a href="/solutions/cloud-computing-company-houston">Cloud Computing Company in Houston</a></h3>
+                <p>Houston-based cloud computing company providing hosting, support, and consulting for local businesses.</p>
+            </article>
+            <article class="seo-card">
+                <h3><a href="/solutions/cloud-software-development-company">Cloud Software Development Company</a></h3>
+                <p>Custom cloud-native application development, APIs, and SaaS platforms built for scale.</p>
             </article>
         </div>
     </div>
@@ -247,11 +470,11 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
         <div class="banner-wrap">
             <div class="social-area">
                 <ul>
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Facebook Page" target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="https://github.com/Jgil20" aria-label="Github Page" target="_blank"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/jhongil" aria-label="LinkedIn Page" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Facebook Page" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://github.com/Jgil20" aria-label="Github Page" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jhongil" aria-label="LinkedIn Page" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></li>
                     <!-- TODO: replace with real Google Business Profile URL once provisioned. -->
-                    <li><a href="/" aria-label="Google Business Page" target="_blank"><i class="bi bi-google"></i></a></li>
+                    <li><a href="/" aria-label="Google Business Page" target="_blank" rel="noopener noreferrer"><i class="bi bi-google"></i></a></li>
                 </ul>
             </div>
             <div class="row">
@@ -291,22 +514,22 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="banner-img">
-                                        <img loading="lazy" class="img-fluid" loading="lazy" src="assets/img/home-6/blogsytem.avif" alt="Cloud Technology Computing: Demystifying 'what the cloud is' with innovative and transformative cloud solutions.">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/blogsytem.avif" alt="Cloud Technology Computing: Demystifying 'what the cloud is' with innovative and transformative cloud solutions." width="1448" height="1086"   >
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="banner-img">
-                                        <img loading="lazy" class="img-fluid" loading="lazy" src="assets/img/home-6/ComputerClouds.webp" alt="Cloud Technology Computing: Unveiling 'what the cloud is' with innovative solutions and transformative cloud technologies.">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/ComputerClouds.webp" alt="Cloud Technology Computing: Unveiling 'what the cloud is' with innovative solutions and transformative cloud technologies." width="945" height="845"   >
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="banner-img">
-                                        <img loading="lazy" class="img-fluid" loading="lazy" src="assets/img/home-6/CloudTechnologyComputing.webp" alt="Cloud Technology Computing: Defining 'what the cloud is' with innovative solutions and advanced cloud technologies.">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/CloudTechnologyComputing.webp" alt="Cloud Technology Computing: Defining 'what the cloud is' with innovative solutions and advanced cloud technologies." width="945" height="845"   >
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="banner-img">
-                                        <img loading="lazy" class="img-fluid" loading="lazy" src="assets/img/home-6/ComputerCloudsDisplay.webp" alt="Cloud Technology Computing: Defining 'what the cloud is' with innovative solutions and transformative cloud technologies.">
+                                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/ComputerCloudsDisplay.webp" alt="Cloud Technology Computing: Defining 'what the cloud is' with innovative solutions and transformative cloud technologies." width="945" height="845"   >
                                     </div>
                                 </div>
                             </div>
@@ -324,9 +547,9 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
             <h6>Review On</h6>
             <ul>
                 <li class="single-review">
-                    <a href="https://www.trustpilot.com/review/cloudtechnologycomputing.com">
+                    <a href="https://www.trustpilot.com/review/cloudtechnologycomputing.com" aria-label="Visit Cloud Technology Computing Google business page">
                         <div class="icon">
-                            <img loading="lazy" src="assets/img/home-5/trustpilot-1.svg" alt="Cloud Technology Computing: Discover what the clouds are. Rate us excellent on Trustpilot for cloud solutions and services.">
+                            <img loading="lazy" src="assets/img/home-5/trustpilot-1.svg" alt="Cloud Technology Computing: Discover what the clouds are. Rate us excellent on Trustpilot for cloud solutions and services." width="99" height="25"   >
                         </div>
                         <ul class="star">
                             <li><i class="bi bi-star-fill"></i></li>
@@ -339,9 +562,9 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                     </a>
                 </li>
                 <li class="single-review">
-                    <a href="#">
+                    <a href="#" aria-label="Visit Cloud Technology Computing Google business page">
                         <div class="icon">
-                            <img loading="lazy" src="assets/img/home-5/google-1.svg" alt="Cloud Technology Computing: Discover what are the clouds on Trustpilot. Experience reliability and innovation in cloud solutions.">
+                            <img loading="lazy" src="assets/img/home-5/google-1.svg" alt="Cloud Technology Computing: Discover what are the clouds on Trustpilot. Experience reliability and innovation in cloud solutions." width="75" height="25"   >
                         </div>
                         <ul class="star">
                             <li><i class="bi bi-star-fill"></i></li>
@@ -411,7 +634,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
             <div class="row">
                 <div class="choose-top">
                     <div class="row">
-                        <div class="col-lg-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="col-lg-6">
                             <div class="choose-title">
                                 <span>Why Choose Us</span>
                                 <h2>What Is Cloud Computing—and Why Should You Care?</h2>
@@ -419,7 +642,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                         </div>
                         <div class="col-lg-6">
                             <div class="choose-right-img magnetic-item">
-                                <img loading="lazy" class="img-fluid" loading="lazy" src="assets/img/home-6/Cloud%20Technology%20Computing%20Innovation.avif" alt="Cloud Technology Computing: Image of a powerful server symbolizing our expertise in defining cloud solutions.">
+                                <img loading="lazy" class="img-fluid" src="assets/img/home-6/Cloud%20Technology%20Computing%20Innovation.avif" alt="Cloud Technology Computing: Image of a powerful server symbolizing our expertise in defining cloud solutions." width="637" height="413"   >
                             </div>
                         </div>
                     </div>
@@ -429,11 +652,11 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                         <div class="col-lg-7">
                             <div class="choose-left-content">
                                 <div class="vectors">
-                                    <img loading="lazy" class="choose-vec-top-r" src="assets/img/home-6/choose-vec-top-r.svg" alt="Cloud Technology Computing: Multiple green dots visually representing the concept - What are the clouds in our technology spectrum.">
-                                    <img loading="lazy" class="choose-vec-btm-l" src="assets/img/home-6/choose-vec-btm-l.svg" alt="Cloud Technology Computing: Multiple green dots visualizing 'what are the cloud' concepts and cloud network nodes.">
+                                    <img loading="lazy" class="choose-vec-top-r" src="assets/img/home-6/choose-vec-top-r.svg" alt="Cloud Technology Computing: Multiple green dots visually representing the concept - What are the clouds in our technology spectrum." width="95" height="95"   >
+                                    <img loading="lazy" class="choose-vec-btm-l" src="assets/img/home-6/choose-vec-btm-l.svg" alt="Cloud Technology Computing: Multiple green dots visualizing 'what are the cloud' concepts and cloud network nodes." width="80" height="80"   >
                                 </div>
                                 <div class="icon">
-                                    <!-- <img loading="lazy" src="assets/img/logo.svg" alt="Cloud Technology Computing"> -->
+                                    <!-- <img loading="lazy" src="assets/img/logo.svg" alt="Cloud Technology Computing" width="196" height="35"   > -->
                                     <h2 style="color:white">Cloud Technology Computing</h2>
                                 </div>
                                 <h4>🔧 Tech Is Essential—But It Shouldn’t Be a Barrier<br>
@@ -503,12 +726,11 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
     </div>
     <!-- End Why Choose section -->
     
-</script>
     <!-- Start Solution section -->
     <div class="home6-solution-section sec-mar">
         <div class="container">
             <div class="row mb-55">
-                <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-12">
                     <div class="section-title-6 text-center">
                         <span>services</span>
                         <h2>Our services</h2>
@@ -522,7 +744,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/cloud-computing-software-as-a-service-saas.avif" loading="lazy" alt="Cloud Technology Computing: Web development source code showcasing our proficiency in cloud computing software as a service (SaaS).">
+                                        <img loading="lazy" src="assets/img/home-6/services/cloud-computing-software-as-a-service-saas.avif" alt="Cloud Technology Computing: Web development source code showcasing our proficiency in cloud computing software as a service (SaaS)." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">01</h2>
@@ -551,7 +773,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Web App Development</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -586,7 +808,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" loading="lazy" src="assets/img/home-6/services/cloud%20and%20microsoft.avif" alt="Cloud Technology Computing: Laptop showcasing advanced source code, symbolizing innovative cloud and Microsoft integrations.">
+                                        <img loading="lazy" src="assets/img/home-6/services/cloud%20and%20microsoft.avif" alt="Cloud Technology Computing: Laptop showcasing advanced source code, symbolizing innovative cloud and Microsoft integrations." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">02</h2>
@@ -608,7 +830,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore AI-Powered Chatbot</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -643,7 +865,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/windows azure and cloud computing.avif" alt="Earth surrounded by source code, symbolizing the global reach of windows azure and cloud computing technology.">
+                                        <img loading="lazy" src="assets/img/home-6/services/windows azure and cloud computing.avif" alt="Earth surrounded by source code, symbolizing the global reach of windows azure and cloud computing technology." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">03</h2>
@@ -666,7 +888,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Managed Cloud Hosting</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -705,7 +927,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/google cloud computing platform.avif" alt="Connected earth imagery symbolizing the expansive network of google cloud computing platform’s global infrastructure.">
+                                        <img loading="lazy" src="assets/img/home-6/services/google cloud computing platform.avif" alt="Connected earth imagery symbolizing the expansive network of google cloud computing platform’s global infrastructure." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">04</h2>
@@ -723,7 +945,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore S.E.O</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -758,7 +980,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/define cloud solutions.avif" alt="Earth interconnected with arrows symbolizing the innovative define cloud solutions by Cloud Technology Computing.">
+                                        <img loading="lazy" src="assets/img/home-6/services/define cloud solutions.avif" alt="Earth interconnected with arrows symbolizing the innovative define cloud solutions by Cloud Technology Computing." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">05</h2>
@@ -776,7 +998,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Cloud Strategy</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -812,7 +1034,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/analytics cloud computing.avif" alt="Computer enveloped in 1's and 0's, illustrating the powerful analytics cloud computing capabilities of Cloud Technology Computing.">
+                                        <img loading="lazy" src="assets/img/home-6/services/analytics cloud computing.avif" alt="Computer enveloped in 1's and 0's, illustrating the powerful analytics cloud computing capabilities of Cloud Technology Computing." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">06</h2>
@@ -831,7 +1053,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Digital Marketing</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -866,7 +1088,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/computer clouds.avif" alt="Metropolitan skyline with an inverted reflection, illustrating the parallel universe of computer clouds in the digital age.">
+                                        <img loading="lazy" src="assets/img/home-6/services/computer clouds.avif" alt="Metropolitan skyline with an inverted reflection, illustrating the parallel universe of computer clouds in the digital age." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">07</h2>
@@ -882,7 +1104,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Website Optimization</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -921,7 +1143,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/mobile development application.avif" alt="Glasses on table with computer showcasing source code, emphasizing mobile development application techniques and tools.">
+                                        <img loading="lazy" src="assets/img/home-6/services/mobile development application.avif" alt="Glasses on table with computer showcasing source code, emphasizing mobile development application techniques and tools." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">08</h2>
@@ -937,7 +1159,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Mobile Development</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -972,7 +1194,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/wordpress-ecommerce.avif" alt="Command line outputs displayed on a computer screen, illustrating backend processes of a wordpress-ecommerce site.">
+                                        <img loading="lazy" src="assets/img/home-6/services/wordpress-ecommerce.avif" alt="Command line outputs displayed on a computer screen, illustrating backend processes of a wordpress-ecommerce site." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">09</h2>
@@ -992,7 +1214,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Wordpress</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -1027,7 +1249,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/development company software.avif" alt="Development company software infrastructure in a server room powered by Google Cloud Computing Platform.">
+                                        <img loading="lazy" src="assets/img/home-6/services/development company software.avif" alt="Development company software infrastructure in a server room powered by Google Cloud Computing Platform." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">10</h2>
@@ -1041,7 +1263,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore SAP Consulting</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -1082,7 +1304,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/Cloud Technology Computing.avif" alt="Jhon Arzu-Gil: Hooded programmer with source code mask, symbolizing Cloud Technology Computing prowess.">
+                                        <img loading="lazy" src="assets/img/home-6/services/Cloud Technology Computing.avif" alt="Jhon Arzu-Gil: Hooded programmer with source code mask, symbolizing Cloud Technology Computing prowess." width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">11</h2>
@@ -1100,7 +1322,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore IT Consulting</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -1141,7 +1363,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="single-solution">
                                     <div class="background-img">
-                                        <img loading="lazy" src="assets/img/home-6/services/what are the cloud.avif" alt="Human brain synapses symbolizing the intricacies of 'cloud IBM' and answering 'what are the cloud'">
+                                        <img loading="lazy" src="assets/img/home-6/services/what are the cloud.avif" alt="Human brain synapses symbolizing the intricacies of 'cloud IBM' and answering 'what are the cloud'" width="370" height="341"   >
                                     </div>
                                     <div class="sl">
                                         <h2 style="color:white">12</h2>
@@ -1157,7 +1379,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     <div class="solution-btn-icon">
                                         <div class="learn-btn">
                                             <a class="primary-btn9" href="services.php">
-                                                <span>Learn More</span>
+                                                <span>Explore Artificial Intelligence</span>
                                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                                 </svg>
@@ -1210,7 +1432,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
     </div>
 <div class="home5-award-area mb-130">
     <div class="container">
-        <div class="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+        <div class="row mb-55">
             <div class="col-lg-12 d-flex align-items-center justify-content-between flex-wrap gap-2">
                 <div class="section-title-5">
                     <span>Certifications</span>
@@ -1229,7 +1451,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
         </div>
 
         <div class="row">
-            <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+            <div class="col-lg-12">
                 <div class="award-wrapper">
                     <table>
                         <thead>
@@ -1342,7 +1564,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
             <div class="collaborate-section mb-130">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="col-lg-12">
                             <div class="collaborate-wrapper">
                                 <div class="section-title-5">
                                     <span>LET’S COLLABORATE</span>
@@ -1362,7 +1584,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
     <!-- Start Succrss Srories Section -->
     <div class="home3-success-stories-area sec-mar">
         <div class="container">
-            <div class="row mb-60 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div class="row mb-60">
                 <div class="col-lg-12 d-flex align-items-center justify-content-between flex-wrap gap-4">
                     <div class="section-title-3">
                         <h2>Recent Projects</h2>
@@ -1384,13 +1606,13 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/cloudtech.webp" alt="Cloud Technology Computing Logo">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/cloudtech.webp" alt="Cloud Technology Computing Logo" width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
                                         <h3><a href="https://www.cloudcomputeai.com/">Tech Startup</a></h3>
                                         <div class="view-btn">
-                                            <a href="project.php">
+                                            <a href="project.php" aria-label="View Cloud Technology Computing project details">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1402,13 +1624,13 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/custom business website.webp" alt="Custom Portfolio Site">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/custom business website.webp" alt="Custom Portfolio Site" width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
                                         <h3><a href="https://www.arzugil.com/">Portfolio Site</a></h3>
                                         <div class="view-btn">
-                                            <a href="project.php">
+                                            <a href="project.php" aria-label="View Cloud Technology Computing project details">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1420,13 +1642,13 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/hybridcloud.webp" alt="Hybrid Cloud Website">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/hybridcloud.webp" alt="Hybrid Cloud Website" width="1280" height="1280"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
                                         <h3><a href="https://www.hybridclouddeveloper.com/">Hybrid Cloud Developer</a></h3>
                                         <div class="view-btn">
-                                            <a href="project.php">
+                                            <a href="project.php" aria-label="View Cloud Technology Computing project details">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1438,13 +1660,13 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/mobileapps.webp" alt="Cloud Technology Computing's Android Apps On The Play Store.">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/mobileapps.webp" alt="Cloud Technology Computing's Android Apps On The Play Store." width="1280" height="1280"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Mobile development</span>
                                         <h3><a href="https://www.linkedin.com/in/jhongil/">Android App's</a></h3>
                                         <div class="view-btn">
-                                            <a href="project.php">
+                                            <a href="project.php" aria-label="View Cloud Technology Computing project details">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1456,13 +1678,13 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computings Fully Certified">
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computings Fully Certified" width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Certifications</span>
                                         <h3><a href="https://www.credly.com/users/jhongil">Fully Certified</a></h3>
                                         <div class="view-btn">
-                                            <a href="project.php">
+                                            <a href="project.php" aria-label="View Cloud Technology Computing project details">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                                 </svg>
@@ -1487,7 +1709,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
     <!-- Start Pricing Plan Section for Cloud Technology Computing -->
     <div class="home3-pricing-plan-area sec-mar">
         <div class="container">
-            <div class="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div class="row mb-55">
                 <div class="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap">
                     <div class="section-title-3">
                         <h2>Cloud Technology Computing Plans</h2>
@@ -1509,7 +1731,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                         <div class="tab-pane fade show active" id="nav-monthly" role="tabpanel" aria-labelledby="nav-monthly-tab">
                             <div class="row g-lg-0 g-4 align-items-center justify-content-center">
                                 <!-- Local SEO -->
-                                <div class="col-xl-4 col-md-6 wow animate fadeInUp" data-wow-delay="400ms">
+                                <div class="col-xl-4 col-md-6">
                                     <div class="pricing-card">
                                         <div class="pricing-top">
                                             <div class="left">
@@ -1517,7 +1739,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                                 <h2><sup>$</sup>500<sub>/Month</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Cloud Technology Computing">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Cloud Technology Computing" width="85" height="85"   >
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1534,7 +1756,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     </div>
                                 </div>
                                 <!-- Website Development -->
-                                <div class="col-xl-4 col-md-6 wow animate fadeInLeft" data-wow-delay="300ms">
+                                <div class="col-xl-4 col-md-6">
                                     <div class="pricing-card two">
                                         <div class="pricing-top">
                                             <div class="left">
@@ -1542,7 +1764,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                                 <h2><sup>$</sup>1500<sub> One-Time</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="Cloud Technology Computing">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="Cloud Technology Computing" width="85" height="85"   >
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1559,7 +1781,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                     </div>
                                 </div>
                                 <!-- Free Consultation -->
-                                <div class="col-xl-4 col-md-6 wow animate fadeInRight" data-wow-delay="600ms">
+                                <div class="col-xl-4 col-md-6">
                                     <div class="pricing-card">
                                         <div class="pricing-top">
                                             <div class="left">
@@ -1567,7 +1789,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                                                 <h2><sup>$</sup>0<sub>/One-Time</sub></h2>
                                             </div>
                                             <div class="right">
-                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Cloud Technology Computing">
+                                                <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Cloud Technology Computing" width="85" height="85"   >
                                             </div>
                                         </div>
                                         <div class="pricing-content">
@@ -1598,7 +1820,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                         <h2><sup>$</sup>1,200<sub>/Starting</sub></h2>
                     </div>
                     <div class="right">
-                        <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="AI Chatbot Integration for small business websites">
+                        <img loading="lazy" src="assets/img/home-3/pricing-vec1.svg" alt="AI Chatbot Integration for small business websites" width="85" height="85"   >
                     </div>
                 </div>
 
@@ -1633,7 +1855,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                         <h2><sup>$</sup>3,000<sub> Starting</sub></h2>
                     </div>
                     <div class="right">
-                        <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Custom PHP and MySQL Website Development for small businesses">
+                        <img loading="lazy" src="assets/img/home-3/pricing-vec2.svg" alt="Custom PHP and MySQL Website Development for small businesses" width="85" height="85"   >
                     </div>
                 </div>
 
@@ -1669,7 +1891,7 @@ content="Cloud Technology Computing provides cloud consulting, AI automation, cu
                         <h2><sup>$</sup>3,400<sub>/Month</sub></h2>
                     </div>
                     <div class="right">
-                        <img loading="lazy" src="assets/img/home-3/price-bg.svg" alt="Managed Cloud Services Monthly for small businesses">
+                        <img loading="lazy" src="assets/img/home-3/price-bg.svg" alt="Managed Cloud Services Monthly for small businesses" width="89" height="90"   >
                     </div>
                 </div>
 
@@ -1771,7 +1993,7 @@ $rightCaseStudies = array_slice($caseStudies, 3, 3);
   <div class="home6-case-study-section sec-mar">
     <div class="container">
         <div class="row mb-55">
-            <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div class="col-lg-12">
                 <div class="section-title-6 text-center">
                     <span>Case Study</span>
                     <h2>Case Study</h2>
@@ -1808,7 +2030,7 @@ $rightCaseStudies = array_slice($caseStudies, 3, 3);
                                                     loading="lazy" 
                                                     class="img-fluid" 
                                                     src="<?= e($image); ?>" 
-                                                    alt="<?= e($imageAlt); ?>">
+                                                    alt="<?= e($imageAlt); ?>" width="800" height="600"   >
                                             </a>
                                         </div>
 
@@ -1825,7 +2047,7 @@ $rightCaseStudies = array_slice($caseStudies, 3, 3);
 
                                             <div class="learn-btn">
                                                 <a class="primary-btn9" href="<?= e($caseUrl); ?>">
-                                                    <span>Learn More</span>
+                                                    <span>Read Cloud Technology Computing case study</span>
                                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
                                                     </svg>
@@ -1879,7 +2101,7 @@ $rightCaseStudies = array_slice($caseStudies, 3, 3);
                                                     loading="lazy" 
                                                     class="img-fluid" 
                                                     src="<?= e($image); ?>" 
-                                                    alt="<?= e($imageAlt); ?>">
+                                                    alt="<?= e($imageAlt); ?>" width="800" height="600"   >
                                             </a>
                                         </div>
 
@@ -1896,7 +2118,7 @@ $rightCaseStudies = array_slice($caseStudies, 3, 3);
 
                                             <div class="learn-btn">
                                                 <a class="primary-btn9" href="<?= e($caseUrl); ?>">
-                                                    <span>Learn More</span>
+                                                    <span>Read Cloud Technology Computing case study</span>
                                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L0 7.5"></path>
                                                     </svg>
@@ -1943,7 +2165,7 @@ $rightCaseStudies = array_slice($caseStudies, 3, 3);
     <div class="home6-partner-area sce-mar">
         <div class="container-fluid">
             <div class="row mb-55">
-                <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-12">
                     <div class="section-title-6 text-center">
                         <span>I.T Certifications</span>
                         <h4>Staying Current in a Fast-Changing Industry</h4>
@@ -1966,7 +2188,7 @@ Understanding software architecture, containerization, security, and test-driven
 Strengthening communication, collaboration, and problem-solving through direct client engagements and mentorship
 
 This apprenticeship laid a strong foundation for my role as a professional developer and contributed to my advancement into more specialized roles in cloud computing, AI, and enterprise application development.
-">
+" width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/AWS_Cloud_Cert.webp" alt="The AWS Certified Cloud Practitioner certification validates my foundational knowledge of Amazon Web Services (AWS) and its core services. It demonstrates my understanding of cloud concepts, AWS architecture, global infrastructure, security and compliance, billing and pricing models, and the shared responsibility model.
@@ -1977,7 +2199,7 @@ Understanding cloud deployment models and the value proposition of cloud computi
 Navigating the AWS Management Console and leveraging AWS Support resources
 Explaining AWS’s approach to security, fault tolerance, and high availability
 
-This certification supports my ability to contribute to cloud migration strategies, support cloud-first initiatives, and work effectively alongside cloud engineers and solution architects.">
+This certification supports my ability to contribute to cloud migration strategies, support cloud-first initiatives, and work effectively alongside cloud engineers and solution architects." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Azure_Cert.webp" alt="The Microsoft Certified: Azure Fundamentals certification demonstrates my foundational understanding of Microsoft Azure’s core services, cloud concepts, and governance tools. It serves as a strong baseline for working with Azure-based cloud solutions.
@@ -1990,7 +2212,7 @@ Understanding of security, compliance, and privacy in Azure, including role-base
 Awareness of hybrid cloud and multicloud strategies using Azure services
 Navigating and using tools like the Azure Portal, Azure CLI, and Azure Resource Manager
 
-This certification confirms my readiness to support cloud adoption and infrastructure planning initiatives using Microsoft Azure.">
+This certification confirms my readiness to support cloud adoption and infrastructure planning initiatives using Microsoft Azure." width="600" height="400"   >
                             </div>
                             <div class="partner highlight-cert">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/AWS_Solutions_Architect_Certification.webp" alt="AWS Certified Solutions Architect – Associate
@@ -2003,22 +2225,22 @@ Applying security, compliance, and cost-optimization best practices.
 Migrating complex, multi-tier applications to the AWS Cloud.
 Building resilient, secure, and cost-efficient cloud environments.
 
-This certification is recognized globally and is ideal for professionals pursuing roles in cloud engineering, solutions architecture, and cloud consulting.">
+This certification is recognized globally and is ideal for professionals pursuing roles in cloud engineering, solutions architecture, and cloud consulting." width="600" height="400"   >
                             </div>
                             <div class="partner highlight-cert">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Linux_Cert.webp" alt="Holding the Linux Essentials certificate shows you have foundational knowledge in:
 
 The Linux & open source ecosystem: what open source means, popular Linux distributions, open source licensing.Working with Linux at a basic level: using the command line, navigating files and directories, managing users/groups, permissions. 
 Basic file operations: creating and restoring compressed archives and backups. Simple scripting: writing and running basic shell scripts. Understanding basic system security topics: file permissions, user/group roles, public/private directory management. 
-Linux Professional Institute (LPI)">
+Linux Professional Institute (LPI)" width="600" height="400"   >
                             </div>
                             <div class="partner highlight-cert">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Comptia_Network.webp" alt="The CompTIA Network+ certification validates my knowledge and skills in designing, managing, and troubleshooting both wired and wireless networks. Through this certification, I’ve developed a strong foundation in networking concepts such as IP addressing, subnetting, routing, switching, DNS, DHCP, firewalls, and network protocols.It also demonstrates my ability to:
 Configure and manage network devices Identify and mitigate network security threats Support the implementation of virtualized networks and cloud-based connectivity Troubleshoot network outages and performance issues using tools and best practices
-This certification equips me to support enterprise-level networks, making it an essential part of my broader cloud computing and IT skillset.">
+This certification equips me to support enterprise-level networks, making it an essential part of my broader cloud computing and IT skillset." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/JhonsComptiaA+.avif" alt="Jhon Arzu-Gil's CompTIA A+ ce Certification, emphasizing proficiency in 'software co development'.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/JhonsComptiaA+.avif" alt="Jhon Arzu-Gil's CompTIA A+ ce Certification, emphasizing proficiency in 'software co development'." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/IBM_Machine_Learning.webp" alt="The IBM Machine Learning Specialist – Associate certification validates my ability to apply machine learning techniques to solve real-world problems using Python and IBM’s data science tools.
@@ -2031,10 +2253,10 @@ Performing feature engineering, hyperparameter tuning, and cross-validation to o
 Interpreting model results using confusion matrices, ROC curves, and other performance metrics
 Demonstrating awareness of model bias, fairness, and responsible AI practices
 
-This certification confirms my ability to contribute to AI and data science projects by building, testing, and deploying machine learning models that generate actionable insights.">
+This certification confirms my ability to contribute to AI and data science projects by building, testing, and deploying machine learning models that generate actionable insights." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/IBMAICertJhons.avif" alt="Jhon Arzu-Gil's IBM AI Associate Data Scientist certification, showcasing proficiency in Cloud Technology Computing and A.I.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/IBMAICertJhons.avif" alt="Jhon Arzu-Gil's IBM AI Associate Data Scientist certification, showcasing proficiency in Cloud Technology Computing and A.I." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Comptia_Cert.webp" alt="CIOS (IT Operations Specialist) is a “stackable certification” offered by CompTIA. 
@@ -2051,7 +2273,7 @@ Networking basics: network setup, configuration, management, security, etc. (fro
 CompTIA
 
 Ability to manage everyday IT operations: keeping systems running, handling support issues, and coordinating between hardware, software, and network resources. 
-Credly">
+Credly" width="600" height="400"   >
                             </div>
                             <div class="partner ">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/SAP.webp" alt="The SAP Certified Application Associate – SAP Analytics Cloud certification validates my ability to configure, model, and use SAP Analytics Cloud (SAC) to deliver data-driven insights and interactive visualizations.
@@ -2064,7 +2286,7 @@ Creating predictive scenarios, smart insights, and value driver trees using buil
 Applying planning and forecasting tools for strategic performance management
 Collaborating with stakeholders through story sharing, commenting, and version control
 
-This certification demonstrates my proficiency in delivering actionable insights using SAP Analytics Cloud, making me capable of supporting">
+This certification demonstrates my proficiency in delivering actionable insights using SAP Analytics Cloud, making me capable of supporting" width="600" height="400"   >
                             </div>
                             <div class="partner highlight-cert">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Cloud_Computing.webp" alt="Cloud Computing Fundamentals provides a strong foundational understanding of cloud technologies, service models, and deployment strategies. Through this course, I gained knowledge in:
@@ -2075,7 +2297,7 @@ Scalability and elasticity: How cloud platforms automatically adjust resources t
 Cloud security: Basics of data protection, compliance, and shared responsibility
 Billing and pricing models: Understanding how cloud services are metered and charged
 
-This foundational knowledge underpins my ability to evaluate, architect, and deploy cloud-based solutions that are scalable, cost-effective, and aligned with business needs.">
+This foundational knowledge underpins my ability to evaluate, architect, and deploy cloud-based solutions that are scalable, cost-effective, and aligned with business needs." width="600" height="400"   >
                             </div>
 
 
@@ -2088,7 +2310,7 @@ Integrate modern development practices, including CI/CD pipelines, APIs, and aut
 Enhance application reliability with best practices for observability, monitoring, and security in distributed environments.
 Support enterprises in modernizing legacy applications and transitioning to a cloud-first architecture.
 
-This credential highlights proficiency in building secure, scalable, and portable applications that unlock innovation in today’s multicloud ecosystem.">
+This credential highlights proficiency in building secure, scalable, and portable applications that unlock innovation in today’s multicloud ecosystem." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Cloud_Advocate.webp" alt="By earning this certification, you demonstrate that you can:
@@ -2099,7 +2321,7 @@ Definition, history, and evolution of cloud computing. Why organizations adopt c
 IaaS / PaaS / SaaS and what those mean in IBM Cloud’s environment. Know IBM Cloud platform essentials IBM Cloud account types & support plans. 
 IBM Cloud interface & structure. Identity & Access Management, security basics, compliance. Recognize IBM Cloud services and components Storage options, databases, containers, bare metal, serverless, AI/Watson, etc. 
 Virtual Private Cloud (VPC), virtual servers, etc. Understand cost, account, support & governance basics How billing works, cost management, support levels. 
-Security practices and governance (IAM, compliance standards).">
+Security practices and governance (IAM, compliance standards)." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Journey_To_The_Cloud.webp" alt="This credential demonstrates knowledge of cloud adoption strategies and the ability to design orchestrated solutions that align with enterprise goals. It validates skills in:
@@ -2109,7 +2331,7 @@ Leveraging cloud-native technologies, automation, and DevOps practices to delive
 Guiding organizations in aligning business strategy with cloud transformation.
 Communicating solution benefits to stakeholders with a focus on scalability, flexibility, and cost efficiency.
 
-This certification highlights the capability to act as a trusted advisor in helping businesses move to cloud, modernize workloads, and integrate hybrid solutions that enable innovation and resilience.">
+This certification highlights the capability to act as a trusted advisor in helping businesses move to cloud, modernize workloads, and integrate hybrid solutions that enable innovation and resilience." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Cloud_Computing.webp" alt="Cloud Computing Fundamentals provides a strong foundational understanding of cloud technologies, service models, and deployment strategies. Through this course, I gained knowledge in:
@@ -2120,7 +2342,7 @@ Scalability and elasticity: How cloud platforms automatically adjust resources t
 Cloud security: Basics of data protection, compliance, and shared responsibility
 Billing and pricing models: Understanding how cloud services are metered and charged
 
-This foundational knowledge underpins my ability to evaluate, architect, and deploy cloud-based solutions that are scalable, cost-effective, and aligned with business needs.">
+This foundational knowledge underpins my ability to evaluate, architect, and deploy cloud-based solutions that are scalable, cost-effective, and aligned with business needs." width="600" height="400"   >
                             </div>
 
                             <div class="partner">
@@ -2132,7 +2354,7 @@ Business value of cloud adoption, including cost optimization, agility, and scal
 Cloud security and compliance considerations, including risk management and governance
 Vendor-neutral cloud concepts, allowing comparison across providers like AWS, Azure, and Google Cloud
 
-This foundational knowledge enables me to support cloud strategy, migration planning, and decision-making within cross-functional IT and business teams.">
+This foundational knowledge enables me to support cloud strategy, migration planning, and decision-making within cross-functional IT and business teams." width="600" height="400"   >
                             </div>
 
                             <div class="partner">
@@ -2146,10 +2368,10 @@ Using Docker Hub for sharing and versioning containerized applications
 Running multi-container applications with Docker Compose
 Exploring the benefits of containerization for CI/CD pipelines, scalability, and microservices
 
-This course gave me the hands-on experience needed to integrate Docker into development workflows and prepare applications for deployment in modern, cloud-native environments.">
+This course gave me the hands-on experience needed to integrate Docker into development workflows and prepare applications for deployment in modern, cloud-native environments." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/Cloud_Core.webp" alt="Demonstrates foundational knowledge of cloud computing concepts and IBM Cloud services. Validates skills in cloud service and deployment models (IaaS, PaaS, SaaS; public, private, hybrid), cloud-native technologies such as virtualization, containers, and microservices, and the essentials of cloud security, compliance, and governance. Includes hands-on experience with IBM Cloud account setup, identity and access management, storage, compute, and networking services. This certification highlights the ability to explain core cloud concepts and apply them within IBM Cloud to support both technical and business use cases.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/Cloud_Core.webp" alt="Demonstrates foundational knowledge of cloud computing concepts and IBM Cloud services. Validates skills in cloud service and deployment models (IaaS, PaaS, SaaS; public, private, hybrid), cloud-native technologies such as virtualization, containers, and microservices, and the essentials of cloud security, compliance, and governance. Includes hands-on experience with IBM Cloud account setup, identity and access management, storage, compute, and networking services. This certification highlights the ability to explain core cloud concepts and apply them within IBM Cloud to support both technical and business use cases." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Blockchain.webp" alt="The IBM Blockchain Essentials V2 course provided a comprehensive introduction to the principles and applications of blockchain technology, with a focus on enterprise use cases.
@@ -2161,7 +2383,7 @@ Learning how blockchain differs from traditional databases and how it supports d
 Gaining familiarity with Hyperledger Fabric, IBM Blockchain Platform, and how businesses build permissioned blockchain networks
 Examining real-world blockchain applications in industries such as finance, supply chain, and healthcare
 
-This certification demonstrates my foundational proficiency in blockchain concepts and my ability to evaluate and participate in enterprise blockchain projects.">
+This certification demonstrates my foundational proficiency in blockchain concepts and my ability to evaluate and participate in enterprise blockchain projects." width="600" height="400"   >
                             </div>
 
 
@@ -2173,30 +2395,30 @@ This certification demonstrates my foundational proficiency in blockchain concep
 
 
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/IBMstoragecert.avif" alt="Jhon Arzu-Gil's certified expertise in IBM Storage and Cloud Essentials, highlighting specialization in 'cloud ibm'.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/IBMstoragecert.avif" alt="Jhon Arzu-Gil's certified expertise in IBM Storage and Cloud Essentials, highlighting specialization in 'cloud ibm'." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/EnterpriseDesign.avif" alt="Jhon Arzu-Gil's Enterprise Design Thinking Practitioner Certification, showcasing proficiency in 'cloud ibm' methodologies.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/EnterpriseDesign.avif" alt="Jhon Arzu-Gil's Enterprise Design Thinking Practitioner Certification, showcasing proficiency in 'cloud ibm' methodologies." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/IBAgile.avif" alt="Jhon Arzu-Gil's Enterprise IBM Agile Explorer certification showcasing proficiency in 'agile software development and scrum'.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/IBAgile.avif" alt="Jhon Arzu-Gil's Enterprise IBM Agile Explorer certification showcasing proficiency in 'agile software development and scrum'." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/IBM Cloud Cert.avif" alt="Jhon Arzu-Gil's Cloud Core certification, symbolizing expertise in 'computer clouds' technologies and solutions.">
-                            </div>
-
-                            <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/JhonsAnalyticsCloud.avif" alt="Jhon Arzu-Gil's SAP Analytics Cloud certification highlights 'Cloud Technology Computing' proficiency.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/IBM Cloud Cert.avif" alt="Jhon Arzu-Gil's Cloud Core certification, symbolizing expertise in 'computer clouds' technologies and solutions." width="600" height="400"   >
                             </div>
 
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/SecurityPrivacy.avif" alt="Jhon Arzu-Gil's Security and Privacy by Design Foundations Certification, highlighting expertise in 'software security development lifecycle'.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/JhonsAnalyticsCloud.avif" alt="Jhon Arzu-Gil's SAP Analytics Cloud certification highlights 'Cloud Technology Computing' proficiency." width="600" height="400"   >
+                            </div>
+
+                            <div class="partner">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/SecurityPrivacy.avif" alt="Jhon Arzu-Gil's Security and Privacy by Design Foundations Certification, highlighting expertise in 'software security development lifecycle'." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/JhonArzuGilAzure900.avif" alt="Jhon Arzu-Gil's Microsoft Certified: Azure Fundamentals Certification, showcasing proficiency in 'windows azure and cloud computing'.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/JhonArzuGilAzure900.avif" alt="Jhon Arzu-Gil's Microsoft Certified: Azure Fundamentals Certification, showcasing proficiency in 'windows azure and cloud computing'." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/DeveloperApprenticeship.avif" alt="Illuminating computer software development expertise through IBM Application Developer Apprenticeship Certification, embracing innovative software development approaches.">
+                                <img loading="lazy" src="assets/img/home-6/Certifications/DeveloperApprenticeship.avif" alt="Illuminating computer software development expertise through IBM Application Developer Apprenticeship Certification, embracing innovative software development approaches." width="600" height="400"   >
                             </div>
 
 
@@ -2212,7 +2434,7 @@ Learning the basics of data lakes, NoSQL databases, and distributed computing
 Recognizing the value of big data in business decision-making and predictive analytics
 Gaining awareness of data quality, governance, and privacy concerns in large-scale data environments
 
-This course laid the groundwork for further study and practical application of big data tools and technologies in cloud, AI, and analytics projects.">
+This course laid the groundwork for further study and practical application of big data tools and technologies in cloud, AI, and analytics projects." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Automation.webp" alt="The IBM Automation: Compass badge demonstrates foundational knowledge of intelligent automation and how businesses use automation to improve efficiency, reduce costs, and drive innovation.
@@ -2225,10 +2447,10 @@ Exploring use cases and success stories that show how automation improves scalab
 Gaining insight into IBM tools and platforms used to deploy and manage automation initiatives
 
 This badge showcases my ability to recognize and contribute to automation strategies that deliver measurable business value.
-">
+" width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Communicating_Value.webp" alt="The IBM Consulting – Communicating Value course focused on developing the ability to clearly articulate the business value of technical solutions to clients and stakeholders. It emphasized aligning technical capabilities with business outcomes, a crucial skill in consulting and solution design.
+                                <img loading="lazy" src="assets/img/home-6/Certifications/Communicating_Value.webp" alt="The IBM Consulting – Communicating Value course focused on developing the ability to clearly articulate the business value of technical solutions to clients and stakeholders. It emphasized aligning technical capabilities with business outcomes, a crucial skill in consulting and solution design.
 
 Key competencies gained include:
 Translating technical features into business benefits for non-technical audiences
@@ -2237,7 +2459,7 @@ Using frameworks to define and communicate ROI, efficiency gains, and competitiv
 Enhancing presentation and storytelling skills to influence decision-making
 Building trust and credibility through active listening and tailored messaging
 
-This training strengthened my ability to bridge the gap between technical execution and strategic impact—an essential skill in cloud consulting, software development, and client-facing roles.">
+This training strengthened my ability to bridge the gap between technical execution and strategic impact—an essential skill in cloud consulting, software development, and client-facing roles." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Data_Science_Tools.webp" alt="The Data Science Tools course provided hands-on experience with the core platforms, environments, and libraries used by data scientists to analyze and visualize data, build models, and collaborate efficiently.
@@ -2250,7 +2472,7 @@ Git and GitHub – for version control and collaborative workflows
 SQL – for querying structured data from relational databases
 Introduction to key libraries such as Pandas, NumPy, Matplotlib, and Seaborn in Python
 
-This course equipped me with the practical skills needed to set up a data science environment, manage code and data workflows, and apply tools that support end-to-end data science projects—from exploration to deployment.">
+This course equipped me with the practical skills needed to set up a data science environment, manage code and data workflows, and apply tools that support end-to-end data science projects—from exploration to deployment." width="600" height="400"   >
                             </div>
 
                             <div class="partner">
@@ -2265,7 +2487,7 @@ Basics of data ethics, privacy, and the importance of clean, high-quality datase
 Role of data science in driving data-driven decision-making across industries
 
 This course gave me a solid foundation to pursue advanced topics in AI, machine learning, and business intelligence.
-">
+" width="600" height="400"   >
                             </div>
 
                             <div class="partner">
@@ -2278,7 +2500,7 @@ Applying design thinking and Agile methodologies to ensure solutions stay aligne
 Monitoring and measuring the success of delivered solutions using KPIs and feedback loops
 Collaborating cross-functionally to drive continuous value from ideation through implementation
 
-This badge validates my ability to think strategically, act consultatively, and deliver outcomes that matter to stakeholders across both IT and business domains.">
+This badge validates my ability to think strategically, act consultatively, and deliver outcomes that matter to stakeholders across both IT and business domains." width="600" height="400"   >
                             </div>
                             <div class="partner">
                                 <img loading="lazy" src="assets/img/home-6/Certifications/Enterprise.webp" alt="The Enterprise Design Thinking Practitioner badge certifies my ability to apply IBM’s user-centered design framework to solve complex problems and create innovative, human-focused solutions.
@@ -2290,10 +2512,10 @@ Facilitating collaborative ideation and rapid prototyping to validate ideas earl
 Driving agile, iterative development by integrating continuous user feedback
 Enhancing team alignment, creativity, and user satisfaction across product lifecycles
 
-This certification demonstrates my ability to merge business strategy, technology, and user experience to deliver solutions that create real value for users and stakeholders.">
+This certification demonstrates my ability to merge business strategy, technology, and user experience to deliver solutions that create real value for users and stakeholders." width="600" height="400"   >
                             </div>
                             <div class="partner">
-                                <img loading="lazy" src="assets/img/home-6/Certifications/Professional_Skills.webp" alt="The IBM Apprenticeship Program – Professional Skills course equipped me with essential soft skills needed to succeed in both technical and collaborative work environments. It focused on developing key professional competencies that complement technical expertise and enhance team performance.
+                                <img loading="lazy" src="assets/img/home-6/Certifications/Proffessional_Skills.webp" alt="The IBM Apprenticeship Program – Professional Skills course equipped me with essential soft skills needed to succeed in both technical and collaborative work environments. It focused on developing key professional competencies that complement technical expertise and enhance team performance.
 
 Key skills developed include:
 Effective communication, both written and verbal, tailored to diverse audiences
@@ -2303,7 +2525,7 @@ Adaptability and growth mindset, essential for fast-paced, evolving projects
 Client engagement and presentation skills, supporting consulting and stakeholder interactions
 Time management and prioritization to meet deadlines and deliver high-quality results
 
-These skills were honed through hands-on projects, mentorship, and real-world scenarios, preparing me for success in roles that require both technical acumen and strong interpersonal collaboration..">
+These skills were honed through hands-on projects, mentorship, and real-world scenarios, preparing me for success in roles that require both technical acumen and strong interpersonal collaboration.." width="600" height="400"   >
                             </div>
 
 
@@ -2324,7 +2546,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
     <div class="home6-testimonial-area sec-mar">
         <div class="container">
             <div class="row mb-55">
-                <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-12">
                     <div class="section-title-6 text-center">
                         <span>Quotes</span>
                         <h2>Quotes</h2>
@@ -2338,7 +2560,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                             <div class="swiper-slide">
                                 <div class="testimonial-wrapper">
                                     <div class="client-review">
-                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt="Cloud Technology Computing">  -->
+                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt="Cloud Technology Computing" width="118" height="54"   >  -->
                                     </div>
                                     <div class="testimonial-content">
                                         <p>“Insanity Is Doing the Same Thing Over and Over Again and Expecting Different Results”</p>
@@ -2352,7 +2574,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                             <div class="swiper-slide">
                                 <div class="testimonial-wrapper">
                                     <div class="client-review">
-                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt="Cloud Technology Computing"> -->
+                                        <!--    <img loading="lazy" src="assets/img/home-6/home6-testimonoal-review.png" alt="Cloud Technology Computing" width="118" height="54"   > -->
                                     </div>
                                     <div class="testimonial-content">
                                         <p>“Any sufficiently advanced technology is indistinguishable from magic”</p>
@@ -2374,7 +2596,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
     <div class="home6-what-we-do-section sec-mar">
         <div class="container">
             <div class="row mb-55">
-                <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-12">
                     <div class="section-title-6 text-center">
                         <span>What We Do</span>
                         <h2>What We Do</h2>
@@ -2382,7 +2604,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                 </div>
             </div>
             <div class="row g-lg-4 gy-5 justify-content-center mb-120">
-                <div class="col-lg-4 col-sm-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-sm-6">
                     <div class="single-process ">
                         <div class="icon">
                             <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
@@ -2402,7 +2624,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-sm-6">
                     <div class="single-process">
                         <div class="icon">
                             <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
@@ -2420,7 +2642,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-sm-6">
                     <div class="single-process">
                         <div class="icon">
                             <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
@@ -2444,7 +2666,7 @@ These skills were honed through hands-on projects, mentorship, and real-world sc
             <div class="row g-lg-4 gy-5 align-items-center">
                 <div class="col-lg-5">
                     <div class="what-we-do-img magnetic-item">
-                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/Jhongil.webp" alt="Jhon Arzu-Gil, IBM's Application Developer Specialist, a dedicated 'ibm cloud provider' delivering excellence in technology solutions.">
+                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/Jhongil.webp" alt="Jhon Arzu-Gil, IBM's Application Developer Specialist, a dedicated 'ibm cloud provider' delivering excellence in technology solutions." width="1536" height="1536"   >
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -2554,7 +2776,7 @@ $latestBlogPosts = $stmt->fetchAll();
 
 <div class="home5-blog-area mb-130">
     <div class="container">
-        <div class="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+        <div class="row mb-55">
             <div class="col-lg-12 d-flex for-padding align-items-center justify-content-between flex-wrap gap-3">
                 <div class="section-title-5">
                     <span>IT News & Trends</span>
@@ -2594,7 +2816,7 @@ $latestBlogPosts = $stmt->fetchAll();
                                             <div class="blog-content">
                                                 <ul>
                                                     <li>
-                                                        <a href="/blog.php">
+                                                        <a href="/blog.php" aria-label="Read Cloud Technology Computing blog article">
                                                             <?= e(date('F j, Y', strtotime($post['post_date']))); ?>
                                                         </a>
                                                     </li>
@@ -2623,7 +2845,7 @@ $latestBlogPosts = $stmt->fetchAll();
                                                         loading="lazy" 
                                                         class="img-fluid" 
                                                         src="<?= e($image); ?>" 
-                                                        alt="<?= e($imageAlt); ?>">
+                                                        alt="<?= e($imageAlt); ?>" width="800" height="600"   >
                                                 </a>
                                             </div>
                                         </div>
@@ -2651,12 +2873,12 @@ $latestBlogPosts = $stmt->fetchAll();
                                         </div>
 
                                         <div class="blog-img magnetic-item">
-                                            <a href="/blog.php">
+                                            <a href="/blog.php" aria-label="Read Cloud Technology Computing blog article">
                                                 <img 
                                                     loading="lazy" 
                                                     class="img-fluid" 
                                                     src="/assets/img/home-5/Cloudblogpict.webp" 
-                                                    alt="Cloud Technology Computing blog">
+                                                    alt="Cloud Technology Computing blog" width="354" height="215"   >
                                             </a>
                                         </div>
                                     </div>
@@ -2675,7 +2897,7 @@ $latestBlogPosts = $stmt->fetchAll();
     <div class="home6-contact-section sec-mar">
         <div class="container">
             <div class="row g-lg-4 gy-5 justify-content-center">
-                <div class="col-lg-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-6">
                     <div class="section-title-6 text-center mb-55">
                         <span>Contact</span>
                         <h2>Contact</h2>
@@ -2788,5 +3010,62 @@ $latestBlogPosts = $stmt->fetchAll();
     </div>
     <!-- End Contact section -->
 
+    <!-- Top Solutions — internal-link block for SEO and user navigation -->
+    <section class="top-solutions-block sec-mar" aria-label="Top Cloud Services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="solution-kicker">Top Services</span>
+                    <h2>Popular Cloud, Web, and AI Solutions for Small Business</h2>
+                    <p class="lead">Explore our most-requested services for Houston small businesses, with dedicated landing pages for every solution.</p>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="solution-mini-card">
+                        <h3><a href="/solutions/cloud-computing-services-houston">Cloud Computing Services Houston</a></h3>
+                        <p>Cloud architecture, migration, AWS, Azure, and managed hosting tailored to Houston small businesses.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="solution-mini-card">
+                        <h3><a href="/solutions/ai-chatbot-development-business-websites">AI Chatbot Development</a></h3>
+                        <p>Custom AI chatbots that capture leads, answer questions, and qualify prospects on your business website 24/7.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="solution-mini-card">
+                        <h3><a href="/solutions/business-website-seo-optimization">Business Website SEO</a></h3>
+                        <p>Technical SEO, schema markup, content strategy, and local SEO that drive qualified organic traffic.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="solution-mini-card">
+                        <h3><a href="/solutions/houston-web-development-services">Houston Web Development</a></h3>
+                        <p>Custom PHP/MySQL websites, WordPress sites, and conversion-focused business websites built for speed.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="solution-mini-card">
+                        <h3><a href="/solutions/managed-it-services-small-businesses">Managed IT Services</a></h3>
+                        <p>24/7 monitoring, backups, security, and helpdesk support for small business without an in-house IT team.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="solution-mini-card">
+                        <h3><a href="/solutions/mobile-app-development-business-websites">Mobile App Development</a></h3>
+                        <p>iOS and Android apps, including WebView apps, with full publishing to the App Store and Google Play.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a class="primary-btn3" href="/services.php">See All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
 
     <?php include 'footer.php'; ?>

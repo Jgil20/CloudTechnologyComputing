@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <?php if (!empty($newPostUrl)): ?>
                 <br>
-                <a href="<?= e($newPostUrl) ?>" target="_blank">View Post</a>
+                <a href="<?= e($newPostUrl) ?>" target="_blank" rel="noopener noreferrer">View Post</a>
             <?php endif; ?>
         </div>
     <?php endif; ?>

@@ -369,3 +369,30 @@
     position: static;
   }
 }
+
+/* Performance and accessibility refinements: preserve image ratios and respect reduced motion. */
+.banner-area4 .banner-img .banner-sm-img .down-arrow img {
+  width: 124px;
+  height: 143px;
+  aspect-ratio: 124 / 143;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .marquee_text,
+  .marquee_text3,
+  .magnetic-item,
+  .swiper-wrapper {
+    transform: none !important;
+  }
+}

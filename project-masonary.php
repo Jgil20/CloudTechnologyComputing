@@ -7,7 +7,7 @@
 <meta property="og:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
 <meta property="og:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Tailored web, cloud, and AI solutions designed to grow your business." />
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/project-masonary.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
 <meta property="twitter:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Tailored web, cloud, and AI solutions designed to grow your business." />
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/project-masonary.php">
 <meta name="twitter:image:alt" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />  
@@ -25,10 +25,32 @@
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/project-masonary.php" />
     <title>Innovative Cloud Computing Projects | Cloud Technology Computing</title>
+
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.cloudtechnologycomputing.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cloud and Web Project Portfolio",
+            "item": "https://www.cloudtechnologycomputing.com/project-masonary.php"
+        }
+    ]
+}
+</script>
 </head>
 
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -100,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -108,10 +130,10 @@
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -122,10 +144,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="" width="300" height="300"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="" width="300" height="300"   >
             </div>
         </div>
         <div class="container">
@@ -134,9 +156,9 @@
                     <div class="breadcrumb-wrapper">
                         <div class="breadcrumb-cnt">
                             <span>Projects Masonary</span>
-                            <h1>"Our Complited Projects"</h1>
+                            <h1>Our Completed Projects</h1>
                             <div class="breadcrumb-list">
-                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Projects Masonary
+                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   > Projects Masonary
                             </div>
                            
                         </div>
@@ -163,7 +185,7 @@
                 <div class="col-lg-5 col-sm-6 single-item ui">
                     <div class="single-work magnetic-item">
                         <div class="work-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/AdvertisingSolutions.avif" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/inner-pages/AdvertisingSolutions.avif" alt="Cloud Technology Computing advertising and digital marketing solutions dashboard" width="1311" height="561"   >
                         </div>
                         <div class="work-content">
                             <h3><a href="project-details.html">Streamlining IT Infrastructure</a></h3>
@@ -174,7 +196,7 @@
                 <div class="col-lg-7 col-sm-6 single-item web">
                     <div class="single-work magnetic-item">
                         <div class="work-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-02.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-02.png" alt="Cloud Technology Computing web development project portfolio sample 1" width="800" height="600"   >
                         </div>
                         <div class="work-content">
                             <h3><a href="project-details.html">Transforming Customer Experience</a></h3>
@@ -185,7 +207,7 @@
                 <div class="col-lg-6 col-sm-6 single-item developing">
                     <div class="single-work magnetic-item">
                         <div class="work-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-03.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-03.png" alt="Cloud Technology Computing web development project portfolio sample 2" width="800" height="600"   >
                         </div>
                         <div class="work-content">
                             <h3><a href="project-details.html">Scaling Agile Development</a></h3>
@@ -196,7 +218,7 @@
                 <div class="col-lg-6 col-sm-6 single-item graphic">
                     <div class="single-work magnetic-item">
                         <div class="work-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-04.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-04.png" alt="Cloud Technology Computing web development project portfolio sample 3" width="800" height="600"   >
                         </div>
                         <div class="work-content">
                             <h3><a href="project-details.html">Optimizing IT Operations</a></h3>
@@ -207,7 +229,7 @@
                 <div class="col-lg-4 col-sm-6 single-item graphic">
                     <div class="single-work magnetic-item">
                         <div class="work-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-05.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-05.png" alt="Cloud Technology Computing web development project portfolio sample 4" width="800" height="600"   >
                         </div>
                         <div class="work-content">
                             <h3><a href="project-details.html">Maximizing Efficiency With DevOps</a></h3>
@@ -218,7 +240,7 @@
                 <div class="col-lg-4 col-sm-6 single-item ui">
                     <div class="single-work magnetic-item">
                         <div class="work-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-06.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-06.png" alt="Cloud Technology Computing web development project portfolio sample 5" width="800" height="600"   >
                         </div>
                         <div class="work-content">
                             <h3><a href="project-details.html">Implementing Robotic Process Automation</a></h3>
@@ -229,7 +251,7 @@
                 <div class="col-lg-4 col-sm-6 single-item developing">
                     <div class="single-work magnetic-item">
                         <div class="work-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-07.png" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-4/work-07.png" alt="Cloud Technology Computing web development project portfolio sample 6" width="800" height="600"   >
                         </div>
                         <div class="work-content">
                             <h3><a href="project-details.html">Scaling Agile Development</a></h3>

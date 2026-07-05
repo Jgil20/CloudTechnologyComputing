@@ -6,15 +6,16 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Book a Free Cloud Consultation | Cloud Technology Computing" />
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/form.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Book a Free Cloud Consultation | Cloud Technology Computing" />
-<meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
+<meta property="og:description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies.">
+<meta name="twitter:description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies.">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/form.php">
 <meta name="twitter:image:alt" content="Book a Free Cloud Consultation | Cloud Technology Computing" />  
@@ -23,7 +24,7 @@
      <!-- Title -->
     <title>Book a Free Cloud Consultation | Cloud Technology Computing</title>
 	<!-- set your website meta description and keywords -->
-	<meta name="description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies for your business.">
+	<meta name="description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies.">
 	<meta name="keywords" content="cloud consultation, free cloud review, cloud migration, web development, AI chatbot, SEO, Houston cloud services, small business cloud">
 	
 	<!-- Bootstrap Stylesheets -->
@@ -33,10 +34,10 @@
 	<!-- bootstrap-datepicker Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
 	<!-- sweetalert Stylesheets -->
-	<link rel="stylesheet" href="css/sweetalert.css" type="text/css">
+	<link rel="stylesheet" href="css/sweetalert.min.css" type="text/css">
 	<!-- plugin Main Stylesheets -->
-	<link rel="stylesheet" href="css/multi-step-form.css" type="text/css">
-	<link rel="stylesheet" href="css/multi-step-form-modern.css" type="text/css">
+	<link rel="stylesheet" href="css/multi-step-form.min.css" type="text/css">
+	<link rel="stylesheet" href="css/multi-step-form-modern.min.css" type="text/css">
 
 
 
@@ -45,9 +46,31 @@
 
 
 
+
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.cloudtechnologycomputing.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Free Cloud and Website Consultation",
+            "item": "https://www.cloudtechnologycomputing.com/form.php"
+        }
+    ]
+}
+</script>
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -86,10 +109,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds" width="164" height="210"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what" width="250" height="191"   >
             </div>
         </div>
         <div class="container">
@@ -100,7 +123,7 @@
                             <span>services</span>
                             <h1>Book a Free Cloud Consultation</h1>
                             <div class="breadcrumb-list">
-                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service"> services
+                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service" width="16" height="9"   > services
                             </div>
                            
                         </div>
@@ -182,13 +205,13 @@
 														<div class="form-group validopsys">
 															<ul class="mgs-radio list-unstyled">
 																<li><input type="radio" name="opsys" id="opsys1" value="Android" />
-																	<label for="opsys1"><img loading="lazy" src="images/logo-android.jpg" /></label>
+																	<label for="opsys1"><img loading="lazy" src="images/logo-android.jpg" width="300" height="300" alt="Android"     /></label>
 																</li>
 																<li><input type="radio" name="opsys" id="opsys2" value="Apple" />
-																	<label for="opsys2"><img loading="lazy" src="images/logo-apple.jpg" /></label>
+																	<label for="opsys2"><img loading="lazy" src="images/logo-apple.jpg" width="300" height="300" alt="Apple"     /></label>
 																</li>
 																<li><input type="radio" name="opsys" id="opsys3" value="Windows" />
-																	<label for="opsys3"><img loading="lazy" src="images/logo-windows.jpg" /></label>
+																	<label for="opsys3"><img loading="lazy" src="images/logo-windows.jpg" width="300" height="300" alt="Windows"     /></label>
 																</li>
 															</ul>
 															<div class="help-block with-errors"></div>
@@ -607,7 +630,7 @@
 																<div id="mgsContactSubmit" class="hidden"></div>
 																
 																<div id="loading-image" style="display:none;">
-																	<img loading="lazy" src="images/loading-image.gif" alt="Processing" />
+																	<img loading="lazy" src="images/loading-image.gif" alt="Processing" width="160" height="24"     />
 																</div><!-- end title-box -->
 																<div id="final-step-buttons" class="form-group  quoteForm-step-5">
 																	<button class="btn btn-custom" type="button" onclick="previousStep4()"><span class="fa-solid fa-arrow-left"></span> Back</button> 
@@ -667,16 +690,16 @@
     </div>
     
     <!-- jQuery Library -->
-	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js" defer></script>
 	<!-- Bootstrap Datepicker -->  
-	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js" defer></script>
 	<!-- Bootstrap Datetimepicker Calendar Language JS -->
-	<script src="js/locales/bootstrap-datepicker.en-AU.js"></script>
+	<script src="js/locales/bootstrap-datepicker.en-AU.min.js" defer></script>
 	<!-- sweetalert Js -->
-    <script src="js/sweetalert.min.js"></script>
+    <script src="js/sweetalert.min.js" defer></script>
 	<!-- Form validator Js -->
-	<script src="js/validator.min.js"></script>
+	<script src="js/validator.min.js" defer></script>
 	<!-- plugin main Js -->
-    <script src="js/multistepform-pop-fr.js"></script>
+    <script src="js/multistepform-pop-fr.min.js" defer></script>
     <!-- Start Footer section -->
  <?php include 'footer.php'; ?>

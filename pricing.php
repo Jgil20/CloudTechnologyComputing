@@ -7,7 +7,7 @@
 <meta property="og:title" content="Cloud Service Pricing &amp; Web Development Plans | CTC" />
 <meta property="og:description" content="Review pricing for cloud technology services, managed cloud hosting, web development, AI chatbot integration, SEO, business consulting, and mobile apps." />
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/pricing.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Cloud Service Pricing &amp; Web Development Plans | CTC" />
 <meta property="twitter:description" content="Review pricing for cloud technology services, managed cloud hosting, web development, AI chatbot integration, SEO, business consulting, and mobile apps." />
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/pricing.php">
 <meta name="twitter:image:alt" content="Cloud Service Pricing &amp; Web Development Plans | CTC" />  
@@ -25,9 +25,47 @@
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/pricing.php" />
     <title>Cloud Service Pricing & Web Development Plans | CTC</title>
+
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.cloudtechnologycomputing.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cloud and Web Development Pricing",
+            "item": "https://www.cloudtechnologycomputing.com/pricing.php"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.cloudtechnologycomputing.com/pricing#webpage",
+    "name": "Pricing Plans",
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "xpath": [
+            "/html/head/title",
+            "/html/body//h1"
+        ]
+    },
+    "inLanguage": "en-US"
+}
+</script>
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -99,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -107,10 +145,10 @@
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -122,10 +160,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="" width="300" height="300"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="" width="300" height="300"   >
             </div>
         </div>
         <div class="container">
@@ -134,9 +172,9 @@
                     <div class="breadcrumb-wrapper">
                         <div class="breadcrumb-cnt">
                             <span>Pricing</span>
-                            <h1>"Pricing Plan"</h1>
+                            <h1>Pricing Plans</h1>
                             <div class="breadcrumb-list">
-                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Pricing
+                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   > Pricing
                             </div>
                            
                         </div>
@@ -149,7 +187,7 @@
         <!-- Start Pricing Plan section -->
      <div class="home4-pricing-plan">
     <div class="container-fluid">
-        <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+        <div class="row">
             <div class="col-lg-12">
                 <div class="section-title-4 two text-center">
                     <h2>Choose Your Plan</h2>
@@ -179,7 +217,7 @@
                     <div class="tab-pane fade show active" id="nav-monthly" role="tabpanel" aria-labelledby="nav-monthly-tab" tabindex="0">
                         <div class="row g-4 align-items-center justify-content-center">
 
-                            <div class="col-xl-4 col-md-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="col-xl-4 col-md-6">
                                 <div class="pricing-card">
                                     <div class="pricing-top">
                                         <span>Local SEO Optimization</span>
@@ -187,11 +225,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>Google Business Profile optimization<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Local keyword research<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Meta titles and descriptions<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Image ALT text and internal links<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Monthly SEO action report<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>Google Business Profile optimization<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Local keyword research<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Meta titles and descriptions<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Image ALT text and internal links<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Monthly SEO action report<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="https://buy.stripe.com/14k4hA6br7n5eqc5kn" target="_blank" rel="noopener">Subscribe</a>
@@ -200,7 +238,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4 col-md-6 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div class="col-xl-4 col-md-6">
                                 <div class="pricing-card two">
                                     <div class="pricing-top">
                                         <span>Social Media Marketing</span>
@@ -208,11 +246,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>Monthly content planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Facebook, Instagram, LinkedIn, or X support<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Brand visibility improvements<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Engagement and growth recommendations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Monthly performance review<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>Monthly content planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Facebook, Instagram, LinkedIn, or X support<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Brand visibility improvements<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Engagement and growth recommendations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Monthly performance review<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="/form.php">Start Marketing</a>
@@ -221,7 +259,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4 col-md-6 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="col-xl-4 col-md-6">
                                 <div class="pricing-card">
                                     <div class="pricing-top">
                                         <span>PPC Online Advertising</span>
@@ -229,11 +267,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>Google Ads or social ad planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Campaign structure and targeting<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Landing page recommendations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Monthly optimization notes<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Ad spend billed separately<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>Google Ads or social ad planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Campaign structure and targeting<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Landing page recommendations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Monthly optimization notes<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Ad spend billed separately<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="/form.php">Plan Ads</a>
@@ -257,11 +295,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>Up to 3 custom business pages<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Mobile-friendly responsive design<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Contact form setup<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Basic on-page SEO<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Launch-ready website files<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>Up to 3 custom business pages<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Mobile-friendly responsive design<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Contact form setup<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Basic on-page SEO<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Launch-ready website files<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="https://buy.stripe.com/6oEcO657n5eX4PC5kl" target="_blank" rel="noopener">Start Website</a>
@@ -278,11 +316,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>Expanded custom business website<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Service pages built for SEO<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Advanced forms and lead capture<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Google Analytics and Search Console guidance<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Performance and image optimization<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>Expanded custom business website<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Service pages built for SEO<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Advanced forms and lead capture<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Google Analytics and Search Console guidance<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Performance and image optimization<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="https://buy.stripe.com/6oEcO657n5eX4PC5kl" target="_blank" rel="noopener">Pay Now</a>
@@ -299,11 +337,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>Website speed cleanup<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Image compression recommendations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Core Web Vitals review<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Technical SEO cleanup<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Conversion improvements<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>Website speed cleanup<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Image compression recommendations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Core Web Vitals review<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Technical SEO cleanup<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Conversion improvements<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="/form.php">Request Optimization</a>
@@ -320,11 +358,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>Product or service checkout flow<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Stripe or PayPal integration support<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Conversion-focused product pages<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>HTTPS and payment testing checklist<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Launch support for online sales<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>Product or service checkout flow<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Stripe or PayPal integration support<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Conversion-focused product pages<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>HTTPS and payment testing checklist<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Launch support for online sales<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="/form.php">Start E-Commerce</a>
@@ -341,11 +379,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>iOS and Android app planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>WebView or native app roadmap<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Mobile-ready website and app flow<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>App Store and Google Play guidance<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Testing and launch assistance<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>iOS and Android app planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>WebView or native app roadmap<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Mobile-ready website and app flow<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>App Store and Google Play guidance<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Testing and launch assistance<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="/form.php">Book App Call</a>
@@ -362,11 +400,11 @@
                                     </div>
                                     <div class="pricing-content">
                                         <ul>
-                                            <li>AI chatbot integration<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>AWS, Azure, Google Cloud, or IBM Cloud planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Cloud migration and managed support<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Security, monitoring, backup, and scalability reviews<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
-                                            <li>Custom software, database, and API integrations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included"></li>
+                                            <li>AI chatbot integration<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>AWS, Azure, Google Cloud, or IBM Cloud planning<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Cloud migration and managed support<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Security, monitoring, backup, and scalability reviews<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
+                                            <li>Custom software, database, and API integrations<img loading="lazy" src="assets/img/home-4/check.svg" alt="Included" width="16" height="14"   ></li>
                                         </ul>
                                         <div class="pay-btn">
                                             <a class="primary-btn3" href="/form.php">Request Quote</a>

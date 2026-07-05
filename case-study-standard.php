@@ -79,13 +79,13 @@ $caseStudies = $stmt->fetchAll();
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Browse Cloud Technology Computing case studies on cloud performance optimization, AI chatbot integrations, cloud hosting vs. dedicated hosting, and cloud migration for small businesses."/>
+<meta name="description" content="Browse Cloud Technology Computing case studies on cloud performance optimization, AI chatbot integrations, and cloud migration for small businesses."/>
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Case Studies: Cloud Performance Optimization | CTC" />
 <meta property="og:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies." />
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/case-study-standard.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
@@ -94,7 +94,7 @@ $caseStudies = $stmt->fetchAll();
 <meta name="twitter:title" content="Case Studies: Cloud Performance Optimization | CTC" />
 <meta property="twitter:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies." />
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/case-study-standard.php">
 <meta name="twitter:image:alt" content="Case Studies: Cloud Performance Optimization | CTC" />  
@@ -120,7 +120,7 @@ $ld = [
     "@context"        => "https://schema.org",
     "@type"           => "CollectionPage",
     "name"            => "Cloud Technology Computing Case Studies",
-    "description"     => "Browse Cloud Technology Computing case studies on cloud performance optimization, AI chatbot integrations, cloud hosting vs. dedicated hosting, and cloud migration for small businesses.",
+    "description"     => "Browse Cloud Technology Computing case studies on cloud performance optimization, AI chatbot integrations, and cloud migration for small businesses.",
     "url"             => "https://www.cloudtechnologycomputing.com/case-study-standard.php",
     "isPartOf"        => ["@type" => "WebSite", "name" => "Cloud Technology Computing", "url" => "https://www.cloudtechnologycomputing.com/"],
     "hasPart"         => $hasParts,
@@ -130,7 +130,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
 ?>
 </script>
 </head>
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -202,7 +202,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -210,10 +210,10 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -224,13 +224,14 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="visually-hidden-focusable">Cloud Technology Computing Case Studies</h1>
+                <h1>Cloud Technology Computing Case Studies</h1>
             </div>
         </div>
     </div>
     <div class="case-study-pages sec-mar">
         <div class="container">
             <div class="row gy-5 mb-60 justify-content-center">
+                <h2 class="visually-hidden">Real-World Cloud and Web Development Case Studies</h2>
 
     <?php if (!empty($caseStudies)): ?>
         <?php foreach ($caseStudies as $caseStudy): ?>
@@ -244,7 +245,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                                         loading="lazy" 
                                         class="img-fluid" 
                                         src="<?= e(assetPath($caseStudy['featured_image'])); ?>" 
-                                        alt="<?= e($caseStudy['featured_image_alt'] ?: $caseStudy['title']); ?>">
+                                        alt="<?= e($caseStudy['featured_image_alt'] ?: $caseStudy['title']); ?>" width="800" height="500"   >
                                 </a>
                             </div>
                         </div>
@@ -267,7 +268,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
 
                                 <div class="learn-btn">
                                     <a class="primary-btn9" href="<?= e(caseStudyUrl($caseStudy['slug'])); ?>">
-                                        <span>Learn More</span>
+                                        <span>Read Cloud Technology Computing case study</span>
                                         <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5"></path>
                                         </svg>

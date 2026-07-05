@@ -15,7 +15,7 @@ if (empty($_SESSION['csrf'])) {
 <meta property="og:title" content="Contact Cloud Technology Computing | Cloud Services" />
 <meta property="og:description" content="Contact Cloud Technology Computing for cloud technology services, cloud migration, managed cloud hosting, AWS, Azure, web development, SEO, and AI chatbots." />
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/contact.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
@@ -24,7 +24,7 @@ if (empty($_SESSION['csrf'])) {
 <meta name="twitter:title" content="Contact Cloud Technology Computing | Cloud Services" />
 <meta property="twitter:description" content="Contact Cloud Technology Computing for cloud technology services, cloud migration, managed cloud hosting, AWS, Azure, web development, SEO, and AI chatbots." />
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudTechnologyComputingDisplay.avif">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/contact.php">
 <meta name="twitter:image:alt" content="Contact Cloud Technology Computing | Cloud Services" />  
@@ -33,9 +33,47 @@ if (empty($_SESSION['csrf'])) {
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/contact.php" />
     <title>Contact Cloud Technology Computing | Cloud Services</title>
+
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.cloudtechnologycomputing.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact Cloud Technology Computing",
+            "item": "https://www.cloudtechnologycomputing.com/contact.php"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.cloudtechnologycomputing.com/contact#webpage",
+    "name": "Contact Cloud Technology Computing",
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "xpath": [
+            "/html/head/title",
+            "/html/body//h1"
+        ]
+    },
+    "inLanguage": "en-US"
+}
+</script>
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -107,7 +145,7 @@ if (empty($_SESSION['csrf'])) {
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -115,10 +153,10 @@ if (empty($_SESSION['csrf'])) {
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -131,10 +169,10 @@ if (empty($_SESSION['csrf'])) {
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="" width="300" height="300"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="">
+                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="" width="300" height="300"   >
             </div>
         </div>
         <div class="container">
@@ -145,7 +183,7 @@ if (empty($_SESSION['csrf'])) {
                             <span>Contact</span>
                             <h1>Contact Cloud Technology Computing</h1>
                             <div class="breadcrumb-list">
-                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Contact
+                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   > Contact
                             </div>
                            
                         </div>
@@ -194,10 +232,10 @@ if (empty($_SESSION['csrf'])) {
                             <p class="para">Follow us on Social Network</p>
                             <div class="blog-widget-body">
                                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
-                                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                                 </ul>
                             </div>
                         </div>

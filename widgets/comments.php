@@ -66,7 +66,7 @@ $comment_total = $res ? $res->num_rows : 0;
     <?php while ($row = $res->fetch_assoc()): ?>
       <div class="single-comment">
         <div class="author-thumb">
-          <img loading="lazy" src="/assets/img/inner-pages/hackerJhonBG.avif" alt="User avatar">
+          <img loading="lazy" src="/assets/img/inner-pages/hackerJhonBG.avif" alt="User avatar" width="250" height="191"   >   
         </div>
         <div class="comment-content">
           <div class="author-post">

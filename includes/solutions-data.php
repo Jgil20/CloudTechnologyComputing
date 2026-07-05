@@ -485,4 +485,67 @@ $solutions = [
         ],
     ],
 
+
+
+    'sap-consulting-services' => [
+        'title' => 'SAP Consulting Services for Analytics | CTC',
+        'meta' => 'SAP consulting services for analytics, reporting, SAP Analytics Cloud, Group Reporting, AO reports, dashboards, and business intelligence support.',
+        'h1' => 'SAP Consulting Services for Analytics and Reporting',
+        'keyword' => 'SAP consulting services',
+        'intro' => 'Cloud Technology Computing supports SAP analytics, reporting, dashboards, and business intelligence work for organizations that need clearer financial and operational visibility. Services can include SAP Analytics Cloud, Analysis for Office, Group Reporting support, report validation, and documentation.',
+        'outcomes' => ['SAP Analytics Cloud and dashboard support', 'Analysis for Office report validation and formatting', 'Group Reporting and business intelligence documentation', 'Analytics process improvements for clearer reporting'],
+        'process' => ['Review reporting goals, current SAP tools, data sources, and stakeholder needs', 'Map report logic, dimensions, hierarchies, validation steps, and delivery requirements', 'Build or improve dashboards, AO reports, documentation, and testing workflows', 'Support users with repeatable reporting processes and knowledge transfer'],
+        'use_cases' => ['Teams that need SAP reporting support without adding permanent headcount', 'Organizations using SAP Analytics Cloud, Analysis for Office, Group Reporting, or related analytics workflows', 'Business users who need dashboards, report validation, documentation, and clearer financial data visibility'],
+        'faq' => [
+            ['What SAP analytics services can you support?', 'Support can include SAP Analytics Cloud dashboards, Analysis for Office reports, Group Reporting workflows, reporting documentation, validation, and user enablement.'],
+            ['Can this help business users understand reports?', 'Yes. Clear documentation, validation steps, and user-focused explanations make reporting easier to trust and repeat.'],
+            ['Can SAP consulting connect with cloud analytics?', 'Yes. SAP analytics work can align with cloud data, dashboards, reporting automation, and business intelligence strategy.'],
+        ],
+    ],
+
+    'cloud-computing-services-houston' => [
+        'title' => 'Cloud Computing Services Houston | CTC',
+        'meta' => 'Houston cloud computing services for small businesses: cloud migration, AWS, Azure, hybrid cloud, managed IT, security, hosting, and support.',
+        'h1' => 'Cloud Computing Services in Houston for Small Businesses',
+        'keyword' => 'cloud computing services Houston',
+        'intro' => 'Cloud Technology Computing helps Houston businesses move from slow hosting, scattered tools, and risky manual processes into secure cloud systems built for growth. We support cloud migration, hosting, managed IT, cybersecurity basics, backups, automation, and cloud-connected websites or applications.',
+        'outcomes' => ['Houston-focused cloud migration and hosting support', 'AWS, Azure, Google Cloud, IBM Cloud, and hybrid guidance', 'Security, backups, monitoring, and cost control', 'Cloud-connected websites, apps, automation, and data workflows'],
+        'process' => ['Audit your current hosting, apps, data, security, and business goals', 'Design a practical cloud roadmap with phased priorities and budget control', 'Migrate, configure, secure, test, and document the cloud environment', 'Monitor performance, improve costs, and support future cloud growth'],
+        'use_cases' => ['Houston companies replacing outdated servers or shared hosting', 'Small businesses that need cloud backups, website hosting, data security, or managed support', 'Founders comparing AWS, Azure, Google Cloud, IBM Cloud, and hybrid options', 'Business owners who want a local cloud technology partner with remote delivery options'],
+        'faq' => [
+            ['What cloud computing services do you provide in Houston?', 'Services include cloud consulting, migration, hosting, managed IT support, cloud security basics, backups, monitoring, web development, application support, and automation.'],
+            ['Can you help small businesses move to AWS or Azure?', 'Yes. We can assess your current systems, recommend AWS, Azure, Google Cloud, IBM Cloud, or a hybrid approach, and migrate in phases.'],
+            ['Do you only work with Houston clients?', 'Houston is a primary local market, but most cloud assessments, migrations, and support can be delivered remotely across the United States.'],
+        ],
+    ],
+    'cloud-services-small-business' => [
+        'title' => 'Cloud Services for Small Business | CTC',
+        'meta' => 'Cloud services for small business covering hosting, migration, backups, security, managed IT, apps, automation, and cost savings. Start your roadmap.',
+        'h1' => 'Cloud Services for Small Business',
+        'keyword' => 'cloud services for small business',
+        'intro' => 'Cloud services help small businesses reduce hardware costs, improve reliability, protect data, and access modern applications without enterprise complexity. Cloud Technology Computing designs practical cloud solutions that match your budget, team size, and growth goals.',
+        'outcomes' => ['Lower IT cost with right-sized cloud hosting and services', 'Better uptime through backups, monitoring, and managed support', 'Improved security for websites, data, accounts, and applications', 'A scalable foundation for AI, analytics, ecommerce, and mobile apps'],
+        'process' => ['Review business goals, pain points, tools, hosting, and data risks', 'Choose cloud services that fit your budget and growth stage', 'Implement migration, hosting, backups, access controls, and documentation', 'Track performance, costs, leads, and user experience after launch'],
+        'use_cases' => ['Small businesses moving beyond basic web hosting', 'Owners who need secure access to files, websites, databases, and apps', 'Companies preparing for AI automation, mobile apps, ecommerce, or analytics', 'Teams that need help understanding SaaS, IaaS, PaaS, public cloud, private cloud, or hybrid cloud'],
+        'faq' => [
+            ['What are cloud services for small business?', 'They include hosting, servers, storage, databases, backups, security tools, managed software, automation, monitoring, and cloud consulting delivered over the internet.'],
+            ['How can cloud services save money?', 'Cloud services can reduce hardware purchases, maintenance, downtime, manual work, and overbuilt hosting when the environment is properly right-sized.'],
+            ['Can I start small?', 'Yes. Many small businesses start with website hosting, backups, email workflows, storage, or one application before expanding.'],
+        ],
+    ],
+    'cloud-security-services-small-businesses' => [
+        'title' => 'Cloud Security Services for Small Business | CTC',
+        'meta' => 'Cloud security services for small businesses covering access controls, backups, monitoring, HTTPS, data protection, and security planning.',
+        'h1' => 'Cloud Security Services for Small Businesses',
+        'keyword' => 'cloud security services for small businesses',
+        'intro' => 'Cloud security for small businesses starts with practical controls: secure access, HTTPS, backups, monitoring, least privilege, update discipline, and clear recovery steps. Cloud Technology Computing helps reduce risk without overwhelming your team.',
+        'outcomes' => ['Stronger account, website, hosting, and data protection', 'Backup and recovery planning for key business systems', 'Cloud monitoring and security basics that fit small teams', 'Documentation for access, vendors, incidents, and maintenance'],
+        'process' => ['Review websites, cloud accounts, hosting, users, data, and risks', 'Prioritize quick wins for access, backups, certificates, updates, and monitoring', 'Implement approved security controls and document ownership', 'Review recurring risks and improve the security plan over time'],
+        'faq' => [
+            ['What is cloud security for small businesses?', 'It is the set of controls that protect cloud-hosted websites, data, applications, accounts, backups, and business workflows.'],
+            ['Do you help with HTTPS and website security?', 'Yes. We can review HTTPS, headers, forms, access controls, updates, backups, and hosting configuration.'],
+            ['Can this work with managed IT?', 'Yes. Cloud security is often strongest when paired with managed IT support, monitoring, documentation, and regular reviews.'],
+        ],
+    ],
+
 ];

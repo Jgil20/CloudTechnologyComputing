@@ -49,17 +49,17 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
   <meta name="twitter:image" content="<?= e($ogImage) ?>">
 
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/bootstrap-icons.min.css" rel="stylesheet">
   <link href="../assets/css/all.min.css" rel="stylesheet">
   <link href="../assets/css/fontawesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="../assets/css/animate.min.css">
   <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
   <link href="../assets/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/preloader.css">
-  <link rel="stylesheet" href="../assets/css/style2.css">
-    <link rel="stylesheet" href="../style.css" as="style">
-<link rel="stylesheet" href="../assets/css/blog-refactor.css">
+  <link rel="stylesheet" href="../assets/css/preloader.min.css">
+  <link rel="stylesheet" href="../assets/css/style2.min.css">
+    <link rel="stylesheet" href="../style.min.css" as="style">
+<link rel="stylesheet" href="../assets/css/blog-refactor.min.css">
 
   <link rel="preload" href="../assets/css/styles.min.css" as="style">
 <link rel="stylesheet" href="../assets/css/styles.min.css" media="print" onload="this.media='all'">
@@ -119,9 +119,53 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
   </script>
   <?php endif; ?>
 
+
+<!-- Article and BreadcrumbList structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "<?= e($canonicalUrl); ?>#article",
+    "headline": "<?= e($metaTitle); ?>",
+    "description": "<?= e($metaDescription); ?>",
+    "image": "<?= e($ogImageAbsolute); ?>",
+    "datePublished": "<?= e($caseStudy['published_at'] ?? ''); ?>",
+    "dateModified": "<?= e($caseStudy['updated_at'] ?? $caseStudy['published_at'] ?? ''); ?>",
+    "author": {
+        "@type": "Person",
+        "name": "Jhon Arzu-Gil",
+        "url": "https://www.arzugil.com/"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.cloudtechnologycomputing.com/#organization",
+        "name": "Cloud Technology Computing",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.cloudtechnologycomputing.com/assets/img/sm-logo.svg"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "<?= e($canonicalUrl); ?>"
+    },
+    "inLanguage": "en-US"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://www.cloudtechnologycomputing.com/case-study-standard.php"},
+        {"@type": "ListItem", "position": 3, "name": "<?= e($caseStudy['title']); ?>", "item": "<?= e($canonicalUrl); ?>"}
+    ]
+}
+</script>
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
 
 <div class="preloader">
     <div id="particles-background" class="vertical-centered-box"></div>
@@ -192,14 +236,14 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
             <img 
                 loading="lazy" 
                 src="<?= assetPath('assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif'); ?>" 
-                alt="Cloud technology advertising">
+                alt="Cloud technology advertising" width="164" height="210"   >
         </div>
 
         <div class="inner-banner-2 magnetic-item">
             <img 
                 loading="lazy" 
                 src="<?= assetPath('assets/img/inner-pages/ibm cloud provider.avif'); ?>" 
-                alt="Cloud provider">
+                alt="Cloud provider" width="250" height="191"   >
         </div>
     </div>
 
@@ -217,7 +261,7 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
                             <img 
                                 loading="lazy" 
                                 src="<?= assetPath('assets/img/inner-pages/breadcrumb-arrow.svg'); ?>" 
-                                alt="">
+                                alt="" width="16" height="9"   >
                             Case Study Details
                         </div>
                     </div>
@@ -241,7 +285,7 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
                         loading="lazy" 
                         class="img-fluid" 
                         src="<?= assetPath($caseStudy['featured_image']); ?>" 
-                        alt="<?= e($caseStudy['featured_image_alt'] ?: $caseStudy['title']); ?>">
+                        alt="<?= e($caseStudy['featured_image_alt'] ?: $caseStudy['title']); ?>" width="800" height="500"   >
                 </div>
 
                 <?php if (!empty($caseStudy['content_intro'])): ?>
@@ -271,7 +315,7 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
                                         loading="lazy" 
                                         class="img-fluid" 
                                         src="<?= assetPath($section['section_image']); ?>" 
-                                        alt="<?= e($section['section_image_alt'] ?: $section['section_title']); ?>">
+                                        alt="<?= e($section['section_image_alt'] ?: $section['section_title']); ?>" width="800" height="600"   >
                                 </div>
                             </div>
 
@@ -299,7 +343,7 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
                                         loading="lazy" 
                                         class="img-fluid" 
                                         src="<?= assetPath($section['section_image']); ?>" 
-                                        alt="<?= e($section['section_image_alt'] ?: $section['section_title']); ?>">
+                                        alt="<?= e($section['section_image_alt'] ?: $section['section_title']); ?>" width="800" height="600"   >
                                 </div>
                             </div>
                         </div>
@@ -316,7 +360,7 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
                                                 <img 
                                                     loading="lazy" 
                                                     src="<?= assetPath($step['icon']); ?>" 
-                                                    alt="<?= e($step['title']); ?>">
+                                                    alt="<?= e($step['title']); ?>" width="64" height="64"   >
                                             </div>
                                         <?php endif; ?>
 
@@ -340,7 +384,7 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
                                         loading="lazy" 
                                         class="img-fluid" 
                                         src="<?= assetPath($image['image']); ?>" 
-                                        alt="<?= e($image['image_alt'] ?: $caseStudy['title']); ?>">
+                                        alt="<?= e($image['image_alt'] ?: $caseStudy['title']); ?>" width="800" height="500"   >
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -354,10 +398,10 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
 
 <?php include 'footer.php'; ?>
 
-<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js" defer></script>
 
     <!-- Linking custom script -->
-    <script src="../script.js"></script>
+    <script src="../script.min.js" defer></script>
   <script>
        $(".marquee_text").marquee({
        direction: "left",
@@ -378,21 +422,17 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
        });
    </script>
 
-<script src="../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../assets/js/popper.min.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/swiper-bundle.min.js"></script>
-<script src="../assets/js/waypoints.min.js"></script>
-<script src="../assets/js/jquery.counterup.min.js"></script>
-<script src="../assets/js/isotope.pkgd.min.js"></script>
-<script src="../assets/js/jquery.fancybox.min.js"></script>
-<script src="../assets/js/gsap.min.js"></script>
-<script src="../assets/js/simpleParallax.min.js"></script>
-<script src="../assets/js/TweenMax.min.js"></script>
-<script src="../assets/js/jquery.marquee.min.js"></script>
-<script src="../assets/js/wow.min.js"></script>
-<script src="../assets/js/preloader.js"></script>
-<script src="../assets/js/custom.js"></script>
+<script src="../assets/js/jquery-3.6.0.min.js" defer></script>
+<script src="../assets/js/popper.min.js" defer></script>
+<script src="../assets/js/bootstrap.min.js" defer></script>
+<script src="../assets/js/swiper-bundle.min.js" defer></script>
+<script src="../assets/js/waypoints.min.js" defer></script>
+<script src="../assets/js/jquery.counterup.min.js" defer></script>
+<script src="../assets/js/isotope.pkgd.min.js" defer></script>
+<script src="../assets/js/jquery.fancybox.min.js" defer></script>
+<script src="../assets/js/jquery.marquee.min.js" defer></script>
+<script src="../assets/js/preloader.min.js" defer></script>
+<script src="../assets/js/custom.min.js" defer></script>
 
 </body>
 </html>

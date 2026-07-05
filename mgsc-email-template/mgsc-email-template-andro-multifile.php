@@ -125,7 +125,7 @@
 <tr>
 <td align="left" style="padding:20px 0;">
 <strong>Regards,<br>
-<a href="https://www.mgscoder.com/" target="_blank" style="text-decoration:none;">www.mgscoder.com</a></strong>
+<a href="https://www.mgscoder.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">www.mgscoder.com</a></strong>
 </td>
 </tr>
 </table>
@@ -134,7 +134,7 @@
 <table style="width:100%;">
 <tr>
 <td style="padding:5px 15px 40px 0;font-size:12px;">
-<p>&copy; 2023 <a href="https://codecanyon.net/user/mgscoder/portfolio?ref=mgscoder" target="_blank" style="text-decoration:none;">MGScoder</a> All rights reserved. <a href="https://1.envato.market/MYZaN" target="_blank" style="text-decoration:none;">Buy Multi-Step-Form Script</a></p>
+<p>&copy; 2023 <a href="https://codecanyon.net/user/mgscoder/portfolio?ref=mgscoder" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">MGScoder</a> All rights reserved. <a href="https://1.envato.market/MYZaN" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Buy Multi-Step-Form Script</a></p>
 </td>
 </tr>
 </table>

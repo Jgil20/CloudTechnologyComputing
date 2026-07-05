@@ -1,22 +1,22 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Discover tailored solutions in web development, cloud services, AI, and more, designed to enhance your business efficiency." />
+<meta name="description" content="Explore innovative cloud, web, and AI projects from Cloud Technology Computing. See tailored solutions that boost small-business efficiency." />
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
-<meta property="og:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Discover tailored solutions in web development, cloud services, AI, and more, designed to enhance your business efficiency." />
+<meta property="og:description" content="Explore innovative cloud, web, and AI projects from Cloud Technology Computing. See tailored solutions that boost small-business efficiency." />
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/project.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
-<meta property="twitter:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Discover tailored solutions in web development, cloud services, AI, and more, designed to enhance your business efficiency." />
+<meta property="twitter:description" content="Explore innovative cloud, web, and AI projects from Cloud Technology Computing. See tailored solutions that boost small-business efficiency." />
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/project.php">
 <meta name="twitter:image:alt" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />  
@@ -25,9 +25,31 @@
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/project.php" />
     <title>Innovative Cloud Computing Projects | Cloud Technology Computing</title>
+
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.cloudtechnologycomputing.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Our Completed Cloud and Web Projects",
+            "item": "https://www.cloudtechnologycomputing.com/project.php"
+        }
+    ]
+}
+</script>
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -99,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -107,10 +129,10 @@
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -122,10 +144,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds" width="164" height="210"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what" width="250" height="191"   >
             </div>
         </div>
         <div class="container">
@@ -134,9 +156,9 @@
                     <div class="breadcrumb-wrapper">
                         <div class="breadcrumb-cnt">
                             <span>Projects</span>
-                            <h1>"Our Complited Projects"</h1>
+                            <h1>Our Completed Projects</h1>
                             <div class="breadcrumb-list">
-                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt=""> Projects
+                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   > Projects
                             </div>
                            
                         </div>
@@ -149,16 +171,17 @@
     <div class="home3-success-stories-area two sec-mar">
         <div class="container-fluid">
             <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <h2 class="visually-hidden">Cloud, Web, and Mobile Project Portfolio</h2>
+                <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudComputing.webp" alt="">
+                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudComputing.webp" alt="ArzuGil personal portfolio website designed and developed by Cloud Technology Computing" width="500" height="480"   >
                         </div>
                         <div class="success-content">
                             <span>Web development</span>
                             <h3><a href="https://www.arzugil.com">Portfolio Site</a></h3>
                             <div class="view-btn">
-                                <a href="project-details.html">
+                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                     </svg>
@@ -167,16 +190,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudTechnologyComputing.avif" alt="">
+                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudTechnologyComputing.avif" alt="ArzuGil portfolio mobile app published on Google Play by Cloud Technology Computing" width="500" height="480"   >
                         </div>
                         <div class="success-content">
                             <span>Mobile development</span>
                             <h3><a href="https://play.google.com/store/apps/details?id=com.arzugil.com.portfoliositejhongil">Portfolio Site App</a></h3>
                             <div class="view-btn">
-                                <a href="project-details.html">
+                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                     </svg>
@@ -185,16 +208,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="success-storie-card">
                         <div class="success-img magnetic-item">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/ComputerClouds.webp" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/ComputerClouds.webp" alt="Cloud Technology Computing corporate marketing website and brand identity" width="500" height="480"   >
                         </div>
                         <div class="success-content">
                             <span>Web development</span>
                             <h3><a href="/">Cloud Technology Computing</a></h3>
                             <div class="view-btn">
-                                <a href="project-details.html">
+                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                     </svg>
@@ -203,16 +226,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/ComputerCloudsDisplay.webp" alt="">
+                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/ComputerCloudsDisplay.webp" alt="Cloud Technology Computing mobile app on the Google Play Store" width="500" height="480"   >
                         </div>
                         <div class="success-content">
                             <span>Mobile development</span>
                             <h3><a href="https://play.google.com/store/apps/details?id=com.cloudtechnologycomputing.Cloud_Technology_Computing">Cloud Technology Computing App</a></h3>
                             <div class="view-btn">
-                                <a href="project-details.html">
+                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                     </svg>
@@ -221,16 +244,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="success-storie-card">
                         <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudSolutions.avif" alt="">
+                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudSolutions.avif" alt="Cloud Technology Computing collection of mobile apps published on Google Play" width="500" height="480"   >
                         </div>
                         <div class="success-content">
                             <span>Mobile development</span>
                             <h3><a href="https://play.google.com/store/apps/dev?id=8040499476760752928">App's On The Playstore</a></h3>
                             <div class="view-btn">
-                                <a href="project-details.html">
+                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                     </svg>
@@ -239,16 +262,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="success-storie-card">
                         <div class="success-img magnetic-item">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/ITConulsting2.avif" alt="">
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/ITConulsting2.avif" alt="" width="500" height="480"   >
                         </div>
                         <div class="success-content">
                             <span>Certification's</span>
                             <h3><a href="https://www.credly.com/users/jhongil">Cedly Certifications</a></h3>
                             <div class="view-btn">
-                                <a href="project-details.html">
+                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
                                     <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
                                     </svg>
@@ -262,13 +285,13 @@
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
                       <li class="page-item disabled">
-                        <a class="page-link"><i class="bi bi-arrow-left"></i></a>
+                        <a class="page-link" aria-label="Previous page"><i class="bi bi-arrow-left"></i></a>
                       </li>
-                      <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link active" href="#" aria-label="Open link">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Open link">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Open link">3</a></li>
                       <li class="page-item">
-                        <a class="page-link" href="#"><i class="bi bi-arrow-right"></i></a>
+                        <a class="page-link" href="#" aria-label="Next page"><i class="bi bi-arrow-right"></i></a>
                       </li>
                     </ul>
                   </nav>

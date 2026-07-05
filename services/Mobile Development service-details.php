@@ -30,7 +30,7 @@
 </head>
 
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   >    -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -111,10 +111,10 @@
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -124,10 +124,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds" width="164" height="210"   >   
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what" width="250" height="191"   >   
             </div>
         </div>
         <div class="container">
@@ -136,10 +136,10 @@
                     <div class="breadcrumb-wrapper">
                         <div class="breadcrumb-cnt">
                             <span>services Details</span>
-                            <h1>"Mobile Development"</h1>
+                            <h1>Mobile Development</h1>
                             <div class="breadcrumb-list">
                                 <a href="/">Home</a><img loading="lazy" src="../assets/img/inner-pages/breadcrumb-arrow.svg" alt="software companies houston texas
-"> services Details
+" width="16" height="9"   >    services Details
                             </div>
                            
                         </div>
@@ -153,7 +153,7 @@
         <div class="about-services sec-mar">
             <div class="container">
                 <div class="row gy-5">
-                    <div class="col-lg-6 d-flex align-items-center wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="col-lg-6 d-flex align-items-center">
                         <div class="about-content">
                             <div class="section-title-5">
                                <h2>Mobile<br>Development</h2>
@@ -199,9 +199,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="col-lg-6">
                         <div class="service-img magnetic-item">
-                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/appDeveloper.avif" alt="integrating cloud computing">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/appDeveloper.avif" alt="integrating cloud computing" width="639" height="568"   >   
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
         </div>
         <div class="how-we-work-section sec-mar">
             <div class="container">
-                <div class="row mb-60 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="row mb-60">
                     <div class="col-lg-12">
                         <div class="section-title">
                             <h2>How we work</h2>
@@ -220,10 +220,10 @@
             <div class="work-item">
                 <div class="container-fluid">
                     <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 gy-5 justify-content-center">
-                        <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="col magnetic-item">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-01.svg" alt="software for cleaning company">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-01.svg" alt="software for cleaning company" width="42" height="42"   >   
                                 </div>
                                 <div class="work-content">
                                     <h3>Requirements Gathering.</h3>
@@ -231,10 +231,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="col magnetic-item">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-02.svg" alt="custom software development company usa">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-02.svg" alt="custom software development company usa" width="40" height="40"   >   
                                 </div>
                                 <div class="work-content">
                                     <h3>Analysis and Planning.</h3>
@@ -242,10 +242,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="col magnetic-item">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-03.svg" alt="software company in houston texas">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-03.svg" alt="software company in houston texas" width="40" height="40"   >   
                                 </div>
                                 <div class="work-content">
                                     <h3>Design & Development.</h3>
@@ -253,10 +253,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <div class="col magnetic-item">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-04.svg" alt="software companies in austin">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-04.svg" alt="software companies in austin" width="40" height="40"   >   
                                 </div>
                                 <div class="work-content">
                                     <h3>Testing Device & Release.</h3>
@@ -264,10 +264,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col magnetic-item wow animate fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="col magnetic-item">
                             <div class="single-work">
                                 <div class="work-icon">
-                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-05.svg" alt="custom software development company">
+                                    <img loading="lazy" src="../assets/img/inner-pages/work-icon-05.svg" alt="custom software development company" width="42" height="42"   >   
                                 </div>
                                 <div class="work-content">
                                     <h3>Maintenance and Support.</h3>
@@ -282,18 +282,18 @@
         <div class="service-sort-driscription-area sec-mar">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="col-lg-12">
                         <div class="driscription-img magnetic-item">
-                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/mobiledevelopment2jpg.avif" alt="types of cloud computing service">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/mobiledevelopment2jpg.avif" alt="types of cloud computing service" width="1311" height="561"   >   
                         </div>
                     </div>
                     <div class="driscription-content">
                         <div class="row">
-                             <div class="col-md-6 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                             <div class="col-md-6">
                                 <p>Cloud Technology Computing's Mobile Application Development service specializes in leveraging cloud computing technologies to build innovative and robust mobile applications. Our team utilizes the scalability, cost-effectiveness, and rapid innovation offered by cloud services to develop cutting-edge mobile apps tailored to meet your specific needs.
 </p>
                             </div>
-                            <div class="col-md-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="col-md-6">
                                 <p>
 With a focus on quality and user experience, we ensure that our mobile applications are optimized for performance, security, and seamless integration with cloud infrastructure. Whether you need a native mobile app or a cross-platform solution, we provide end-to-end development services to bring your ideas to life and enhance your mobile presence.</p>
                             </div>
@@ -305,12 +305,12 @@ With a focus on quality and user experience, we ensure that our mobile applicati
         <div class="service-faq-area sec-mar">
             <div class="container">
                 <div class="row gy-5">
-                    <div class="col-lg-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="col-lg-6">
                         <div class="faq-img magnetic-item">
-                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/mobiledevelopment.avif" alt="azure cloud computing service">
+                            <img loading="lazy" class="img-fluid" src="../assets/img/inner-pages/mobiledevelopment.avif" alt="azure cloud computing service" width="639" height="568"   >   
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="col-lg-6 d-flex align-items-center">
                         <div class="faq-content-area">
                             <h2>Mobile Development</h2>
                             <div class="accordion" id="accordionExample">

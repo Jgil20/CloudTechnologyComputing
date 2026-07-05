@@ -8,7 +8,7 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud, AI & Web Development Services | Cloud Technology Computing">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Cloud, AI & Web Development Services | Cloud Technology Computing">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/CloudTechnologyComputingAIservices.png">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/">
 <meta name="twitter:image:alt" content="Cloud Technology Computing: Expert in software development, cloud computing (IBM, Google, Azure), and mobile app innovation. Elevate your tech journey.">  
@@ -89,9 +89,25 @@ $ld = [
 echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 ?>
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.cloudtechnologycomputing.com/services#webpage",
+    "name": "Cloud, AI & Web Development Services",
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "xpath": [
+            "/html/head/title",
+            "/html/body//h1"
+        ]
+    },
+    "inLanguage": "en-US"
+}
+</script>
 </head>
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
    
  <!-- Start header section -->
       <?php include"nav.php" ?> 
@@ -102,10 +118,10 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds">
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds" width="164" height="210"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what">
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what" width="250" height="191"   >
             </div>
         </div>
         <div class="container">
@@ -116,7 +132,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                             <span>services</span>
                             <h1>Cloud, AI &amp; Web Development Services</h1>
                             <div class="breadcrumb-list">
-                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service"> services
+                                <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="azure cloud computing service" width="16" height="9"   > services
                             </div>
                            
                         </div>
@@ -132,7 +148,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/cloud-computing-software-as-a-service-saas.avif" alt="cloud computing software as a service saas">
+                            <img loading="lazy" src="assets/img/home-6/services/cloud-computing-software-as-a-service-saas.avif" alt="cloud computing software as a service saas" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>01</h2>
@@ -144,7 +160,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Web%20Development%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Web Development</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -179,7 +195,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/cloud%20and%20microsoft.avif" alt="cloud and microsoft">
+                            <img loading="lazy" src="assets/img/home-6/services/cloud%20and%20microsoft.avif" alt="cloud and microsoft" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>02</h2>
@@ -191,7 +207,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Software%20Development%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Software Development</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -226,7 +242,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/windows azure and cloud computing.avif" alt="windows azure and cloud computing">
+                            <img loading="lazy" src="assets/img/home-6/services/windows azure and cloud computing.avif" alt="windows azure and cloud computing" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>03</h2>
@@ -238,7 +254,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Managed_Cloud_Hosting.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Cloud Solutions</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -277,7 +293,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/google cloud computing platform.avif" alt="google cloud computing platform">
+                            <img loading="lazy" src="assets/img/home-6/services/google cloud computing platform.avif" alt="google cloud computing platform" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>04</h2>
@@ -289,7 +305,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/S.E.O%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore S.E.O</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -324,7 +340,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/define cloud solutions.avif" alt="define cloud solutions">
+                            <img loading="lazy" src="assets/img/home-6/services/define cloud solutions.avif" alt="define cloud solutions" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>05</h2>
@@ -336,7 +352,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Data%20Analytics%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Data Analytics</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -372,7 +388,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/analytics cloud computing.avif" alt="analytics cloud computing">
+                            <img loading="lazy" src="assets/img/home-6/services/analytics cloud computing.avif" alt="analytics cloud computing" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>06</h2>
@@ -384,7 +400,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Data%20Analytics%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Digital Marketing</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -419,7 +435,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                      <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/computer clouds.avif" alt="computer clouds">
+                            <img loading="lazy" src="assets/img/home-6/services/computer clouds.avif" alt="computer clouds" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>07</h2>
@@ -431,7 +447,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Website%20Optimization%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Website Optimization</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -470,7 +486,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/mobile development application.avif" alt="mobile development application">
+                            <img loading="lazy" src="assets/img/home-6/services/mobile development application.avif" alt="mobile development application" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>08</h2>
@@ -482,7 +498,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Mobile%20Development%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Mobile Development</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -517,7 +533,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/wordpress-ecommerce.avif" alt="wordpress-ecommerce">
+                            <img loading="lazy" src="assets/img/home-6/services/wordpress-ecommerce.avif" alt="wordpress-ecommerce" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>09</h2>
@@ -529,7 +545,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/Wordpress%20Development%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Wordpress Development</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -564,7 +580,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/development company software.avif" alt="development company software">
+                            <img loading="lazy" src="assets/img/home-6/services/development company software.avif" alt="development company software" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>10</h2>
@@ -576,7 +592,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/SAP%20Consulting%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore SAP Consulting</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -617,7 +633,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/Cloud Technology Computing.avif" alt="Cloud Technology Computing">
+                            <img loading="lazy" src="assets/img/home-6/services/Cloud Technology Computing.avif" alt="Cloud Technology Computing" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>11</h2>
@@ -629,7 +645,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/IT%20Consulting%20service-details.php">
-                                    <span>Learn More</span>
+                                    <span>Explore IT Consulting</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>
@@ -670,7 +686,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                 <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
                     <div class="single-solution">
                         <div class="background-img">
-                            <img loading="lazy" src="assets/img/home-6/services/what are the cloud.avif" alt="what are the cloud">
+                            <img loading="lazy" src="assets/img/home-6/services/what are the cloud.avif" alt="what are the cloud" width="370" height="341"   >
                         </div>
                         <div class="sl">
                             <h2>12</h2>
@@ -682,7 +698,7 @@ echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRE
                         <div class="solution-btn-icon">
                             <div class="learn-btn">
                                 <a class="primary-btn9" href="services/AI_Chatbot_Development.php">
-                                    <span>Learn More</span>
+                                    <span>Explore Artificial Intelligence</span>
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0.5L15 7.5M15 7.5L8 13.5M15 7.5L1.30274e-07 7.5" />
                                     </svg>

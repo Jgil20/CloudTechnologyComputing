@@ -1,13 +1,13 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Browse ready-to-deploy cloud services, managed hosting plans, ebooks, and digital products from Cloud Technology Computing for small businesses in Houston and beyond." />
+<meta name="description" content="Browse ready-to-deploy cloud services, managed hosting plans, ebooks, and digital products from Cloud Technology Computing for small businesses." />
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Cloud Services Shop | Cloud Technology Computing" />
 <meta property="og:description" content="Browse ready-to-deploy cloud services, hosting plans, ebooks, and digital products from Cloud Technology Computing." />
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/shop.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Cloud Services Shop | Cloud Technology Computing" />
 <meta property="twitter:description" content="Browse ready-to-deploy cloud services, hosting plans, ebooks, and digital products from Cloud Technology Computing." />
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ComputerClouds.avif">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/shop.php">
 <meta name="twitter:image:alt" content="Cloud Services Shop | Cloud Technology Computing" />  
@@ -26,10 +26,32 @@
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/shop.php" />
     <title>Cloud Services Shop | Cloud Technology Computing</title>
+
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.cloudtechnologycomputing.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cloud and Web Services Shop",
+            "item": "https://www.cloudtechnologycomputing.com/shop.php"
+        }
+    ]
+}
+</script>
 </head>
 
 
-<body class="home-dark2 tt-magic-cursor">
+<body class="home-dark2">
     <!-- Preloader Start -->
     <div class="preloader">
         <div id="particles-background" class="vertical-centered-box"></div>
@@ -102,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"> -->
+            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -110,10 +132,10 @@
             <div class="blog-widget-body">
                 <ul class="follow-list d-flex flex-row align-items-start gap-4">
                     
-                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation"><i class="bx bxl-facebook" target="_blank"></i></a></li>
-                    <li><a href="https://twitter.com/CTCCorporation"><i class="bx bxl-twitter" target="_blank"></i></a></li>
-                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" ><i class="bx bxl-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Visit Cloud Technology Computing on Facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CTCCorporation" aria-label="Visit Cloud Technology Computing on X" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudtechnologycomputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/CloudTechnologyComputing" target="_blank" rel="noopener noreferrer" aria-label="Visit Cloud Technology Computing on Pinterest"><i class="bx bxl-pinterest"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -128,13 +150,14 @@
 <!-- Shop Banner -->
 <section class="page-title">
     <div class="container">
-        <h1 class="text-center mt-5">Our services Shop</h1>
+        <h1 class="text-center mt-5">Our Services Shop</h1>
         <p class="text-center mb-5"style="background-color: black;">Choose from our range of digital services designed to scale your business.</p>
     </div>
 </section>
 
 <!-- Shop Products -->
 <section class="service-listing py-5"style="background-color: black;">
+    <h2 class="visually-hidden">Cloud and Web Services Available for Purchase</h2>
     
         <paypal-add-to-cart-button data-id="LGM5QTESGBA2E"></paypal-add-to-cart-button style="background-color: white;">
 <script>
