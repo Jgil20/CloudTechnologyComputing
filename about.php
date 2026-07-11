@@ -1,22 +1,22 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Learn about Cloud Technology Computing and founder Jhon Arzu-Gil — a Houston-based developer specializing in cloud, AI, web, and mobile for small businesses.">
+<meta name="description" content="Meet Cloud Technology Computing and founder Jhon Arzu-Gil, a Houston developer building cloud, AI, websites, apps, and SEO systems for small businesses.">
 <meta name="robots" content="index, follow">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="About Cloud Technology Computing | Cloud Services Experts" />
-<meta property="og:description" content="Learn about Cloud Technology Computing and founder Jhon Arzu-Gil — a Houston-based developer specializing in cloud, AI, web, and mobile for small businesses.">
+<meta property="og:title" content="About CTC: Cloud, AI &amp; Web Experts in Houston">
+<meta property="og:description" content="Meet Cloud Technology Computing and founder Jhon Arzu-Gil, a Houston developer building cloud, AI, websites, apps, and SEO systems for small businesses.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/about.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="About Cloud Technology Computing | Cloud Services Experts" />
-<meta property="twitter:description" content="Learn about Cloud Technology Computing and founder Jhon Arzu-Gil — a Houston-based developer specializing in cloud, AI, web, and mobile for small businesses.">
+<meta name="twitter:title" content="About CTC: Cloud, AI &amp; Web Experts in Houston">
+<meta name="twitter:description" content="Meet Cloud Technology Computing and founder Jhon Arzu-Gil, a Houston developer building cloud, AI, websites, apps, and SEO systems for small businesses.">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/about.php">
 <meta name="twitter:image:alt" content="About Cloud Technology Computing | Cloud Services Experts" />  
@@ -35,7 +35,7 @@
    
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/about.php" />
-    <title>About Cloud Technology Computing | Cloud Services Experts</title>
+    <title>About CTC: Cloud, AI &amp; Web Experts in Houston</title>
 
 <!-- Breadcrumb structured data -->
 <script type="application/ld+json">
@@ -149,7 +149,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -171,10 +170,10 @@
     <section class="breadcrumbs">
        <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="../assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds" width="800" height="600"   >
+                <img loading="lazy" src="/assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="computer clouds" width="800" height="600"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="../assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what" width="800" height="600"   >
+                <img loading="lazy" src="/assets/img/inner-pages/ibm cloud provider.avif" alt="cloud what" width="800" height="600"   >
             </div>
         </div>
         <div class="container">
@@ -258,7 +257,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="choose-right-img magnetic-item">
-                                <img loading="lazy" class="img-fluid " src="assets/img/home-6/choose-img-1.png" alt="" width="800" height="600"   >
+                                <img loading="lazy" class="img-fluid " src="assets/img/home-6/CloudTechnologyComputingDisplay.avif" alt="" width="800" height="600"   >
                             </div>
                         </div>
                     </div>
@@ -601,7 +600,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/home3-blog-01.png" alt="" width="800" height="500"   >
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-6/cloudsecuritychecklist.webp" alt="" width="800" height="500"   >
                             <div class="blog-tag">
                                 <a href="blog.html">Web development</a>
                             </div>
@@ -636,7 +635,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/home3-blog-02.png" alt="" width="800" height="500"   >
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/cloudcomputeai.webp" alt="" width="800" height="500"   >
                             <div class="blog-tag">
                                 <a href="blog.html">Cloud solutions</a>
                             </div>
@@ -671,7 +670,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog magnetic-item">
                         <div class="blog-img">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/home3-blog-03.png" alt="" width="800" height="500"   >
+                            <img loading="lazy" class="img-fluid" src="assets/img/home-6/blogsytem.avif" alt="" width="800" height="500"   >
                             <div class="blog-tag">
                                 <a href="blog.html">Web development</a>
                             </div>

@@ -1,51 +1,137 @@
-<?php include 'header.php'; ?>
-<meta name="author" content="Jhon Arzu-Gil">
-<meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Explore innovative cloud, web, and AI projects from Cloud Technology Computing. See tailored solutions that boost small-business efficiency." />
-<meta name="robots" content="index, follow"> 
+<?php
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/project-list-data.php';
+
+$portfolioPage = ctc_portfolio_page_data();
+$seo = $portfolioPage['seo'];
+$portfolioPageInfo = $portfolioPage['page'];
+$portfolioProjects = $portfolioPage['projects'];
+
+$databaseProjects = ctc_portfolio_projects_from_database();
+if (!empty($databaseProjects)) {
+    $portfolioProjects = $databaseProjects;
+}
+
+$perPage = max(1, (int) ($portfolioPageInfo['per_page'] ?? 6));
+$totalProjects = count($portfolioProjects);
+$totalPages = max(1, (int) ceil($totalProjects / $perPage));
+$currentPage = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT) ?: 1;
+$currentPage = max(1, min($currentPage, $totalPages));
+$offset = ($currentPage - 1) * $perPage;
+$visibleProjects = array_slice($portfolioProjects, $offset, $perPage);
+
+$metaTitle = (string) ($seo['title'] ?? 'Projects | Cloud Technology Computing');
+if ($currentPage > 1) {
+    $metaTitle = ctc_truncate_text($metaTitle . ' - Page ' . $currentPage, 65);
+}
+
+$metaDescription = ctc_truncate_text(
+    (string) ($seo['description'] ?? 'Explore cloud, AI, web development, mobile app, and SEO projects by Cloud Technology Computing.'),
+    165
+);
+
+$canonicalPath = (string) ($seo['canonical'] ?? '/project.php');
+if ($currentPage > 1) {
+    $canonicalPath .= '?page=' . $currentPage;
+}
+$canonicalUrl = ctc_absolute_url($canonicalPath);
+$ogImage = ctc_absolute_url((string) ($seo['image'] ?? '/assets/img/home-6/cloudbanner.jpg'));
+$robots = (string) ($seo['robots'] ?? 'index, follow');
+$siteName = (string) ($seo['site_name'] ?? 'Cloud Technology Computing');
+$locale = (string) ($seo['locale'] ?? 'en_US');
+$ogType = (string) ($seo['type'] ?? 'website');
+$twitterSite = (string) ($seo['twitter_site'] ?? '@JhonArzuGil');
+$twitterCreator = (string) ($seo['twitter_creator'] ?? '@JhonArzuGil');
+$author = (string) ($seo['author'] ?? 'Jhon Arzu-Gil');
+$imageAlt = (string) ($seo['image_alt'] ?? 'Cloud Technology Computing project portfolio');
+
+$breadcrumbItems = [];
+foreach (($portfolioPage['breadcrumb'] ?? []) as $index => $item) {
+    $breadcrumbItems[] = [
+        '@type' => 'ListItem',
+        'position' => $index + 1,
+        'name' => (string) ($item['name'] ?? ''),
+        'item' => ctc_absolute_url((string) ($item['url'] ?? '/')),
+    ];
+}
+
+$itemListElements = [];
+foreach ($portfolioProjects as $index => $projectItem) {
+    $itemListElements[] = [
+        '@type' => 'ListItem',
+        'position' => $index + 1,
+        'name' => (string) ($projectItem['title'] ?? 'Project'),
+        'url' => ctc_absolute_url((string) ($projectItem['url'] ?? '/project.php')),
+        'image' => ctc_absolute_url((string) ($projectItem['image'] ?? '/assets/img/home-6/cloudbanner.jpg')),
+    ];
+}
+
+$structuredData = [
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => $breadcrumbItems,
+        ],
+        [
+            '@type' => 'CollectionPage',
+            '@id' => $canonicalUrl . '#webpage',
+            'url' => $canonicalUrl,
+            'name' => $metaTitle,
+            'description' => $metaDescription,
+            'isPartOf' => [
+                '@id' => 'https://www.cloudtechnologycomputing.com/#website',
+            ],
+            'mainEntity' => [
+                '@id' => $canonicalUrl . '#project-list',
+            ],
+        ],
+        [
+            '@type' => 'ItemList',
+            '@id' => $canonicalUrl . '#project-list',
+            'name' => 'Cloud Technology Computing Project Portfolio',
+            'numberOfItems' => $totalProjects,
+            'itemListElement' => $itemListElements,
+        ],
+    ],
+];
+
+$buildProjectPageUrl = static function (int $page): string {
+    return $page <= 1 ? '/project.php' : '/project.php?page=' . $page;
+};
+
+include 'header.php';
+?>
+<meta name="author" content="<?= ctc_h($author); ?>">
+<meta name="copyright" content="<?= ctc_h($author); ?>" />
+<meta name="description" content="<?= ctc_h($metaDescription); ?>">
+<meta name="robots" content="<?= ctc_h($robots); ?>"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
-<meta property="og:description" content="Explore innovative cloud, web, and AI projects from Cloud Technology Computing. See tailored solutions that boost small-business efficiency." />
-<meta property="og:url" content="https://www.cloudtechnologycomputing.com/project.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
-<meta property="og:site_name" content="Cloud Technology Computing" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website">
+<meta property="og:title" content="<?= ctc_h($metaTitle); ?>">
+<meta property="og:description" content="<?= ctc_h($metaDescription); ?>">
+<meta property="og:url" content="<?= ctc_h($canonicalUrl); ?>">
+<meta property="og:image" content="<?= ctc_h($ogImage); ?>">
+<meta property="og:site_name" content="<?= ctc_h($siteName); ?>" />
+<meta property="og:locale" content="<?= ctc_h($locale); ?>" />
+<meta property="og:type" content="<?= ctc_h($ogType); ?>">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
-<meta property="twitter:description" content="Explore innovative cloud, web, and AI projects from Cloud Technology Computing. See tailored solutions that boost small-business efficiency." />
-<meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
-<meta name="twitter:creator" content="@JhonArzuGil"/>
-<meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/project.php">
-<meta name="twitter:image:alt" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />  
-    <!-- Favicon -->
-   
-     <!-- Title -->
-<link rel="canonical" href="https://www.cloudtechnologycomputing.com/project.php" />
-    <title>Innovative Cloud Computing Projects | Cloud Technology Computing</title>
+<meta name="twitter:title" content="<?= ctc_h($metaTitle); ?>">
+<meta name="twitter:description" content="<?= ctc_h($metaDescription); ?>">
+<meta property="twitter:site" content="<?= ctc_h($twitterSite); ?>">
+<meta property="twitter:image" content="<?= ctc_h($ogImage); ?>">
+<meta name="twitter:creator" content="<?= ctc_h($twitterCreator); ?>"/>
+<meta property="twitter:url" content="<?= ctc_h($canonicalUrl); ?>">
+<meta name="twitter:image:alt" content="<?= ctc_h($imageAlt); ?>" />  
+<link rel="canonical" href="<?= ctc_h($canonicalUrl); ?>" />
+<title><?= ctc_h($metaTitle); ?></title>
 
-<!-- Breadcrumb structured data -->
+<!-- Portfolio structured data -->
 <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.cloudtechnologycomputing.com/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Our Completed Cloud and Web Projects",
-            "item": "https://www.cloudtechnologycomputing.com/project.php"
-        }
-    ]
-}
+<?= json_encode($structuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
 </script>
 </head>
 
@@ -121,7 +207,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -155,8 +240,8 @@
                 <div class="col-12">
                     <div class="breadcrumb-wrapper">
                         <div class="breadcrumb-cnt">
-                            <span>Projects</span>
-                            <h1>Our Completed Projects</h1>
+                            <span><?= ctc_h($portfolioPageInfo['eyebrow'] ?? 'Projects'); ?></span>
+                            <h1><?= ctc_h($portfolioPageInfo['h1'] ?? 'Our Completed Projects'); ?></h1>
                             <div class="breadcrumb-list">
                                 <a href="/">Home</a><img loading="lazy" src="assets/img/inner-pages/breadcrumb-arrow.svg" alt="" width="16" height="9"   > Projects
                             </div>
@@ -171,131 +256,68 @@
     <div class="home3-success-stories-area two sec-mar">
         <div class="container-fluid">
             <div class="row g-4 justify-content-center">
-                <h2 class="visually-hidden">Cloud, Web, and Mobile Project Portfolio</h2>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="success-storie-card">
-                        <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudComputing.webp" alt="ArzuGil personal portfolio website designed and developed by Cloud Technology Computing" width="500" height="480"   >
-                        </div>
-                        <div class="success-content">
-                            <span>Web development</span>
-                            <h3><a href="https://www.arzugil.com">Portfolio Site</a></h3>
-                            <div class="view-btn">
-                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
-                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                    </svg>
-                                </a>
+                <h2 class="visually-hidden"><?= ctc_h($portfolioPageInfo['hidden_h2'] ?? 'Cloud, Web, and Mobile Project Portfolio'); ?></h2>
+                <?php if (empty($visibleProjects)): ?>
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <div class="success-storie-card">
+                            <div class="success-content">
+                                <span>Projects</span>
+                                <h3>No published projects yet.</h3>
+                                <p>Add published rows to the <code>projects</code> table to display project cards here.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="success-storie-card">
-                        <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudTechnologyComputing.avif" alt="ArzuGil portfolio mobile app published on Google Play by Cloud Technology Computing" width="500" height="480"   >
-                        </div>
-                        <div class="success-content">
-                            <span>Mobile development</span>
-                            <h3><a href="https://play.google.com/store/apps/details?id=com.arzugil.com.portfoliositejhongil">Portfolio Site App</a></h3>
-                            <div class="view-btn">
-                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
-                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                    </svg>
-                                </a>
+                <?php endif; ?>
+                <?php foreach ($visibleProjects as $projectItem): ?>
+                    <?php
+                        $projectTitle = (string) ($projectItem['title'] ?? 'Project');
+                        $projectCategory = (string) ($projectItem['category'] ?? 'Project');
+                        $projectUrl = ctc_url((string) ($projectItem['url'] ?? '#'));
+                        $detailUrl = ctc_url((string) ($projectItem['detail_url'] ?? $projectUrl));
+                        $projectImage = ctc_asset((string) ($projectItem['image'] ?? 'assets/img/home-6/cloudbanner.jpg'));
+                        $projectAlt = (string) ($projectItem['alt'] ?? $projectTitle . ' project by Cloud Technology Computing');
+                        $titleTarget = preg_match('#^https?://#i', $projectUrl) ? ' target="_blank" rel="noopener noreferrer"' : '';
+                        $detailTarget = preg_match('#^https?://#i', $detailUrl) ? ' target="_blank" rel="noopener noreferrer"' : '';
+                    ?>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="success-storie-card">
+                            <div class="success-img">
+                                <img loading="lazy" class="img-fluid magnetic-item" src="<?= ctc_h($projectImage); ?>" alt="<?= ctc_h($projectAlt); ?>" width="500" height="480">
+                            </div>
+                            <div class="success-content">
+                                <span><?= ctc_h($projectCategory); ?></span>
+                                <h3><a href="<?= ctc_h($projectUrl); ?>"<?= $titleTarget; ?>><?= ctc_h($projectTitle); ?></a></h3>
+                                <div class="view-btn">
+                                    <a href="<?= ctc_h($detailUrl); ?>" aria-label="View <?= ctc_h($projectTitle); ?> project details"<?= $detailTarget; ?>>
+                                        <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="success-storie-card">
-                        <div class="success-img magnetic-item">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/ComputerClouds.webp" alt="Cloud Technology Computing corporate marketing website and brand identity" width="500" height="480"   >
-                        </div>
-                        <div class="success-content">
-                            <span>Web development</span>
-                            <h3><a href="/">Cloud Technology Computing</a></h3>
-                            <div class="view-btn">
-                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
-                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="success-storie-card">
-                        <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/ComputerCloudsDisplay.webp" alt="Cloud Technology Computing mobile app on the Google Play Store" width="500" height="480"   >
-                        </div>
-                        <div class="success-content">
-                            <span>Mobile development</span>
-                            <h3><a href="https://play.google.com/store/apps/details?id=com.cloudtechnologycomputing.Cloud_Technology_Computing">Cloud Technology Computing App</a></h3>
-                            <div class="view-btn">
-                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
-                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="success-storie-card">
-                        <div class="success-img">
-                            <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudSolutions.avif" alt="Cloud Technology Computing collection of mobile apps published on Google Play" width="500" height="480"   >
-                        </div>
-                        <div class="success-content">
-                            <span>Mobile development</span>
-                            <h3><a href="https://play.google.com/store/apps/dev?id=8040499476760752928">App's On The Playstore</a></h3>
-                            <div class="view-btn">
-                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
-                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="success-storie-card">
-                        <div class="success-img magnetic-item">
-                            <img loading="lazy" class="img-fluid" src="assets/img/home-3/ITConulsting2.avif" alt="" width="500" height="480"   >
-                        </div>
-                        <div class="success-content">
-                            <span>Certification's</span>
-                            <h3><a href="https://www.credly.com/users/jhongil">Cedly Certifications</a></h3>
-                            <div class="view-btn">
-                                <a href="project-details.html" aria-label="View Cloud Technology Computing project details">
-                                    <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
-            <div class="row">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                      <li class="page-item disabled">
-                        <a class="page-link" aria-label="Previous page"><i class="bi bi-arrow-left"></i></a>
-                      </li>
-                      <li class="page-item"><a class="page-link active" href="#" aria-label="Open link">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#" aria-label="Open link">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#" aria-label="Open link">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next page"><i class="bi bi-arrow-right"></i></a>
-                      </li>
-                    </ul>
-                  </nav>
-            </div>
+            <?php if ($totalPages > 1): ?>
+                <div class="row">
+                    <nav aria-label="Project portfolio pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item <?= $currentPage <= 1 ? 'disabled' : ''; ?>">
+                                <a class="page-link" href="<?= ctc_h($buildProjectPageUrl($currentPage - 1)); ?>" aria-label="Previous project page"><i class="bi bi-arrow-left"></i></a>
+                            </li>
+                            <?php for ($pageNumber = 1; $pageNumber <= $totalPages; $pageNumber++): ?>
+                                <li class="page-item">
+                                    <a class="page-link <?= $pageNumber === $currentPage ? 'active' : ''; ?>" href="<?= ctc_h($buildProjectPageUrl($pageNumber)); ?>" aria-label="Open project page <?= (int) $pageNumber; ?>"><?= (int) $pageNumber; ?></a>
+                                </li>
+                            <?php endfor; ?>
+                            <li class="page-item <?= $currentPage >= $totalPages ? 'disabled' : ''; ?>">
+                                <a class="page-link" href="<?= ctc_h($buildProjectPageUrl($currentPage + 1)); ?>" aria-label="Next project page"><i class="bi bi-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
     <!-- Start Footer section -->

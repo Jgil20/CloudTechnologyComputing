@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/includes/helpers.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/blog-functions.php';
 
@@ -9,7 +10,10 @@ if (!$post) {
     exit('Blog post not found.');
 }
 
-saveComment($pdo, (int) $post['id']);
+if (saveComment($pdo, (int) $post['id'])) {
+    header('Location: /blog/' . rawurlencode($post['slug']) . '?comment=pending#comments', true, 303);
+    exit;
+}
 
 $views = incrementPostViews($pdo, (int) $post['id']);
 $tags = getPostTags($pdo, (int) $post['id']);
@@ -28,7 +32,7 @@ if ($ogImage && !str_starts_with($ogImage, 'http://') && !str_starts_with($ogIma
     $ogImage = 'https://www.cloudtechnologycomputing.com/' . ltrim($ogImage, '/');
 }
 if (!$ogImage) {
-    $ogImage = 'https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png';
+    $ogImage = 'https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg';
 }
 
 $featuredImage = $post['featured_image'] ?: '/assets/img/home-6/CloudTechnologyComputingDisplay.avif';
@@ -41,12 +45,11 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
     $authorImage = '/' . ltrim($authorImage, '/');
 }
 ?>
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+$pagePreloadImage = $featuredImage;
+$pageStylesheets = ['/css/blog-refactor.min.css'];
+include __DIR__ . '/header.php';
+?>
 
   <title><?= e($metaTitle) ?></title>
   <meta name="description" content="<?= e($metaDescription) ?>">
@@ -68,23 +71,6 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
   <meta name="twitter:description" content="<?= e($metaDescription) ?>">
   <meta name="twitter:image" content="<?= e($ogImage) ?>">
 
-  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/css/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="/assets/css/all.min.css" rel="stylesheet">
-  <link href="/assets/css/fontawesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/assets/css/animate.min.css">
-  <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
-  <link href="/assets/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/preloader.min.css">
-  <link rel="stylesheet" href="/assets/css/style2.min.css">
-  <link rel="stylesheet" href="/style.min.css">
-  <link rel="stylesheet" href="/css/blog-refactor.min.css">
-  <link rel="stylesheet" href="/css/seo-engagement.min.css">
-  <link rel="icon" href="/assets/img/sm-logo.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,24 +96,6 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
   }
   </script>
 
-  <?php
-  // Load analytics only after the dynamic page title and metadata are available.
-  $gaMeasurementId = getenv('GA_MEASUREMENT_ID') ?: 'GT-NMKVXWDW';
-  if (!empty($gaMeasurementId)):
-      $gaMeasurementIdEscaped = htmlspecialchars($gaMeasurementId, ENT_QUOTES, 'UTF-8');
-  ?>
-  <!-- Google tag (gtag.js) — loaded after title and metadata -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<?= $gaMeasurementIdEscaped ?>"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '<?= $gaMeasurementIdEscaped ?>', {
-      'page_title': document.title,
-      'page_location': window.location.href
-    });
-  </script>
-  <?php endif; ?>
 
 </head>
 
@@ -404,7 +372,7 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
 
         <div class="row">
             <div class="col-lg-9">
-                <div class="comments-area sec-mar">
+                <div class="comments-area sec-mar" id="comments">
                     <h3><?= count($comments) ?> Comment<?= count($comments) === 1 ? '' : 's' ?></h3>
 
                     <?php foreach ($comments as $comment): ?>
@@ -430,8 +398,12 @@ if ($authorImage && !str_starts_with($authorImage, 'http://') && !str_starts_wit
 
                 <div class="comment-form">
                     <h3>Leave a comment</h3>
+                    <?php if (isset($_GET['comment']) && $_GET['comment'] === 'pending'): ?>
+                        <div class="alert alert-success" role="status">Your comment was submitted and is awaiting approval.</div>
+                    <?php endif; ?>
 
                     <form action="/blog/<?= rawurlencode($post['slug']) ?>" method="POST">
+                        <?php csrf_field(); ?>
                         <div class="row">
                             <div class="col-12" aria-hidden="true" style="position:absolute;left:-9999px;">
                                 <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>

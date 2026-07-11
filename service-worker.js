@@ -1,7 +1,7 @@
 /* service-worker.js */
 
-const PRECACHE = 'precache-v3';
-const RUNTIME  = 'runtime-v2';
+const PRECACHE = 'precache-v8';
+const RUNTIME  = 'runtime-v7';
 
 const RAW_URLS = [
   '/',
@@ -12,7 +12,7 @@ const RAW_URLS = [
   '/assets/css/swiper-bundle.min.css',
   '/assets/css/jquery.fancybox.min.css',
   '/assets/css/boxicons.min.css',
-  '/assets/css/style2.min.css',
+  '/assets/css/style2.min.css?v=20260711-2',
   '/style.min.css',
   '/css/seo-engagement.min.css',
 
@@ -22,9 +22,13 @@ const RAW_URLS = [
   '/assets/js/swiper-bundle.min.js',
   '/assets/js/jquery.fancybox.min.js',
   '/assets/js/jquery.marquee.min.js',
-  '/assets/js/custom.min.js',
+  '/assets/js/custom.min.js?v=20260710-3',
+  '/assets/js/navigation.min.js?v=20260711-1',
   '/script.min.js',
-  '/sw-register.min.js'
+  '/sw-register.min.js',
+  '/site.webmanifest',
+  '/web-app-manifest-192x192.png',
+  '/web-app-manifest-512x512.png'
 ];
 
 const urlsToCache = RAW_URLS.map(u =>

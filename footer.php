@@ -183,11 +183,11 @@
                        <div class="menu-container">
                            <ul>
                                <!-- TODO: replace with real legal pages -->
-                               <li><a href="/privacy-policy.php">Privacy Policy</a> </li>
-                               <li><a href="/support-policy.php">Support Policy</a> </li>
+                               <li><a href="/privacy-policy">Privacy Policy</a></li>
+                               <li><a href="/support-policy">Support Policy</a></li>
                                <li><a href="/blog.php">Blog Posts</a></li>
                                <li><a href="/sitemap">HTML Sitemap</a></li>
-                               <li><a href="/terms.php">Terms and Conditions</a> </li>
+                               <li><a href="/terms">Terms and Conditions</a></li>
                                <li><a href="https://www.arzugil.com" target="_blank" rel="noopener noreferrer">Portfolio Site</a></li>
                                <li><a href="https://www.cloudcomputeai.com/" target="_blank" rel="noopener noreferrer">Services</a></li>
                            </ul>
@@ -219,8 +219,7 @@
                                   <li><a href="https://www.facebook.com/CloudTechnologyComputingCorporation" aria-label="Facebook Page" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a></li>
                                    <li><a href="https://github.com/Jgil20" aria-label="Github Page"  target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a></li>
                                    <li><a href="https://www.linkedin.com/in/jhongil" aria-label="LinkedIn Page" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></li>
-                                   <!-- TODO: replace with real Google Business Profile URL once provisioned. -->
-                                   <li><a href="/" aria-label="Google Business Page" target="_blank" rel="noopener noreferrer"><i class="bi bi-google"></i></a></li>
+                                   <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cloud+Technology+Computing+Houston+TX" aria-label="Find Cloud Technology Computing on Google Maps" target="_blank" rel="noopener noreferrer"><i class="bi bi-google"></i></a></li>
                                </ul>
                            </div>
                        </div>
@@ -247,6 +246,7 @@
        '/assets/js/jquery-3.6.0.min.js',
        '/assets/js/popper.min.js',
        '/assets/js/bootstrap.min.js',
+       '/assets/js/navigation.min.js?v=20260711-1',
    ];
 
    if ($isFooterHomepage) {
@@ -255,7 +255,7 @@
            '/assets/js/swiper-bundle.min.js',
            '/assets/js/jquery.fancybox.min.js',
            '/assets/js/jquery.marquee.min.js',
-           '/assets/js/custom.min.js',
+           '/assets/js/custom.min.js?v=20260710-3',
        ]);
    } else {
        // Interior pages keep the broader plugin set for portfolio filters, counters, and legacy layouts.
@@ -267,9 +267,19 @@
            '/assets/js/jquery.fancybox.min.js',
            '/assets/js/jquery.marquee.min.js',
            '/assets/js/preloader.min.js',
-           '/assets/js/custom.min.js',
+           '/assets/js/custom.min.js?v=20260710-3',
        ]);
    }
+
+   if ($footerScriptName === 'shop.php') {
+       $footerScripts[] = '/assets/js/paypal-cart-init.min.js?v=20260711-1';
+   }
+
+   if (!empty($pageFooterScripts) && is_array($pageFooterScripts)) {
+       $footerScripts = array_merge($footerScripts, array_filter($pageFooterScripts, 'is_string'));
+   }
+
+   $footerScripts = array_values(array_unique($footerScripts));
    ?>
    <?php foreach ($footerScripts as $scriptSrc): ?>
    <script src="<?= htmlspecialchars($scriptSrc, ENT_QUOTES, 'UTF-8'); ?>" defer></script>

@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="Custom WordPress development for Houston small businesses. Theme design, plugin development, WooCommerce, performance tuning, and ongoing maintenance.">
+<meta name="description" content="Build a faster WordPress website with custom themes, plugins, WooCommerce, SEO, performance tuning, security updates, and ongoing maintenance support.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/Wordpress%20Development%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="WordPress Development Services | Cloud Technology Computing">
-<meta property="og:description" content="Custom WordPress development for Houston small businesses. Theme design, plugin development, WooCommerce, performance tuning, and ongoing maintenance.">
+<meta property="og:title" content="WordPress Development Services for Business | CTC">
+<meta property="og:description" content="Build a faster WordPress website with custom themes, plugins, WooCommerce, SEO, performance tuning, security updates, and ongoing maintenance support.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/Wordpress%20Development%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/WordpressDevelopment.png">
 <meta property="og:image:alt" content="Cloud Technology Computing WordPress development services">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="WordPress Development Services | Cloud Technology Computing">
-<meta name="twitter:description" content="Custom WordPress development for Houston small businesses. Theme design, plugin development, WooCommerce, performance tuning, and ongoing maintenance.">
+<meta name="twitter:title" content="WordPress Development Services for Business | CTC">
+<meta name="twitter:description" content="Build a faster WordPress website with custom themes, plugins, WooCommerce, SEO, performance tuning, security updates, and ongoing maintenance support.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/Wordpress%20Development%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/WordpressDevelopment.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing WordPress development services">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>WordPress Development Services | Cloud Technology Computing</title>
+<title>WordPress Development Services for Business | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "WordPress Development", "name": "WordPress Development", "description": "Custom WordPress development for Houston small businesses. Theme design, plugin development, WooCommerce, performance tuning, and ongoing maintenance.", "url": "https://www.cloudtechnologycomputing.com/services/Wordpress%20Development%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/WordpressDevelopment.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "WordPress Development", "item": "https://www.cloudtechnologycomputing.com/services/Wordpress%20Development%20service-details.php"}]}]
 </script>

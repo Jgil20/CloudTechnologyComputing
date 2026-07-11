@@ -14,10 +14,7 @@ if (!function_exists('assetPath')) {
             return '/assets/img/inner-pages/portfolio-dt-01.png';
         }
 
-        if (
-            str_starts_with($path, 'http://') ||
-            str_starts_with($path, 'https://')
-        ) {
+        if (preg_match('#^https?://#i', $path)) {
             return $path;
         }
 
@@ -30,13 +27,7 @@ if (!function_exists('urlPath')) {
     {
         $path = trim($path);
 
-        if (
-            str_starts_with($path, 'http://') ||
-            str_starts_with($path, 'https://') ||
-            str_starts_with($path, 'mailto:') ||
-            str_starts_with($path, 'tel:') ||
-            str_starts_with($path, '#')
-        ) {
+        if (preg_match('~^(https?://|mailto:|tel:|#)~i', $path)) {
             return $path;
         }
 

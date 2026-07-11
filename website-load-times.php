@@ -1,11 +1,11 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Explore a case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed and scalability.">
+<meta name="description" content="See how website load times compare across AWS, Azure, and dedicated hosting, then learn performance fixes that improve speed, SEO, and scalability.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Case Study: Website Load Times &amp; Cloud Performance | Cloud Technology Computing" />
-<meta property="og:description" content="Explore a case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed and scalability.">
+<meta property="og:title" content="Website Speed &amp; Cloud Performance Case Study | CTC">
+<meta property="og:description" content="See how website load times compare across AWS, Azure, and dedicated hosting, then learn performance fixes that improve speed, SEO, and scalability.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/website-load-times.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/inner-pages/AzureHostingDesktop.avif">
 <meta property="og:site_name" content="Cloud Technology Computing" />
@@ -13,8 +13,8 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Case Study: Website Load Times &amp; Cloud Performance | Cloud Technology Computing" />
-<meta name="twitter:description" content="Explore a case study comparing website load times across AWS, Azure, and dedicated hosting, and learn how cloud optimization improved speed and scalability.">
+<meta name="twitter:title" content="Website Speed &amp; Cloud Performance Case Study | CTC">
+<meta name="twitter:description" content="See how website load times compare across AWS, Azure, and dedicated hosting, then learn performance fixes that improve speed, SEO, and scalability.">
 <meta property="twitter:site" content="@JhonArzuGil">
 <meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/inner-pages/AzureHostingDesktop.avif">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
@@ -23,7 +23,7 @@
 
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/website-load-times.php" />
-    <title>Website Load Times &amp; Cloud Performance Case Study | CTC</title>
+    <title>Website Speed &amp; Cloud Performance Case Study | CTC</title>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

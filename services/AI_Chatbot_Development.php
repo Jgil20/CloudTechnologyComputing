@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="AI chatbot development for Houston small businesses. Custom GPT-powered chatbots for websites, customer support, lead capture, and internal workflows.">
+<meta name="description" content="Capture leads and support customers with custom AI chatbots for websites, FAQs, appointment requests, internal workflows, and small business automation.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/AI_Chatbot_Development.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="AI Chatbot Development | Cloud Technology Computing">
-<meta property="og:description" content="AI chatbot development for Houston small businesses. Custom GPT-powered chatbots for websites, customer support, lead capture, and internal workflows.">
+<meta property="og:title" content="AI Chatbot Development for Lead Generation | CTC">
+<meta property="og:description" content="Capture leads and support customers with custom AI chatbots for websites, FAQs, appointment requests, internal workflows, and small business automation.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/AI_Chatbot_Development.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/AIChatbot.png">
 <meta property="og:image:alt" content="Cloud Technology Computing AI chatbot development">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Chatbot Development | Cloud Technology Computing">
-<meta name="twitter:description" content="AI chatbot development for Houston small businesses. Custom GPT-powered chatbots for websites, customer support, lead capture, and internal workflows.">
+<meta name="twitter:title" content="AI Chatbot Development for Lead Generation | CTC">
+<meta name="twitter:description" content="Capture leads and support customers with custom AI chatbots for websites, FAQs, appointment requests, internal workflows, and small business automation.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/AI_Chatbot_Development.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/AIChatbot.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing AI chatbot development">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>AI Chatbot Development | Cloud Technology Computing</title>
+<title>AI Chatbot Development for Lead Generation | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "AI Chatbot Development", "name": "AI Chatbot Development", "description": "AI chatbot development for Houston small businesses. Custom GPT-powered chatbots for websites, customer support, lead capture, and internal workflows.", "url": "https://www.cloudtechnologycomputing.com/services/AI_Chatbot_Development.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/AIChatbot.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "AI Chatbot Development", "item": "https://www.cloudtechnologycomputing.com/services/AI_Chatbot_Development.php"}]}]
 </script>

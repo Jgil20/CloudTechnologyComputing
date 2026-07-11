@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="Website speed and Core Web Vitals optimization for Houston small businesses. Faster load times, better SEO, and higher conversion rates backed by data.">
+<meta name="description" content="Improve Core Web Vitals, page speed, SEO, and conversions with website optimization services for small businesses. Get a faster site audit and action plan.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/Website%20Optimization%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Website Speed &amp;amp; Performance Optimization | Cloud Technology Computing">
-<meta property="og:description" content="Website speed and Core Web Vitals optimization for Houston small businesses. Faster load times, better SEO, and higher conversion rates backed by data.">
+<meta property="og:title" content="Website Speed Optimization Services | CTC">
+<meta property="og:description" content="Improve Core Web Vitals, page speed, SEO, and conversions with website optimization services for small businesses. Get a faster site audit and action plan.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/Website%20Optimization%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/inner-pages/Website Optimization3.avif">
 <meta property="og:image:alt" content="Cloud Technology Computing website performance optimization">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Website Speed &amp;amp; Performance Optimization | Cloud Technology Computing">
-<meta name="twitter:description" content="Website speed and Core Web Vitals optimization for Houston small businesses. Faster load times, better SEO, and higher conversion rates backed by data.">
+<meta name="twitter:title" content="Website Speed Optimization Services | CTC">
+<meta name="twitter:description" content="Improve Core Web Vitals, page speed, SEO, and conversions with website optimization services for small businesses. Get a faster site audit and action plan.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/Website%20Optimization%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/inner-pages/Website Optimization3.avif">
 <meta name="twitter:image:alt" content="Cloud Technology Computing website performance optimization">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>Website Speed &amp;amp; Performance Optimization | Cloud Technology Computing</title>
+<title>Website Speed Optimization Services | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "Website Performance Optimization", "name": "Website Optimization", "description": "Website speed and Core Web Vitals optimization for Houston small businesses. Faster load times, better SEO, and higher conversion rates backed by data.", "url": "https://www.cloudtechnologycomputing.com/services/Website%20Optimization%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/inner-pages/Website Optimization3.avif", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "Website Optimization", "item": "https://www.cloudtechnologycomputing.com/services/Website%20Optimization%20service-details.php"}]}]
 </script>

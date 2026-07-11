@@ -4,27 +4,27 @@
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Book a Free Cloud Consultation | Cloud Technology Computing" />
+<meta property="og:title" content="Book a Free Cloud Consultation | CTC">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/form.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Book a Free Cloud Consultation | Cloud Technology Computing" />
-<meta property="og:description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies.">
-<meta name="twitter:description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies.">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta name="twitter:title" content="Book a Free Cloud Consultation | CTC">
+<meta property="og:description" content="Schedule a free consultation for cloud migration, AI chatbots, web development, SEO, mobile apps, or managed IT. Tell us your goals and get next steps.">
+<meta name="twitter:description" content="Schedule a free consultation for cloud migration, AI chatbots, web development, SEO, mobile apps, or managed IT. Tell us your goals and get next steps.">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/form.php">
 <meta name="twitter:image:alt" content="Book a Free Cloud Consultation | Cloud Technology Computing" />  
     <!-- Favicon -->
-   <link href="assets/img/CloudTechnologyComputingAIservices.png" type="image/x-icon" rel="icon">
+   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
      <!-- Title -->
-    <title>Book a Free Cloud Consultation | Cloud Technology Computing</title>
+    <title>Book a Free Cloud Consultation | CTC</title>
 	<!-- set your website meta description and keywords -->
-	<meta name="description" content="Schedule a free consultation with Cloud Technology Computing to discuss cloud migration, web and mobile development, AI chatbots, and SEO strategies.">
+	<meta name="description" content="Schedule a free consultation for cloud migration, AI chatbots, web development, SEO, mobile apps, or managed IT. Tell us your goals and get next steps.">
 	<meta name="keywords" content="cloud consultation, free cloud review, cloud migration, web development, AI chatbot, SEO, Houston cloud services, small business cloud">
 	
 	<!-- Bootstrap Stylesheets -->

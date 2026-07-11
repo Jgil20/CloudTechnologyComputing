@@ -131,8 +131,8 @@ $solutionMedia = [
     'cloud-technology-consulting' => ['src' => '/assets/img/solutions/houston-cloud-consulting-growing-businesses.webp', 'alt' => 'Cloud technology consulting session for architecture migration and cost planning'],
     'cloud-computing-company-houston' => ['src' => '/assets/img/home-6/cloudbusiness.avif', 'alt' => 'Houston cloud computing company supporting secure business technology modernization'],
     'cloud-it-consulting-services' => ['src' => '/assets/img/solutions/managed-it-services-small-business-dashboard.webp', 'alt' => 'Cloud IT consulting services dashboard for infrastructure security and support'],
-    'cloud-software-development-company' => ['src' => '/assets/img/home-6/software development.png', 'alt' => 'Cloud software development company building secure web applications APIs and databases'],
-    'it-consulting-solutions' => ['src' => '/assets/img/home-6/ITConsulting.png', 'alt' => 'IT consulting solutions for cloud security software and small business growth'],
+    'cloud-software-development-company' => ['src' => '/assets/img/home-6/software development.webp', 'alt' => 'Cloud software development company building secure web applications APIs and databases'],
+    'it-consulting-solutions' => ['src' => '/assets/img/home-6/ITConsulting.webp', 'alt' => 'IT consulting solutions for cloud security software and small business growth'],
 ];
 
 $defaultSolutionMedia = [

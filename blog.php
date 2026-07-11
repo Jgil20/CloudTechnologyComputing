@@ -206,14 +206,14 @@ foreach ($categories as $categoryRow) {
     }
 }
 
-$pageTitle = 'Cloud Computing & AI Blog | Cloud Technology Computing';
-$pageDescription = 'Read practical cloud computing, AI automation, web development, SEO, cybersecurity, and managed IT guides for small business growth.';
+$pageTitle = 'Cloud, AI & Small Business Tech Blog | CTC';
+$pageDescription = 'Read practical guides on cloud computing, AI chatbots, websites, SEO, cybersecurity, managed IT, and automation for small business growth. Start learning today.';
 $heroTitle = 'Cloud, AI, Web Development, and SEO Resources';
 $heroText = 'Practical technology guides designed to help small businesses improve security, performance, automation, visibility, and growth.';
 
 if ($search !== '') {
     $pageTitle = 'Search Results for ' . $search . ' | CTC Blog';
-    $pageDescription = 'Search Cloud Technology Computing articles about cloud services, AI automation, SEO, web development, cybersecurity, and business technology.';
+    $pageDescription = 'Search Cloud Technology Computing articles about cloud services, AI chatbots, SEO, web development, cybersecurity, managed IT, and automation for growth.';
     $heroTitle = 'Search Results for “' . $search . '”';
     $heroText = $totalPosts === 1
         ? '1 article matched your search.'
@@ -234,7 +234,7 @@ if ($search !== '') {
     $heroText = 'Browse articles and practical guidance tagged ' . strtolower($displayTag) . '.';
 } elseif ($blogCurrentPage > 1) {
     $pageTitle = 'Cloud Computing & AI Blog – Page ' . $blogCurrentPage . ' | CTC';
-    $pageDescription = 'Browse page ' . $blogCurrentPage . ' of Cloud Technology Computing guides covering cloud, AI, cybersecurity, SEO, web development, and managed IT.';
+    $pageDescription = 'Browse more Cloud Technology Computing guides covering cloud, AI, cybersecurity, SEO, web development, managed IT, and small business technology growth.';
 }
 
 $isSearchPage = $search !== '';

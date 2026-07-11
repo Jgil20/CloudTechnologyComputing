@@ -535,7 +535,7 @@ $solutions = [
     ],
     'cloud-security-services-small-businesses' => [
         'title' => 'Cloud Security Services for Small Business | CTC',
-        'meta' => 'Cloud security services for small businesses covering access controls, backups, monitoring, HTTPS, data protection, and security planning.',
+        'meta' => 'Protect business data with cloud security services covering access controls, backups, monitoring, HTTPS, compliance planning, and incident response support.',
         'h1' => 'Cloud Security Services for Small Businesses',
         'keyword' => 'cloud security services for small businesses',
         'intro' => 'Cloud security for small businesses starts with practical controls: secure access, HTTPS, backups, monitoring, least privilege, update discipline, and clear recovery steps. Cloud Technology Computing helps reduce risk without overwhelming your team.',

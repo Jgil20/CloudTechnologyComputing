@@ -23,12 +23,10 @@ $ogImageAbsolute = (str_starts_with($ogImage, 'http://') || str_starts_with($ogI
 $publishedAt = !empty($caseStudy['published_at']) ? strtotime($caseStudy['published_at']) : null;
 $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at']) : null;
 ?>
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+$pagePreloadImage = assetPath($caseStudy['featured_image'] ?: 'assets/img/home-6/CloudTechnologyComputingDisplay.avif');
+include __DIR__ . '/header.php';
+?>
 
   <title><?= e($metaTitle) ?></title>
   <meta name="description" content="<?= e($metaDescription) ?>">
@@ -48,26 +46,6 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
   <meta name="twitter:description" content="<?= e($metaDescription) ?>">
   <meta name="twitter:image" content="<?= e($ogImage) ?>">
 
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/css/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="../assets/css/all.min.css" rel="stylesheet">
-  <link href="../assets/css/fontawesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="../assets/css/animate.min.css">
-  <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
-  <link href="../assets/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/preloader.min.css">
-  <link rel="stylesheet" href="../assets/css/style2.min.css">
-    <link rel="stylesheet" href="../style.min.css" as="style">
-<link rel="stylesheet" href="../assets/css/blog-refactor.min.css">
-
-  <link rel="preload" href="../assets/css/styles.min.css" as="style">
-<link rel="stylesheet" href="../assets/css/styles.min.css" media="print" onload="this.media='all'">
-<noscript>
-    <link rel="stylesheet" href="../assets/css/styles.min.css">
-</noscript>
-<script src="../assets/js/scripts.min.js" defer></script>
-  <link rel="icon" href="../assets/img/sm-logo.svg" type="image/gif" sizes="20x20">
 
 
 
@@ -100,24 +78,6 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
   </script>
 
 
-  <?php
-  // Load analytics only after the dynamic page title and metadata are available.
-  $gaMeasurementId = getenv('GA_MEASUREMENT_ID') ?: 'GT-NMKVXWDW';
-  if (!empty($gaMeasurementId)):
-      $gaMeasurementIdEscaped = htmlspecialchars($gaMeasurementId, ENT_QUOTES, 'UTF-8');
-  ?>
-  <!-- Google tag (gtag.js) — loaded after title and metadata -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<?= $gaMeasurementIdEscaped ?>"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '<?= $gaMeasurementIdEscaped ?>', {
-      'page_title': document.title,
-      'page_location': window.location.href
-    });
-  </script>
-  <?php endif; ?>
 
 
 <!-- Article and BreadcrumbList structured data -->
@@ -397,42 +357,3 @@ $updatedAt = !empty($caseStudy['updated_at']) ? strtotime($caseStudy['updated_at
 </div>
 
 <?php include 'footer.php'; ?>
-
-<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js" defer></script>
-
-    <!-- Linking custom script -->
-    <script src="../script.min.js" defer></script>
-  <script>
-       $(".marquee_text").marquee({
-       direction: "left",
-       duration: 20000,
-       gap: 50,
-       delayBeforeStart: 0,
-       duplicated: true,
-       startVisible: true,
-       });
-
-       $(".marquee_text3").marquee({
-       direction: "left",
-       duration: 30000,
-       gap: 50,
-       delayBeforeStart: 0,
-       duplicated: true,
-       startVisible: true,
-       });
-   </script>
-
-<script src="../assets/js/jquery-3.6.0.min.js" defer></script>
-<script src="../assets/js/popper.min.js" defer></script>
-<script src="../assets/js/bootstrap.min.js" defer></script>
-<script src="../assets/js/swiper-bundle.min.js" defer></script>
-<script src="../assets/js/waypoints.min.js" defer></script>
-<script src="../assets/js/jquery.counterup.min.js" defer></script>
-<script src="../assets/js/isotope.pkgd.min.js" defer></script>
-<script src="../assets/js/jquery.fancybox.min.js" defer></script>
-<script src="../assets/js/jquery.marquee.min.js" defer></script>
-<script src="../assets/js/preloader.min.js" defer></script>
-<script src="../assets/js/custom.min.js" defer></script>
-
-</body>
-</html>

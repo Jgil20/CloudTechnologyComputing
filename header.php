@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/includes/env.php';
+
 /**
  * Shared document header.
  *
@@ -55,6 +57,29 @@ ob_start(static function (string $html) use ($analyticsMarkup, $fallbackTitleEsc
         }
     }
 
+    // Add page-correct hreflang links using the canonical URL declared by each page.
+    $headClosePosition = stripos($html, '</head>');
+    $headOpenPosition = stripos($html, '<head');
+    $headBlock = ($headOpenPosition !== false && $headClosePosition !== false)
+        ? substr($html, $headOpenPosition, $headClosePosition - $headOpenPosition)
+        : '';
+
+    if (
+        $headBlock !== ''
+        && stripos($headBlock, 'hreflang=') === false
+        && preg_match('~<link\s+[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\']~i', $headBlock, $canonicalMatch)
+    ) {
+        $canonicalHref = htmlspecialchars(
+            html_entity_decode($canonicalMatch[1], ENT_QUOTES | ENT_HTML5, 'UTF-8'),
+            ENT_QUOTES | ENT_SUBSTITUTE,
+            'UTF-8'
+        );
+        $hreflangMarkup = "\n<link rel=\"alternate\" hreflang=\"en-US\" href=\"{$canonicalHref}\">"
+            . "\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"{$canonicalHref}\">\n";
+        $html = substr_replace($html, $hreflangMarkup, $headClosePosition, 0);
+        $headClosePosition += strlen($hreflangMarkup);
+    }
+
     // Inject analytics only once and only after page-specific title/meta markup.
     if ($analyticsMarkup !== '' && stripos($html, 'googletagmanager.com/gtag/js') === false) {
         $html = substr_replace($html, "\n{$analyticsMarkup}\n", $headClosePosition, 0);
@@ -70,7 +95,7 @@ ob_start(static function (string $html) use ($analyticsMarkup, $fallbackTitleEsc
 <style>
 :root{--bg:#020617;--bg-2:#0b1220;--bg-6:#161519;--fg:#d6deeb;--theme:#06D889;--white:#fff;--accent:#3b82f6;--accent-2:#06d889;--font-saira:"Saira",sans-serif}
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden;height:auto!important;min-height:100%}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,h4,h5,h6{font-family:var(--font-saira);font-weight:700;line-height:1.3;margin:0 0 .5em}
@@ -79,6 +104,13 @@ p{margin:0 0 1em}
 /* The actual cause of CLS — body.bg-6 background applied inline before async CSS loads */
 body{background:#161519;color:#fff}
 body.bg-6{background:#161519}
+
+/* Keep the footer at the bottom of short pages and prevent the root
+   background from appearing as a dark-blue block below it. */
+html{background:#171717}
+body{min-height:100vh!important;display:flex;flex-direction:column}
+body>main{flex:1 0 auto;width:100%}
+body>footer{margin-top:auto;flex-shrink:0;width:100%}
 
 /* Header + preloader to prevent layout shift on first paint */
 .preloader{position:fixed;inset:0;background:var(--bg-6);display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity .3s}
@@ -137,7 +169,7 @@ body.show-chatbot #chatbot-toggler span:first-child{opacity:0}
 .col-lg-5.d-flex.justify-content-center{min-height:600px;align-items:center;position:relative}
 @media (max-width:991px){.col-lg-5.d-flex.justify-content-center{min-height:500px}}
 @media (max-width:767px){.col-lg-5.d-flex.justify-content-center{min-height:0}}
-.banner-big-.banner-big-img,.col-lg-5.d-flex.justify-content-center .banner-img{aspect-ratio:450/650;background:rgba(22,21,25,0.5);overflow:hidden}
+.banner-big-img,.col-lg-5.d-flex.justify-content-center .banner-img{aspect-ratio:450/650;background:rgba(22,21,25,0.5);overflow:hidden}
 .banner-big-img img{width:100%;height:100%;object-fit:cover;display:block}
 .banner-sm-img{position:relative;z-index:2}
 .banner-sm-img img{width:150px;height:150px;display:block;position:relative;z-index:2}
@@ -179,25 +211,58 @@ body.show-chatbot #chatbot-toggler span:first-child{opacity:0}
 .banner5-slider .banner-img{height:100%;position:relative}
 .banner5-slider .banner-img img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* home6-solution-slider — 11 slides, no specific aspect (small cards) */
-.home6-solution-slider{aspect-ratio:4/3;background:rgba(22,21,25,0.5);width:100%}
-.home6-solution-slider .swiper-wrapper{height:100%!important}
-.home6-solution-slider .swiper-slide{height:100%!important}
-
-/* home3-success-stories-slider — 5 slides */
-.home3-success-stories-slider{aspect-ratio:16/9;background:rgba(22,21,25,0.5);width:100%}
-.home3-success-stories-slider .swiper-wrapper{height:100%!important}
-.home3-success-stories-slider .swiper-slide{height:100%!important}
+/* Content-driven sliders must grow with their cards.
+   Fixed aspect ratios clipped service text and project overlays on mobile. */
+.home6-solution-slider,
+.home3-success-stories-slider{
+  width:100%;
+  min-height:1px;
+  height:auto;
+  aspect-ratio:auto;
+  background:rgba(22,21,25,0.5)
+}
+.home6-solution-slider .swiper-wrapper,
+.home3-success-stories-slider .swiper-wrapper{
+  height:auto;
+  align-items:flex-start
+}
+.home6-solution-slider .swiper-slide,
+.home3-success-stories-slider .swiper-slide{
+  height:auto
+}
+.home6-solution-slider .single-solution,
+.home3-success-stories-slider .success-storie-card{
+  height:auto
+}
+.home3-success-stories-slider .success-img img{
+  display:block;
+  width:100%;
+  height:auto
+}
+@media (max-width:767px){
+  .home6-solution-section .single-solution{padding:28px 22px 42px}
+  .home6-solution-section .single-solution .solution-content p{line-height:1.75;margin-bottom:24px}
+  .home3-success-stories-area .success-storie-card .success-content{left:14px;right:14px;bottom:14px;padding:20px 18px}
+}
 
 /* home6-testimonial-slider */
 .home6-testimonial-slider{aspect-ratio:16/9;background:rgba(22,21,25,0.5);width:100%}
 .home6-testimonial-slider .swiper-wrapper{height:100%!important}
 .home6-testimonial-slider .swiper-slide{height:100%!important}
 
-/* home5-blog-slider */
-.home5-blog-slider{aspect-ratio:4/3;background:rgba(22,21,25,0.5);width:100%}
-.home5-blog-slider .swiper-wrapper{height:100%!important}
-.home5-blog-slider .swiper-slide{height:100%!important}
+/* Home 5 blog slider — allow mobile cards to grow with their content.
+   A fixed 4:3 height clipped the featured image after long mobile titles/excerpts. */
+.home5-blog-slider{width:100%;height:auto!important;min-height:0;background:rgba(22,21,25,0.5)}
+.home5-blog-slider .swiper-wrapper{height:auto!important;align-items:stretch}
+.home5-blog-slider .swiper-slide{height:auto!important}
+.home5-blog-slider .single-blog-card{height:100%}
+.home5-blog-slider .single-blog-card .blog-img{width:100%;aspect-ratio:16/9;overflow:hidden}
+.home5-blog-slider .single-blog-card .blog-img>a{display:block;width:100%;height:100%}
+.home5-blog-slider .single-blog-card .blog-img img{display:block;width:100%!important;height:100%!important;object-fit:cover;object-position:center top}
+@media (max-width:767px){
+  .home5-blog-slider{aspect-ratio:auto!important}
+  .home5-blog-slider .single-blog-card{padding-bottom:0!important}
+}
 
 /* Reserve space for accordion/collapse content that may expand on init */
 .accordion-collapse{min-height:60px}
@@ -231,269 +296,50 @@ body.show-chatbot #chatbot-toggler span:first-child{opacity:0}
 @font-face{font-family:'Saira Fallback';src:local('Arial');size-adjust:100%;ascent-override:95%;descent-override:30%;line-gap-override:5%}
 @font-face{font-family:'Helvetica Fallback';src:local('Helvetica');size-adjust:107%;ascent-override:95%;descent-override:30%;line-gap-override:5%}
 
-
-/* Mobile menu close button + overlay */
-.ctc-mobile-menu-close{display:none}
-.ctc-mobile-menu-overlay{display:none}
+/* Mobile navigation close button */
+.ctc-menu-close-btn{display:none}
 @media (max-width:991px){
-  .header-area2 .mobile-logo-area{display:flex!important;gap:12px;justify-content:space-between!important;align-items:center!important;width:100%;padding:0 0 20px!important;border-bottom:1px solid rgba(255,255,255,.12)}
-  .header-area2{z-index:100000!important}
-  .header-area2 .main-menu{padding:22px 18px 30px!important;width:min(86vw,330px)!important;z-index:100001!important}
-  .header-area2 .main-menu .menu-list{padding-top:24px!important;display:block!important;min-height:0!important}
-  .header-area2 .main-menu ul{display:block!important;min-height:0!important;width:100%!important}
-  .header-area2 .main-menu ul>li{display:block!important;width:100%!important;float:none!important;white-space:normal!important}
-  .header-area2 .main-menu ul>li>a{display:block!important;width:100%!important;white-space:normal!important;padding:12px 34px 12px 0!important}
-  .ctc-mobile-menu-close{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:42px!important;height:42px!important;min-width:42px!important;border:1px solid rgba(255,255,255,.45)!important;border-radius:50%!important;background:#111827!important;color:#fff!important;font-size:20px!important;line-height:1!important;cursor:pointer!important;padding:0!important;position:relative!important;z-index:100002!important}
-  .ctc-mobile-menu-close i{color:#fff!important;font-size:22px!important;line-height:1!important}
-  .ctc-mobile-menu-close:hover,.ctc-mobile-menu-close:focus{background:var(--theme, #06D889)!important;color:#020617!important;outline:2px solid rgba(255,255,255,.35)!important;outline-offset:2px!important}
-  .ctc-mobile-menu-close:hover i,.ctc-mobile-menu-close:focus i{color:#020617!important}
-  .ctc-mobile-menu-overlay{position:fixed!important;inset:0!important;background:rgba(0,0,0,.55)!important;z-index:99990!important;display:none!important}
-  body.ctc-mobile-menu-open .ctc-mobile-menu-overlay{display:block!important}
-  body.ctc-mobile-menu-open{overflow:hidden!important}
-  body.ctc-mobile-menu-open .header-area2{z-index:100000!important}
-  body.ctc-mobile-menu-open .header-area2 .main-menu.show-menu{z-index:100001!important;pointer-events:auto!important}
-  .header-area2 .main-menu ul li ul.sub-menu{display:none}
+  .header-area2 .main-menu{position:fixed !important}
+  .header-area2 .main-menu .mobile-logo-area{position:relative;padding-right:54px;min-height:44px}
+  .ctc-menu-close-btn{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:8px;
+    right:0;
+    width:42px;
+    height:42px;
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:50%;
+    background:rgba(6,216,137,.12);
+    color:#fff;
+    cursor:pointer;
+    z-index:100002;
+    padding:0;
+    line-height:1;
+  }
+  .ctc-menu-close-btn i{
+    color:#fff !important;
+    font-size:22px !important;
+    position:static !important;
+    opacity:1 !important;
+    display:block !important;
+    line-height:1 !important;
+  }
+  .ctc-menu-close-btn:hover,
+  .ctc-menu-close-btn:focus{
+    background:var(--theme-color);
+    color:#0A1019;
+    outline:2px solid rgba(255,255,255,.45);
+    outline-offset:2px;
+  }
+  .ctc-menu-close-btn:hover i,
+  .ctc-menu-close-btn:focus i{color:#0A1019 !important}
+  body.ctc-mobile-menu-open{overflow:hidden}
 }
-@media (min-width:992px){.ctc-mobile-menu-close,.ctc-mobile-menu-overlay{display:none!important}}
+@media (min-width:992px){.ctc-menu-close-btn{display:none !important}}
 
-
-/* Mobile nav final stability fix: keep hamburger visible, keep drawer hidden until .show-menu, and ensure overlay is behind drawer. */
-@media (max-width:991px){
-  .header-area2 .nav-right .mobile-menu-btn,
-  .header-area2 .nav-right .sidebar-button.mobile-menu-btn{
-    display:flex!important;
-    visibility:visible!important;
-    opacity:1!important;
-    width:44px!important;
-    height:44px!important;
-    min-width:44px!important;
-    margin-left:16px!important;
-    cursor:pointer!important;
-    z-index:100003!important;
-  }
-  .header-area2 .nav-right .mobile-menu-btn span,
-  .header-area2 .nav-right .sidebar-button.mobile-menu-btn span{
-    display:block!important;
-    visibility:visible!important;
-    opacity:1!important;
-  }
-  .header-area2 .main-menu{
-    position:fixed!important;
-    top:0!important;
-    left:0!important;
-    height:100vh!important;
-    max-height:100vh!important;
-    overflow-y:auto!important;
-    background:#0A1019!important;
-    transform:translateX(-105%)!important;
-    transition:transform .3s ease-in-out!important;
-    pointer-events:none!important;
-  }
-  .header-area2 .main-menu.show-menu{
-    transform:translateX(0)!important;
-    pointer-events:auto!important;
-  }
-  .ctc-mobile-menu-overlay{
-    z-index:99990!important;
-  }
-  .header-area2 .main-menu{
-    z-index:100001!important;
-  }
-}
-
-
-
-/* CTC final mobile nav fix: one X, working hamburger, working submenu collapse */
-@media (max-width:991px){
-  .header-area2 .nav-right .sidebar-button.mobile-menu-btn{
-    display:flex!important;
-    visibility:visible!important;
-    opacity:1!important;
-    align-items:center!important;
-    justify-content:center!important;
-    width:44px!important;
-    height:44px!important;
-    min-width:44px!important;
-    cursor:pointer!important;
-    z-index:100003!important;
-    pointer-events:auto!important;
-  }
-  .header-area2 .nav-right .sidebar-button.mobile-menu-btn span,
-  .header-area2 .nav-right .sidebar-button.mobile-menu-btn span::before,
-  .header-area2 .nav-right .sidebar-button.mobile-menu-btn span::after{
-    display:block!important;
-    visibility:visible!important;
-    opacity:1!important;
-  }
-  .header-area2 .main-menu{
-    position:fixed!important;
-    top:0!important;
-    left:0!important;
-    width:min(86vw,340px)!important;
-    height:100vh!important;
-    max-height:100vh!important;
-    overflow-y:auto!important;
-    overflow-x:hidden!important;
-    background:#0A1019!important;
-    transform:translateX(-105%)!important;
-    transition:transform .28s ease-in-out!important;
-    pointer-events:none!important;
-    z-index:100001!important;
-    padding:22px 18px 30px!important;
-  }
-  .header-area2 .main-menu.show-menu{
-    transform:translateX(0)!important;
-    pointer-events:auto!important;
-  }
-  .header-area2 .mobile-logo-area{
-    display:flex!important;
-    gap:12px!important;
-    justify-content:space-between!important;
-    align-items:center!important;
-    width:100%!important;
-    padding:0 0 18px!important;
-    margin:0 0 10px!important;
-    border-bottom:1px solid rgba(255,255,255,.14)!important;
-  }
-  .header-area2 .main-menu .ctc-mobile-menu-close{
-    display:inline-flex!important;
-    align-items:center!important;
-    justify-content:center!important;
-    width:42px!important;
-    height:42px!important;
-    min-width:42px!important;
-    border:1px solid rgba(255,255,255,.5)!important;
-    border-radius:50%!important;
-    background:#111827!important;
-    color:#fff!important;
-    cursor:pointer!important;
-    padding:0!important;
-    position:relative!important;
-    z-index:100004!important;
-  }
-  .header-area2 .main-menu .ctc-mobile-menu-close i{
-    color:#fff!important;
-    font-size:22px!important;
-    line-height:1!important;
-    pointer-events:none!important;
-  }
-  /* prevent any accidentally injected second CTC close button from showing */
-  .header-area2 .main-menu .ctc-mobile-menu-close ~ .ctc-mobile-menu-close{
-    display:none!important;
-  }
-  .ctc-mobile-menu-overlay{
-    position:fixed!important;
-    inset:0!important;
-    background:rgba(0,0,0,.55)!important;
-    z-index:99990!important;
-    display:none!important;
-    pointer-events:auto!important;
-  }
-  body.ctc-mobile-menu-open .ctc-mobile-menu-overlay{display:block!important;}
-  body.ctc-mobile-menu-open{overflow:hidden!important;}
-
-  .header-area2 .main-menu .menu-list,
-  .header-area2 .main-menu ul{
-    display:block!important;
-    width:100%!important;
-    min-height:0!important;
-    padding-left:0!important;
-    margin-left:0!important;
-  }
-  .header-area2 .main-menu ul>li{
-    display:block!important;
-    width:100%!important;
-    float:none!important;
-    white-space:normal!important;
-    position:relative!important;
-    padding:0!important;
-  }
-  .header-area2 .main-menu ul>li>a{
-    display:block!important;
-    width:100%!important;
-    white-space:normal!important;
-    padding:12px 44px 12px 0!important;
-    line-height:1.4!important;
-  }
-  .header-area2 .main-menu .dropdown-icon{
-    display:flex!important;
-    opacity:1!important;
-    visibility:visible!important;
-    align-items:center!important;
-    justify-content:center!important;
-    position:absolute!important;
-    right:0!important;
-    top:8px!important;
-    width:36px!important;
-    height:36px!important;
-    color:#fff!important;
-    font-size:22px!important;
-    cursor:pointer!important;
-    z-index:100003!important;
-    pointer-events:auto!important;
-  }
-  .header-area2 .main-menu ul>li.menu-item-has-children::after{display:none!important;}
-  .header-area2 .main-menu ul>li ul.sub-menu{
-    display:none!important;
-    position:static!important;
-    width:100%!important;
-    min-width:0!important;
-    margin:0!important;
-    padding:0 0 0 14px!important;
-    background:transparent!important;
-    box-shadow:none!important;
-    opacity:1!important;
-    visibility:visible!important;
-    transform:none!important;
-  }
-  .header-area2 .main-menu ul>li.open>ul.sub-menu{
-    display:block!important;
-  }
-  .header-area2 .main-menu ul>li ul.sub-menu li a{
-    padding:10px 34px 10px 0!important;
-    font-size:15px!important;
-  }
-}
-@media (min-width:992px){
-  .ctc-mobile-menu-close,.ctc-mobile-menu-overlay{display:none!important;}
-}
-
-
-/* CTC hotfix: remove duplicate X and keep submenu collapse controls clickable */
-@media (max-width:991px){
-  /* The hamburger turns into an X when active; hide it while the drawer is open so only the drawer X is visible. */
-  body.ctc-mobile-menu-open .header-area2 .nav-right .sidebar-button.mobile-menu-btn,
-  body.ctc-mobile-menu-open .header-area2 .nav-right .mobile-menu-btn{
-    display:none!important;
-    visibility:hidden!important;
-    opacity:0!important;
-    pointer-events:none!important;
-  }
-
-  /* Hide any old template close button so the custom drawer close button is the only X. */
-  .header-area2 .main-menu .menu-close-btn,
-  .header-area2 .main-menu .mobile-menu-close,
-  .header-area2 .main-menu #ctc-mobile-menu-close{
-    display:none!important;
-  }
-
-  /* Show the custom X only inside the opened drawer. */
-  .header-area2 .main-menu:not(.show-menu) .ctc-mobile-menu-close{
-    display:none!important;
-  }
-  .header-area2 .main-menu.show-menu .ctc-mobile-menu-close:first-of-type{
-    display:inline-flex!important;
-  }
-
-  /* Keep submenu plus/minus buttons above links and clickable. */
-  .header-area2 .main-menu .menu-item-has-children > .dropdown-icon{
-    pointer-events:auto!important;
-    z-index:100010!important;
-  }
-  .header-area2 .main-menu .menu-item-has-children > a.drop-down{
-    pointer-events:auto!important;
-  }
-}
 </style>
 
 <meta charset="utf-8">
@@ -516,7 +362,7 @@ body.show-chatbot #chatbot-toggler span:first-child{opacity:0}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+<link rel="manifest" href="/site.webmanifest">
 
 <?php
 // Only preload the hero on the homepage. Other pages set $pagePreloadImage explicitly
@@ -563,10 +409,20 @@ $asyncCss = $isHomepage
         '/assets/css/jquery.fancybox.min.css',
         '/assets/css/boxicons.min.css',
         '/assets/css/preloader.min.css',
+        '/assets/css/animate.min.css',
     ];
 ?>
 <!-- style2.min.css: load synchronously (not async) to avoid layout shift when its rules apply. -->
-<link rel="stylesheet" href="/assets/css/style2.min.css">
+<link rel="stylesheet" href="/assets/css/style2.min.css?v=20260711-2">
+
+<?php
+$pageStylesheets = isset($pageStylesheets) && is_array($pageStylesheets)
+    ? array_values(array_unique(array_filter($pageStylesheets, 'is_string')))
+    : [];
+?>
+<?php foreach ($pageStylesheets as $pageCss): ?>
+<link rel="stylesheet" href="<?= htmlspecialchars($pageCss, ENT_QUOTES, 'UTF-8'); ?>">
+<?php endforeach; ?>
 
 <?php foreach ($asyncCss as $css): ?>
 <link rel="preload" href="<?= htmlspecialchars($css, ENT_QUOTES, 'UTF-8'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -576,8 +432,7 @@ $asyncCss = $isHomepage
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0&display=swap">
 
 <meta name="p:domain_verify" content="ac5c484e34bef5bf8d2f4b91d7d28dba">
-<link rel="alternate" type="application/rss+xml" title="Cloud Technology Computing Blog" href="/rss.php">
-<link rel="manifest" href="/manifest.json">
+<link rel="alternate" type="application/rss+xml" title="Cloud Technology Computing Blog" href="/rss.xml">
 
 <!-- Local SEO: Houston, TX targeting -->
 <meta name="geo.region" content="US-TX">
@@ -588,11 +443,6 @@ $asyncCss = $isHomepage
 <meta name="distribution" content="global">
 <meta name="rating" content="general">
 <meta name="revisit-after" content="7 days">
-
-<!-- hreflang -->
-<link rel="alternate" hreflang="en" href="https://www.cloudtechnologycomputing.com/">
-<link rel="alternate" hreflang="en-US" href="https://www.cloudtechnologycomputing.com/">
-<link rel="alternate" hreflang="x-default" href="https://www.cloudtechnologycomputing.com/">
 
 <?php if (basename($_SERVER['SCRIPT_NAME'] ?? '') === 'shop.php'): ?>
 <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="<?= htmlspecialchars(getenv('PAYPAL_MERCHANT_ID') ?: '3DQHW2ED3QGBL', ENT_QUOTES, 'UTF-8'); ?>" defer></script>

@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="IT consulting for Houston small businesses. Cloud strategy, cybersecurity audits, infrastructure modernization, and vCIO services to align technology with your goals.">
+<meta name="description" content="Modernize IT with cloud strategy, cybersecurity audits, infrastructure planning, vCIO guidance, managed support, and practical technology roadmaps.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/IT%20Consulting%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="IT Consulting Services | Cloud Technology Computing">
-<meta property="og:description" content="IT consulting for Houston small businesses. Cloud strategy, cybersecurity audits, infrastructure modernization, and vCIO services to align technology with your goals.">
+<meta property="og:title" content="IT Consulting Services for Small Business | CTC">
+<meta property="og:description" content="Modernize IT with cloud strategy, cybersecurity audits, infrastructure planning, vCIO guidance, managed support, and practical technology roadmaps.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/IT%20Consulting%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ITConsulting.png">
 <meta property="og:image:alt" content="Cloud Technology Computing IT consulting for small business">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="IT Consulting Services | Cloud Technology Computing">
-<meta name="twitter:description" content="IT consulting for Houston small businesses. Cloud strategy, cybersecurity audits, infrastructure modernization, and vCIO services to align technology with your goals.">
+<meta name="twitter:title" content="IT Consulting Services for Small Business | CTC">
+<meta name="twitter:description" content="Modernize IT with cloud strategy, cybersecurity audits, infrastructure planning, vCIO guidance, managed support, and practical technology roadmaps.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/IT%20Consulting%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/ITConsulting.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing IT consulting for small business">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>IT Consulting Services | Cloud Technology Computing</title>
+<title>IT Consulting Services for Small Business | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "IT Consulting", "name": "IT Consulting", "description": "IT consulting for Houston small businesses. Cloud strategy, cybersecurity audits, infrastructure modernization, and vCIO services to align technology with your goals.", "url": "https://www.cloudtechnologycomputing.com/services/IT%20Consulting%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/ITConsulting.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "IT Consulting", "item": "https://www.cloudtechnologycomputing.com/services/IT%20Consulting%20service-details.php"}]}]
 </script>

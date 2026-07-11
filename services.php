@@ -1,29 +1,30 @@
 <?php include 'header.php'; ?>
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services.php" />
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Explore cloud technology services, managed cloud hosting, AWS and Azure consulting, cloud security, AI chatbots, SEO, web development, and mobile apps.">
-<meta property="og:description" content="Discover end-to-end services including cloud migration, web and mobile app development, AI chatbot solutions, SEO, and managed hosting tailored for small businesses and enterprises.">
+<meta name="description" content="Explore cloud, AI, web development, SEO, mobile app, and managed IT services built for small businesses. Compare solutions and book a free consultation.">
+<meta property="og:description" content="Explore cloud, AI, web development, SEO, mobile app, and managed IT services built for small businesses. Compare solutions and book a free consultation.">
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Cloud, AI & Web Development Services | Cloud Technology Computing">
+<meta property="og:title" content="Cloud, AI &amp; Web Development Services for Growth | CTC">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Cloud, AI & Web Development Services | Cloud Technology Computing">
+<meta name="twitter:title" content="Cloud, AI &amp; Web Development Services for Growth | CTC">
+<meta name="twitter:description" content="Explore cloud, AI, web development, SEO, mobile app, and managed IT services built for small businesses. Compare solutions and book a free consultation.">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/">
 <meta name="twitter:image:alt" content="Cloud Technology Computing: Expert in software development, cloud computing (IBM, Google, Azure), and mobile app innovation. Elevate your tech journey.">  
     <!-- Favicon -->
-   <link href="assets/img/CloudTechnologyComputingAIservices.png" type="image/x-icon" rel="icon">
+   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
      <!-- Title -->
-    <title>Cloud Technology Services, AI & Web Development | CTC</title>
+    <title>Cloud, AI &amp; Web Development Services for Growth | CTC</title>
 <script type="application/ld+json">
 <?php
 $serviceSlugs = [

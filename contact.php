@@ -9,22 +9,22 @@ if (empty($_SESSION['csrf'])) {
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Contact Cloud Technology Computing for cloud technology services, cloud migration, managed cloud hosting, AWS, Azure, web development, SEO, and AI chatbots." />
+<meta name="description" content="Ready to grow with cloud, AI, SEO, web development, or managed IT? Contact Cloud Technology Computing today to request a quote or free consultation.">
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Contact Cloud Technology Computing | Cloud Services" />
-<meta property="og:description" content="Contact Cloud Technology Computing for cloud technology services, cloud migration, managed cloud hosting, AWS, Azure, web development, SEO, and AI chatbots." />
+<meta property="og:title" content="Contact CTC for Cloud, AI &amp; Web Services">
+<meta property="og:description" content="Ready to grow with cloud, AI, SEO, web development, or managed IT? Contact Cloud Technology Computing today to request a quote or free consultation.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/contact.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Contact Cloud Technology Computing | Cloud Services" />
-<meta property="twitter:description" content="Contact Cloud Technology Computing for cloud technology services, cloud migration, managed cloud hosting, AWS, Azure, web development, SEO, and AI chatbots." />
+<meta name="twitter:title" content="Contact CTC for Cloud, AI &amp; Web Services">
+<meta name="twitter:description" content="Ready to grow with cloud, AI, SEO, web development, or managed IT? Contact Cloud Technology Computing today to request a quote or free consultation.">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/contact.php">
 <meta name="twitter:image:alt" content="Contact Cloud Technology Computing | Cloud Services" />  
@@ -32,7 +32,7 @@ if (empty($_SESSION['csrf'])) {
    
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/contact.php" />
-    <title>Contact Cloud Technology Computing | Cloud Services</title>
+    <title>Contact CTC for Cloud, AI &amp; Web Services</title>
 
 <!-- Breadcrumb structured data -->
 <script type="application/ld+json">
@@ -145,7 +145,6 @@ if (empty($_SESSION['csrf'])) {
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -169,10 +168,10 @@ if (empty($_SESSION['csrf'])) {
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="" width="300" height="300"   >
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="" width="300" height="300"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="" width="300" height="300"   >
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="" width="300" height="300"   >
             </div>
         </div>
         <div class="container">
@@ -244,11 +243,15 @@ if (empty($_SESSION['csrf'])) {
                 <div class="col-lg-6">
                     <div class="contact-form-wrap">
                         <div class="form-tltle">
-                            <h5>Make a Free Consulting</h5>
+                            <h5>Schedule a Free Consultation</h5>
                         </div>
+                        <?php if (isset($_GET['sent']) && $_GET['sent'] === '1'): ?>
+                            <div class="alert alert-success" role="status">Thank you. Your message was sent successfully.</div>
+                        <?php endif; ?>
                        <div class="contact-form">
                         <form action="/processform.php" method="post" id="contact-form">
                             <input type="hidden" name="csrf" value="<?= htmlspecialchars($_SESSION['csrf'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                            <input type="hidden" name="return_to" value="/contact.php?sent=1#contact-form">
                             <div class="row">
                                 <div class="col-md-6 mb-20">
                                     <div class="form-inner">

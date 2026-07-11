@@ -1,20 +1,22 @@
-<?php include 'header.php'; ?>
+<?php
+require_once __DIR__ . '/includes/helpers.php';
+include __DIR__ . '/header.php';
+?>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Cloud Technology Services for Small Business | CTC</title>
+<title>Cloud Technology Computing Services for Small Business Growth</title>
 <meta name="author" content="Jhon Arzu-Gil">
-<meta name="description"
-content="Cloud Technology Computing helps small businesses with cloud, AI, web development, managed IT, cybersecurity, and SEO. Schedule a consultation today.">
+<meta name="description" content="Get cloud technology computing services, AI chatbots, websites, SEO, cybersecurity, and managed IT built for small business growth. Book a free consultation today.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Cloud Technology Services for Small Business | CTC">
-<meta property="og:description" content="Cloud Technology Computing helps small businesses with cloud, AI, web development, managed IT, cybersecurity, and SEO. Schedule a consultation today.">
+<meta property="og:title" content="Cloud Technology Services for Small Business Growth | CTC">
+<meta property="og:description" content="Get cloud technology computing services, AI chatbots, websites, SEO, cybersecurity, and managed IT built for small business growth. Book a free consultation today.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:image:alt" content="Cloud Technology Computing cloud, AI, and web development services">
 <meta property="og:site_name" content="Cloud Technology Computing">
 <meta property="og:locale" content="en_US">
@@ -22,15 +24,12 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cloud Technology Services for Small Business | CTC">
-<meta name="twitter:description" content="Cloud Technology Computing helps small businesses with cloud, AI, web development, managed IT, cybersecurity, and SEO. Schedule a consultation today.">
-<meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta name="twitter:title" content="Cloud Technology Computing Services for Small Business Growth">
+<meta name="twitter:description" content="Get cloud technology computing services, AI chatbots, websites, SEO, cybersecurity, and managed IT built for small business growth. Book a free consultation today.">
+<meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:image:alt" content="Cloud Technology Computing digital technology services">
 <meta name="twitter:site" content="@CTCCorporation">
 <meta name="twitter:creator" content="@JhonArzuGil">
-
-<!-- Favicon -->
-<link rel="icon" href="/assets/img/computer-clouds.png" type="image/png">
 
 
 <!-- Structured Data -->
@@ -490,7 +489,7 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
                                 </a> </strong></p>
                         <p>Affordable Cloud Technology services Built for Small Business Success. Running a small business is already a full-time job—you don’t need IT headaches, complicated infrastructure, or overpriced consultants adding to your plate. That’s why Cloud Technology Computing is here. We provide affordable, beginner-friendly cloud technology services designed to help small business owners like you succeed online—with smart solutions powered by AWS, Microsoft Azure, and IBM cloud computing platforms.✅ Hosting. ✅ Development. ✅ Automation. ✅ Marketing. All in one place.</p>
                         <div class="banner-btn-group">
-                            <a class="primary-btn3" href="https://jhongil.gumroad.com/">Shop</a>
+                            <a class="primary-btn3" href="/shop.php">Shop</a>
                             <a class="primary-btn5" href="https://a.co/d/6ZGauUo">
                                 <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.51038 32.6729C-0.990382 34.1837 -0.232333 37.9945 2.65612 38.4335C4.97848 38.7866 6.09439 41.4804 4.70164 43.3722C2.96938 45.7248 5.12803 48.9555 7.9646 48.2555C10.245 47.6925 12.3074 49.7548 11.7445 52.0354C11.0445 54.8721 14.2752 57.0306 16.6278 55.2984C18.5196 53.9057 21.2139 55.0216 21.5665 57.3439C22.0054 60.2322 25.8161 60.9904 27.3271 58.4896C28.5419 56.479 31.4581 56.479 32.6729 58.4896C34.1837 60.9904 37.9945 60.2323 38.4335 57.3439C38.7866 55.0215 41.4804 53.9056 43.3722 55.2984C45.7248 57.0306 48.9555 54.872 48.2555 52.0354C47.6925 49.755 49.7548 47.6925 52.0354 48.2555C54.872 48.9555 57.0306 45.7248 55.2984 43.3722C53.9057 41.4804 55.0216 38.7861 57.3439 38.4335C60.2322 37.9946 60.9904 34.1839 58.4896 32.6729C56.479 31.4581 56.479 28.5419 58.4896 27.3271C60.9904 25.8163 60.2323 22.0055 57.3439 21.5665C55.0215 21.2134 53.9056 18.5196 55.2984 16.6278C57.0306 14.2752 54.872 11.0445 52.0354 11.7445C49.7549 12.3075 47.6925 10.2452 48.2555 7.9646C48.9555 5.12795 45.7248 2.96938 43.3722 4.70164C41.4804 6.09426 38.7861 4.9784 38.4335 2.65612C37.9946 -0.23224 34.1839 -0.990422 32.6729 1.51038C31.4581 3.52095 28.5419 3.52095 27.3271 1.51038C25.8163 -0.990382 22.0055 -0.232333 21.5665 2.65612C21.2134 4.97848 18.5196 6.09439 16.6278 4.70164C14.2752 2.96938 11.0445 5.12803 11.7445 7.9646C12.3075 10.245 10.2452 12.3074 7.9646 11.7445C5.12795 11.0445 2.96938 14.2752 4.70164 16.6278C6.09426 18.5196 4.9784 21.2139 2.65612 21.5665C-0.232239 22.0054 -0.990423 25.8161 1.51038 27.3271C3.52095 28.5419 3.52095 31.4581 1.51038 32.6729Z"></path>
@@ -529,7 +528,7 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="banner-img">
-                                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/ComputerCloudsDisplay.webp" alt="Cloud Technology Computing: Defining 'what the cloud is' with innovative solutions and transformative cloud technologies." width="945" height="845"   >
+                                        <img loading="lazy" class="img-fluid" src="assets/img/home-6/CloudSolutions.webp" alt="Cloud Technology Computing: Defining 'what the cloud is' with innovative solutions and transformative cloud technologies." width="945" height="845"   >
                                     </div>
                                 </div>
                             </div>
@@ -1454,104 +1453,105 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
             <div class="col-lg-12">
                 <div class="award-wrapper">
                     <table>
+                        <caption class="visually-hidden">Selected professional certifications, badges, and credentials</caption>
                         <thead>
                             <tr>
-                                <td>Certification</td>
-                                <td>Issuer</td>
-                                <td>Year</td>
+                                <th scope="col">Certification</th>
+                                <th scope="col">Issuer</th>
+                                <th scope="col">Year</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Cloud (AWS, Azure, IBM, SAP) -->
-                             <tr>
-                                <td data-label="Certification">AWS Certified Solutions Architect Associate</td>
-                                <td data-label="Issuer">Amazon Web Services</td>
-                                <td data-label="Year">2025</td>
+                            <!-- Cloud certifications -->
+                            <tr>
+                                <td data-label="Certification">AWS Certified Solutions Architect – Associate</td>
+                                <td data-label="Issuer">Amazon Web Services (AWS)</td>
+                                <td data-label="Year">2026</td>
                             </tr>
                             <tr>
                                 <td data-label="Certification">AWS Certified Cloud Practitioner</td>
-                                <td data-label="Issuer">Amazon Web Services</td>
+                                <td data-label="Issuer">Amazon Web Services (AWS)</td>
                                 <td data-label="Year">2024</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">Microsoft Azure Fundamentals (AZ-900)</td>
+                                <td data-label="Certification">Microsoft Certified: Azure Fundamentals (AZ-900)</td>
                                 <td data-label="Issuer">Microsoft</td>
-                                <td data-label="Year">2024</td>
+                                <td data-label="Year">2022</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">IBM Cloud Essentials / Cloud Advocate</td>
+                                <td data-label="Certification">IBM Cloud Essentials</td>
                                 <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2023</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">SAP Analytics Cloud</td>
+                                <td data-label="Certification">SAP Certified Application Associate – SAP Analytics Cloud</td>
                                 <td data-label="Issuer">SAP</td>
-                                <td data-label="Year">2023</td>
+                                <td data-label="Year">2022</td>
                             </tr>
 
-                            <!-- Core IT & Linux -->
+                            <!-- Core IT and Linux certifications -->
                             <tr>
                                 <td data-label="Certification">CompTIA A+</td>
                                 <td data-label="Issuer">CompTIA</td>
-                                <td data-label="Year">2024</td>
+                                <td data-label="Year">2023</td>
                             </tr>
                             <tr>
                                 <td data-label="Certification">CompTIA Network+</td>
                                 <td data-label="Issuer">CompTIA</td>
-                                <td data-label="Year">2023</td>
+                                <td data-label="Year">2024</td>
                             </tr>
                             <tr>
                                 <td data-label="Certification">Linux Essentials</td>
-                                <td data-label="Issuer">LPI</td>
+                                <td data-label="Issuer">Linux Professional Institute (LPI)</td>
                                 <td data-label="Year">2024</td>
                             </tr>
 
-                            <!-- AI, Data, Automation -->
+                            <!-- AI, data, automation, and professional credentials -->
                             <tr>
-                                <td data-label="Certification">AI & Machine Learning Fundamentals</td>
+                                <td data-label="Certification">IBM Machine Learning Specialist – Associate</td>
                                 <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2023</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">Data Science & Big Data Foundations</td>
+                                <td data-label="Certification">IBM AI Associate Data Scientist</td>
                                 <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2023</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">Automation & DevOps Foundations</td>
+                                <td data-label="Certification">Data Science &amp; Big Data Foundations</td>
                                 <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2023</td>
                             </tr>
-
-                            <!-- Design Thinking, Agile, Blockchain -->
+                            <tr>
+                                <td data-label="Certification">Automation &amp; DevOps Foundations</td>
+                                <td data-label="Issuer">IBM</td>
+                                <td data-label="Year">2023</td>
+                            </tr>
                             <tr>
                                 <td data-label="Certification">Enterprise Design Thinking Practitioner</td>
                                 <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2022</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">Agile Explorer / Agile Practitioner</td>
+                                <td data-label="Certification">Agile Explorer</td>
                                 <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2022</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">Blockchain Essentials</td>
+                                <td data-label="Certification">Blockchain Essentials V2</td>
                                 <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2023</td>
                             </tr>
-
-                            <!-- Containers, Cloud Native -->
                             <tr>
-                                <td data-label="Certification">Docker & Kubernetes Essentials</td>
-                                <td data-label="Issuer">IBM / Cloud Native</td>
+                                <td data-label="Certification">Docker Essentials</td>
+                                <td data-label="Issuer">IBM</td>
                                 <td data-label="Year">2024</td>
                             </tr>
                             <tr>
-                                <td data-label="Certification">Application Development & Cloud Native</td>
-                                <td data-label="Issuer">IBM</td>
-                                <td data-label="Year">2023</td>
+                                <td data-label="Certification">IBM Application Developer Apprenticeship</td>
+                                <td data-label="Issuer">IBM / U.S. Department of Labor</td>
+                                <td data-label="Year">2021</td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
@@ -1606,11 +1606,11 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/cloudtech.webp" alt="Cloud Technology Computing Logo" width="500" height="480"   >
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/cloudcomputeai.webp" alt="Cloud Technology Computing Logo" width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
-                                        <h3><a href="https://www.cloudcomputeai.com/">Tech Startup</a></h3>
+                                        <h3><a href="https://www.cloudcomputeai.com/">Buy Services</a></h3>
                                         <div class="view-btn">
                                             <a href="project.php" aria-label="View Cloud Technology Computing project details">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1624,7 +1624,7 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/custom business website.webp" alt="Custom Portfolio Site" width="500" height="480"   >
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/arzugilsiteimage.webp" alt="Custom Portfolio Site" width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
@@ -1642,7 +1642,7 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/hybridcloud.webp" alt="Hybrid Cloud Website" width="1280" height="1280"   >
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/hybridclouddev.webp" alt="Hybrid Cloud Website" width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Web development</span>
@@ -1660,11 +1660,11 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/mobileapps.webp" alt="Cloud Technology Computing's Android Apps On The Play Store." width="1280" height="1280"   >
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/IOSAPP.webp" alt="Cloud Technology Computing's Android Apps On The Play Store." width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Mobile development</span>
-                                        <h3><a href="https://www.linkedin.com/in/jhongil/">Android App's</a></h3>
+                                        <h3><a href="https://apps.apple.com/us/app/cloudtechnologycomputingapp/id6751188089">IOS App</a></h3>
                                         <div class="view-btn">
                                             <a href="project.php" aria-label="View Cloud Technology Computing project details">
                                                 <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1678,7 +1678,7 @@ content="Cloud Technology Computing helps small businesses with cloud, AI, web d
                             <div class="swiper-slide">
                                 <div class="success-storie-card">
                                     <div class="success-img">
-                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/CloudInfo.webp" alt="Cloud Technology Computings Fully Certified" width="500" height="480"   >
+                                        <img loading="lazy" class="img-fluid magnetic-item" src="assets/img/home-3/itcertscredly.webp" alt="Cloud Technology Computings Fully Certified" width="500" height="480"   >
                                     </div>
                                     <div class="success-content">
                                         <span>Certifications</span>
@@ -2845,7 +2845,7 @@ $latestBlogPosts = $stmt->fetchAll();
                                                         loading="lazy" 
                                                         class="img-fluid" 
                                                         src="<?= e($image); ?>" 
-                                                        alt="<?= e($imageAlt); ?>" width="800" height="600"   >
+                                                        alt="<?= e($imageAlt); ?>" width="1600" height="900" decoding="async"   >
                                                 </a>
                                             </div>
                                         </div>
@@ -2878,7 +2878,7 @@ $latestBlogPosts = $stmt->fetchAll();
                                                     loading="lazy" 
                                                     class="img-fluid" 
                                                     src="/assets/img/home-5/Cloudblogpict.webp" 
-                                                    alt="Cloud Technology Computing blog" width="354" height="215"   >
+                                                    alt="Cloud Technology Computing blog" width="354" height="315"   >
                                             </a>
                                         </div>
                                     </div>
@@ -2894,7 +2894,7 @@ $latestBlogPosts = $stmt->fetchAll();
 </div>
 
     <!-- Start Contact section -->
-    <div class="home6-contact-section sec-mar">
+    <div class="home6-contact-section sec-mar" id="contact">
         <div class="container">
             <div class="row g-lg-4 gy-5 justify-content-center">
                 <div class="col-lg-6">
@@ -2954,8 +2954,13 @@ $latestBlogPosts = $stmt->fetchAll();
                         <div class="form-tltle">
                             <h2>Schedule A Free Consultation</h2>
                         </div>
+                        <?php if (isset($_GET['sent']) && $_GET['sent'] === '1'): ?>
+                            <div class="alert alert-success" role="status">Thank you. Your consultation request was sent successfully.</div>
+                        <?php endif; ?>
                         <div class="contact-form">
-                            <form action="processform.php" method="POST">
+                            <form action="/processform.php" method="post">
+                                <?php csrf_field(); ?>
+                                <input type="hidden" name="return_to" value="/?sent=1#contact">
                                 <div class="row">
                                     <div class="col-md-6 mb-20">
                                         <div class="form-inner">
@@ -2992,6 +2997,10 @@ $latestBlogPosts = $stmt->fetchAll();
                                             <label for="message">Message</label>
                                             <textarea id="message" name="message" required></textarea>
                                         </div>
+                                    </div>
+                                    <div class="visually-hidden" aria-hidden="true">
+                                        <label for="home-contact-website">Website (leave blank)</label>
+                                        <input id="home-contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-inner">

@@ -64,7 +64,7 @@ $absoluteImageUrl = static function (?string $path): string {
     $path = trim((string) $path);
 
     if ($path === '') {
-        return 'https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png';
+        return 'https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg';
     }
 
     if (preg_match('#^https?://#i', $path)) {
@@ -75,6 +75,12 @@ $absoluteImageUrl = static function (?string $path): string {
 };
 
 $projectTitle = $cleanMetaText($project['title'] ?? 'Technology Project');
+
+$liveProjectUrl = trim((string) ($project['live_url'] ?? ''));
+$liveProjectLabel = trim((string) ($project['card_cta'] ?? 'View Live Project'));
+if ($liveProjectLabel === '') {
+    $liveProjectLabel = 'View Live Project';
+}
 
 $metaTitle = $cleanMetaText($project['meta_title'] ?? '');
 
@@ -206,30 +212,6 @@ $structuredData = [
 <meta name="twitter:image" content="<?= e($ogImage); ?>">
 <meta name="twitter:image:alt" content="<?= e($projectTitle); ?>">
 
-<link rel="icon" href="<?= assetPath('assets/img/sm-logo.svg'); ?>" type="image/svg+xml">
-
-<link rel="stylesheet" href="<?= assetPath('assets/css/bootstrap.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/bootstrap-icons.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/all.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/fontawesome.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/swiper-bundle.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/animate.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/jquery.fancybox.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/boxicons.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/preloader.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/style2.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('style.min.css'); ?>">
-<link rel="stylesheet" href="<?= assetPath('assets/css/blog-refactor.css'); ?>">
-
-<link
-    rel="preload"
-    href="<?= assetPath('assets/css/styles.min.css'); ?>"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-
-<noscript>
-    <link rel="stylesheet" href="<?= assetPath('assets/css/styles.min.css'); ?>">
-</noscript>
 
 <script type="application/ld+json">
 <?= json_encode(
@@ -315,11 +297,11 @@ $structuredData = [
 <section class="breadcrumbs">
     <div class="breadcrumb-sm-images">
         <div class="inner-banner-1 magnetic-item">
-            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/inner-banner-1.png'); ?>" alt="Project details banner" width="300" height="300"   >
+            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/ArtificialIntelligience.avif'); ?>" alt="Project details banner" width="300" height="300"   >
         </div>
 
         <div class="inner-banner-2 magnetic-item">
-            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/inner-banner-2.png'); ?>" alt="Project details banner" width="300" height="300"   >
+            <img loading="lazy" src="<?= assetPath('assets/img/inner-pages/Wordpress2.avif'); ?>" alt="Project details banner" width="300" height="300"   >
         </div>
     </div>
 
@@ -479,6 +461,18 @@ $structuredData = [
                     </ul>
                 </div>
 
+                <?php if ($liveProjectUrl !== ''): ?>
+                    <div class="portfolio-details-sm-banner" style="margin-bottom: 30px;">
+                        <div class="section-title-5">
+                            <h2>View the <br><span>live project</span></h2>
+
+                            <div class="get-btn">
+                                <a class="primary-btn3" href="<?= e(urlPath($liveProjectUrl)); ?>" target="_blank" rel="noopener noreferrer"><?= e($liveProjectLabel); ?></a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
                 <div class="portfolio-details-sm-banner">
                     <div class="section-title-5">
                         <h2>Ready to <br><span>work with us?</span></h2>
@@ -559,58 +553,3 @@ $structuredData = [
 </div>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-<script src="<?= assetPath('assets/js/jquery-3.6.0.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/popper.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/bootstrap.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/swiper-bundle.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/waypoints.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/jquery.counterup.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/isotope.pkgd.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/jquery.fancybox.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/jquery.marquee.min.js'); ?>" defer></script>
-<script src="<?= assetPath('assets/js/preloader.min.js'); ?>" defer></script>
-
-<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js" defer></script>
-
-<script src="<?= assetPath('assets/js/custom.min.js'); ?>" defer></script>
-<script src="<?= assetPath('script.min.js'); ?>" defer></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    if (typeof jQuery === 'undefined' || !jQuery.fn.marquee) {
-        return;
-    }
-
-    const $ = jQuery;
-
-    const $marqueeText = $('.marquee_text');
-
-    if ($marqueeText.length) {
-        $marqueeText.marquee({
-            direction: 'left',
-            duration: 20000,
-            gap: 50,
-            delayBeforeStart: 0,
-            duplicated: true,
-            startVisible: true
-        });
-    }
-
-    const $marqueeTextThree = $('.marquee_text3');
-
-    if ($marqueeTextThree.length) {
-        $marqueeTextThree.marquee({
-            direction: 'left',
-            duration: 30000,
-            gap: 50,
-            delayBeforeStart: 0,
-            duplicated: true,
-            startVisible: true
-        });
-    }
-});
-</script>
-
-</body>
-</html>

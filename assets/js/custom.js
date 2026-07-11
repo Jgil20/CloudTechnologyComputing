@@ -276,6 +276,7 @@
     //Success slider
     initSwiper(".home3-success-stories-slider", {
         loop: true,
+        autoHeight: true,
         slidesPerView: 3,
         spaceBetween: 30,
         speed: 1000,
@@ -408,6 +409,9 @@
     //HOme4 Blog slider
     initSwiper(".home5-blog-slider", {
         loop: true,
+        autoHeight: true,
+        observer: true,
+        observeParents: true,
         spaceBetween: 50,
         speed: 2000,
         // centeredSlides: true,
@@ -447,6 +451,7 @@
     //home6 solution slider
     initSwiper(".home6-solution-slider", {
         loop: true,
+        autoHeight: true,
         slidesPerView: 3,
         spaceBetween: 30,
         speed: 1000,

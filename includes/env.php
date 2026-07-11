@@ -7,6 +7,20 @@
  * Never commit a real .env file with credentials.
  */
 
+if (!function_exists('str_starts_with')) {
+    function str_starts_with(string $haystack, string $needle): bool
+    {
+        return $needle === '' || strpos($haystack, $needle) === 0;
+    }
+}
+
+if (!function_exists('str_contains')) {
+    function str_contains(string $haystack, string $needle): bool
+    {
+        return $needle === '' || strpos($haystack, $needle) !== false;
+    }
+}
+
 if (!function_exists('ctc_load_env')) {
     function ctc_load_env(string $path): void
     {
@@ -22,7 +36,7 @@ if (!function_exists('ctc_load_env')) {
         foreach ($lines as $line) {
             $line = trim($line);
 
-            if ($line === '' || str_starts_with($line, '#') || !str_contains($line, '=')) {
+            if ($line === '' || strpos($line, '#') === 0 || strpos($line, '=') === false) {
                 continue;
             }
 

@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="Data analytics and business intelligence for Houston small businesses. Dashboards, reporting, predictive modeling, and data pipelines that turn raw data into decisions.">
+<meta name="description" content="Turn business data into dashboards, reports, forecasts, and decisions with data analytics, BI, pipelines, cloud reporting, and predictive insights.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/Data%20Analytics%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Data Analytics Services | Cloud Technology Computing">
-<meta property="og:description" content="Data analytics and business intelligence for Houston small businesses. Dashboards, reporting, predictive modeling, and data pipelines that turn raw data into decisions.">
+<meta property="og:title" content="Data Analytics &amp; BI Services for Business | CTC">
+<meta property="og:description" content="Turn business data into dashboards, reports, forecasts, and decisions with data analytics, BI, pipelines, cloud reporting, and predictive insights.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/Data%20Analytics%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/DataAnalytics.png">
 <meta property="og:image:alt" content="Cloud Technology Computing data analytics dashboards">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Data Analytics Services | Cloud Technology Computing">
-<meta name="twitter:description" content="Data analytics and business intelligence for Houston small businesses. Dashboards, reporting, predictive modeling, and data pipelines that turn raw data into decisions.">
+<meta name="twitter:title" content="Data Analytics &amp; BI Services for Business | CTC">
+<meta name="twitter:description" content="Turn business data into dashboards, reports, forecasts, and decisions with data analytics, BI, pipelines, cloud reporting, and predictive insights.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/Data%20Analytics%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/DataAnalytics.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing data analytics dashboards">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>Data Analytics Services | Cloud Technology Computing</title>
+<title>Data Analytics &amp; BI Services for Business | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "Data Analytics", "name": "Data Analytics", "description": "Data analytics and business intelligence for Houston small businesses. Dashboards, reporting, predictive modeling, and data pipelines that turn raw data into decisions.", "url": "https://www.cloudtechnologycomputing.com/services/Data%20Analytics%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/DataAnalytics.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "Data Analytics", "item": "https://www.cloudtechnologycomputing.com/services/Data%20Analytics%20service-details.php"}]}]
 </script>

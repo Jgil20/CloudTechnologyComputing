@@ -189,6 +189,12 @@ $projects = [
 
 $buyServices = [
     [
+        'label' => 'Services Cart & Checkout',
+        'href' => 'shop.php',
+        'class' => 'dropdown-item',
+        'target' => '_self',
+    ],
+    [
         'label' => 'AI Chatbot Integration',
         'href' => 'https://buy.stripe.com/4gweWe8jzdLteqcbIK',
         'class' => 'dropdown-item',
@@ -300,7 +306,7 @@ $aboutPages = array_filter(array_column($aboutLinks, 'page'));
                     <p style="color: white;">Cloud Technology Computing</p>
                 </a>
             </div>
-            <button class="ctc-mobile-menu-close" type="button" aria-label="Close mobile menu">
+            <button type="button" class="ctc-menu-close-btn" aria-label="Close navigation menu">
                 <i class="bi bi-x-lg" aria-hidden="true"></i>
             </button>
         </div>
@@ -370,7 +376,8 @@ $aboutPages = array_filter(array_column($aboutLinks, 'page'));
                 <ul class="sub-menu">
                     <?php foreach ($buyServices as $item): ?>
                         <li>
-                            <a href="<?= $item['href']; ?>" target="_blank" rel="noopener" class="<?= $item['class']; ?>">
+                            <?php $buyTarget = $item['target'] ?? '_blank'; ?>
+                            <a href="<?= urlPath($item['href']); ?>" <?= $buyTarget === '_blank' ? 'target="_blank" rel="noopener"' : ''; ?> class="<?= $item['class']; ?>">
                                 <?= htmlspecialchars($item['label']); ?>
                             </a>
                         </li>
@@ -470,244 +477,8 @@ $aboutPages = array_filter(array_column($aboutLinks, 'page'));
         </div>
         
     </div>
+
+<?php if ($navCurrentPage === 'shop.php'): ?>
     <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
-<script>
-  window.addEventListener('load', function () {
-    if (window.cartPaypal && typeof window.cartPaypal.Cart === 'function') {
-      window.cartPaypal.Cart({ id: "pp-view-cart" });
-    }
-  });
-</script>
+<?php endif; ?>
 </header>
-<div class="ctc-mobile-menu-overlay" aria-hidden="true"></div>
-
-
-
-<style id="ctc-mobile-submenu-collapse-fix">
-/* CTC mobile submenu fix: plus opens, minus closes. This overrides touch :hover
-   and older slideToggle inline styles that kept mobile submenus stuck open. */
-@media (max-width: 991px) {
-  .header-area2 .main-menu ul > li.menu-item-has-children:not(.open) > ul.sub-menu,
-  .header-area2 .main-menu ul > li.menu-item-has-children:not(.open):hover > ul.sub-menu,
-  .header-area2 .main-menu ul > li.menu-item-has-children:not(.open):focus-within > ul.sub-menu {
-    display: none !important;
-  }
-
-  .header-area2 .main-menu ul > li.menu-item-has-children.open > ul.sub-menu,
-  .header-area2 .main-menu ul > li.menu-item-has-children.open:hover > ul.sub-menu,
-  .header-area2 .main-menu ul > li.menu-item-has-children.open:focus-within > ul.sub-menu {
-    display: block !important;
-  }
-
-  .header-area2 .main-menu .menu-item-has-children > .dropdown-icon {
-    touch-action: manipulation !important;
-    pointer-events: auto !important;
-    user-select: none !important;
-    -webkit-user-select: none !important;
-  }
-}
-</style>
-
-<script>
-(function () {
-  function ready(fn) {
-    if (document.readyState !== 'loading') { fn(); }
-    else { document.addEventListener('DOMContentLoaded', fn); }
-  }
-
-  ready(function () {
-    var menu = document.querySelector('.header-area2 .main-menu');
-    var openBtn = document.querySelector('.header-area2 .sidebar-button.mobile-menu-btn, .header-area2 .mobile-menu-btn');
-    var overlay = document.querySelector('.ctc-mobile-menu-overlay');
-
-    if (!menu || !openBtn) return;
-
-    function isMobile() {
-      return window.innerWidth <= 991;
-    }
-
-    // Keep only one CTC close button in the mobile drawer.
-    var closeButtons = Array.prototype.slice.call(menu.querySelectorAll('.ctc-mobile-menu-close'));
-    closeButtons.slice(1).forEach(function (btn) { btn.remove(); });
-    var closeBtn = menu.querySelector('.ctc-mobile-menu-close');
-
-    function setAria(isOpen) {
-      openBtn.setAttribute('role', 'button');
-      openBtn.setAttribute('aria-label', isOpen ? 'Close mobile menu' : 'Open mobile menu');
-      openBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    }
-
-    function resetForcedStyles() {
-      menu.style.left = '';
-      menu.style.right = '';
-      menu.style.transform = '';
-      menu.style.visibility = '';
-      menu.style.opacity = '';
-      menu.style.pointerEvents = '';
-      menu.style.display = '';
-    }
-
-    function updateIcon(icon, isOpen) {
-      if (!icon) return;
-      icon.classList.toggle('active', isOpen);
-      icon.classList.toggle('bi-plus', !isOpen);
-      icon.classList.toggle('bi-dash', isOpen);
-      icon.classList.remove('bi-dash-lg');
-      icon.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      icon.setAttribute('role', 'button');
-      icon.setAttribute('aria-label', isOpen ? 'Collapse submenu' : 'Expand submenu');
-    }
-
-    function closeDropdowns() {
-      menu.querySelectorAll('.menu-item-has-children.open').forEach(function (item) {
-        item.classList.remove('open');
-      });
-      menu.querySelectorAll('ul.sub-menu').forEach(function (submenu) {
-        submenu.removeAttribute('style');
-      });
-      menu.querySelectorAll('.dropdown-icon').forEach(function (icon) {
-        updateIcon(icon, false);
-      });
-    }
-
-    function openMenu() {
-      if (!isMobile()) return;
-      resetForcedStyles();
-      menu.classList.add('show-menu');
-      openBtn.classList.add('active');
-      document.body.classList.add('ctc-mobile-menu-open');
-      setAria(true);
-    }
-
-    function closeMenu() {
-      closeDropdowns();
-      menu.classList.remove('show-menu', 'active', 'open');
-      openBtn.classList.remove('active');
-      document.body.classList.remove('ctc-mobile-menu-open');
-      setAria(false);
-    }
-
-    function toggleMenu() {
-      if (menu.classList.contains('show-menu')) closeMenu();
-      else openMenu();
-    }
-
-    function toggleSubmenu(parent) {
-      if (!parent || !isMobile()) return;
-      var submenu = parent.querySelector(':scope > ul.sub-menu');
-      var icon = parent.querySelector(':scope > .dropdown-icon');
-      if (!submenu) return;
-
-      var shouldOpen = !parent.classList.contains('open');
-
-      Array.prototype.forEach.call(parent.parentElement.children, function (sibling) {
-        if (sibling === parent) return;
-        sibling.classList.remove('open');
-        var siblingSubmenu = sibling.querySelector(':scope > ul.sub-menu');
-        var siblingIcon = sibling.querySelector(':scope > .dropdown-icon');
-        if (siblingSubmenu) siblingSubmenu.removeAttribute('style');
-        updateIcon(siblingIcon, false);
-      });
-
-      if (shouldOpen) {
-        parent.classList.add('open');
-        submenu.removeAttribute('style');
-        updateIcon(icon, true);
-      } else {
-        parent.classList.remove('open');
-        submenu.removeAttribute('style');
-        updateIcon(icon, false);
-      }
-    }
-
-    setAria(false);
-    closeDropdowns();
-
-    // Capture dropdown taps early on mobile so the template's older jQuery slideToggle cannot keep the submenu stuck open.
-    ['pointerdown', 'touchstart'].forEach(function (eventName) {
-      document.addEventListener(eventName, function (event) {
-        if (!isMobile() || !menu.classList.contains('show-menu')) return;
-        var dropdownControl = event.target.closest('.menu-item-has-children > .dropdown-icon, .menu-item-has-children > a.drop-down');
-        if (dropdownControl && menu.contains(dropdownControl)) {
-          event.preventDefault();
-          event.stopPropagation();
-          event.stopImmediatePropagation();
-          if (window.ctcDropdownPointerHandled && Date.now() - window.ctcDropdownPointerHandled < 350) return;
-          toggleSubmenu(dropdownControl.closest('.menu-item-has-children'));
-          window.ctcDropdownPointerHandled = Date.now();
-        }
-      }, { capture: true, passive: false });
-    });
-
-    // Capture phase prevents the template's older menu/dropdown scripts from double-toggling.
-    document.addEventListener('click', function (event) {
-      if (!isMobile()) return;
-
-      var openTrigger = event.target.closest('.header-area2 .sidebar-button.mobile-menu-btn, .header-area2 .mobile-menu-btn');
-      if (openTrigger) {
-        event.preventDefault();
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        toggleMenu();
-        return;
-      }
-
-      var closeTrigger = event.target.closest('.ctc-mobile-menu-close');
-      if (closeTrigger) {
-        event.preventDefault();
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        closeMenu();
-        return;
-      }
-
-      if (overlay && event.target === overlay) {
-        event.preventDefault();
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        closeMenu();
-        return;
-      }
-
-      if (!menu.classList.contains('show-menu')) return;
-
-      var dropdownControl = event.target.closest('.menu-item-has-children > .dropdown-icon, .menu-item-has-children > a.drop-down');
-      if (dropdownControl && menu.contains(dropdownControl)) {
-        event.preventDefault();
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        if (!window.ctcDropdownPointerHandled || Date.now() - window.ctcDropdownPointerHandled > 700) {
-          toggleSubmenu(dropdownControl.closest('.menu-item-has-children'));
-        }
-        return;
-      }
-
-      var finalLink = event.target.closest('.main-menu a');
-      if (finalLink && menu.contains(finalLink) && !finalLink.classList.contains('drop-down')) {
-        window.setTimeout(closeMenu, 150);
-      }
-    }, true);
-
-    if (overlay) {
-      overlay.addEventListener('touchmove', function (event) {
-        if (document.body.classList.contains('ctc-mobile-menu-open')) event.preventDefault();
-      }, { passive: false });
-    }
-
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') closeMenu();
-    });
-
-    var observer = new MutationObserver(function () {
-      var isOpen = menu.classList.contains('show-menu');
-      document.body.classList.toggle('ctc-mobile-menu-open', isOpen && isMobile());
-      setAria(isOpen && isMobile());
-    });
-    observer.observe(menu, { attributes: true, attributeFilter: ['class'] });
-
-    window.addEventListener('resize', function () {
-      if (!isMobile()) closeMenu();
-    });
-  });
-})();
-</script>

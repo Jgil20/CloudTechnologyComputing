@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="iOS and Android mobile app development for Houston small businesses. Native and cross-platform apps with cloud backends, push notifications, and analytics.">
+<meta name="description" content="Launch iOS and Android apps with cloud backends, analytics, push notifications, and business-ready features. Start your mobile app roadmap with CTC.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/Mobile%20Development%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Mobile App Development | Cloud Technology Computing">
-<meta property="og:description" content="iOS and Android mobile app development for Houston small businesses. Native and cross-platform apps with cloud backends, push notifications, and analytics.">
+<meta property="og:title" content="Mobile App Development for Small Business | CTC">
+<meta property="og:description" content="Launch iOS and Android apps with cloud backends, analytics, push notifications, and business-ready features. Start your mobile app roadmap with CTC.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/Mobile%20Development%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/MobileDevelopment.png">
 <meta property="og:image:alt" content="Cloud Technology Computing mobile app development">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mobile App Development | Cloud Technology Computing">
-<meta name="twitter:description" content="iOS and Android mobile app development for Houston small businesses. Native and cross-platform apps with cloud backends, push notifications, and analytics.">
+<meta name="twitter:title" content="Mobile App Development for Small Business | CTC">
+<meta name="twitter:description" content="Launch iOS and Android apps with cloud backends, analytics, push notifications, and business-ready features. Start your mobile app roadmap with CTC.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/Mobile%20Development%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/MobileDevelopment.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing mobile app development">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>Mobile App Development | Cloud Technology Computing</title>
+<title>Mobile App Development for Small Business | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "Mobile Application Development", "name": "Mobile App Development", "description": "iOS and Android mobile app development for Houston small businesses. Native and cross-platform apps with cloud backends, push notifications, and analytics.", "url": "https://www.cloudtechnologycomputing.com/services/Mobile%20Development%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/MobileDevelopment.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "Mobile App Development", "item": "https://www.cloudtechnologycomputing.com/services/Mobile%20Development%20service-details.php"}]}]
 </script>

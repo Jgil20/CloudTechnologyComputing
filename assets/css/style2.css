@@ -11507,3 +11507,41 @@ body.show-emoji-picker em-emoji-picker {
     color: #6b7280;
     margin-bottom: 15px;
 }
+/* CTC content-slider height fix: services and recent projects */
+.home6-solution-slider,
+.home3-success-stories-slider {
+  height: auto;
+  aspect-ratio: auto;
+}
+.home6-solution-slider .swiper-wrapper,
+.home3-success-stories-slider .swiper-wrapper,
+.home6-solution-slider .swiper-slide,
+.home3-success-stories-slider .swiper-slide {
+  height: auto;
+}
+.home3-success-stories-slider .success-img img {
+  display: block;
+  height: auto;
+}
+
+/* Footer viewport fix: prevent empty root background below the footer. */
+html {
+  height: auto !important;
+  min-height: 100%;
+  background: #171717;
+}
+body {
+  height: auto !important;
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+}
+body > main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+body > footer {
+  width: 100%;
+  margin-top: auto;
+  flex-shrink: 0;
+}

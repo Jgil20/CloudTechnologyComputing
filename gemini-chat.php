@@ -1,207 +1,221 @@
 <?php
-header('Content-Type: application/json');
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo json_encode([
-        'success' => false,
-        'error' => 'Only POST requests are allowed.'
-    ]);
+declare(strict_types=1);
+
+header('Content-Type: application/json; charset=utf-8');
+header('Cache-Control: no-store, max-age=0');
+header('X-Content-Type-Options: nosniff');
+
+function ctc_chat_response(bool $success, array $payload = [], int $status = 200): never
+{
+    http_response_code($status);
+    echo json_encode(
+        array_merge(['success' => $success], $payload),
+        JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
+    );
     exit;
 }
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Allow: POST');
+    ctc_chat_response(false, ['error' => 'Only POST requests are allowed.'], 405);
+}
+
+$contentLength = (int) ($_SERVER['CONTENT_LENGTH'] ?? 0);
+if ($contentLength > 5_500_000) {
+    ctc_chat_response(false, ['error' => 'The request is too large.'], 413);
+}
+
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+
+$now = time();
+$windowStart = (int) ($_SESSION['chat_rate_window'] ?? 0);
+$requestCount = (int) ($_SESSION['chat_rate_count'] ?? 0);
+
+if ($windowStart === 0 || ($now - $windowStart) >= 300) {
+    $windowStart = $now;
+    $requestCount = 0;
+}
+
+if ($requestCount >= 20) {
+    ctc_chat_response(false, ['error' => 'Too many chat requests. Please wait a few minutes and try again.'], 429);
+}
+
+$_SESSION['chat_rate_window'] = $windowStart;
+$_SESSION['chat_rate_count'] = $requestCount + 1;
 
 require_once __DIR__ . '/includes/config.php';
 
 if (!defined('GEMINI_API_KEY') || GEMINI_API_KEY === '') {
-    http_response_code(503);
-    echo json_encode([
-        'success' => false,
-        'error' => 'Chat is temporarily unavailable while the API key is configured.'
-    ]);
-    exit;
+    ctc_chat_response(false, ['error' => 'Chat is temporarily unavailable while the API key is configured.'], 503);
 }
 
-$input = json_decode(file_get_contents('php://input'), true);
+$rawInput = file_get_contents('php://input');
+$input = json_decode($rawInput ?: '', true);
 
-$userMessage = trim($input['message'] ?? '');
-$file = $input['file'] ?? null;
-$history = $input['history'] ?? [];
-
-if ($userMessage === '' && empty($file['data'])) {
-    http_response_code(400);
-    echo json_encode([
-        'success' => false,
-        'error' => 'Message is required.'
-    ]);
-    exit;
+if (!is_array($input) || json_last_error() !== JSON_ERROR_NONE) {
+    ctc_chat_response(false, ['error' => 'Invalid JSON request.'], 400);
 }
+
+$userMessage = trim((string) ($input['message'] ?? ''));
+$history = is_array($input['history'] ?? null) ? $input['history'] : [];
+$file = is_array($input['file'] ?? null) ? $input['file'] : null;
 
 if (strlen($userMessage) > 3000) {
-    http_response_code(400);
-    echo json_encode([
-        'success' => false,
-        'error' => 'Message is too long.'
-    ]);
-    exit;
+    ctc_chat_response(false, ['error' => 'Message is too long.'], 400);
 }
 
-$businessMemory = "
-Context:
-www.arzugil.com is the personal portfolio site of Jhon A. Arzu-Gil — a certified Cloud Developer, Full-Stack Engineer, and Application Development Specialist with over 30 professional IT certifications.
+$businessMemory = <<<'CONTEXT'
+You are the website assistant for Cloud Technology Computing Corporation, a Houston-based cloud, AI, web, mobile, data, cybersecurity, SEO, and managed IT services company.
 
-Jhon specializes in:
-- Web Development using HTML, CSS, JavaScript, PHP, and MySQL
-- Native and hybrid mobile app development for Android and iOS
-- Cloud Architecture with AWS, Azure, IBM Cloud, and multi-cloud environments
-- AI and Machine Learning integrations including chatbots and automation
-- SEO optimization, website speed, and performance audits
-- Progressive Web Apps, responsive designs, and accessible UI
-- SAP Analytics Cloud dashboards and enterprise data reporting
-- Digital marketing campaigns including Amazon PPC, Google Ads, and Facebook
+Core services:
+- AWS, Microsoft Azure, IBM Cloud, Google Cloud, hybrid-cloud, migration, hosting, monitoring, backup, and cost optimization
+- Custom PHP, MySQL, HTML, CSS, JavaScript, APIs, e-commerce, and business websites
+- AI chatbots, workflow automation, lead capture, and customer-support integrations
+- Native Android and iOS applications, progressive web apps, and mobile publishing support
+- SEO, website performance, Core Web Vitals, analytics, digital marketing, and conversion optimization
+- SAP Analytics Cloud, dashboards, reporting, data analytics, and technology consulting
 
-Cloud Technology Computing Corporation provides:
-- Affordable 3-page website development starting at $1,000
-- Local SEO packages starting at $500 per month
-- Website optimization starting at $1,500
-- Social media marketing starting at $399 per month
-- PPC online advertising starting at $450 per month
-- Custom software development
-- Web application development
-- Mobile application development
-- WordPress development
-- SAP consulting
-- Cloud consulting
-- IT consulting
+Current listed service prices include a $200 business consulting session, $500/month SEO optimization, $750 website speed and SEO tune-up, $950 managed cloud setup, $1,200 AI chatbot integration, and $1,500 custom business website. Final pricing depends on scope.
 
-The assistant should answer questions clearly, recommend relevant services, and encourage visitors to schedule an appointment or contact Cloud Technology Computing when appropriate.
-";
+Answer clearly and accurately. Do not invent guarantees, certifications, project results, availability, or prices. When a visitor needs a quote, appointment, or project-specific answer, encourage them to use the consultation form or call 1-713-870-9966.
+CONTEXT;
 
 $contents = [];
+$totalHistoryCharacters = 0;
 
-$contents[] = [
-    'role' => 'user',
-    'parts' => [
-        [
-            'text' => $businessMemory
-        ]
-    ]
-];
+foreach (array_slice($history, -10) as $item) {
+    if (!is_array($item) || !isset($item['parts']) || !is_array($item['parts'])) {
+        continue;
+    }
 
-if (is_array($history)) {
-    foreach ($history as $item) {
-        if (!isset($item['role']) || !isset($item['parts']) || !is_array($item['parts'])) {
+    $safeParts = [];
+    foreach ($item['parts'] as $part) {
+        if (!is_array($part) || !isset($part['text'])) {
             continue;
         }
 
-        $safeParts = [];
-
-        foreach ($item['parts'] as $part) {
-            if (isset($part['text'])) {
-                $safeParts[] = [
-                    'text' => substr((string) $part['text'], 0, 3000)
-                ];
-            }
+        $text = substr((string) $part['text'], 0, 2000);
+        $totalHistoryCharacters += strlen($text);
+        if ($totalHistoryCharacters > 12_000) {
+            break 2;
         }
 
-        if (!empty($safeParts)) {
-            $contents[] = [
-                'role' => $item['role'] === 'model' ? 'model' : 'user',
-                'parts' => $safeParts
-            ];
+        if ($text !== '') {
+            $safeParts[] = ['text' => $text];
         }
     }
-}
 
-$currentParts = [];
-
-if ($userMessage !== '') {
-    $currentParts[] = [
-        'text' => $userMessage
-    ];
-}
-
-if (
-    is_array($file) &&
-    !empty($file['data']) &&
-    !empty($file['mime_type'])
-) {
-    $allowedMimeTypes = [
-        'image/png',
-        'image/jpeg',
-        'image/webp',
-        'image/gif'
-    ];
-
-    if (in_array($file['mime_type'], $allowedMimeTypes, true)) {
-        $currentParts[] = [
-            'inline_data' => [
-                'mime_type' => $file['mime_type'],
-                'data' => $file['data']
-            ]
+    if ($safeParts !== []) {
+        $contents[] = [
+            'role' => (($item['role'] ?? '') === 'model') ? 'model' : 'user',
+            'parts' => $safeParts,
         ];
     }
 }
 
-$contents[] = [
-    'role' => 'user',
-    'parts' => $currentParts
-];
+$currentParts = [];
+if ($userMessage !== '') {
+    $currentParts[] = ['text' => $userMessage];
+}
 
-$url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+if ($file !== null && !empty($file['data']) && !empty($file['mime_type'])) {
+    $mimeType = (string) $file['mime_type'];
+    $encodedData = (string) $file['data'];
+    $allowedMimeTypes = ['image/png', 'image/jpeg', 'image/webp', 'image/gif'];
+
+    if (!in_array($mimeType, $allowedMimeTypes, true)) {
+        ctc_chat_response(false, ['error' => 'Only PNG, JPEG, WebP, and GIF images are supported.'], 400);
+    }
+
+    if (strlen($encodedData) > 4_200_000) {
+        ctc_chat_response(false, ['error' => 'The uploaded image is too large.'], 413);
+    }
+
+    $decodedData = base64_decode($encodedData, true);
+    if ($decodedData === false || strlen($decodedData) > 3_000_000) {
+        ctc_chat_response(false, ['error' => 'The uploaded image data is invalid or too large.'], 400);
+    }
+
+    $currentParts[] = [
+        'inline_data' => [
+            'mime_type' => $mimeType,
+            'data' => $encodedData,
+        ],
+    ];
+}
+
+if ($currentParts === []) {
+    ctc_chat_response(false, ['error' => 'Message or image is required.'], 400);
+}
+
+$contents[] = ['role' => 'user', 'parts' => $currentParts];
+
+$model = ctc_env('GEMINI_MODEL', 'gemini-2.5-flash');
+$url = 'https://generativelanguage.googleapis.com/v1beta/models/'
+    . rawurlencode($model)
+    . ':generateContent';
 
 $payload = [
+    'system_instruction' => [
+        'parts' => [['text' => $businessMemory]],
+    ],
     'contents' => $contents,
     'generationConfig' => [
-        'temperature' => 0.7,
-        'maxOutputTokens' => 700
-    ]
+        'temperature' => 0.55,
+        'maxOutputTokens' => 700,
+    ],
 ];
 
-$ch = curl_init($url);
+$encodedPayload = json_encode($payload, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+if ($encodedPayload === false) {
+    ctc_chat_response(false, ['error' => 'The chat request could not be prepared.'], 500);
+}
 
+if (!function_exists('curl_init')) {
+    ctc_chat_response(false, ['error' => 'Chat is unavailable because PHP cURL is not enabled.'], 503);
+}
+
+$ch = curl_init($url);
 curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POST => true,
     CURLOPT_HTTPHEADER => [
         'Content-Type: application/json',
-        'x-goog-api-key: ' . GEMINI_API_KEY
+        'x-goog-api-key: ' . GEMINI_API_KEY,
     ],
-    CURLOPT_POSTFIELDS => json_encode($payload),
-    CURLOPT_TIMEOUT => 30
+    CURLOPT_POSTFIELDS => $encodedPayload,
+    CURLOPT_CONNECTTIMEOUT => 10,
+    CURLOPT_TIMEOUT => 30,
 ]);
 
 $response = curl_exec($ch);
-$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$httpCode = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
 $curlError = curl_error($ch);
-
 curl_close($ch);
 
-if ($curlError) {
-    http_response_code(500);
-    echo json_encode([
-        'success' => false,
-        'error' => 'Server connection error.'
-    ]);
-    exit;
+if ($response === false || $curlError !== '') {
+    error_log('Gemini connection error: ' . $curlError);
+    ctc_chat_response(false, ['error' => 'The chat service could not be reached. Please try again.'], 502);
 }
 
 $data = json_decode($response, true);
-
-if ($httpCode < 200 || $httpCode >= 300) {
-    http_response_code($httpCode);
-    echo json_encode([
-        'success' => false,
-        'error' => $data['error']['message'] ?? 'Gemini API error.'
-    ]);
-    exit;
+if (!is_array($data)) {
+    error_log('Gemini returned invalid JSON with HTTP status ' . $httpCode);
+    ctc_chat_response(false, ['error' => 'The chat service returned an invalid response.'], 502);
 }
 
-$reply = $data['candidates'][0]['content']['parts'][0]['text'] ?? 'No response generated.';
+if ($httpCode < 200 || $httpCode >= 300) {
+    $apiMessage = (string) ($data['error']['message'] ?? 'Unknown Gemini API error');
+    error_log('Gemini API error ' . $httpCode . ': ' . $apiMessage);
+    ctc_chat_response(false, ['error' => 'The chat service is temporarily unavailable.'], 502);
+}
 
-$reply = preg_replace('/\*\*(.*?)\*\*/', '$1', $reply);
-$reply = trim($reply);
+$reply = trim((string) ($data['candidates'][0]['content']['parts'][0]['text'] ?? ''));
+if ($reply === '') {
+    ctc_chat_response(false, ['error' => 'No response was generated. Please try again.'], 502);
+}
 
-echo json_encode([
-    'success' => true,
-    'reply' => $reply
-]);
+ctc_chat_response(true, ['reply' => $reply]);

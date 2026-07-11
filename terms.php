@@ -2,14 +2,14 @@
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/terms.php" />
 <meta name="author" content="Jhon Arzu-Gil" />
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Read the Cloud Technology Computing Terms and Conditions. Covers services, payments, IP, acceptable use, disclaimers, liability, and Texas governing law." />
+<meta name="description" content="Review Cloud Technology Computing terms covering projects, payments, intellectual property, acceptable use, limitations, and Texas governing law.">
 <meta name="robots" content="index, follow" />
 <meta name="keywords" content="cloud technology computing, terms and conditions, houston cloud services, small business, cloud consulting" />
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Terms and Conditions | Cloud Technology Computing" />
-<meta property="og:description" content="Read the Cloud Technology Computing Terms and Conditions. Covers services, payments, IP, acceptable use, disclaimers, liability, and Texas governing law." />
+<meta property="og:title" content="Terms &amp; Conditions | Cloud Technology Computing">
+<meta property="og:description" content="Review Cloud Technology Computing terms covering projects, payments, intellectual property, acceptable use, limitations, and Texas governing law.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/terms.php" />
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:image:alt" content="Cloud Technology Computing Terms and Conditions">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
@@ -18,14 +18,14 @@
 <meta property="article:modified_time" content="2026-06-30T00:00:00+00:00" />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Terms and Conditions | Cloud Technology Computing" />
-<meta name="twitter:description" content="Read the Cloud Technology Computing Terms and Conditions. Covers services, payments, IP, acceptable use, disclaimers, liability, and Texas governing law." />
+<meta name="twitter:title" content="Terms &amp; Conditions | Cloud Technology Computing">
+<meta name="twitter:description" content="Review Cloud Technology Computing terms covering projects, payments, intellectual property, acceptable use, limitations, and Texas governing law.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/terms.php" />
 <meta name="twitter:site" content="@JhonArzuGil" />
 <meta name="twitter:creator" content="@JhonArzuGil" />
-<meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:image:alt" content="Cloud Technology Computing Terms and Conditions" />
-<title>Terms and Conditions | Cloud Technology Computing</title>
+<title>Terms &amp; Conditions | Cloud Technology Computing</title>
 
 <!-- Breadcrumb structured data -->
 <script type="application/ld+json">

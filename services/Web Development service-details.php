@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="Custom web development for Houston small businesses. Responsive websites, e-commerce, CMS, and web applications built with modern frameworks. Free consultation available.">
+<meta name="description" content="Build a responsive business website, ecommerce store, CMS, landing page, or web application designed for speed, SEO, lead generation, and growth.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/Web%20Development%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Web Development Services | Cloud Technology Computing">
-<meta property="og:description" content="Custom web development for Houston small businesses. Responsive websites, e-commerce, CMS, and web applications built with modern frameworks. Free consultation available.">
+<meta property="og:title" content="Web Development Services for Small Business | CTC">
+<meta property="og:description" content="Build a responsive business website, ecommerce store, CMS, landing page, or web application designed for speed, SEO, lead generation, and growth.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/Web%20Development%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/WebDevelopment3.png">
 <meta property="og:image:alt" content="Cloud Technology Computing custom web development for small business">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Web Development Services | Cloud Technology Computing">
-<meta name="twitter:description" content="Custom web development for Houston small businesses. Responsive websites, e-commerce, CMS, and web applications built with modern frameworks. Free consultation available.">
+<meta name="twitter:title" content="Web Development Services for Small Business | CTC">
+<meta name="twitter:description" content="Build a responsive business website, ecommerce store, CMS, landing page, or web application designed for speed, SEO, lead generation, and growth.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/Web%20Development%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/WebDevelopment3.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing custom web development for small business">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>Web Development Services | Cloud Technology Computing</title>
+<title>Web Development Services for Small Business | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "Web Development", "name": "Web Development", "description": "Custom web development for Houston small businesses. Responsive websites, e-commerce, CMS, and web applications built with modern frameworks. Free consultation available.", "url": "https://www.cloudtechnologycomputing.com/services/Web%20Development%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/WebDevelopment3.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "Web Development", "item": "https://www.cloudtechnologycomputing.com/services/Web%20Development%20service-details.php"}]}]
 </script>

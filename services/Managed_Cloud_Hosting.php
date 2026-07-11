@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="Managed cloud hosting on AWS, Azure, and Google Cloud. Cloud Technology Computing provides 24/7 monitoring, auto-scaling, security, and cost optimization for Houston small businesses.">
+<meta name="description" content="Get managed cloud hosting on AWS, Azure, or Google Cloud with monitoring, security, backups, scaling, and cost optimization for growing businesses.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/Managed_Cloud_Hosting.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Managed Cloud Hosting | Cloud Technology Computing">
-<meta property="og:description" content="Managed cloud hosting on AWS, Azure, and Google Cloud. Cloud Technology Computing provides 24/7 monitoring, auto-scaling, security, and cost optimization for Houston small businesses.">
+<meta property="og:title" content="Managed Cloud Hosting for Small Business | CTC">
+<meta property="og:description" content="Get managed cloud hosting on AWS, Azure, or Google Cloud with monitoring, security, backups, scaling, and cost optimization for growing businesses.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/Managed_Cloud_Hosting.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudSolutions.png">
 <meta property="og:image:alt" content="Cloud Technology Computing managed cloud hosting dashboard">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Managed Cloud Hosting | Cloud Technology Computing">
-<meta name="twitter:description" content="Managed cloud hosting on AWS, Azure, and Google Cloud. Cloud Technology Computing provides 24/7 monitoring, auto-scaling, security, and cost optimization for Houston small businesses.">
+<meta name="twitter:title" content="Managed Cloud Hosting for Small Business | CTC">
+<meta name="twitter:description" content="Get managed cloud hosting on AWS, Azure, or Google Cloud with monitoring, security, backups, scaling, and cost optimization for growing businesses.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/Managed_Cloud_Hosting.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudSolutions.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing managed cloud hosting dashboard">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>Managed Cloud Hosting | Cloud Technology Computing</title>
+<title>Managed Cloud Hosting for Small Business | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "Managed Cloud Hosting", "name": "Managed Cloud Hosting", "description": "Managed cloud hosting on AWS, Azure, and Google Cloud. Cloud Technology Computing provides 24/7 monitoring, auto-scaling, security, and cost optimization for Houston small businesses.", "url": "https://www.cloudtechnologycomputing.com/services/Managed_Cloud_Hosting.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/CloudSolutions.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "Managed Cloud Hosting", "item": "https://www.cloudtechnologycomputing.com/services/Managed_Cloud_Hosting.php"}]}]
 </script>

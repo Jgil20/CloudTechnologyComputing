@@ -5,6 +5,13 @@ function e(?string $value): string
     return htmlspecialchars($value ?? '', ENT_QUOTES, 'UTF-8');
 }
 
+function ctc_blog_truncate(string $value, int $maxLength): string
+{
+    return function_exists('mb_substr')
+        ? mb_substr($value, 0, $maxLength, 'UTF-8')
+        : substr($value, 0, $maxLength);
+}
+
 function getPostBySlugOrId(PDO $pdo): ?array
 {
     $slug = $_GET['slug'] ?? null;
@@ -132,15 +139,24 @@ function getApprovedComments(PDO $pdo, int $postId): array
     return $stmt->fetchAll();
 }
 
-function saveComment(PDO $pdo, int $postId): void
+function saveComment(PDO $pdo, int $postId): bool
 {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        return;
+        return false;
+    }
+
+    if (function_exists('csrf_check') && !csrf_check()) {
+        return false;
     }
 
     // Honeypot field. Real visitors will not fill this hidden field.
     if (!empty($_POST['website'] ?? '')) {
-        return;
+        return false;
+    }
+
+    $lastComment = (int) ($_SESSION['last_blog_comment'] ?? 0);
+    if ($lastComment > 0 && (time() - $lastComment) < 15) {
+        return false;
     }
 
     $name = trim((string) ($_POST['name'] ?? ''));
@@ -149,17 +165,17 @@ function saveComment(PDO $pdo, int $postId): void
     $message = trim((string) ($_POST['message'] ?? ''));
 
     if ($name === '' || $email === '' || $message === '') {
-        return;
+        return false;
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        return;
+        return false;
     }
 
-    $name = mb_substr($name, 0, 100);
-    $email = mb_substr($email, 0, 190);
-    $subject = mb_substr($subject, 0, 160);
-    $message = mb_substr($message, 0, 3000);
+    $name = ctc_blog_truncate($name, 100);
+    $email = ctc_blog_truncate($email, 190);
+    $subject = ctc_blog_truncate($subject, 160);
+    $message = ctc_blog_truncate($message, 3000);
 
     $stmt = $pdo->prepare("
         INSERT INTO blog_comments 
@@ -175,6 +191,11 @@ function saveComment(PDO $pdo, int $postId): void
         ':subject' => $subject,
         ':message' => $message,
     ]);
+
+    $_SESSION['last_blog_comment'] = time();
+    unset($_SESSION['csrf']);
+
+    return true;
 }
 
 function getRelatedPosts(PDO $pdo, int $postId, ?int $categoryId, int $limit = 3): array

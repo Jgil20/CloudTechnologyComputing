@@ -79,22 +79,22 @@ $caseStudies = $stmt->fetchAll();
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Browse Cloud Technology Computing case studies on cloud performance optimization, AI chatbot integrations, and cloud migration for small businesses."/>
+<meta name="description" content="Read case studies on cloud migration, website speed, AI chatbot lead capture, SEO, and managed IT results from Cloud Technology Computing client projects.">
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Case Studies: Cloud Performance Optimization | CTC" />
-<meta property="og:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies." />
+<meta property="og:title" content="Cloud, AI &amp; Website Case Studies | CTC">
+<meta property="og:description" content="Read case studies on cloud migration, website speed, AI chatbot lead capture, SEO, and managed IT results from Cloud Technology Computing client projects.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/case-study-standard.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Case Studies: Cloud Performance Optimization | CTC" />
-<meta property="twitter:description" content="Explore our detailed case study showcasing standard solutions for optimizing cloud performance. Learn how Cloud Technology Computing enhanced efficiency and scalability for our clients with innovative cloud strategies." />
+<meta name="twitter:title" content="Cloud, AI &amp; Website Case Studies | CTC">
+<meta name="twitter:description" content="Read case studies on cloud migration, website speed, AI chatbot lead capture, SEO, and managed IT results from Cloud Technology Computing client projects.">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/case-study-standard.php">
 <meta name="twitter:image:alt" content="Case Studies: Cloud Performance Optimization | CTC" />  
@@ -102,7 +102,7 @@ $caseStudies = $stmt->fetchAll();
    
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/case-study-standard.php" />
-    <title>Case Studies: Cloud Performance Optimization | CTC</title>
+    <title>Cloud, AI &amp; Website Case Studies | CTC</title>
 <script type="application/ld+json">
 <?php
 $hasParts = [];

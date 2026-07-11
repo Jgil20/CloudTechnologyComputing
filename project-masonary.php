@@ -1,22 +1,22 @@
 <?php include 'header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Cloud Technology Computing: Expert in software development, cloud computing (IBM, Google, Azure), and mobile app innovation. Elevate your tech journey." />
+<meta name="description" content="Explore a gallery of cloud computing, AI chatbot, website, SEO, and mobile app projects built to improve speed, leads, security, and business growth for clients.">
 <meta name="robots" content="index, follow"> 
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
-<meta property="og:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Tailored web, cloud, and AI solutions designed to grow your business." />
+<meta property="og:title" content="Cloud, AI &amp; Website Project Gallery | CTC">
+<meta property="og:description" content="Explore a gallery of cloud computing, AI chatbot, website, SEO, and mobile app projects built to improve speed, leads, security, and business growth for clients.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/project-masonary.php">
-<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta property="og:site_name" content="Cloud Technology Computing" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />
-<meta property="twitter:description" content="Explore innovative cloud computing projects delivered by Cloud Technology Computing. Tailored web, cloud, and AI solutions designed to grow your business." />
+<meta name="twitter:title" content="Cloud, AI &amp; Website Project Gallery | CTC">
+<meta name="twitter:description" content="Explore a gallery of cloud computing, AI chatbot, website, SEO, and mobile app projects built to improve speed, leads, security, and business growth for clients.">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.png">
+<meta property="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/cloudbanner.jpg">
 <meta name="twitter:creator" content="@JhonArzuGil"/>
 <meta property="twitter:url" content="https://www.cloudtechnologycomputing.com/project-masonary.php">
 <meta name="twitter:image:alt" content="Innovative Cloud Computing Projects | Cloud Technology Computing" />  
@@ -24,7 +24,7 @@
    
      <!-- Title -->
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/project-masonary.php" />
-    <title>Innovative Cloud Computing Projects | Cloud Technology Computing</title>
+    <title>Cloud, AI &amp; Website Project Gallery | CTC</title>
 
 <!-- Breadcrumb structured data -->
 <script type="application/ld+json">
@@ -122,7 +122,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <img loading="lazy" src="assets/images/bg/office1.png" alt="image"   > -->
         </div>
         <div class="follow-area">
             <h5 class="blog-widget-title">Follow Us</h5>
@@ -144,10 +143,10 @@
     <section class="breadcrumbs">
         <div class="breadcrumb-sm-images">
             <div class="inner-banner-1 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-1.png" alt="" width="300" height="300"   >
+                <img loading="lazy" src="assets/img/inner-pages/OnlineAdvertisingCloudTechnologyComputing.avif" alt="" width="300" height="300"   >
             </div>
             <div class="inner-banner-2 magnetic-item">
-                <img loading="lazy" src="assets/img/inner-pages/inner-banner-2.png" alt="" width="300" height="300"   >
+                <img loading="lazy" src="assets/img/inner-pages/ibm cloud provider.avif" alt="" width="300" height="300"   >
             </div>
         </div>
         <div class="container">

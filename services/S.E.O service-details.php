@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="Search engine optimization for Houston small businesses. Technical SEO, on-page optimization, local SEO, and content strategy that drives qualified traffic and leads.">
+<meta name="description" content="Increase organic search visibility with technical SEO, on-page optimization, local SEO, keyword research, content strategy, and conversion tracking.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/S.E.O%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="SEO Services for Small Businesses | Cloud Technology Computing">
-<meta property="og:description" content="Search engine optimization for Houston small businesses. Technical SEO, on-page optimization, local SEO, and content strategy that drives qualified traffic and leads.">
+<meta property="og:title" content="SEO Services for Small Business Growth | CTC">
+<meta property="og:description" content="Increase organic search visibility with technical SEO, on-page optimization, local SEO, keyword research, content strategy, and conversion tracking.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/S.E.O%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/SEO2.png">
 <meta property="og:image:alt" content="Cloud Technology Computing SEO services for small business">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SEO Services for Small Businesses | Cloud Technology Computing">
-<meta name="twitter:description" content="Search engine optimization for Houston small businesses. Technical SEO, on-page optimization, local SEO, and content strategy that drives qualified traffic and leads.">
+<meta name="twitter:title" content="SEO Services for Small Business Growth | CTC">
+<meta name="twitter:description" content="Increase organic search visibility with technical SEO, on-page optimization, local SEO, keyword research, content strategy, and conversion tracking.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/S.E.O%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/SEO2.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing SEO services for small business">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>SEO Services for Small Businesses | Cloud Technology Computing</title>
+<title>SEO Services for Small Business Growth | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "Search Engine Optimization", "name": "SEO Services", "description": "Search engine optimization for Houston small businesses. Technical SEO, on-page optimization, local SEO, and content strategy that drives qualified traffic and leads.", "url": "https://www.cloudtechnologycomputing.com/services/S.E.O%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/SEO2.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "SEO Services", "item": "https://www.cloudtechnologycomputing.com/services/S.E.O%20service-details.php"}]}]
 </script>

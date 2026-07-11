@@ -1,12 +1,12 @@
 <?php include __DIR__ . '/../header.php'; ?>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil">
-<meta name="description" content="Bespoke software development for Houston small businesses. We design, build, and maintain custom applications, integrations, and SaaS platforms tailored to your workflows.">
+<meta name="description" content="Build custom software, SaaS tools, workflow automations, APIs, and integrations for your business. Plan, develop, launch, and improve with CTC as your partner.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudtechnologycomputing.com/services/Software%20Development%20service-details.php">
 <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Custom Software Development | Cloud Technology Computing">
-<meta property="og:description" content="Bespoke software development for Houston small businesses. We design, build, and maintain custom applications, integrations, and SaaS platforms tailored to your workflows.">
+<meta property="og:title" content="Custom Software Development Services | CTC">
+<meta property="og:description" content="Build custom software, SaaS tools, workflow automations, APIs, and integrations for your business. Plan, develop, launch, and improve with CTC as your partner.">
 <meta property="og:url" content="https://www.cloudtechnologycomputing.com/services/Software%20Development%20service-details.php">
 <meta property="og:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/SoftwareDevelopment.png">
 <meta property="og:image:alt" content="Cloud Technology Computing custom software development">
@@ -15,15 +15,15 @@
 <meta property="og:type" content="website">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Custom Software Development | Cloud Technology Computing">
-<meta name="twitter:description" content="Bespoke software development for Houston small businesses. We design, build, and maintain custom applications, integrations, and SaaS platforms tailored to your workflows.">
+<meta name="twitter:title" content="Custom Software Development Services | CTC">
+<meta name="twitter:description" content="Build custom software, SaaS tools, workflow automations, APIs, and integrations for your business. Plan, develop, launch, and improve with CTC as your partner.">
 <meta name="twitter:url" content="https://www.cloudtechnologycomputing.com/services/Software%20Development%20service-details.php">
 <meta name="twitter:image" content="https://www.cloudtechnologycomputing.com/assets/img/home-6/SoftwareDevelopment.png">
 <meta name="twitter:image:alt" content="Cloud Technology Computing custom software development">
 <meta name="twitter:site" content="@JhonArzuGil">
 <meta name="twitter:creator" content="@JhonArzuGil">
 <!-- Title -->
-<title>Custom Software Development | Cloud Technology Computing</title>
+<title>Custom Software Development Services | CTC</title>
 <script type="application/ld+json">
 [{"@context": "https://schema.org", "@type": "Service", "serviceType": "Custom Software Development", "name": "Software Development", "description": "Bespoke software development for Houston small businesses. We design, build, and maintain custom applications, integrations, and SaaS platforms tailored to your workflows.", "url": "https://www.cloudtechnologycomputing.com/services/Software%20Development%20service-details.php", "image": "https://www.cloudtechnologycomputing.com/assets/img/home-6/SoftwareDevelopment.png", "provider": {"@type": "Organization", "name": "Cloud Technology Computing", "url": "https://www.cloudtechnologycomputing.com/"}, "areaServed": [{"@type": "City", "name": "Houston"}, {"@type": "State", "name": "Texas"}, {"@type": "Country", "name": "United States"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cloudtechnologycomputing.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cloudtechnologycomputing.com/services.php"}, {"@type": "ListItem", "position": 3, "name": "Software Development", "item": "https://www.cloudtechnologycomputing.com/services/Software%20Development%20service-details.php"}]}]
 </script>
